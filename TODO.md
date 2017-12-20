@@ -9,7 +9,7 @@
 ## Database
 
 - Figure out needed tables
-  - Create files and definitions for tables
+  - Create files and definitions for:
 
 ## Assets
 
