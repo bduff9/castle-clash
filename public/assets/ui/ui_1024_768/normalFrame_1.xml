@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="normalFrame_1" W="1024" H="768">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="1024" H="768" Touch="1" Zoom="0">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="514" H="768" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="510" Y="0" W="514" H="768" RotationY="180" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="TitleBkgCanvs" X="0" Y="641" W="1024" H="132" Top="0">
+        <Image Name="TitleBkg_L" X="-64" Y="0" W="578" H="132" Image="{1,ui/res/title_bk.png}" SizeMode="1" />
+        <Image Name="TitleBkg_R" X="510" Y="0" W="578" H="132" RotationY="180" Image="{1,ui/res/title_bk.png}" SizeMode="1" />
+    </Canvas>
+	<Label Name="TitleLabel" X="117" Y="645" W="790" H="132" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+    <Image Name="CloseImg" X="909" Y="657" W="96" H="96" Touch="1" Top="15" Right="15" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+</Layout>

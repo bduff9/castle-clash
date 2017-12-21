@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFrame" W="1024" H="768">
+    <Canvas Name="CanvasInfo" X="25" Y="24" W="974" H="629">
+	    <Canvas Name="InfoCanvsRight_Buttom" X="336" Y="30" W="614" H="352">
+            <ListBox Name="DefenseListBox" X="47" Y="72" W="520" H="240" Center="1" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="520" H="36">
+                    <Label Name="ItemTypeLabel" X="0" Y="5" W="240" H="26" Color="0,0,0" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                    <Label Name="ItemValueLabel" X="250" Y="5" W="280" H="26" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="CanvasLeft" X="0" Y="11" W="356" H="600">
+            <Label Name="NameLabel" X="58" Y="188" W="240" H="50" Center="1" Color="103,73,37" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="LoginFrame" R_W="1.00" R_H="1.00">
+    <Image Name="BackgroundImg" Center="3" W="1800" R_H="1" Image="{1,ui/res/load_bk.jpg}" SizeMode="0" />
+	<Image Name="IggImage" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" SizeMode="0" />
+    <Canvas Name="CanvasLogin" X="362" Y="428" W="300" H="60" Center="1">
+        <EditBox Name="AccountEdit" X="0" Y="7" W="200" H="46" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="2" Padding="{10,10};" Color="0,0,0" />
+        <Canvas Name="PlayBtn" X="202" Y="7" W="80" H="46" Touch="1" Center="2">
+            <Image Name="Image" X="0" Y="0" W="80" H="46" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="80" H="46" Text="Enter" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="16" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="ChatCanvas" X="0" Y="90" W="151" H="108" Touch="1">
+        <Image Name="Image" X="0" Y="0" W="151" H="108" Image="{1,ui/res/chat.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="5" W="151" H="18" Text="Live Support" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="16" />
+    </Canvas>
+    <Canvas Name="LoadCanvs" X="79" Y="0" W="865" H="90" Fixed="1" Center="1">
+        <Image Name="LoadProBkImg" X="0" Y="30" W="865" H="15" Center="1" Image="{1,ui/res/load_pro_bk.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="TipLabel" X="0" Y="50" W="560" H="30" Text="Tip" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+        <Label Name="VersionLabel" X="565" Y="0" W="300" H="30" Text="Version" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+    </Canvas>
+	<Canvas Name="Tencent" X="0" Y="100" Center="1" W="1028" H="183" >
+		<Canvas Name="WeChatCanvs" X="0" Y="0" W="514" H="183" Touch="1">
+			<Image Name="Img" X="0" Y="0" W="514" H="183" Center="1" Image="{1,ui/res/wechat_login.png}" SizeMode="1" />
+		</Canvas>
+		<Canvas Name="QQCanvs" X="514" Y="0" W="514" H="183" Touch="1">
+			<Image Name="Img" X="0" Y="0" W="514" H="183" Center="1" Image="{1,ui/res/qq_login.png}" SizeMode="1" />
+		</Canvas>
+	</Canvas>
+</Layout>

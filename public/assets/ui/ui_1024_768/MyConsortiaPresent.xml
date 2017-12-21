@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MyConsortiaPresentFrame" W="662" H="460">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="460">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="460" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="460" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="374" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="342" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Image Name="TypeImg" X="19" Y="342" W="115" H="117" Touch="1" Top="1" Image="{1,ui/res/Consortia/form_rename.png}" SizeMode="1" />
+    <Canvas Name="CanvsChip" X="0" Y="80" W="662" H="360">
+        <Label Name="TxtLabel" X="30" Y="190" W="180" H="100" Color="162,128,80" TextAlignment="2" BmpFont="font_2.fnt" FSize="28" />
+        <Image Name="Img" X="220" Y="210" W="50" H="50" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0"  />
+        <Label Name="HeroClipNumLabel" X="280" Y="190" W="200" H="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        <Image Name="ImgBkg" X="61" Y="10" W="540" H="190" Center="1" Image="{1,ui/res/setting/shade_680_93.png}" SizeMode="1" />
+        <Image Name="Img1" X="160" Y="90" W="50" H="50" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0"  />
+        <EditBox Name="HeroClipEdit" X="220" Y="90" W="300" H="48" Background="{1,ui/res/Consortia/consortia_edit.png}" Padding="{10,10};" Color="255,255,255" IsNum="1" />
+        <Label Name="TipsLabel" X="81" Y="0" W="500" H="100" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="18" />
+    </Canvas>
+    <Canvas Name="CanvsRename" X="0" Y="80" W="662" H="360">
+        <Label Name="NameLabel" X="156" Y="199" W="350" H="40" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="30" />
+        <Image Name="minusBtnImg" X="132" Y="89" W="96" H="99" Image="{1,icon/bag/item0044.png}" SizeMode="1" />
+        <Canvas Name="OperateCanvs" X="227" Y="104" W="306" H="67">
+            <Image Name="operatebg" X="0" Y="0" W="306" H="67" Image="{1,ui/res/bag/operatebg.png}" SizeMode="1" />
+            <Canvas Name="MinusBtn" X="2" Y="1" W="64" H="65" Touch="1">
+                <Image Name="Img" X="0" Y="0" W="64" H="65" Image="{1,ui/res/button/minus.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="HaveNum" X="26" Y="14" W="160" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="32" />
+            <Canvas Name="PlusBtn" X="169" Y="1" W="64" H="65" Touch="1">
+                <Image Name="Img" X="0" Y="0" W="64" H="65" Image="{1,ui/res/button/plus.png}" SizeMode="1" />
+            </Canvas>
+            <Image Name="TomaxBtn" X="233" Y="1" W="72" H="64" Touch="1" Image="{1,ui/res/button/tomax.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="NumLabel" X="81" Y="65" W="500" H="30" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+        <Label Name="TipsLabel" X="81" Y="20" W="500" H="40" Center="1" Color="123,70,24" TextAlignment="1" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+    </Canvas>
+    <Canvas Name="OKCanvs" X="233" Y="-10" W="196" H="77" Touch="1" Center="1">
+        <Image Name="Img" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+        <Label Name="Txt" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="VkInvitesFrame" W="710" H="768">
+    <Canvas Name="CanvasTip" X="3" Y="292" W="66" H="183" Touch="1" Zoom="0" zOrder="-2" Center="2">
+        <Image Name="ImgBkg" X="0" Y="0" W="66" H="183" Image="{1,ui/res/social/social_btn.png}" SizeMode="1" />
+        <Image Name="ImgSocialIcon" X="8" Y="66" W="50" H="51" Center="3" Image="{1,ui/res/social/social_icon.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasMain" X="54" Y="0" W="649" H="768" Touch="1" Zoom="0" Center="2">
+        <Image Name="ImgBkg" X="0" Y="0" W="649" H="768" zOrder="-3" Image="{1,ui/res/social/social_bkg.png}" SizeMode="1" />
+        <Canvas Name="CanvasTab" X="49" Y="671" W="632" H="97" Touch="1" Zoom="0" Top="0">
+            <Canvas Name="CanvasTab_1" X="10" Y="0" W="216" H="97" Touch="1" Zoom="0" Top="0">
+                <Image Name="ImgSelected" X="0" Y="0" W="216" H="97" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="9" W="215" H="88" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="22" W="216" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasPage" X="40" Y="17" W="610" H="660" Touch="1" Zoom="0">
+            <ListBox Name="FriendlList" X="5" Y="20" W="600" H="635" Touch="1" Center="1" RectTouch="0,70,610,635" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="600" H="85">
+                    <Canvas Name="ItemCanvs" X="0" Y="2" W="600" H="79" Touch="1" Zoom="0">
+                        <Canvas Name="BkgImgCanvs" X="0" Y="0" W="600" H="79">
+                            <Image Name="BkgImgCanvs_L" X="0" Y="0" W="302" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                            <Image Name="BkgImgCanvs_R" X="298" Y="0" W="302" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="BkgImgCanvs_My" X="0" Y="0" W="900" H="79">
+                            <Image Name="BkgImgCanvs_L" X="0" Y="0" W="452" H="79" SizeMode="1" />
+                            <Image Name="BkgImgCanvs_R" X="450" Y="0" W="452" H="79" RotationY="180" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="FaceCanvs" X="24" Y="1" W="76" H="78" Center="2">
+                            <Image Name="FaceImg_Bkg" X="0" Y="0" W="76" H="78" SizeMode="0" />
+                            <Image Name="FaceImg" X="8" Y="9" W="60" H="60" Center="3" SizeMode="0" />
+                        </Canvas>
+                        <Label Name="FirstName" X="120" Y="40" W="250" H="30" Color="255,255,255" TextAlignment="0" FSize="28" />
+                        <Label Name="LastName" X="120" Y="5" W="250" H="30" Color="255,255,255" TextAlignment="0" FSize="28" />
+                        <Canvas Name="InviteCanvs" X="408" Y="6" W="168" H="66" Touch="1" Right="24" Center="2">
+                            <Image Name="BkImg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                            <Label Name="Label" X="0" Y="0" W="168" H="66" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Canvas Name="PageCanvs" X="-19" Y="-24" W="648" H="150" Touch="1" Zoom="0" Center="1">
+                <Image Name="ButtomImg" X="0" Y="0" W="648" H="130" Center="1" Image="{1,ui/res/rank/page_buttom.png}" SizeMode="1" />
+                <Canvas Name="BkgCanvs" X="86" Y="9" W="476" H="85" Center="1">
+                    <Image Name="ImgBkg_L" X="0" Y="0" W="240" H="85" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+                    <Image Name="ImgBkg_R" X="238" Y="0" W="240" H="85" RotationY="180" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="BkgCanvs_1" X="154" Y="15" W="340" H="62" Center="1">
+                    <Image Name="ImgBkg_L" X="0" Y="0" W="172" H="62" Image="{1,ui/res/rank/page_bk_frame.png}" SizeMode="1" />
+                    <Image Name="ImgBkg_R" X="168" Y="0" W="172" H="62" RotationY="180" Image="{1,ui/res/rank/page_bk_frame.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="PreCanvs" X="162" Y="16" W="112" H="58" Touch="1">
+                    <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                    <Image Name="Img" X="44" Y="14" W="24" H="29" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+                </Canvas>
+                <Label Name="PageLabel" X="269" Y="15" W="110" H="59" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                <Canvas Name="NextCanvs" X="374" Y="15" W="112" H="58" Touch="1" Right="162">
+                    <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                    <Image Name="Img" X="44" Y="14" W="24" H="29" RotationY="180" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

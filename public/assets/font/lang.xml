@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config XXName="语言包配置表" default="2" FontRoot="font/" >
+  <List Id="1" Icon="" Name="繁体" file="lan/Text_ZN.xml" Font="font/zn/" FontFixed="8" />
+  <List Id="2" Icon="ui/res/lang/en.png" Name="English" file="lan/Text_EN.xml" Font="font/en/" FontFixed="12" />
+  <List Id="3" Icon="ui/res/lang/fr.png" Name="française" file="lan/Text_FR.xml" Font="font/fr/" FontFixed="0" />
+  <List Id="4" Icon="ui/res/lang/de.png" Name="Deutsch" file="lan/Text_DE.xml" Font="font/de/" FontFixed="0" />
+  <List Id="5" Icon="ui/res/lang/ru.png" Name="Pусский" file="lan/Text_RU.xml" Font="font/ru/" FontFixed="4" />
+  <List Id="6" Icon="ui/res/lang/jp.png" Name="日本語" file="lan/Text_JP.xml" Font="font/jp/" FontFixed="8" />
+  <List Id="7" Icon="" Name="简体" file="lan/Text_CN.xml" Font="font/cn/" FontFixed="8" />
+  <List Id="8" Icon="ui/res/lang/es.png" Name="Español" file="lan/Text_ES.xml" Font="font/es/" FontFixed="-4" />
+  <List Id="9" Icon="ui/res/lang/th.png" Name="ภาษาไทย" file="lan/Text_TH.xml" Font="font/th/" FontFixed="20" />
+  <List Id="10" Icon="ui/res/lang/kr.png" Name="한글" file="lan/Text_KR.xml" Font="font/kr/" FontFixed="6" />
+  <List Id="11" Icon="ui/res/lang/id.png" Name="Indonesia" file="lan/Text_ID.xml" Font="font/id/" FontFixed="6" />
+  <List Id="12" Icon="ui/res/lang/tr.png" Name="Türk" file="lan/Text_TR.xml" Font="font/tr/" FontFixed="6" />
+  <List Id="13" Icon="ui/res/lang/it.png" Name="Italia" file="lan/Text_IT.xml" Font="font/it/" FontFixed="0" />
+  <List Id="14" Icon="ui/res/lang/pt.png" Name="Português" file="lan/Text_PT.xml" Font="font/pt/" FontFixed="6" />
+  <List Id="15" Icon="ui/res/lang/arb.png" Name="Arab" file="lan/Text_ARB.xml" Font="font/arb/" FontFixed="8" />
+  <List Id="16" Icon="ui/res/lang/vn.png" Name="Tiếng Việt" file="lan/Text_VN.xml" Font="font/vn/" FontFixed="8" />
+  <List Id="17" Icon="ui/res/lang/cb.png" Name="جمهوری اسلامی ایران" file="lan/Text_CB.xml" Font="font/cb/" FontFixed="8" />
+  <List Id="18" Icon="ui/res/lang/fr.png" Name="française" file="lan/Text_FRorange.xml" Font="font/fr/" FontFixed="0" />
+</Config>

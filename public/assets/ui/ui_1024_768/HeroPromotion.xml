@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroPromotionFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="HeroPromotionCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="SeparateCanvs" X="17" Y="120" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="10" Y="8" W="974" H="629">
+            <Canvas Name="HeroCanvs" X="60" Y="180" W="300" H="440">
+                <Image Name="Top_L" X="10" Y="320" W="100" H="94" Image="{1,ui/res/soldier/soldier_img_top.png}" SizeMode="1" />
+                <Image Name="Top_R" X="170" Y="320" W="100" H="94" RotationY="180" Image="{1,ui/res/soldier/soldier_img_top.png}" SizeMode="1" />
+                <Image Name="BkImg" X="0" Y="0" W="284" H="429" Image="{1,ui/res/hero/hero_bk_green.png}" SizeMode="1" />
+                <Image Name="HeroImg" X="-15" Y="16" W="330" H="438" Center="1" SizeMode="1" />
+                <Canvas Name="TitleCanvs" X="-14" Y="-10" W="313" H="84">
+                    <Image Name="NameImg" X="0" Y="0" W="313" H="84" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                    <Label Name="NameLabel" X="0" Y="30" W="313" H="50" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="AtrCanvs" X="380" Y="180" W="560" H="370">
+                <Canvas Name="BkImgCanvs" X="0" Y="0" W="560" H="370">
+                    <Image Name="Bkg_L" X="0" Y="0" W="290" H="370" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                    <Image Name="Bkg_R" X="270" Y="0" W="290" H="370" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="StarCanvs" X="0" Y="260" W="560" H="100">
+                    <Image Name="CurAwakeImg" X="130" Y="13" W="72" H="74" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="CurImg" X="130" Y="13" W="72" H="74" Center="2" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="CurNum" X="130" Y="13" W="72" H="74" Center="2" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                    <Image Name="ArrowImg" X="250" Y="30" W="58" H="39" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Image Name="NewAwakeImg" X="350" Y="13" W="72" H="74" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="NewImg" X="350" Y="13" W="72" H="74" Center="2" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="350" Y="13" W="72" H="74" Center="2" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+                <Canvas Name="GradeCanvs" X="0" Y="215" W="560" H="40">
+                    <Label Name="Label" X="6" Y="7" W="180" H="25" Center="2" Text="Grade:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="CurNum" X="190" Y="7" W="150" H="25" Center="2" Text="00/00" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="390" Y="0" W="150" H="40" Center="2" Text="00/00" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="AttackCanvs" X="0" Y="165" W="560" H="40">
+                    <Label Name="Label" X="6" Y="7" W="180" H="25" Center="2" Text="Grade:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="CurNum" X="190" Y="7" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="390" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="LifeCanvs" X="0" Y="120" W="560" H="40">
+                    <Label Name="Label" X="6" Y="7" W="180" H="25" Center="2" Text="Grade:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="CurNum" X="190" Y="7" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="390" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="AtkSpeedCanvs" X="0" Y="75" W="560" H="40">
+                    <Label Name="Label" X="6" Y="7" W="180" H="25" Center="2" Text="Grade:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="CurNum" X="190" Y="7" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="390" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="MoveSpeedCanvs" X="0" Y="30" W="560" H="40">
+                    <Label Name="Label" X="6" Y="7" W="180" H="25" Center="2" Text="Grade:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="CurNum" X="190" Y="7" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+                    <Label Name="NewNum" X="390" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="TermCanvs" X="12" Y="10" W="950" H="120">
+                <Label Name="Consume" X="20" Y="100" W="650" H="20" Color="248,227,208" TextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                <Label Name="MoneyLabel" X="0" Y="20" W="160" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="MoneyImg" X="160" Y="35" W="50" H="50" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" Touch="1" />
+                <Label Name="HonorLabel" X="210" Y="20" W="160" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="HonorImg" X="370" Y="35" W="50" H="50" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" Touch="1" />
+                <Label Name="StarLabel" X="421" Y="20" W="160" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="StarImg" X="580" Y="35" W="45" H="60" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="0" Touch="1" />
+                <Canvas Name="UpgradeCanvs" X="680" Y="30" W="245" H="77" Touch="1">
+                    <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                    <Label Name="Label" X="0" Y="3" W="245" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

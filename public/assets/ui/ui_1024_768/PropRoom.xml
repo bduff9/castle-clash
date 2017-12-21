@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PropRoomFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="CanvasInfo" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="10" Y="230" W="974" H="403">
+            <Canvas Name="CanvasItem" X="80" Y="120" W="219" H="300">
+                <Image Name="BottleImg" X="0" Y="15" W="200" H="198" Image="{1,ui/res/magic/magic_bottle.png}" SizeMode="1" />
+                <Image Name="IconImg" X="51" Y="55" W="98" H="98" SizeMode="1" />
+            </Canvas>
+            <Label Name="LabelName" X="35" Y="90" W="300" H="30" Text="Name" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="LabelLvl" X="35" Y="52" W="300" H="30" Text="Lv 3" Color="243,228,197" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+			<Canvas Name="InfoBkgCanvs" X="335" Y="33" W="614" H="352">
+				<Image Name="InfoBkg_L" X="0" Y="0" W="309" H="352" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+				<Image Name="InfoBkg_R" X="305" Y="0" W="309" H="352" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+			 </Canvas>
+            <ListBox Name="InfoListBox" X="324" Y="10" W="614" H="352" ScrollViewDir="1"> <!-- ListBox -->
+                <Template Name="" X="0" Y="0" W="580" H="50" > <!-- Template -->
+                    <Label Name="ItemTypeLabel" X="-176" Y="5" W="500" H="26" Color="126,90,44" Text="Attribude:" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                    <Label Name="ItemValueLabel" X="340" Y="5" W="350" H="26" Color="255,244,206" Text="100" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                </Template>
+            </ListBox>
+            <Canvas Name="CanvasUpgrade" X="454" Y="-5" W="512" H="150">
+                <Label Name="TimeLabelTip" X="-66" Y="131" W="260" H="26" Text="Txt:Upgrade Time" Color="126,90,44" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="TimeLabel" X="200" Y="86" W="240" H="115" Text="2H00M00S" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                <Canvas Name="UpgradeBtn" X="66" Y="36" W="239" H="107" Touch="1">
+                    <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="23" Y="13" W="142" H="60" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                    <Image Name="ProduceImage" X="173" Y="18" W="41" H="45" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="FinishBtn" X="66" Y="36" W="239" H="107" Touch="1">
+                    <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="23" Y="13" W="142" H="60" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                    <Image Name="ProduceImage" X="173" Y="16" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+                <Label Name="LabelTip" X="-13" Y="-1" W="512" H="120" Color="0,0,0" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="33" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="205" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="10" Y="50" W="974" H="198">
+            <Label Name="ContentLabel" X="37" Y="9" W="900" H="180" Text="Tips" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="27" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="646">
+        <Image Name="BkgImg" X="10" Y="15" W="974" H="629" SizeMode="1" />
+        <Canvas Name="CanvasTop" X="20" Y="370" W="950" H="250" Fixed="2">
+            <Label Name="TipName" X="18" Y="-358" W="800" H="60" Text="Tip:" Color="154,213,67" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <ListBox Name="ListBoxMagic" X="50" Y="30" W="840" H="300" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="210" H="300" Fixed="2">
+                    <Canvas Name="CanvasItem" X="9" Y="0" W="219" H="300">
+                        <Image Name="BottleImg" X="0" Y="15" W="200" H="198" Image="{1,ui/res/magic/magic_bottle.png}" SizeMode="1" />
+                        <Image Name="IconImg" X="51" Y="55" W="98" H="98" SizeMode="1" />
+                        <Label Name="LabelLvl" X="-10" Y="90" W="219" H="40" Color="213,192,177" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+						<Image Name="ImgCancel" X="148" Y="160" W="57" H="63" Touch="1" RectTouch="-23,-17,80,80" Image="{1,ui/res/btn_del.png}" SizeMode="1" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="358" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasMagic" X="20" Y="12" W="950" H="350">
+            <ListBox Name="ListBoxMagicInfo" X="1" Y="30" W="950" H="342" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="291" H="342" Fixed="1">
+                    <Canvas Name="CanvasItem" X="5" Y="5" W="291" H="342" Touch="1">
+                        <Image Name="BackImg" X="0" Y="0" W="291" H="337" Image="{1,ui/res/magic/magic_list_bk.png}" SizeMode="1" />
+                        <Image Name="Line" X="76" Y="85" W="130" H="2" Image="{1,ui/res/white_line_2-2.png}" SizeMode="1" />
+                        <Image Name="LvlUpImg" X="208" Y="267" W="68" H="76" Touch="1" RectTouch="0,-4,80,80" Image="{1,ui/res/btn_upgrade.png}" SizeMode="1" />
+                        <Label Name="LvlLabel" X="67" Y="115" W="90" H="60" Text="Level:" Color="248,227,208" TextAlignment="2" BmpFont="font_1.fnt" FSize="18" />
+                        <Label Name="LvlNum" X="163" Y="115" W="60" H="60" Text="3" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                        <Image Name="IconImg" X="88" Y="177" W="102" H="102" SizeMode="1" />
+                        <Label Name="LabelMsg" X="20" Y="160" W="245" H="30" Text="Message" Color="243,228,197" TextAlignment="1" BmpFont="font_1.fnt" FSize="19" />
+                        <Label Name="Name" X="70" Y="83" W="140" H="50" Text="Name" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                        <Canvas Name="CanvasProduce" X="-2" Y="22" W="259" H="60">
+                            <Label Name="PayNumLabel" X="35" Y="7" W="130" H="59" Color="255,225,128" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+                            <Image Name="ImgProduce" X="165" Y="11" W="50" H="50" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" />
+                        </Canvas>
+                        <Label Name="LabelTime" X="10" Y="28" W="259" H="60" Text="100s" Color="90,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

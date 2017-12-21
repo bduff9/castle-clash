@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SlotMachineFrame" R_W="1.00" H="768">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="FormCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="LeftCanvas" X="0" Y="79" W="336" H="504">
+            <Image Name="bkg" X="0" Y="0" W="336" H="504" Image="{1,ui/res/SlotMachine/left_bkg.png}" SizeMode="1" />
+            <Canvas Name="TopItemCanvs" X="43" Y="410" W="270" H="50" Zoom="0">
+                <Canvas Name="GemCanvs" X="0" Y="0" W="270" H="50">
+                    <Image Name="Img_1" X="14" Y="-1" W="55" H="52" SizeMode="1" />
+                    <Image Name="Img_2" X="66" Y="-1" W="55" H="52" SizeMode="1" />
+                    <Image Name="Img_3" X="118" Y="-1" W="55" H="52" SizeMode="1" />
+                    <Image Name="sign" X="175" Y="18" W="24" H="13" Center="2" Image="{1,ui/res/SlotMachine/sign.png}" SizeMode="1" />
+                    <Image Name="Item" X="198" Y="-8" W="64" H="66" Touch="1" SizeMode="1" />
+                    <Label Name="Num" X="198" Y="0" W="64" H="24" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+                </Canvas>
+            </Canvas>
+            <ListBox Name="RewardListBox" X="43" Y="60" W="270" H="346" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="270" H="55">
+                    <Canvas Name="ItemCanvs" X="0" Y="0" W="270" H="46" Zoom="0">
+                        <Canvas Name="GemCanvs" X="0" Y="0" W="248" Center="1" H="46">
+                            <Image Name="Img_1" X="8" Y="0" W="50" H="47" SizeMode="1" />
+                            <Image Name="Img_2" X="56" Y="0" W="50" H="47" SizeMode="1" />
+                            <Image Name="Img_3" X="104" Y="0" W="50" H="47" SizeMode="1" />
+                            <Image Name="sign" X="158" Y="17" W="22" H="11" Center="2" Image="{1,ui/res/SlotMachine/sign.png}" SizeMode="1" />
+                            <Image Name="Item" X="182" Y="-7" W="58" H="60" Touch="1" SizeMode="1" />
+                            <Label Name="Num" X="182" Y="0" W="58" H="22" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Canvas Name="NonCanvs" X="0" Y="0" W="248" H="46" Center="1" Touch="1">
+                            <Label Name="Label" X="0" Y="0" W="128" H="36" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                            <Image Name="Item" X="140" Y="-6" W="56" H="55" Image="{1,ui/res/SlotMachine/comfort.png}" SizeMode="0" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Image Name="TipImg" X="124" Y="188" W="111" H="113" Image="{1,ui/res/domain/slime.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="MainCanvas" X="316" Y="51" W="701" H="656">
+            <Image Name="bkg" X="0" Y="0" W="701" H="656" Image="{1,ui/res/SlotMachine/main_bkg.png}" SizeMode="1" />
+            <Canvas Name="GemCanvas" X="106" Y="212" W="488" H="173" Center="1">
+                <Image Name="gem_1" X="36" Y="34" W="110" H="104" SizeMode="1" />
+                <Image Name="gem_2" X="197" Y="34" W="110" H="104" SizeMode="1" />
+                <Image Name="gem_3" X="355" Y="34" W="110" H="104" SizeMode="1" />
+                <Image Name="SlateImg" X="0" Y="0" W="488" H="173" Image="{1,ui/res/SlotMachine/slate.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="BuyBtn" X="474" Y="94" W="105" H="69" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="105" H="69" Image="{1,ui/res/SlotMachine/buy_bkg.png}" SizeMode="1" />
+                <Label Name="Txt" X="5" Y="0" W="95" H="69" Color="241,220,201" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="DecorateCanvas" X="0" Y="0" W="701" H="656">
+                <Image Name="DecorateImg_L1" X="95" Y="459" W="64" H="119" Image="{1,ui/res/SlotMachine/decorate_1.png}" SizeMode="1" />
+                <Image Name="DecorateImg_R1" X="548" Y="459" W="64" H="119" RotationY="180" Right="89" Image="{1,ui/res/SlotMachine/decorate_1.png}" SizeMode="1" />
+                <Image Name="DecorateImg_L2" X="-14" Y="53" W="146" H="281" Image="{1,ui/res/SlotMachine/decorate_2.png}" SizeMode="1" />
+                <Image Name="DecorateImg_R2" X="569" Y="53" W="146" H="281" RotationY="180" Right="-14" Image="{1,ui/res/SlotMachine/decorate_2.png}" SizeMode="1" />
+            </Canvas>
+            <Image Name="ThemeImg" X="-82" Y="-46" W="842" H="768" Image="{1,ui/res/SlotMachine/theme_1.png}" SizeMode="1" />
+            <Canvas Name="NumCanvas" X="140" Y="102" W="90" H="46">
+                <Image Name="Image" X="0" Y="6" W="47" H="41" Image="{1,ui/res/SlotMachine/hammer.png}" SizeMode="0" />
+                <Label Name="Num" X="45" Y="4" W="100" H="40" Color="241,220,201" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="TimeCanvas" X="100" Y="380" W="500" H="81" Center="1">
+                <Label Name="Txt" X="0" Y="40" W="500" H="36" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="Label" X="0" Y="10" W="500" H="30" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BottomCanvas" X="142" Y="8" W="416" H="50" Center="1">
+                <ProgressEx Name="PointPro" X="0" Y="7" W="416" H="26" ProgressBackground="{1,ui/res/pro/pro_bk_416_26.png}" ProgressImage="{1,ui/res/pro/pro_416_26.png}" MaxValue="100" Direction="3" />
+                <Label Name="Label" X="119" Y="5" W="178" H="32" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+				<Label Name="AddLabel" X="119" Y="37" W="178" H="32" Color="87,240,12" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                <Image Name="BagImg" X="393" Y="-6" W="64" H="66" Touch="2" Image="{1,icon/bag/item0229.png}" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="GoBtn" X="274" Y="75" W="153" H="134" Touch="1" Center="1">
+                <Image Name="bkg" X="0" Y="0" W="153" H="134" Image="{1,ui/res/SlotMachine/hammer.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="FreeLabel" X="252" Y="89" W="196" H="40" Center="1" Color="255,235,17" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CloseBtn" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="HelpBtn" X="-4" Y="605" W="153" H="166" Touch="1" Top="-3">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="HelpImg" X="35" Y="60" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TipLabel" X="112" Y="12" W="800" H="56" Center="1" Color="255,78,9" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+</Layout>

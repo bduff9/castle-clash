@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaBossFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="40" W="960" H="620">
+        <Canvas Name="CountCanvs" X="186" Y="500" W="300" H="70">
+            <ProgressEx Name="CountProgress1" X="0" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress2" X="50" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress3" X="100" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress4" X="150" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress5" X="200" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <Image Name="LightSwordImg1" X="-19" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg2" X="31" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg3" X="81" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg4" X="131" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg5" X="181" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="560" Y="18" W="380" H="560">
+            <Canvas Name="BkgCanvs" X="0" Y="0" W="380" H="560">
+                <Image Name="Bkg_L" X="0" Y="0" W="192" H="560" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="190" Y="0" W="190" H="560" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="SkillCanvs" X="0" Y="370" W="380" H="180">
+                <Image Name="Bkg" X="26" Y="0" W="330" H="110" Image="{1,ui/res/setting/shade_680_88.png}" SizeMode="1" />
+                <Label Name="Title" X="14" Y="94" W="360" H="77" Text="Skill Title" Color="136,91,30" TextAlignment="1" BmpFont="font_2.fnt" FSize="36" />
+                <Label Name="Intro1" X="-9" Y="48" W="420" H="60" Center="1" Text="Skill Intro" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="Intro2" X="-9" Y="6" W="420" H="60" Center="1" Text="Skill Intro" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Label Name="AwardIntro" X="14" Y="277" W="360" H="77" Text="Award Intro" Color="136,91,30" TextAlignment="1" BmpFont="font_2.fnt" FSize="36" />
+            <Canvas Name="SelfAward" X="2" Y="146" W="360" H="180">
+                <Custom Name="item1" X="8" Y="-14" W="134" H="164" File="ItemCanvas.xml" />
+                <Custom Name="item2" X="122" Y="-14" W="134" H="164" File="ItemCanvas.xml" />
+                <Custom Name="item3" X="236" Y="-14" W="134" H="164" File="ItemCanvas.xml" />
+                <Image Name="res1" X="64" Y="30" W="116" H="116" Image="{1,icon/Posy/000.png}" SizeMode="1" />
+                <Image Name="res2" X="176" Y="25" W="126" H="134" Image="{1,icon/bag/item0272.png}" SizeMode="1" />
+                <Image Name="res3" X="246" Y="23" W="126" H="134" Image="{1,icon/bag/item0272.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasEnter" X="67" Y="56" W="245" H="77" Touch="1" Center="1">
+                <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="TimeLabel" X="0" Y="4" W="245" H="77" Text="Enter" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BossCanvs" X="0" Y="0" W="620" H="620">
+            <Image Name="InfoBkg" X="139" Y="84" W="341" H="429" Center="1" Image="{1,ui/res/hero/hero_bk_blue.png}" SizeMode="1" />
+            <Image Name="DecorationTopLeft" X="51" Y="300" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationTopRight" X="463" Y="310" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationBottomLeft" X="51" Y="122" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationBottomRight" X="463" Y="122" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="BossImg" X="81" Y="84" W="495" H="414" Image="{1,icon/hero/831.png}" SizeMode="1" />
+            <Image Name="BoradImg" X="126" Y="26" W="367" H="83" Center="1" Image="{1,ui/res/Consortia/borad.png}" SizeMode="1" />
+            <Canvas Name="CanvasTime" X="180" Y="32" W="260" H="140" Center="1">
+                <Label Name="LabelTime" X="50" Y="80" W="160" H="46" Center="1" Text="02:01:23" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+                <ProgressEx Name="HpPro" X="-30" Y="31" W="321" H="37" Center="1" ProgressBackground="{1,ui/res/Consortia/hp_progress_bk.png}" ProgressImage="{1,ui/res/Consortia/hp_progress.png}" MaxValue="100" Direction="3" />
+                <Image Name="hertImage" X="-31" Y="49" W="49" H="45" Image="{1,ui/res/Consortia/heart.png}" SizeMode="1" />
+                <Label Name="HpLabel_Cur" X="-60" Y="6" W="200" H="46" Text="1000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="HpLabel_Sum" X="142" Y="6" W="200" H="46" Text="/2000000" Color="212,197,180" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvsMember" X="32" Y="5" W="960" H="640" Center="1">
+        <ListBox Name="MemberListBox" X="16" Y="40" W="928" H="574" Center="1" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="928" H="85">
+                <Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Zoom="0">
+                    <Canvas Name="BkgImgCanvs" X="0" Y="0" W="928" H="79">
+                        <Image Name="BkgImgCanvs_L" X="0" Y="0" W="466" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                        <Image Name="BkgImgCanvs_R" X="462" Y="0" W="466" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                    </Canvas>
+                    <Image Name="RankImg" X="19" Y="9" W="164" H="62" Top="8" Image="{1,ui/res/rank/rank_bk.png}" SizeMode="1" />
+                    <Canvas Name="CanvasName" X="19" Y="12" W="160" H="56" Touch="1">
+                        <Image Name="Image" X="0" Y="0" W="160" H="56" Image="{1,ui/res/button/btn_106_36.png}" SizeMode="1" />
+                        <Label Name="NameLabel" X="0" Y="0" W="160" H="56" Text="Enter" Color="255,255,255" TextAlignment="1" FSize="26" />
+                    </Canvas>
+                    <Canvas Name="BattlePowerCanvas" X="280" Y="22" W="200" H="35" Center="2">
+                        <Image Name="Img" X="0" Y="0" W="38" H="35" Image="{1,ui/res/power_img.png}" SizeMode="0" Touch="1" />
+                        <Label Name="LabelNum" X="40" Y="0" W="140" H="35" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                    </Canvas>
+                    <Canvas Name="CheckCanvs" X="780" Y="6" W="66" H="66" Touch="1" Right="82" RectTouch="-100,0,190,66">
+                        <Image Name="ImgBkg" X="7" Y="10" W="51" H="47" Image="{1,ui/res/button/chkbox_bg.png}" SizeMode="1" />
+                        <Image Name="ImgChk" X="-3" Y="3" W="73" H="60" Image="{1,ui/res/button/chkbox_cross.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="ColdTime" X="680" Y="3" W="180" H="66" Text="2:59:42" Color="255,0,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Label Name="LabelLoading" X="0" Y="300" W="960" H="60" Text="Loading..." Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="49" />
+        <Label Name="NoMember" X="0" Y="300" W="960" H="120" Text="Friends" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="44" />
+        <Canvas Name="PageCanvs" X="6" Y="0" W="948" H="150" Center="1">
+            <Image Name="ButtomImg" X="0" Y="0" W="948" H="150" Image="{1,ui/res/rank/page_buttom.png}" SizeMode="1" />
+            <Canvas Name="ChallengeCanvs" X="270" Y="-4" W="408" H="106" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="206" H="106" Image="{1,ui/res/button/recharge_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="202" Y="0" W="206" H="106" RotationY="180" Image="{1,ui/res/button/recharge_bk.png}" SizeMode="1" />
+                <Canvas Name="ChallengeBtn" X="13" Y="10" W="382" H="88" Touch="1" Center="1">
+                    <Image Name="BkImg" X="0" Y="0" W="382" H="88" Image="{1,ui/res/button/btn_382_88.png}" SizeMode="1" />
+                    <Label Name="TxtLabel" X="57" Y="30" W="268" H="45" Center="1" Text="Challenge" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" SizeMode="1" />
+    <Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Image Name="ImgTip" X="284" Y="190" W="94" H="109" Center="1" Image="{1,icon/task/quest-ld2.png}" SizeMode="1" />
+            <Label Name="TipLabel" X="51" Y="108" W="560" H="80" Center="1" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="31" />
+            <Canvas Name="InviteCanvas" X="130" Y="30" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="168" H="66" Text="Invite" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="SubMitCanvas" X="358" Y="30" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="168" H="66" Text="OK" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

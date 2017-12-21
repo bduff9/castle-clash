@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaBattleFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="629">
+        <Canvas Name="BottomCanvas" X="11" Y="20" W="954" H="160">
+            <Canvas Name="CanvasReward" X="0" Y="0" W="954" H="160">
+                <Label Name="TeamTitle" X="340" Y="80" W="238" H="40" Text="Consort Score:" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+                <Label Name="TeamTxt" X="100" Y="80" W="200" H="40" Text="222" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="PersonTitle" X="340" Y="46" W="238" H="40" Text="Person Score:" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+                <Label Name="PersonTxt" X="100" Y="46" W="200" H="40" Text="125" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="TeamRewardTitle" X="340" Y="8" W="238" H="40" Text="Team Rank:" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+                <Image Name="ImgWealth" X="270" Y="-6" W="50" H="66" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+                <Label Name="RewardTxt" X="156" Y="6" W="100" H="40" Text="7752" Color="255,250,196" TextAlignment="2" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Label Name="LabelTitle" X="700" Y="26" W="245" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="LabelTimes" X="600" Y="20" W="100" H="56" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+    </Canvas>
+</Layout>

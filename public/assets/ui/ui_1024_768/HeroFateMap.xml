@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFateMapFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="MapCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Center="1">
+        <Image Name="ImgMap" X="-588" Y="0" W="2200" R_H="1.00" Center="3" Image="{1,ui/res/fate/1.jpg}" SizeMode="0" />
+        <Canvas Name="Area" X="0" Y="0" W="1024" H="768" Center="3">
+            <Canvas Name="1" X="534" Y="343" W="267" H="195" Touch="1" Zoom="0">
+                <Image Name="ImgSelect" X="0" Y="0" W="267" H="195" Image="{1,ui/res/fate/a1.png}" SizeMode="0" />
+                <Image Name="ImgB" X="73" Y="21" W="75" H="108" Image="{1,ui/res/fate/b1.png}" SizeMode="0" />
+                <Image Name="ImgEnter" X="72" Y="65" W="80" H="80" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="2" X="265" Y="36" W="342" H="188" Touch="1" Zoom="0">
+                <Image Name="ImgSelect" X="0" Y="0" W="342" H="188" Image="{1,ui/res/fate/a2.png}" SizeMode="0" />
+                <Image Name="ImgB" X="156" Y="95" W="92" H="96" Image="{1,ui/res/fate/b2.png}" SizeMode="0" />
+                <Image Name="ImgEnter" X="154" Y="122" W="80" H="80" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+        <Image Name="ImgCloud" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" SizeMode="0" />
+    </Canvas>
+    <Canvas Name="InfoCanvas" X="26" Y="666" W="200" H="100" Top="2">
+        <Image Name="ProBackImg" X="46" Y="19" W="146" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+        <Image Name="ImgHead" X="2" Y="0" W="60" H="96" Touch="1" RectTouch="0,0,200,96" Image="{1,ui/res/fate/head.png}" SizeMode="1" />
+        <Label Name="LabelNum" X="48" Y="17" W="140" H="50" Text="26/71" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+    </Canvas>
+    <Canvas Name="HomeBtn" X="854" Y="0" W="167" H="170" Touch="1" Right="3">
+        <Image Name="Img" X="0" Y="0" W="167" H="170" Image="{1,ui/res/fate/btn_exit.png}" SizeMode="0" />
+    </Canvas>
+</Layout>

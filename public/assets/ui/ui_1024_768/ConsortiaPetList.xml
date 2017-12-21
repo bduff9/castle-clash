@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaPetListFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasRankMain" X="25" Y="24" W="974" H="629">
+        <Image Name="ImgBkg_L" X="16" Y="18" W="50" H="600" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Image Name="ImgBkg_R" X="908" Y="18" W="50" H="600" Right="16" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Canvas Name="BkgImgCanvs" X="10" Y="500" W="960" H="106">
+            <Image Name="BkgImgCanvs_L" X="0" Y="0" W="476" H="106" Image="{1,ui/res/rank/rank_title.png}" SizeMode="1" />
+            <Image Name="BkgImgCanvs_R" X="472" Y="0" W="478" H="106" RotationY="180" Image="{1,ui/res/rank/rank_title.png}" SizeMode="1" />
+        </Canvas>
+		 <Image Name="RankImg" X="35" Y="518" W="186" H="79" Image="{1,ui/res/rank/rank_bk_my.png}" SizeMode="1" />
+        <Canvas Name="ConsortiaInfoCanvs" X="23" Y="500" W="960" H="106">
+             <Label Name="RankLabel" X="17" Y="10" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+             <Label Name="Name" X="-5" Y="28" W="220" H="66" Color="255,234,177" TextAlignment="1" FSize="25" />
+			 <Label Name="TimeLeftTitle" X="120" Y="40" W="220" H="66" Color="99,65,45" TextAlignment="2" FSize="25" />
+			 <Label Name="TimeLeft" X="350" Y="40" W="220" H="66" Color="253,110,60" TextAlignment="0" FSize="25" BmpFont="font_1.fnt" />
+             <ProgressEx Name="ProCreate" X="200" Y="20" W="320" H="38" ProgressBackground="{1,ui/res/pro/pro_bk_320_38.png}" ProgressImage="{1,ui/res/pro/pro_320_38.png}" MaxValue="100" Direction="3" />
+             <Label Name="PowerLabel" X="250" Y="18" W="200" H="80" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+			 <Canvas Name="HelpCanvs" X="610" Y="17" W="88" H="76" Touch="1">
+				<Image Name="BkgImg" X="0" Y="0" W="88" H="76" Image="{1,ui/res/Pet/askhelp.png}" SizeMode="1" />
+			 </Canvas>
+			 <Canvas Name="HelpAllCanvs" X="450" Y="20" W="180" H="70" Touch="1" Right="60" >
+				<Image Name="BkgImg" X="0" Y="0" W="180" H="70" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+				<Label Name="Label" X="0" Y="3" W="180" H="70" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+			</Canvas>
+        </Canvas>
+		
+        <ListBox Name="MainListBox" X="23" Y="40" W="928" H="460" Center="1" RectTouch="0,45,928,445" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="928" H="85">
+                <Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Zoom="0">
+                    <Canvas Name="BkgImgCanvs" X="0" Y="0" W="928" H="79">
+                        <Image Name="BkgImgCanvs_L" X="0" Y="0" W="466" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                        <Image Name="BkgImgCanvs_R" X="462" Y="0" W="466" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                    </Canvas>
+					<Image Name="RankImg" X="19" Y="9" W="164" H="62" Top="8" Image="{1,ui/res/rank/rank_bk.png}" SizeMode="1" />
+                    <Label Name="RankLabel" X="17" Y="10" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+                    <Label Name="Name" X="-10" Y="5" W="220" H="66" Color="95,169,220" TextAlignment="1" FSize="25" />
+                    <ProgressEx Name="ProCreate" X="200" Y="18" W="320" H="38" ProgressBackground="{1,ui/res/pro/pro_bk_320_38.png}" ProgressImage="{1,ui/res/pro/pro_320_38.png}" MaxValue="100" Direction="3" />
+                    <Label Name="PowerLabel" X="250" Y="18" W="200" H="80" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+					 <Canvas Name="HelpCanvs" X="720" Y="0" W="180" H="70" Touch="1">
+						<Image Name="BkgImg" X="0" Y="0" W="180" H="70" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+						<Label Name="Label" X="0" Y="3" W="180" H="70" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+					</Canvas>
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Canvas Name="PageCanvs" X="13" Y="5" W="948" H="150" Touch="1" Zoom="0" Center="1">
+            <Image Name="ButtomImg" X="0" Y="0" W="948" H="150" Image="{1,ui/res/rank/page_buttom.png}" SizeMode="1" />
+            <Canvas Name="BkgCanvs" X="77" Y="0" W="794" H="85" Center="1">
+                <Image Name="ImgBkg_L" X="0" Y="0" W="399" H="85" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+                <Image Name="ImgBkg_R" X="395" Y="0" W="399" H="85" RotationY="180" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="FristCanvs" X="135" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="41" Y="14" W="29" H="29" Center="3" Image="{1,ui/res/rank/page_frist.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="PreCanvs" X="247" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="44" Y="14" W="24" H="29" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="NextCanvs" X="359" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="44" Y="14" W="24" H="29" RotationY="180" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="LastCanvs" X="471" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="41" Y="14" W="29" H="29" RotationY="180" Center="3" Image="{1,ui/res/rank/page_frist.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasPage" X="595" Y="10" W="207" H="63">
+                <Image Name="ImgBkg" X="0" Y="0" W="207" H="63" Image="{1,ui/res/rank/page_bk_frame2.png}" SizeMode="1" />
+                <Image Name="ImgPageSearch" X="141" Y="2" W="64" H="57" Touch="1" Image="{1,ui/res/rank/page_search.png}" SizeMode="1" />
+                <Canvas Name="CanvasPage" X="0" Y="0" W="207" H="63">
+                    <EditBox Name="EditPage" X="0" Y="2" W="150" H="50" Padding="{10,0};" Color="255,255,255" FSize="25" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

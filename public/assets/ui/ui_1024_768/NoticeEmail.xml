@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BattleNoticeFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="38" Y="168" W="918" H="435" Center="1">
+            <Canvas Name="InfoBkgCanvs" X="0" Y="0" W="918" H="435" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="461" H="435" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="459" Y="0" W="461" H="435" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="InfoCanvs" X="318" Y="0" W="580" H="435" Center="1">
+                <Label Name="ContentLabel" X="-271" Y="42" W="800" H="340" Center="1" Color="126,90,44" TextAlignment="0" VTextAlignment="0" FSize="32" Multline="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="OkBtn" X="374" Y="59" W="245" H="77" Touch="1" Center="1">
+            <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

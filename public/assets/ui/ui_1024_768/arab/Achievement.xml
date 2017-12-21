@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="AchievementFrame" W="1024" H="768">
+    <ListBox Name="TaskInfoListBox" X="40" Y="41" W="952" H="598" ScrollViewDir="1">
+        <Template Name="" X="0" Y="0" W="952" H="148" >
+			<Canvas Name="ItemCanvas" X="-5" Y="-10" W="936" H="148" >
+                <Canvas Name="MidCanvs" X="180" Y="0" W="540" H="137">
+                    <Label Name="LabelComment" X="10" Y="68" W="530" H="90" Text="" Color="255,255,255" TextAlignment="2" VTextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="20" />
+                </Canvas>
+            </Canvas>
+        </Template>
+    </ListBox>
+</Layout>

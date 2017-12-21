@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaWelfareRedRecordFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="370" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+	
+	<Label Name="TxtLabel" X="130" Y="270" W="180" H="100" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+	 <Label Name="CashNumLabel" X="330" Y="270" W="200" H="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28"  />
+
+	 <ListBox Name="RedRecordListBox" X="16" Y="40" W="580" H="250" Center="1" RectTouch="0,45,928,365" ScrollViewDir="1">
+		<Template Name="" X="0" Y="0" W="570" H="76">
+			<Canvas Name="ItemCanvs" X="0" Y="0" W="570" H="76" Touch="1" Zoom="0">
+				<Canvas Name="CanvasBkg" X="10" Y="0" W="570" H="75" Background="{1,ui/res/WorldBoss/bg_reward.png}" />
+					
+				<Label Name="NameLabel" X="30" Y="18" W="250" H="40"  Text="" Color="255,255,255" TextAlignment="0"  FSize="26" />
+					
+				<Image Name="CashImg" X="400" Y="12" W="55" H="55" Image="{1,ui/res/cash_cangray.png}" SizeMode="0" />
+				<Label Name="Num" X="460" Y="20" W="100" H="40"  Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+			</Canvas>
+		</Template>
+	</ListBox>
+</Layout>

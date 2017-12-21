@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFrame" W="1024" H="768">
+    <Canvas Name="HeroDevourCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="InfoCanvs" X="12" Y="233" W="970" H="403">
+            <Canvas Name="HeroCanvs" X="65" Y="179" W="196" H="200">
+                <Label Name="LvlLabel" X="0" Y="20" W="196" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="NobilityUpLevelFrame" R_W="1.00" R_H="1.00" >
+	<Image Name="CanvasBkg" X="0" Y="0" R_W="1.0" R_H="1.0" Background="{1,ui/res/shade.png.pvr.ccz}" Touch="1" Zoom="0" />
+    <Canvas Name="CanvasResult" X="214" Y="172" W="596" H="596" Top="0" Center="1">
+        <Canvas Name="CanvasPlay" X="0" Y="0" W="596" H="596" />
+        <Image Name="ImageNobility" X="238" Y="150" W="120" H="120" Center="1" SizeMode="0" />
+        <Label Name="LabelTitle_1" X="93" Y="80" W="400" H="50" Center="1" Text="111" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+        <Label Name="LabelTitle_2" X="91" Y="48" W="400" H="46" Center="1" Text="2222" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="46" />
+    </Canvas>
+    <Canvas Name="TencentCanvs" X="262" Y="20" W="500" H="77" Center="1">
+        <Canvas Name="ShareBtn" X="0" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+        <Canvas Name="ExitBtn" X="255" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaBossFrame" W="1024" H="768">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="1024" H="768" Touch="1" Zoom="0">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="514" H="768" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="510" Y="0" W="514" H="768" RotationY="180" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Image Name="CloseImg" X="875" Y="651" W="115" H="117" Touch="1" Top="-4" Right="34" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="CanvasTab_1" X="49" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="Label_1" X="8" Y="32" W="160" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="239" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="Label_1" X="8" Y="32" W="160" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+    </Canvas>
+    <Canvas Name="CanvasInfo" X="25" Y="24" W="974" H="629" Touch="1" Zoom="0">
+        <ListBox Name="BossListBox_1" X="289" Y="16" W="668" H="597" ScrollViewDir="0" EdgeShade="1">
+            <Template Name="" X="0" Y="0" W="640" H="597" Fixed="1">
+                <Canvas Name="ItemCanvas_1" X="0" Y="0" W="620" H="597">
+                    <Canvas Name="BattleTime" X="434" Y="510" W="300" H="80">
+                        <Image Name="Img" X="0" Y="18" W="42" H="42" Image="{1,ui/res/timer.png}" SizeMode="1" />
+                        <Label Name="TimeLabel" X="50" Y="0" W="200" H="80" Text="30m00s" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+                    </Canvas>
+                    <Canvas Name="CanvasLvl" X="25" Y="510" W="300" H="80">
+                        <Image Name="ImageLvl" X="0" Y="-5" W="72" H="80" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                        <Label Name="LabelLvl" X="64" Y="-2" W="70" H="80" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                        <Label Name="LabelLvl2" X="118" Y="-3" W="100" H="80" Text="/5" Color="199,176,143" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+                    </Canvas>
+                    <Image Name="InfoBkg" X="139" Y="144" W="341" H="429" Center="1" Image="{1,ui/res/hero/hero_bk_blue.png}" SizeMode="1" />
+                    <Image Name="DecorationTopLeft" X="61" Y="361" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationTopRight" X="473" Y="361" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationBottomLeft" X="61" Y="182" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationBottomRight" X="473" Y="182" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="Hero1" X="76" Y="155" W="468" H="369" Center="1" Image="{1,icon/hero/571.png}" SizeMode="1" />
+                    <Image Name="BoradImg" X="126" Y="86" W="367" H="83" Center="1" Image="{1,ui/res/Consortia/borad.png}" SizeMode="1" />
+                    <Image Name="InfoImg" X="410" Y="456" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                    <Canvas Name="CanvasTime" X="180" Y="-4" W="260" H="180" Center="1">
+                        <Canvas Name="CanvasEnter" X="7" Y="25" W="245" H="77" Touch="1" Center="1">
+                            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                            <Label Name="TimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        </Canvas>
+                        <ProgressEx Name="HpPro" X="-30" Y="126" W="321" H="37" Center="1" ProgressBackground="{1,ui/res/Consortia/hp_progress_bk.png}" ProgressImage="{1,ui/res/Consortia/hp_progress.png}" MaxValue="100" Direction="3" />
+                        <Image Name="hertImage" X="-31" Y="144" W="49" H="45" Image="{1,ui/res/Consortia/heart.png}" SizeMode="1" />
+                        <Label Name="HpLabel_Cur" X="0" Y="101" W="140" H="46" Text="1000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="HpLabel_Sum" X="140" Y="101" W="130" H="46" Text="/2000000" Color="232,228,228" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                    </Canvas>
+                    <Canvas Name="CanvasOpen" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                        <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="9" Y="10" W="142" H="60" Text="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                        <Image Name="ProduceImage" X="165" Y="10" W="50" H="57" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+                        <Label Name="TipLabel" X="0" Y="3" W="245" H="77" Text="Consorita III" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                    </Canvas>
+                    <Canvas Name="CanvasSetTime" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                        <Image Name="Img" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                        <Label Name="TimeTipLabel" X="-55" Y="20" W="350" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        <Label Name="TimeLabel" X="0" Y="-20" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+						<Label Name="NeedTimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Center="3" />
+                    </Canvas>
+                    <Label Name="RewardLabel" X="130" Y="120" W="360" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    <Canvas Name="CanvasReward" X="130" Y="120" W="360" H="40" Center="1">
+                        <Label Name="RewardLabel" X="0" Y="0" W="200" H="40" Text="Reward:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="38" />
+                        <Image Name="Img" X="210" Y="-5" W="46" H="50" Fixed="1" Center="2" Image="{1,ui/res/best3/best3money.png}" SizeMode="1" Touch="1" />
+                    </Canvas>
+                    <Label Name="ResultLabel" X="160" Y="113" W="300" H="55" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <ListBox Name="BossListBox_2" X="289" Y="16" W="668" H="597" ScrollViewDir="0" EdgeShade="1">
+            <Template Name="" X="0" Y="0" W="640" H="597" Fixed="1">
+			<Canvas Name="ItemCanvas_1" X="0" Y="0" W="620" H="597">
+                    <Canvas Name="BattleTime" X="434" Y="510" W="300" H="80">
+                        <Image Name="Img" X="0" Y="18" W="42" H="42" Image="{1,ui/res/timer.png}" SizeMode="1" />
+                        <Label Name="TimeLabel" X="50" Y="0" W="200" H="80" Text="30m00s" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+                    </Canvas>
+                    <Canvas Name="CanvasLvl" X="25" Y="510" W="300" H="80">
+                        <Image Name="ImageLvl" X="0" Y="-5" W="72" H="80" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                        <Label Name="LabelLvl" X="64" Y="-2" W="70" H="80" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                        <Label Name="LabelLvl2" X="118" Y="-3" W="100" H="80" Text="/5" Color="199,176,143" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+                    </Canvas>
+                    <Image Name="InfoBkg" X="139" Y="144" W="341" H="429" Center="1" Image="{1,ui/res/hero/hero_bk_blue.png}" SizeMode="1" />
+                    <Image Name="DecorationTopLeft" X="61" Y="361" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationTopRight" X="473" Y="361" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationBottomLeft" X="61" Y="182" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="DecorationBottomRight" X="473" Y="182" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+                    <Image Name="Hero1" X="76" Y="155" W="468" H="369" Center="1" Image="{1,icon/hero/571.png}" SizeMode="1" />
+                    <Image Name="BoradImg" X="126" Y="86" W="367" H="83" Center="1" Image="{1,ui/res/Consortia/borad.png}" SizeMode="1" />
+                    <Image Name="InfoImg" X="410" Y="456" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                    <Canvas Name="CanvasTime" X="180" Y="-4" W="260" H="180" Center="1">
+                        <Canvas Name="CanvasEnter" X="7" Y="25" W="245" H="77" Touch="1" Center="1">
+                            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                            <Label Name="TimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        </Canvas>
+                        <ProgressEx Name="HpPro" X="-30" Y="126" W="321" H="37" Center="1" ProgressBackground="{1,ui/res/Consortia/hp_progress_bk.png}" ProgressImage="{1,ui/res/Consortia/hp_progress.png}" MaxValue="100" Direction="3" />
+                        <Image Name="hertImage" X="-31" Y="144" W="49" H="45" Image="{1,ui/res/Consortia/heart.png}" SizeMode="1" />
+                        <Label Name="HpLabel_Cur" X="0" Y="101" W="140" H="46" Text="1000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="HpLabel_Sum" X="140" Y="101" W="130" H="46" Text="/2000000" Color="232,228,228" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                    </Canvas>
+                    <Canvas Name="CanvasOpen" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                        <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="9" Y="10" W="142" H="60" Text="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                        <Image Name="ProduceImage" X="165" Y="10" W="50" H="57" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+                        <Label Name="TipLabel" X="0" Y="3" W="245" H="77" Text="Consorita III" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                    </Canvas>
+                    <Canvas Name="CanvasSetTime" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                        <Image Name="Img" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                        <Label Name="TimeTipLabel" X="-55" Y="20" W="350" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        <Label Name="TimeLabel" X="0" Y="-20" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+						<Label Name="NeedTimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Center="3" />
+                    </Canvas>
+                    <Label Name="RewardLabel" X="130" Y="120" W="360" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    <Canvas Name="CanvasReward" X="130" Y="120" W="360" H="40" Center="1">
+                        <Label Name="RewardLabel" X="0" Y="0" W="200" H="40" Text="Reward:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="38" />
+                        <Image Name="Img" X="210" Y="-5" W="46" H="50" Fixed="1" Center="2" Image="{1,ui/res/best3/best3money.png}" SizeMode="1" Touch="1" />
+                    </Canvas>
+                    <Label Name="ResultLabel" X="160" Y="113" W="300" H="55" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+                </Canvas>
+		<Canvas Name="ItemCanvas_2" X="0" Y="0" W="620" H="597">
+            <Canvas Name="BattleTime" X="434" Y="510" W="300" H="80">
+                <Image Name="Img" X="0" Y="18" W="42" H="42" Image="{1,ui/res/timer.png}" SizeMode="1" />
+                <Label Name="TimeLabel" X="50" Y="0" W="200" H="80" Text="30m00s" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+            </Canvas>
+            <Canvas Name="CanvasLvl" X="25" Y="510" W="300" H="80">
+                <Image Name="ImageLvl" X="0" Y="-5" W="72" H="80" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelLvl" X="64" Y="-2" W="70" H="80" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                <Label Name="LabelLvl2" X="118" Y="-3" W="100" H="80" Text="/5" Color="199,176,143" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+            </Canvas>
+            <Image Name="InfoBkg" X="139" Y="144" W="341" H="429" Center="1" Image="{1,ui/res/hero/hero_bk_blue.png}" SizeMode="1" />
+            <Image Name="DecorationTopLeft" X="61" Y="361" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationTopRight" X="473" Y="361" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationBottomLeft" X="61" Y="182" W="87" H="84" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="DecorationBottomRight" X="473" Y="182" W="87" H="84" RotationY="180" Image="{1,ui/res/Consortia/decoration.png}" SizeMode="1" />
+            <Image Name="Hero1_b" X="20" Y="155" W="390" H="392" Image="{1,icon/hero/boss2_light.png}" SizeMode="1" />
+            <Image Name="Hero1" X="20" Y="155" W="390" H="392" Image="{1,icon/hero/boss2.png}" SizeMode="1" />
+            <Image Name="Hero2_b" X="280" Y="155" W="212" H="288" Image="{1,icon/hero/boss1_light.png}" SizeMode="1" />
+            <Image Name="Hero2" X="280" Y="155" W="212" H="288" Image="{1,icon/hero/boss1.png}" SizeMode="1" />
+            <Image Name="BoradImg" X="126" Y="86" W="367" H="83" Center="1" Image="{1,ui/res/Consortia/borad.png}" SizeMode="1" />
+            <Image Name="InfoImg" X="410" Y="456" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+            <Canvas Name="CanvasTime" X="180" Y="-4" W="260" H="180" Center="1">
+                <Canvas Name="CanvasEnter" X="7" Y="25" W="245" H="77" Touch="1" Center="1">
+                    <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                    <Label Name="TimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                </Canvas>
+                <ProgressEx Name="HpPro" X="-30" Y="126" W="321" H="37" Center="1" ProgressBackground="{1,ui/res/Consortia/hp_progress_bk.png}" ProgressImage="{1,ui/res/Consortia/hp_progress.png}" MaxValue="100" Direction="3" />
+                <Image Name="hertImage" X="-31" Y="144" W="49" H="45" Image="{1,ui/res/Consortia/heart.png}" SizeMode="1" />
+                <Label Name="HpLabel_Cur" X="0" Y="101" W="140" H="46" Text="1000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="HpLabel_Sum" X="140" Y="101" W="130" H="46" Text="/2000000" Color="232,228,228" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="CanvasOpen" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="9" Y="10" W="142" H="60" Text="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="ProduceImage" X="165" Y="10" W="50" H="57" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+                <Label Name="TipLabel" X="0" Y="3" W="245" H="77" Text="Consorita III" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="CanvasSetTime" X="187" Y="22" W="245" H="77" Touch="1" Center="1">
+                <Image Name="Img" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="TimeTipLabel" X="-55" Y="20" W="350" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                <Label Name="TimeLabel" X="0" Y="-20" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+				<Label Name="NeedTimeLabel" X="0" Y="0" W="245" H="77" Text="20:20:01" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Center="3" />
+            </Canvas>
+            <Label Name="RewardLabel" X="130" Y="120" W="360" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+            <Canvas Name="CanvasReward" X="130" Y="120" W="360" H="40" Center="1">
+                <Label Name="RewardLabel" X="0" Y="0" W="200" H="40" Text="Reward:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="38" />
+                <Image Name="Img" X="210" Y="-5" W="46" H="50" Fixed="1" Center="2" Image="{1,ui/res/best3/best3money.png}" SizeMode="1" Touch="1"  />
+            </Canvas>
+            <Label Name="ResultLabel" X="160" Y="113" W="300" H="55" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+            </Template>
+        </ListBox>
+        <Canvas Name="BossInfoCanvas" X="280" Y="300" W="560" H="240" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Label Name="NameLabel" X="10" Y="220" W="540" H="40" Center="1" Color="255,244,28" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <ListBox Name="CommentListBox" X="40" Y="20" W="500" H="200" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="530" H="340" Fixed="1">
+                    <Label Name="CommentLabel" X="0" Y="0" W="490" H="330" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+                </Template>
+            </ListBox>
+            <Image Name="UpSignImg" X="530" Y="200" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="DownSignImg" X="530" Y="10" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="240" Y="10" W="61" H="610">
+            <Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="307" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_Up" X="0" Y="303" W="61" H="307" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasButtom_Right" X="17" Y="116" W="250" H="497" Background="{1,ui/res/black_bk_245-595.png}">
+            <ListBox Name="RankListBox" X="4" Y="-4" W="238" H="493" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="238" H="82" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="0" Y="5" W="238" H="82" Background="{1,ui/res/board_238-82.png}">
+                        <Image Name="ImgStar" X="12" Y="11" W="61" H="60" Fixed="1" Center="2" Image="{1,ui/res/monster_61-60.png}" SizeMode="1" />
+                        <Label Name="LabelNum" X="13" Y="0" W="60" H="75" Text="1" Color="255,191,73" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        <Label Name="NameLabel" X="89" Y="45" W="160" H="34" Text="Name" Color="255,250,196" TextAlignment="0" FSize="20" />
+                        <Canvas Name="AttackCanvas" X="71" Y="32" W="160" H="40">
+                            <Image Name="Img" X="0" Y="-2" W="20" H="20" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                            <Label Name="LabelNum" X="22" Y="-7" W="160" H="30" Text="12345" Color="255,191,73" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                        </Canvas>
+                        <Canvas Name="RewardCanvas" X="71" Y="12" W="160" H="40">
+                            <Image Name="Img" X="0" Y="-2" W="20" H="20" Image="{1,ui/res/main/main_honor.png}" SizeMode="0" />
+                            <Label Name="LabelNum" X="22" Y="-7" W="160" H="30" Text="10000" Color="255,191,73" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Image Name="setBkgImg" X="17" Y="20" W="246" H="92" Image="{1,ui/res/Consortia/setting.png}" SizeMode="1" />
+        <Canvas Name="CanvasSetting" X="40" Y="28" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+    </Canvas>
+</Layout>

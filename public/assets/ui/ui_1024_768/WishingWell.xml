@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WishingWell" R_W="1.00" H="768">
+    <Canvas Name="CanvasMain" X="-256" Y="0" W="1536" H="768" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="1536" H="768" Center="1" Image="{1,ui/res/wishing/bkg.jpg}" SizeMode="0" />
+        <Canvas Name="FrameCanvs" X="0" Y="0" W="1536" H="768" Touch="1" Zoom="0" />
+        <Canvas Name="InfoCanvs" X="0" Y="100" W="1536" H="668" Center="1">
+            <Label Name="HeadLab" X="618" Y="617" W="300" H="50" Center="1" Text="Head" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="SubHeadLab" X="618" Y="584" W="300" H="50" Center="1" Text="SubHead" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="SurplusTimeLab" X="618" Y="554" W="300" H="50" Center="1" Text="15:21" Color="253,77,36" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="NotOpenLabel" X="518" Y="280" W="500" H="60" Center="1" Text="Not Open" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="BoxCanvas" X="670" Y="196" W="196" H="166" Touch="1" Center="1">
+            <Image Name="boxImg" X="0" Y="0" W="196" H="166" Image="{1,ui/res/wishing/box.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="AllCanvas" X="256" Y="5" W="1024" H="520" Center="1">
+            <Canvas Name="AddItemCanvas" X="435" Y="0" W="154" H="145" Touch="1" Center="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Image Name="addImg" X="45" Y="44" W="64" H="64" Center="1" Image="{1,ui/res/frame/plus_100_100.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Item_1" X="14" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="Item_2" X="182" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="Item_3" X="350" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="Item_4" X="518" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="Item_5" X="686" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="Item_6" X="854" Y="0" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" Image="{1,ui/res/frame/frame_232_216.png}" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="ExtraItem_1" X="120" Y="290" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="ExtraItem_2" X="745" Y="290" W="154" H="145" Touch="1">
+                <Image Name="bgImg" X="0" Y="0" W="154" H="145" SizeMode="1" />
+                <Custom Name="WishingItem" X="22" Y="19" W="110" H="110" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="102" Y="7" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Label Name="TipLabel" X="212" Y="140" W="600" H="60" Center="1" Text="1" Color="234,174,95" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvasRewardTip" X="300" Y="208" W="390" H="170">
+            <Image Name="bkg" X="0" Y="0" W="390" H="170" Image="{1,ui/res/guide/content.png}" SizeMode="1" />
+            <Label Name="TitleLabel" X="30" Y="120" W="300" H="32" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="TimeLabel" X="110" Y="120" W="200" H="32" Color="255,0,0" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Canvas Name="RewardItem1" X="50" Y="26" W="86" H="86">
+                <Custom Name="WishingItem" X="0" Y="0" W="86" H="86" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="50" Y="0" W="40" H="30" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="RewardItem2" X="155" Y="26" W="86" H="86">
+                <Custom Name="WishingItem" X="0" Y="0" W="86" H="86" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="50" Y="0" W="40" H="30" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="RewardItem3" X="258" Y="26" W="86" H="86">
+                <Custom Name="WishingItem" X="0" Y="0" W="86" H="86" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="50" Y="0" W="40" H="30" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="HelpCanvas" X="0" Y="648" W="120" H="120" Touch="1" Top="0">
+        <Image Name="HelpImg" X="15" Y="15" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="FreeTimesLab" X="130" Y="710" W="310" H="50" Text="xx:3/3" Color="255,255,255" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+    <Label Name="CoinTimesLab" X="130" Y="650" W="310" H="50" Text="xx:3/3" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+    <Canvas Name="HomeCanvas" X="896" Y="648" W="120" H="120" Touch="1" Top="0" Right="8">
+        <Image Name="CloseImg" X="10" Y="19" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasShade" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasPopWishing" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Canvas Name="CanvasItem" X="280" Y="180" W="120" H="120">
+                <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Label Name="NameLabel" X="72" Y="142" W="520" H="40" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            <Image Name="TipBkg" X="53" Y="18" W="556" H="120" Center="1" Image="{1,ui/res/setting/shade_680_93.png}" SizeMode="1" />
+            <Label Name="TipLabel" X="79" Y="17" W="500" H="112" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+        </Canvas>
+        <Canvas Name="WishingBtn" X="208" Y="-25" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="NumLabel" X="125" Y="3" W="90" H="77" Text="1" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            <Image Name="PropImage" X="70" Y="14" W="50" H="56" Image="{1,icon/bag/item0042.png}" SizeMode="0" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasPopGetReward" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+        <Label Name="HeadLabel" X="41" Y="264" W="580" H="60" Center="1" Color="143,101,57" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+        <Canvas Name="CanvasItem1" X="110" Y="130" W="120" H="120">
+            <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+            <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Canvas Name="CanvasItem2" X="276" Y="130" W="120" H="120">
+            <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+            <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Canvas Name="CanvasItem3" X="438" Y="130" W="120" H="120">
+            <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+            <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Canvas Name="GetBtn" X="208" Y="-25" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasWishingAni" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="bkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Background="{1,ui/res/frame/frame_shade.png.pvr.ccz}" Center="1" />
+        <Canvas Name="PlayCanvas" X="12" Y="94" W="1000" H="580" Center="3">
+            <Canvas Name="DisappearItem" X="440" Y="390" W="120" H="120" Center="1">
+                <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+            </Canvas>
+            <Canvas Name="RewardItem1" X="220" Y="230" W="120" H="120">
+                <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="RewardItem2" X="443" Y="230" W="120" H="120">
+                <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="RewardItem3" X="660" Y="230" W="120" H="120">
+                <Custom Name="WishingItem" X="0" Y="0" W="120" H="120" File="WishingItemCanvas.xml" />
+                <Label Name="LabelNum" X="77" Y="-3" W="50" H="50" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Image Name="ImgMultpleNum" X="480" Y="70" W="260" H="150" Image="{1,ui/res/wishing/two.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="EffectCanvas" X="12" Y="94" W="1000" H="580" Center="3">
+        <Canvas Name="PlayCanvas" X="440" Y="393" W="120" H="120" Center="1" />
+    </Canvas>
+</Layout>

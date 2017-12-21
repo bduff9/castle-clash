@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroManual" W="1024" H="768">
+    <Canvas Name="HeroMainCanvs" X="24" Y="25" W="974" H="629">
+        <Label Name="LabelTip" X="45" Y="578" W="900" H="30" Color="142,219,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <ListBox Name="HeroListBox" X="16" Y="156" W="942" H="440" Center="1" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="294" H="450" Fixed="1">
+                <Canvas Name="ItemCanvas" X="2" Y="0" W="290" H="450" Touch="1">
+                    <Label Name="NameLabel" X="45" Y="18" W="200" H="60" Center="1" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+    <Canvas Name="HeroInfoCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="LeftCanvs" X="10" Y="25" W="356" H="600">
+            <Canvas Name="NameCanvs" X="21" Y="140" W="313" H="84" Center="1">
+                <Label Name="NameLabel" X="26" Y="30" W="260" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="AtrCanvs" X="386" Y="350" W="580" H="260">
+            <Canvas Name="MoreAtrCanvs" X="0" Y="0" W="580" H="260">
+                <Label Name="Tenacity" X="242" Y="138" W="200" H="30" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="TenacityValue" X="450" Y="139" W="160" H="30" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="26" />
+                <Label Name="Hit" X="242" Y="184" W="200" H="30" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="HitValue" X="450" Y="185" W="160" H="30" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="26" />
+                <Label Name="Crit" X="10" Y="92" W="160" H="30" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="CritValue" X="178" Y="93" W="160" H="30" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="26" />
+                <Label Name="Dodge" X="10" Y="138" W="160" H="30" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="DodgeValue" X="178" Y="139" W="160" H="30" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="26" />
+                <Label Name="Roquet" X="10" Y="184" W="160" H="30" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                <Label Name="RoquetValue" X="178" Y="185" W="160" H="30" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

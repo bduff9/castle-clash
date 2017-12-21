@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFateHomeFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="FrameCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Center="1" />
+    <Canvas Name="MapCanvas" X="0" Y="0" R_W="1.00" R_H="0.75" Fixed="2" Center="3">
+        <Image Name="ImgMap" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/fate/map1.jpg}" SizeMode="0" />
+        <Canvas Name="1" X="0" Y="0" R_W="1.00" R_H="1.00">
+            <Image Name="62" R_X="0.14" R_Y="0.18" R_W="0.27" R_H="0.40" Touch="1" Image="{1,icon/fate/1031.png}" SizeMode="1" />
+            <Image Name="108" R_X="0.49" R_Y="0.21" R_W="0.27" R_H="0.44" Touch="1" Image="{1,icon/fate/1112.png}" SizeMode="1" />
+            <Image Name="57" R_X="0.01" R_Y="0.17" R_W="0.18" R_H="0.37" Touch="1" Image="{1,icon/fate/891.png}" SizeMode="1" />
+            <Image Name="7" R_X="0.79" R_Y="0.16" R_W="0.15" R_H="0.33" Touch="1" Image="{1,icon/fate/311.png}" SizeMode="1" />
+            <Image Name="67" R_X="0.66" R_Y="0.19" R_W="0.19" R_H="0.35" Touch="1" Image="{1,icon/fate/1081.png}" SizeMode="1" />
+            <Image Name="1" R_X="0.36" R_Y="0.19" R_W="0.18" R_H="0.40" Touch="1" Image="{1,icon/fate/201.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="2" X="0" Y="0" R_W="1.00" R_H="1.00">
+            <Image Name="8" R_X="0.02" R_Y="0.19" R_W="0.19" R_H="0.32" Touch="1" Image="{1,icon/fate/321.png}" SizeMode="1" />
+            <Image Name="103" R_X="0.64" R_Y="0.48" R_W="0.22" R_H="0.31" Touch="1" Image="{1,icon/fate/1108.png}" SizeMode="1" />
+            <Image Name="83" R_X="0.37" R_Y="0.18" R_W="0.22" R_H="0.45" Touch="1" Image="{1,icon/fate/1099.png}" SizeMode="1" />
+            <Image Name="50" R_X="0.54" R_Y="0.19" R_W="0.20" R_H="0.41" Touch="1" Image="{1,icon/fate/761.png}" SizeMode="1" />
+            <Image Name="49" R_X="0.82" R_Y="0.28" R_W="0.13" R_H="0.38" Touch="1" Image="{1,icon/fate/751.png}" SizeMode="1" />
+            <Image Name="74" R_X="0.19" R_Y="0.17" R_W="0.22" R_H="0.47" Touch="1" Image="{1,icon/fate/1094.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="ViewCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ShadeBg" X="-1" Y="1" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="MainCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1">
+        <Canvas Name="LeftTopCanvas" X="10" Y="662" W="280" H="106" Touch="1" Top="0">
+            <Image Name="bkg" X="0" Y="0" W="280" H="106" Image="{1,ui/res/fate/title1.png}" SizeMode="1" />
+            <Label Name="LabelName" X="-8" Y="48" W="300" H="50" Text="Name" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Image Name="scroll1" X="46" Y="-6" W="66" H="65" Image="{1,ui/res/fate/scroll.png}" SizeMode="1" />
+            <Image Name="scroll2" X="115" Y="-6" W="66" H="65" Image="{1,ui/res/fate/scroll.png}" SizeMode="1" />
+            <Image Name="scroll3" X="186" Y="-6" W="66" H="65" Image="{1,ui/res/fate/scroll.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="HomeCanvas" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+            <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+            <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BottomFrame" X="0" Y="0" R_W="1.00" H="200" Touch="1" Zoom="0" />
+        <Canvas Name="BottomCanvas" X="0" Y="0" W="1024" H="200" Center="1">
+            <Image Name="bkg" X="0" Y="0" W="1024" H="189" Center="1" Image="{1,ui/res/fate/bkg.png}" SizeMode="1" />
+            <Canvas Name="InfoCanvas" X="0" Y="0" W="1024" H="170" Center="1">
+                <Image Name="logo" X="33" Y="2" W="117" H="131" Touch="1" Image="{1,ui/res/fate/fatelogo.png}" SizeMode="1" />
+                <Label Name="LabelFate" X="11" Y="0" W="165" H="50" Text="150" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <ListBox Name="HeroListBox" X="172" Y="0" W="823" H="160" ScrollViewDir="0">
+                    <Template Name="" X="0" Y="0" W="150" H="150" Touch="1">
+                        <Image Name="HeadBkImg" X="8" Y="8" W="134" H="134" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="HeroImg" X="16" Y="47" W="132" H="110" Image="{1,icon/hero/201_s.png}" SizeMode="1" />
+                        <Label Name="NameLabel" X="2" Y="16" W="150" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        <Image Name="FateImg" X="2" Y="100" W="45" H="45" Image="{1,ui/res/fate/fate.png}" SizeMode="0" />
+                        <Label Name="FateLvLabel" X="0" Y="94" W="50" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                        <Label Name="FateLabel" X="35" Y="124" W="100" H="40" Text="+10000" Color="255,242,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+                    </Template>
+                </ListBox>
+                <Image Name="bkg3" X="145" Y="0" W="34" H="153" Image="{1,ui/res/fate/bkg3.png}" SizeMode="1" />
+                <Canvas Name="AttrCanvas" X="170" Y="0" W="860" H="160">
+                    <Image Name="bkg" X="602" Y="0" W="230" H="157" Image="{1,ui/res/fate/bkg2.png}" SizeMode="1" />
+                    <Canvas Name="HeroCanvs" X="2" Y="0" W="150" H="150">
+                        <Image Name="HeadBkImg" X="8" Y="8" W="134" H="134" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="HeroImg" X="16" Y="47" W="132" H="110" Image="{1,icon/hero/201_s.png}" SizeMode="1" />
+                        <Label Name="NameLabel" X="2" Y="16" W="150" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                    </Canvas>
+                    <Canvas Name="Level" X="152" Y="0" W="440" H="146" Fixed="1">
+                        <Image Name="bkgLeft" X="0" Y="0" W="222" H="146" Image="{1,ui/res/report/email_bk_win.png}" SizeMode="1" />
+                        <Image Name="bkgRight" X="220" Y="0" W="220" H="146" RotationY="180" Image="{1,ui/res/report/email_bk_win.png}" SizeMode="1" />
+                        <Label Name="ActiveTipLabel" X="24" Y="20" W="390" H="110" Color="155,118,52" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+                        <Label Name="TipLabel" X="96" Y="82" W="332" H="40" Text="Get" Color="143,101,57" TextAlignment="1" BmpFont="font_2.fnt" FSize="20" />
+                        <Label Name="TypeLabel" X="96" Y="30" W="332" H="50" Text="HP:+1000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                        <Image Name="FateImg" X="25" Y="30" W="90" H="94" Image="{1,ui/res/fate/fate.png}" SizeMode="0" />
+                        <Label Name="FateLvLabel" X="40" Y="9" W="61" H="60" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+                    </Canvas>
+                    <Canvas Name="LevelCanvs" X="610" Y="88" W="210" H="64" Touch="1">
+                        <Image Name="InfoIcon" X="144" Y="0" W="53" H="64" Image="{1,ui/res/SoulArms/Help_Icon.png}" SizeMode="1" />
+                        <Label Name="Label" X="-30" Y="-1" W="160" H="50" Text="Lv 0/40" Color="143,101,57" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+                    </Canvas>
+                    <Canvas Name="CanvasConfirm" X="639" Y="9" W="168" H="66" Fixed="1" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                        <Label Name="Label" X="0" Y="2" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasRtn" X="925" Y="168" W="95" H="82" Fixed="1" Touch="1" Right="4">
+            <Image Name="bkg" X="0" Y="0" W="95" H="82" Image="{1,ui/res/fate/btn_bkg.png}" SizeMode="0" />
+            <Image Name="Img" X="10" Y="18" W="62" H="55" Image="{1,ui/res/fate/btn_back.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="CanvasView" X="925" Y="168" W="95" H="82" Fixed="1" Touch="1" Right="4">
+            <Image Name="bkg" X="0" Y="0" W="95" H="82" Image="{1,ui/res/fate/btn_bkg.png}" SizeMode="0" />
+            <Image Name="Img" X="12" Y="18" W="62" H="55" Image="{1,ui/res/fate/btn_view.png}" SizeMode="0" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="StoryCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+        <Canvas Name="InfoCanvs" X="52" Y="82" W="920" H="610" Center="1">
+            <Canvas Name="CanvasPre" X="620" Y="26" W="134" H="82" Fixed="1" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="134" H="82" Image="{1,ui/res/button/r_134_82.png}" SizeMode="0" />
+                <Label Name="Label" X="0" Y="12" W="134" H="66" Text="Pre" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="CanvasNext" X="766" Y="26" W="134" H="82" Fixed="1" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="134" H="82" Image="{1,ui/res/button/g_134_82.png}" SizeMode="0" />
+                <Label Name="Label" X="0" Y="12" W="134" H="66" Text="Next" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Image Name="Bkg_L" X="0" Y="90" W="462" H="510" Touch="1" Zoom="0" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="458" Y="90" W="462" H="510" Touch="1" Zoom="0" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Label Name="LabelTitle" X="160" Y="512" W="600" H="60" Center="1" Text="text" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="LabelContent" X="60" Y="140" W="800" H="366" Text="text" Color="143,101,57" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="28" />
+            <Image Name="UpSignImg" X="859" Y="480" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="DownSignImg" X="858" Y="139" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BottomCanvas" X="212" Y="0" W="600" H="100" Fixed="1" Center="1">
+            <Image Name="Imgbk" X="0" Y="3" W="600" H="55" Image="{1,ui/res/main/HiddenBtnBg.png}" SizeMode="1" />
+            <Canvas Name="RewardCanvas1" X="60" Y="-12" W="127" H="133" Fixed="1" Touch="1">
+                <Image Name="ImgBox" X="0" Y="0" W="127" H="133" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="RewardCanvas2" X="236" Y="-12" W="127" H="133" Fixed="1" Touch="1" Center="1">
+                <Image Name="ImgBox" X="0" Y="0" W="127" H="133" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="RewardCanvas3" X="406" Y="-12" W="127" H="133" Fixed="1" Touch="1" Right="67">
+                <Image Name="ImgBox" X="0" Y="0" W="127" H="133" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+        <Label Name="TipLabel" X="112" Y="108" W="800" H="77" Center="1" Color="255,78,9" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="NewActivityFrame" W="1024" H="768">
+    <Canvas Name="CanvasInfo" X="25" Y="24" W="974" H="629">
+        <Canvas Name="CanvasContent" X="368" Y="21" W="580" H="580">
+            <Label Name="LabelTimeTag" X="42" Y="425" W="500" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="21" />
+            <Label Name="LabelTime" X="62" Y="390" W="280" H="30" Color="96,65,21" TextAlignment="0" FSize="22" />
+            <Label Name="LabelCommentTag" X="42" Y="351" W="500" H="30" Color="255,255,255" BmpFont="font_1.fnt" TextAlignment="0" FSize="21" />
+            <Label Name="LabelComment" X="62" Y="202" W="462" H="140" Color="96,65,21" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="22" />
+            <Label Name="LabelRewardCommentTag" X="42" Y="198" W="500" H="30" Color="255,255,255" BmpFont="font_1.fnt" TextAlignment="0" FSize="21" />
+            <Label Name="LabelRewardComment" X="62" Y="78" W="455" H="110" Color="91,124,45" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="22" />
+        </Canvas>
+    </Canvas>
+</Layout>

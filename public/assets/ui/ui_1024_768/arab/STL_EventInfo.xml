@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="STL_EventInfo" W="662" H="442">
+    <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+        <Label Name="LabelTag" X="76" Y="256" W="500" H="35" Text="111111:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="35" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BattleFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="SelfMoneyCanvs" X="18" Y="702" W="244" H="50" Fixed="1" Top="16">
+        <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+        <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Money.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="Label" X="48" Y="-19" W="180" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="23" />
+        <Image Name="Image" X="10" Y="16" W="41" H="41" Fixed="1" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="MaxLabel" X="48" Y="38" W="180" H="18" Color="255,247,193" TextAlignment="0" BmpFont="font_1.fnt" FSize="14" />
+    </Canvas>
+    <Canvas Name="SelfCrystalCanvs" X="18" Y="630" W="244" H="50" Fixed="1" Top="88">
+        <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+        <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Crystal.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="Label" X="48" Y="-19" W="180" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="23" />
+        <Image Name="Image" X="10" Y="16" W="41" H="41" Fixed="1" Image="{1,ui/res/crystal.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="MaxLabel" X="48" Y="38" W="180" H="18" Color="255,247,193" TextAlignment="0" BmpFont="font_1.fnt" FSize="14" />
+    </Canvas>
+    <Canvas Name="CanvasCenter" X="382" Y="608" W="260" H="160" Top="0" Center="3">
+        <Canvas Name="CanvasTime" X="0" Y="0" W="260" H="80" Center="1">
+            <Label Name="LabelTip" X="-170" Y="50" W="600" H="16" Center="1" Color="220,215,200" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+            <Label Name="LabelTime" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="BtnEndBattle" X="7" Y="74" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Text="" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasRightTop" X="724" Y="368" W="300" H="400" Top="0" Right="0">
+        <Canvas Name="MoneyCanvas" X="106" Y="258" W="180" H="39" Top="103" Right="14">
+            <Image Name="ImagePro" X="141" Y="-4" W="39" H="39" Fixed="1" Right="0" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="LabelNum" X="0" Y="0" W="140" H="30" Color="222,222,222" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="CrystalCanvas" X="106" Y="212" W="180" H="39" Top="149" Right="14">
+            <Image Name="ImagePro" X="141" Y="0" W="39" H="39" Fixed="1" Right="0" Image="{1,ui/res/crystal.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="LabelNum" X="0" Y="3" W="140" H="30" Color="222,222,222" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="HonorCanvas" X="106" Y="166" W="180" H="39" Top="195" Right="14">
+            <Image Name="ImagePro" X="141" Y="0" W="39" H="39" Fixed="1" Right="0" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" />
+            <Label Name="LabelNum" X="0" Y="3" W="140" H="30" Color="222,222,222" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="DefeatHonorCanvas" X="106" Y="84" W="180" H="39" Top="277" Right="14">
+            <Image Name="ImagePro" X="141" Y="0" W="39" H="39" Fixed="1" Right="0" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" />
+            <Label Name="LabelNum" X="0" Y="3" W="140" H="30" Color="222,222,222" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Label Name="LabelName" X="-112" Y="344" W="400" H="46" Top="10" Right="12" Color="255,255,255" TextAlignment="2" FSize="28" />
+        <Label Name="LabelLoot" X="56" Y="299" W="240" H="20" Top="81" Right="4" Color="220,215,200" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+        <Label Name="LabelDefeat" X="92" Y="124" W="200" H="20" Top="250" Right="8" Color="220,215,200" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+    </Canvas>
+    <Canvas Name="CanvasNext" X="808" Y="150" W="206" H="105" Touch="1" Right="10">
+        <Image Name="Image" X="0" Y="0" W="206" H="105" Image="{1,ui/res/button/btn_206_105.png}" SizeMode="1" />
+        <Image Name="ProduceImage" X="110" Y="18" W="40" H="40" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="0" />
+        <Label Name="LabelNum" X="-16" Y="24" W="120" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+		<Label Name="LabelNum_1" X="0" Y="24" W="206" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        <Label Name="LabelNext" X="0" Y="60" W="206" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    </Canvas>
+    <Canvas Name="CanvasDamage" X="858" Y="150" W="150" H="80" Background="{1,ui/res/soldier_list_bkg.png.pvr.ccz}" Right="16">
+        <Canvas Name="CanvasStar" X="29" Y="2" W="92" H="40" Center="1">
+            <Image Name="ImageStar1" X="0" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar2" X="31" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar3" X="63" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_1" X="0" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_2" X="31" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_3" X="63" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="LabelDamage" X="0" Y="40" W="150" H="36" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="CanvasMagic" R_X="0.00" Y="160" R_W="1.00" H="130" Fixed="1">
+        <ListBox Name="ListBoxMagic" X="0" Y="0" W="780" H="130" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="130" H="130" Fixed="1" Touch="1">
+                <Image Name="ImageSelected" X="0" Y="0" W="130" H="130" Image="{1,ui/res/magic_selected.png}" SizeMode="1" />
+				<Image Name="MagicBG" X="18" Y="18" W="94" H="94" Image="{1,ui/res/magic/magic_bg.png}" SizeMode="1" />
+				<Image Name="ImgMagic" X="25" Y="25" W="80" H="80" SizeMode="1" />
+                <TimerImage Name="CDTimer" X="25" Y="25" W="80" H="80" Image="{1,ui/res/magic_shade.png}" TimerType="0" />
+            </Template>
+        </ListBox>
+    </Canvas>
+    <Canvas Name="CanvasSoldier" X="0" Y="0" R_W="1.00" H="170" Touch="1" Zoom="0">
+        <ListBox Name="ListBoxSoldier" X="0" Y="0" R_W="1.00" H="165" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="137" H="150" Fixed="1">
+                <Canvas Name="ItemCanvas" X="0" Y="0" W="142" H="140" Touch="1">
+                    <Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgBkg1" X="12" Y="3" W="118" H="120" Center="1" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />
+                    <Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+					<ProgressEx Name="ProgressHp" X="0" Y="0" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro3/pro_hero_bkg.png}" ProgressImage="{1,ui/res/pro3/pro_hero.png}" MaxValue="100" Direction="3" />
+                    <Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+    <Canvas Name="BtnSpeed" X="788" Y="20" W="196" H="77" Touch="1" Right="40">
+        <Image Name="Image" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+        <Image Name="ImageSpeed" X="50" Y="20" W="62" H="41" Image="{1,ui/res/speed.png}" SizeMode="1" />
+        <Label Name="Label" X="114" Y="5" W="100" H="75" Text="" Color="222,222,222" TextAlignment="0" BmpFont="font_1.fnt" FSize="45" />
+    </Canvas>
+    <Canvas Name="CanvasMagicPlay" X="312" Y="300" W="400" H="280" Center="1">
+        <Image Name="ImageMagic" X="120" Y="120" W="160" H="160" SizeMode="1" />
+        <Label Name="LabelName" X="0" Y="80" W="400" H="40" Text="" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        <Label Name="LabelDes" X="0" Y="-10" W="400" H="80" Text="" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="30" />
+    </Canvas>
+	<Canvas Name="CanvasBosses" X="0" Y="287" W="142" H="700" Top="60" Right="0" Touch="0" >
+		<Canvas Name="CanvasBoss_0" X="0" Y="560" W="142" H="140" Touch="0">
+			<Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+			<Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+			<Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />			
+			<Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<ProgressEx Name="ProgressHp" X="0" Y="20" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro/hp_progress_bkg.png}" ProgressImage="{1,ui/res/pro/hp_progress.png}" MaxValue="100" Direction="3" />
+			<Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+		</Canvas>
+		<Canvas Name="CanvasBoss_1" X="0" Y="420" W="142" H="140" Touch="0">
+			<Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+			<Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+			<Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />			
+			<Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<ProgressEx Name="ProgressHp" X="0" Y="20" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro/hp_progress_bkg.png}" ProgressImage="{1,ui/res/pro/hp_progress.png}" MaxValue="100" Direction="3" />
+			<Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+		</Canvas>
+		<Canvas Name="CanvasBoss_2" X="0" Y="280" W="142" H="140" Touch="0">
+			<Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+			<Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+			<Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />			
+			<Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<ProgressEx Name="ProgressHp" X="0" Y="20" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro/hp_progress_bkg.png}" ProgressImage="{1,ui/res/pro/hp_progress.png}" MaxValue="100" Direction="3" />
+			<Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+		</Canvas>
+		<Canvas Name="CanvasBoss_3" X="0" Y="140" W="142" H="140" Touch="0">
+			<Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+			<Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+			<Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />			
+			<Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<ProgressEx Name="ProgressHp" X="0" Y="20" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro/hp_progress_bkg.png}" ProgressImage="{1,ui/res/pro/hp_progress.png}" MaxValue="100" Direction="3" />
+			<Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+		</Canvas>
+		<Canvas Name="CanvasBoss_4" X="0" Y="0" W="142" H="140" Touch="0">
+			<Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+			<Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+			<Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />			
+			<Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<ProgressEx Name="ProgressHp" X="0" Y="20" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro/hp_progress_bkg.png}" ProgressImage="{1,ui/res/pro/hp_progress.png}" MaxValue="100" Direction="3" />
+			<Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+		</Canvas>
+	</Canvas>
+    <Canvas Name="CanvasBuffs" X="10" Y="448" W="80" H="160" Top="160">
+        <Canvas Name="CanvasBuff_0" X="10" Y="80" W="62" H="62">
+            <Image Name="ImgBkg" X="0" Y="0" W="62" H="62" Center="3" Image="{1,ui/res/frame/bkg_buff.png}" SizeMode="1" />
+            <Image Name="ImgIcon" X="6" Y="6" W="50" H="50" Center="3" Image="{1,icon/Corps/101.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasBuff_1" X="10" Y="6" W="62" H="62">
+            <Image Name="ImgBkg" X="0" Y="0" W="62" H="62" Center="3" Image="{1,ui/res/frame/bkg_buff.png}" SizeMode="1" />
+            <Image Name="ImgIcon" X="6" Y="6" W="50" H="50" Center="3" Image="{1,icon/Corps/102.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

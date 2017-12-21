@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="RewardAlert" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Label Name="NameLabel" X="50" Y="270" W="560" H="50" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+    <Canvas Name="CanvasMain" X="0" Y="40" W="662" H="300" Center="1">
+        <Canvas Name="SubMitCanvas" X="208" Y="30" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label1" X="-10" Y="3" W="265" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="OneCanvas" X="171" Y="104" W="400" H="150">
+            <Image Name="OneGiftImage" X="63" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Label Name="OneLabel" X="163" Y="55" W="150" H="40" Center="2" Text="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="TwoCanvas" X="82" Y="104" W="500" H="150">
+            <Image Name="OneGiftImage" X="79" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Image Name="TwoGiftImage" X="274" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Label Name="OneLabel" X="160" Y="55" W="120" H="40" Center="2" Text="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="TwoLabel" X="354" Y="55" W="120" H="40" Center="2" Text="200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ThreeCanvas" X="128" Y="104" W="400" H="150">
+            <Image Name="OneGiftImage" X="-10" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Image Name="TwoGiftImage" X="150" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Image Name="ThreeGiftImage" X="293" Y="45" W="60" H="60" Center="2" Image="{1,ui\res\task\1.png}" SizeMode="0" />
+            <Label Name="OneLabel" X="70" Y="55" W="90" H="40" Center="2" Text="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="TwoLabel" X="230" Y="55" W="90" H="40" Center="2" Text="200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="ThreeLabel" X="374" Y="55" W="90" H="40" Center="2" Text="200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

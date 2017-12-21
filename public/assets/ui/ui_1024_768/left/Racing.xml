@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="RacingFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="730">
+        <Canvas Name="CanvsTop" X="12" Y="260" W="970" H="372">
+            <Canvas Name="CanvasTime" X="40" Y="25" W="600" H="80">
+                <Image Name="ImgAdd" X="250" Y="-3" W="46" H="46" Touch="1" Image="{1,ui/res/Addition.png.pvr.ccz}" SizeMode="1" />
+                <Label Name="LabelSeasonTimeTag" X="0" Y="44" W="400" H="30" Text="Time:" Color="123,93,53" TextAlignment="2" BmpFont="font_2.fnt" FSize="24" />
+                <Label Name="LabelSeasonTime" X="405" Y="44" W="160" H="30" Color="255,245,205" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

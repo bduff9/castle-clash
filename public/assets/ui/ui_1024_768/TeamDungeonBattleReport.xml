@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TeamDungeonReport" R_W="1.00" R_H="1.00" Background="{1,ui/res/shade.png.pvr.ccz}">
+	<Canvas Name="FrameCa" R_W="1.00" R_H="1.00" Touch="1" />
+	<Label Name="LabelTime" X="389" Y="140" W="245" H="77" Center="1" Color="255,55,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" Text=""/>
+    <Canvas Name="ExitBtn" X="389" Y="40" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="RewardCanvas" X="250" Y="140" W="900" H="400" Center="1"  >   	<!-- Background="{1,ui/res/tip_content.png}" -->
+        <Canvas Name="CanvasItem_1" X="60" Y="130" W="180" H="197" Touch="1" >
+			<Canvas Name="BoxCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/box.png}" SizeMode="1" />
+			</Canvas>
+			<!--
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/money_reward.png}" SizeMode="1" />
+			</Canvas> 
+			-->
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="125" H="125" Center="3">
+                <Custom Name="CanvasItem" X="0" Y="-20" W="136" H="164" Center="1" File="ItemCanvas.xml" />
+                <Label Name="LabelNum" X="25" Y="18" W="86" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+			<Label Name="LabelName" X="-10" Y="-35" W="150" H="40" Center="1" Color="255,255,255" TextAlignment="1" FSize="30" />
+        </Canvas>
+		 <Canvas Name="CanvasItem_2" X="260" Y="130" W="180" H="197" Touch="1" >
+			<Canvas Name="BoxCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/box.png}" SizeMode="1" />
+			</Canvas>
+			<!--
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/money_reward.png}" SizeMode="1" />
+			</Canvas> 
+			-->
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="125" H="125" Center="3">
+                <Custom Name="CanvasItem" X="0" Y="-20" W="136" H="164" Center="1" File="ItemCanvas.xml" />
+                <Label Name="LabelNum" X="25" Y="18" W="86" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>     
+			<Label Name="LabelName" X="-10" Y="-35" W="150" H="40" Center="1" Color="255,255,255" TextAlignment="1" FSize="30" />
+        </Canvas>
+		 <Canvas Name="CanvasItem_3" X="460" Y="130" W="180" H="197" Touch="1" >
+			<Canvas Name="BoxCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/box.png}" SizeMode="1" />
+			</Canvas>
+			<!--
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/money_reward.png}" SizeMode="1" />
+			</Canvas> 
+			-->
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="125" H="125" Center="3">
+				<Custom Name="CanvasItem" X="0" Y="-20" W="136" H="164" Center="1" File="ItemCanvas.xml" />
+                <Label Name="LabelNum" X="25" Y="18" W="86" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>     
+			<Label Name="LabelName" X="-10" Y="-35" W="150" H="40" Center="1" Color="255,255,255" TextAlignment="1" FSize="30" />
+        </Canvas>
+		 <Canvas Name="CanvasItem_4" X="660" Y="130" W="180" H="197" Touch="1" >
+			<Canvas Name="BoxCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/box.png}" SizeMode="1" />
+			</Canvas>
+			<!--
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="180" H="197" >
+				<Image Name="ImgBox" X="0" Y="0" W="180" H="197" Image="{1,ui/res/teamdungeon/money_reward.png}" SizeMode="1" />
+			</Canvas> 
+			-->
+			<Canvas Name="RewardCanvas" X="0" Y="0" W="125" H="125" Center="3">
+				<Custom Name="CanvasItem" X="0" Y="-20" W="136" H="164" Center="1" File="ItemCanvas.xml" />
+                <Label Name="LabelNum" X="25" Y="18" W="86" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>    
+			<Label Name="LabelName" X="-10" Y="-35" W="150" H="40" Center="1" Color="255,255,255" TextAlignment="1" FSize="30" />
+        </Canvas>
+
+    </Canvas>
+
+</Layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MyConsortiaRenameFrame" W="662" H="460">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="460">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="460" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="460" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="374" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="342" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="Canvs_1" X="0" Y="0" W="662" H="360">
+        <Label Name="TxtLabel" X="46" Y="280" W="570" H="40" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="30" />
+        <EditBox Name="NameEdit" X="121" Y="196" W="420" H="60" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="1" Padding="{10,5};" Color="255,255,255" />
+        <Label Name="NumLabel" X="81" Y="150" W="500" H="30" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+        <Label Name="TipsLabel" X="81" Y="110" W="500" H="40" Center="1" Color="123,70,24" TextAlignment="1" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+        <Canvas Name="OKCanvs" X="233" Y="-10" W="196" H="77" Touch="1" Center="1">
+            <Image Name="Img" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Image Name="Img1" X="60" Y="14" W="53" H="55" Image="{1,icon/bag/item0044.png}" SizeMode="1" />
+            <Label Name="Txt" X="116" Y="3" W="80" H="77" Right="0" Text="222" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="Canvs_2" X="0" Y="0" W="662" H="460">
+        <Label Name="TxtLabel" X="46" Y="200" W="570" H="100" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="30" />
+        <Label Name="NumLabel" X="81" Y="100" W="500" H="40" Center="1" Color="123,70,24" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+        <Canvas Name="OKCanvs" X="233" Y="-10" W="196" H="77" Touch="1" Center="1">
+            <Image Name="Img" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Txt" X="0" Y="0" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="STL_SrResBuildFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="25" Y="35" W="994" H="646">
+        <Canvas Name="InfoCanvs" X="336" Y="24" W="614" H="352" Right="44">
+            <ListBox Name="InfoListBox" X="22" Y="260" W="570" H="260" Center="1" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="570" H="40">
+                    <Label Name="ItemTypeLabel" X="150" Y="4" W="340" H="28" Color="126,90,44" TextAlignment="2" BmpFont="font_2.fnt" FSize="28" />
+                    <Label Name="ItemValueLabel" X="0" Y="2" W="240" H="30" Color="255,245,205" TextAlignment="2" FSize="30" />
+                </Template>
+            </ListBox>
+            <Label Name="ContentLabel" X="32" Y="140" W="450" H="120" Center="1" Color="126,90,44" TextAlignment="2" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+        </Canvas>
+    </Canvas>
+</Layout>

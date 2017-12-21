@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SettingFrame" W="806" H="727">
+    <Canvas Name="MainCanvas" X="0" Y="0" W="806" H="620">
+        <Canvas Name="TermsServiceCanvs" X="74" Y="232" W="196" H="77" Touch="1">
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Terms of Service" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+        </Canvas>
+        <Canvas Name="SubMitBugCanvs" X="536" Y="232" W="196" H="77" Touch="1" Right="74">
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Submit Bug" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+        </Canvas>
+        <Canvas Name="PrivacyPalicyCanvs" X="305" Y="232" W="196" H="77" Touch="1" Center="1">
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Privacy Policy" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+        </Canvas>
+    </Canvas>
+</Layout>

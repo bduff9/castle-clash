@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="EmojiWorldFrame" R_W="1.00" R_H="1.00" IsPop="1">
+    <Canvas Name="CanvasMain" X="0" Y="0" W="960" H="340" Touch="1" Zoom="0">
+        <Canvas Name="Bkg" X="0" Y="0" W="960" H="340" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="340" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="340" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BtnEmoji" X="75" Y="205" W="87" H="78" Touch="1">
+            <Image Name="ImgSel" X="-22" Y="-19" W="131" H="121" Image="{1,ui/res/chat/btn_sel.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="0" Y="0" W="87" H="78" Image="{1,ui/res/chat/btn_emoji.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BtnHero" X="75" Y="80" W="88" H="93" Touch="1">
+            <Image Name="ImgSel" X="-21" Y="-19" W="131" H="121" Image="{1,ui/res/chat/btn_sel.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="0" Y="0" W="88" H="93" Image="{1,ui/res/chat/btn_hero.png}" SizeMode="1" />
+        </Canvas>
+        <Image Name="Canvas" X="200" Y="62" W="716" H="250" Image="{1,ui/res/setting/shade_680_93.png}" />
+        <ListBox Name="ListEmoji" X="200" Y="62" W="716" H="250" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="94" H="250" Fixed="1">
+                <Canvas Name="Item_1" X="6" Y="170" W="80" H="80" Top="6" Touch="1">
+                    <Image Name="Img" X="19" Y="19" W="42" H="42" Center="3" Image="{1,icon/emoji/1.png}" SizeMode="0" />
+                    <Image Name="ImgSel" X="-7" Y="-7" W="94" H="94" Center="3" Image="{1,ui/res/chat/sel_emoji.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="Item_2" X="6" Y="90" W="80" H="80" Center="2" Touch="1">
+                    <Image Name="Img" X="19" Y="19" W="42" H="42" Center="3" Image="{1,icon/emoji/1.png}" SizeMode="0" />
+                    <Image Name="ImgSel" X="-7" Y="-7" W="94" H="94" Center="3" Image="{1,ui/res/chat/sel_emoji.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="Item_3" X="6" Y="6" W="80" H="80" Touch="1">
+                    <Image Name="Img" X="19" Y="19" W="42" H="42" Center="3" Image="{1,icon/emoji/1.png}" SizeMode="0" />
+                    <Image Name="ImgSel" X="-7" Y="-7" W="94" H="94" Center="3" Image="{1,ui/res/chat/sel_emoji.png}" SizeMode="1" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <ListBox Name="ListHero" X="200" Y="62" W="716" H="250" ScrollViewDir="0">
+            <Template Name="" X="66" Y="63" W="125" H="260" Fixed="1">
+                <Canvas Name="Item_1" X="10" Y="128" W="115" H="113" Touch="1">
+                    <Image Name="HeadBkImg" X="0" Y="0" W="110" H="113" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSel" X="-10" Y="-10" W="134" H="132" Image="{1,ui/res/head_selected.png}" SizeMode="1" />
+                    <Image Name="IconImg" X="7" Y="33" W="107" H="90" Image="{1,icon/hero/521_s.png}" SizeMode="1" />
+                    <Label Name="LvlLabel" X="5" Y="12" W="100" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="AwakeImg" X="-1" Y="87" W="31" H="31" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="StarImg" X="-1" Y="87" W="31" H="31" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="StarNumLabel" X="-3" Y="88" W="34" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+                <Canvas Name="Item_2" X="10" Y="4" W="115" H="113" Touch="1">
+                    <Image Name="HeadBkImg" X="0" Y="0" W="110" H="113" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSel" X="-10" Y="-10" W="134" H="132" Image="{1,ui/res/head_selected.png}" SizeMode="1" />
+                    <Image Name="IconImg" X="7" Y="33" W="107" H="90" Image="{1,icon/hero/521_s.png}" SizeMode="1" />
+                    <Label Name="LvlLabel" X="5" Y="12" W="100" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="AwakeImg" X="-1" Y="87" W="31" H="31" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="StarImg" X="-1" Y="87" W="31" H="31" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="StarNumLabel" X="-3" Y="88" W="34" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Canvas Name="BtnSend" X="382" Y="-16" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+</Layout>

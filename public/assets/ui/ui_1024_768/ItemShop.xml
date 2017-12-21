@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ItemShopFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasTab_1" X="49" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="239" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_3" X="429" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+	</Canvas>
+	<Canvas Name="CanvasTab_4" X="619" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+	</Canvas>
+	<Canvas Name="LotteryCanvas" X="15" Y="15" W="994" H="646">
+        <Image Name="ImgBkg_L" X="24" Y="24" W="50" H="600" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Image Name="ImgBkg_R" X="920" Y="24" W="50" H="600" Right="24" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+		<Canvas Name="OnceCanvs" X="50" Y="0" W="400" H="646" >
+			<Canvas Name="ImgCanvs" Center="1" Y="120" W="326" H="359" >
+				<Image Name="BkImg" X="0" Y="0" W="326" H="359" Image="{1,ui/res/itemshop/lottery_img_bk.png}" SizeMode="1" />
+				<Image Name="Img" Center="1" Y="84" W="237" H="242" Image="{1,ui/res/itemshop/80.png}" SizeMode="1"/>
+			</Canvas>
+			<Label Name="Label" X="0" Y="155" W="350" H="50" Text="Name" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+		    <Canvas Name="BtnCanvs" Center="1" Y="62" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="240" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+				<Image Name="CashImg" X="180" Y="13" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+			</Canvas>
+			<Label Name="Time" X="20" Y="26" W="350" H="50" Text="Time" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+		</Canvas>
+		<Canvas Name="MulCanvs" X="560" Y="0" W="400" H="646" >
+			<Canvas Name="ImgCanvs" Center="1" Y="120" W="326" H="359" >
+				<Image Name="BkImg" X="0" Y="0" W="326" H="359" Image="{1,ui/res/itemshop/lottery_img_bk.png}" SizeMode="1" />
+				<Image Name="Img" Center="1" Y="84" W="237" H="242" Image="{1,ui/res/itemshop/900.png}" SizeMode="1"/>
+			</Canvas>
+			<Label Name="Label" X="0" Y="155" W="350" H="50" Text="Name" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+		    <Canvas Name="BtnCanvs" Center="1" Y="62" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="240" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+				<Image Name="CashImg" X="180" Y="13" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+			</Canvas>
+		</Canvas>
+		<Canvas Name="SpecialCanvs" X="253" Y="350" W="518" H="239" Center="1">
+			<Image Name="BkImg" X="0" Y="0" W="507" H="198" Image="{1,ui/res/itemshop/box_bk.png}" SizeMode="1" />
+			<Custom Name="item1" X="50" Y="112" W="134" H="164" Touch="1" File="ItemCanvas.xml" />
+			<Custom Name="item2" X="192" Y="112" W="134" H="164" Touch="1" File="ItemCanvas.xml" />
+			<Custom Name="item3" X="344" Y="112" W="134" H="164" Touch="1" File="ItemCanvas.xml" />
+			<Label Name="Label" X="176" Y="54" W="180" H="50" Text="SepcialBox" Color="248,94,254" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+			<Label Name="Time" X="140" Y="16" W="180" H="50" Text="11:25:30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+			<Label Name="EndLabel" X="274" Y="16" W="100" H="50" Text="Refresh" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+		</Canvas>
+	</Canvas>
+    <Canvas Name="SubCanvas" Touch="1" Zoom="0" X="15" Y="15" W="994" H="646">
+        <ListBox Name="SubListBox_1" X="24" Y="140" W="945" H="516" Center="1" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="174" H="516" Fixed="1">
+                <Custom Name="ItemCanvas_1" X="6" Y="255" W="176" H="214" Touch="1" File="ShopItemCanvas.xml" />
+				<Custom Name="ItemCanvas_2" X="6" Y="25" W="176" H="214" Touch="1" File="ShopItemCanvas.xml" />
+            </Template>
+        </ListBox>
+        <Canvas Name="SeparateCanvs" X="17" Y="89" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="21" W="960" H="40" Color="248,224,167" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+		<Canvas Name="BottomCanvas" X="12" Y="10" W="970" H="110">
+            <Canvas Name="MoneyCanvas" X="20" Y="20" W="400" H="80">
+                <Label Name="Label" X="0" Y="10" W="234" H="50" Color="230,230,230" TextAlignment="2" BmpFont="font_1.fnt" FSize="36" />
+                <Image Name="Image" X="250" Y="5" W="60" H="60" Touch="1" Image="{1,ui/res/itemshop/exploit.png}" SizeMode="0" />
+                <Canvas Name="CanvasTip" X="300" Y="261" W="320" H="110" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgBkg" X="100" Y="-17" W="40" H="40" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+                    <Label Name="Label" X="15" Y="15" W="290" H="80" Color="84,81,76" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="16" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="refreshCanvas" X="687" Y="22" W="245" H="77" Touch="1">
+                <Image Name="bgImage" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NameLabel" X="23" Y="23" W="200" H="35" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+	<Image Name="ShadeBg" X="0" Y="0" R_W="1.0" R_H="1.0" Touch="1" Zoom="0" SizeMode="1" />
+	<Canvas Name="CanvasPop" W="662" H="442" Center="3">
+	    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+			<Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+			<Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+		</Canvas>
+		<Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+		<Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+		<Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+			<Custom Name="CanvasItem" X="70" Y="122" W="136" H="164" File="ItemCanvas.xml" />
+			<Label Name="NameLabel" X="222" Y="231" W="350" H="32" Color="249,245,229" TextAlignment="0" BmpFont="font_1.fnt" FSize="31" />
+			<Label Name="ShowNumLabel" X="220" Y="174" W="100" H="30" Text="Num:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+			<Label Name="haveNum" X="280" Y="174" W="70" H="30" Text="999" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+			<Label Name="MaxNum" X="374" Y="174" W="120" H="30" Text="/ 999" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+			<Label Name="TipLabel" X="83" Y="25" W="500" H="120" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+		</Canvas>
+		<Canvas Name="ComfirmBtn" X="389" Y="-100" W="245" H="77" Touch="1" Center="1">
+			<Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+			<Label Name="NumLabel" X="30" Y="3" W="142" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            <Image Name="ProduceImage" X="173" Y="16" W="42" H="46" Image="{1,ui/res/itemshop/exploit.png}" SizeMode="0" />
+		</Canvas>
+	</Canvas>
+</Layout>

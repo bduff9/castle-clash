@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="backFrame_1" Inherit="normalFrame_1.xml">
+    <Image Name="BackImg" X="15" Y="659" Top="15" W="88" H="88" Touch="1" Image="{1,ui/res/button/form_back_m.png}" SizeMode="1" />
+</Layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaResearchFrame" W="1024" H="768">
+    <Canvas Name="CanvasBuffInfo" X="15" Y="15" W="994" H="646" Center="1">
+        <Canvas Name="CanvsTop" X="10" Y="229" W="974" H="403" Center="1">
+            <ListBox Name="InfoListBox" X="406" Y="43" W="500" H="300" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="600" H="60">
+                    <Label Name="ItemTypeLabel" X="270" Y="5" W="310" H="26" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                    <Label Name="ItemValueLabel" X="20" Y="5" W="240" H="26" Color="255,244,206" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

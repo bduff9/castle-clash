@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MsgInfoFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="MsgInfoCanvas" X="0" Y="400" R_W="1.00" H="205" Top="150">
+        <Label Name="TipLabel_1" X="0" Y="0" R_W="1.00" H="41" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel_2" X="0" Y="45" R_W="1.00" H="41" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel_3" X="0" Y="91" R_W="1.00" H="41" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel_4" X="0" Y="137" R_W="1.00" H="41" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel_5" X="0" Y="183" R_W="1.00" H="41" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+	<Canvas Name="BulletinCanvas" X="0" Y="160" Top="110" Center="1" W="840" H="41" Background="{1,ui/res/frame/frame_shade.png}">
+		<ListBox Name="InfoListBox" X="0" Y="0" Center="3" W="825" R_H="1.0" ScrollViewDir="1">
+			<Template Name="" X="0" Y="0" R_W="1.0" R_H="1.0">
+				<Label Name="LabelBulletin" X="0" Y="0" Center="3" W="2048" H="41" Color="86,253,255" BmpFont="font_2.fnt" TextAlignment="0" FSize="34" />
+			</Template>
+		</ListBox>
+    </Canvas>
+</Layout>

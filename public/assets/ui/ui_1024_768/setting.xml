@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SettingFrame" W="806" H="727">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="806" H="727" Touch="1" Zoom="0">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="405" H="727" Image="{1,ui/res/form_bk_806_727.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="401" Y="0" W="405" H="727" RotationY="180" Image="{1,ui/res/form_bk_806_727.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="203" Y="634" W="400" H="80" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+    <Image Name="BackImg" X="19" Y="603" W="115" H="117" Touch="1" Top="7" Image="{1,ui/res/button/form_back.png}" SizeMode="1" />
+    <Image Name="CloseImg" X="647" Y="603" W="115" H="117" Touch="1" Top="7" Right="44" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="MainCanvas" X="0" Y="0" W="806" H="620">
+        <Canvas Name="IggCanvs" X="63" Y="511" W="680" H="88" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="680" H="88" Image="{1,ui/res/setting/shade_680_88.png}" SizeMode="1" />
+            <Label Name="IggLabel" X="15" Y="44" W="160" H="30" Text="IGG ID:" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Label Name="IdLabel" X="15" Y="5" W="250" H="30" Text="10000" Color="255,215,106" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="BindCanvs" X="267" Y="5" W="196" H="77" Touch="1" Right="217" Center="2">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="ON" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+            <Canvas Name="ChangeCanvs" X="472" Y="5" W="196" H="77" Touch="1" Right="12" Center="2">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="ON" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+            <Canvas Name="LogoutCanvs" X="472" Y="5" W="196" H="77" Touch="1" Right="12" Center="2">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_orange_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="0" W="196" H="77" Text="ON" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="MusicCanvs" X="64" Y="422" W="340" H="80">
+            <Image Name="Img" X="57" Y="17" W="61" H="49" Image="{1,ui/res/setting/music.png}" SizeMode="1" />
+            <Canvas Name="BtnCanvs" X="128" Y="0" W="196" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="ON" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SoundCanvs" X="402" Y="422" W="340" H="80">
+            <Image Name="Img" X="60" Y="17" W="61" H="49" Image="{1,ui/res/setting/sound.png}" SizeMode="1" />
+            <Canvas Name="BtnCanvs" X="134" Y="-1" W="196" H="77" Touch="1" Right="10">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="ON" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="MidCanvs" X="63" Y="326" W="680" H="88" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="680" H="88" Image="{1,ui/res/setting/shade_680_93.png}" SizeMode="1" />
+            <Canvas Name="LangCanvs" X="5" Y="1" W="220" H="88" Touch="1">
+                <Image Name="ImgBk" X="0" Y="3" W="81" H="81" Center="2" Image="{1,ui/res/setting/flag_bk.png}" SizeMode="0" />
+                <Image Name="Img" X="8" Y="13" W="62" H="62" Center="2" SizeMode="0" />
+                <Label Name="TxtLabel" X="82" Y="36" W="140" H="40" Text="Language" Color="91,73,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="22" />
+                <Label Name="LangLabel" X="82" Y="3" W="140" H="40" Text="English" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="LowCanvs" X="245" Y="4" W="196" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Low" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="ForumCanvs" X="473" Y="4" W="196" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Forum" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="TermsServiceCanvs" X="74" Y="232" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Terms of Service" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="SubMitBugCanvs" X="536" Y="232" W="196" H="77" Touch="1" Right="74">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Submit Bug" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="PrivacyPalicyCanvs" X="305" Y="232" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Privacy Policy" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="LiveSupportCanvs" X="74" Y="150" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Live Support" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="EmailCanvs" X="305" Y="150" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Email" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="63" Y="56" W="680" H="80" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="680" H="80" Image="{1,ui/res/setting/shade_680_93.png}" SizeMode="1" />
+            <Label Name="Version" X="0" Y="50" W="680" H="18" Text="Version 1.00" Color="82,79,75" TextAlignment="1" BmpFont="font_2.fnt" FSize="16" />
+            <Label Name="CopyRight" X="0" Y="30" W="680" H="18" Text="Copyright 2012-2013 IGG.com All Rights Reserved" Color="82,79,75" TextAlignment="1" BmpFont="font_2.fnt" FSize="16" />
+            <Label Name="Mail" X="0" Y="10" W="680" H="18" Text="Help.castle.android@igg.com" Color="82,79,75" TextAlignment="1" BmpFont="font_2.fnt" FSize="16" />
+        </Canvas>
+        <Canvas Name="CanvasEmailMenu" X="179" Y="160" W="230" H="305" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgLeft" X="-15" Y="133" W="37" H="38" Center="2" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Canvas Name="Canvas_1" X="30" Y="220" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="Canvas_2" X="30" Y="153" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="Canvas_3" X="30" Y="86" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="Canvas_4" X="30" Y="19" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="LanListCanvs" X="239" Y="272" W="186" H="300" Background="{1,ui/res/tip_content.png}">
+            <ListBox Name="LangListBox" X="13" Y="25" W="160" H="250" Center="3" ScrollViewDir="1">
+                <Template Name="" X="10" Y="20" W="160" H="50">
+                    <Canvas Name="ItemCanvs" X="0" Y="7" W="160" H="36" Touch="1" Center="3">
+                        <Image Name="Img" X="5" Y="0" W="46" H="36" Image="{1,ui/res/setting/shade_680_93.png}" SizeMode="0" />
+                        <Label Name="LangLabel" X="51" Y="0" W="100" H="36" Color="0,0,0" TextAlignment="0" FSize="24" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="GCMCanvs" X="536" Y="150" W="196" H="77" Touch="1" Right="74">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="0" W="196" H="77" Text="GCM" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+		<Canvas Name="FBFansCanvs" X="536" Y="146" W="73" H="75" Touch="1" Right="100">
+            <Image Name="ImgBkg" X="0" Y="0" W="73" H="75" Image="{1,ui/res/setting/fackbook.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="VKCanvs" X="295" Y="144" W="320" H="80">
+            <Image Name="ImgLogo" X="235" Y="2" W="73" H="75" Touch="1" Image="{1,ui/res/setting/vk.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TencentInfoLabel" X="75" Y="115" W="400" H="80" Text="qqqqqqqqqqqqqqqqqqqqqqq" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+    </Canvas>
+    <Canvas Name="AccountBindCanvas" X="63" Y="60" W="680" H="530" Background="{1,ui/res/frame/frame_shade.png.pvr.ccz}" Center="1">
+        <ListBox Name="ListBoxAccountBind" X="0" Y="0" W="680" H="530" Center="1" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="680" H="100" Fixed="1">
+                <Canvas Name="ItemCanvas" X="0" Y="3" W="680" H="94" Touch="1" Center="2">
+                    <Image Name="ImgBkg" X="36" Y="0" W="607" H="94" Center="1" Image="{1,ui/res/button/btn_671_94.png}" SizeMode="1" />
+                    <Label Name="LabelName" X="36" Y="0" W="607" H="94" Center="1" Text="aaaaaaaaaa" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+    <Canvas Name="FeedBackCanvs" X="63" Y="60" W="680" H="530" Center="1" Touch="1" Zoom="0">
+        <Label Name="TxtLabel" X="140" Y="458" W="400" H="56" Background="{1,ui/res/frame/shade_brown.png}" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="22" />
+        <EditBox Name="ContentEdit" X="15" Y="116" W="650" H="330" Background="{1,ui/res/frame/shade_brown.png}" Center="1" Padding="{10,5};" Color="255,255,255" FSize="25" BmpFont="font_2.fnt"/>
+        <Canvas Name="SendCanvs" X="472" Y="10" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="196" H="77" Text="Send" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Label Name="TipLabel" X="20" Y="66" W="450" H="80" Text="text" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="TipLabel_2" X="20" Y="13" W="450" H="80" Text="text" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+        <Label Name="TipLabel_3" X="20" Y="-9" W="450" H="80" Text="text" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+    </Canvas>
+    <Canvas Name="HelpCanvs" X="63" Y="60" W="680" H="530" Center="1">
+        <ListBox Name="LangListBox" X="15" Y="15" W="650" H="500" Center="3" ScrollViewDir="1">
+            <Template Name="" X="0" Y="20" W="650" H="140">
+                <Label Name="TitleLabel" X="0" Y="80" W="650" H="50" Background="{1,ui/res/frame/shade_brown.png}" Text="text" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="19" />
+                <Label Name="ContentLabel" X="0" Y="0" W="650" H="80" Center="1" Text="text" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="18" />
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

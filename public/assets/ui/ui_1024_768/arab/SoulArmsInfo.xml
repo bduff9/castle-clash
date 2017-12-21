@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SoulArmsInfoFrame" W="1024" H="768">
+    <Canvas Name="SoulArmsInfoCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="RigthCanvs" X="390" Y="0" W="570" H="600">
+            <Canvas Name="AttCanvs" X="-10" Y="20" W="480" H="240">
+                <Label Name="AttackLabelName" X="170" Y="240" W="180" H="40" Text="Attack" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="RoquetName" X="170" Y="200" W="180" H="40" Text="Roquet" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="DodgeName" X="170" Y="160" W="180" H="40" Text="Dodge" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="CritName" X="170" Y="120" W="180" H="40" Text="Crit" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="HpLabelName" X="380" Y="240" W="180" H="40" Text="Hp" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="HitDMGLabelName" X="380" Y="200" W="180" H="40" Text="HitDMG" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="TenacityLabelName" X="380" Y="160" W="180" H="40" Text="Tenacity" Color="159,125,89" TextAlignment="0" BmpFont="font_2.fnt" FSize="18" />
+                <Label Name="Label1" X="-53" Y="240" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label5" X="-53" Y="200" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label4" X="-53" Y="160" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label6" X="-53" Y="120" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label0" X="154" Y="240" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label3" X="154" Y="200" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+                <Label Name="Label2" X="154" Y="160" W="220" H="40" Text="9999" Color="144,102,16" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="UpgradeCanvs" X="390" Y="0" W="570" H="600">
+            <Label Name="LvlLabelName" X="300" Y="500" W="180" H="46" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="AttackLabelName" X="300" Y="460" W="180" H="40" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="HpLabelName" X="300" Y="420" W="180" H="40" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="LvlLabel" X="70" Y="500" W="220" H="46" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="AttackLabel" X="70" Y="460" W="220" H="46" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="HpLabel" X="70" Y="420" W="220" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="LvlUpLabelName" X="300" Y="230" W="180" H="46" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="AttackUpLabelName" X="300" Y="190" W="180" H="40" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="HpUpLabelName" X="300" Y="150" W="180" H="40" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="LvlUpLabel" X="70" Y="230" W="220" H="46" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="AttackUpLabel" X="70" Y="190" W="220" H="46" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="HpUpLabel" X="70" Y="150" W="220" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RefiningCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="InfoCanvs" X="0" Y="0" W="994" H="646">
+            <ListBox Name="RefiningListBox" X="30" Y="195" W="930" H="430" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="155" H="430" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="3" Y="0" W="148" H="430" Center="1">
+						<Label Name="starLabel" X="-1" Y="74" W="150" H="50" Center="1" Color="0,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+                        <Label Name="TitleLabel" X="0" Y="25" W="150" H="50" Color="0,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

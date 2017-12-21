@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WBTrickFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="BkgCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0">
+        <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasHelp" X="0" Y="605" W="153" H="166" Touch="1" Top="-3">
+        <Image Name="bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="31" Y="64" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="HomeCanvas" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="EntranceCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="TitleCanvas" X="353" Y="662" W="318" H="106" Top="0" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="318" H="106" Image="{1,ui/res/frame/titleboard.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="36" W="318" H="60" Center="1" Text="1/5" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="42" />
+        </Canvas>
+        <Canvas Name="EnterCanvas" X="0" Y="161" W="1024" H="445" Touch="1" Zoom="0" Center="3" />
+        <Canvas Name="ScoreCanvas" X="137" Y="70" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="-40" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="482" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="LuckCardCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="TitleCanvas" X="234" Y="622" W="556" H="126" Top="20" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="556" H="126" Image="{1,ui/res/WorldBoss/bg_title_green.png}" SizeMode="1" />
+            <Label Name="Label" X="-22" Y="52" W="600" H="60" Center="1" Text="Title" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Score1Canvas" X="120" Y="340" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="Score2Canvas" X="410" Y="340" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="Score3Canvas" X="710" Y="340" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="Score4Canvas" X="120" Y="200" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="Score5Canvas" X="410" Y="200" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="Score6Canvas" X="710" Y="200" W="210" H="60">
+            <Image Name="bkg" X="-35" Y="0" W="280" H="75" Center="1" Image="{1,ui/res/frame/name_light.png}" SizeMode="1" />
+            <Label Name="Label" X="10" Y="8" W="210" H="60" Text="2000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+        <Canvas Name="CardTopCanvas" X="442" Y="480" W="140" H="198" Center="1">
+            <Image Name="ImgCard" X="0" Y="0" W="140" H="198" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card1Canvas" X="90" Y="340" W="190" H="268" Touch="1" Zoom="0">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card2Canvas" X="417" Y="340" W="190" H="268" Touch="1" Zoom="0" Center="1">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card3Canvas" X="746" Y="340" W="190" H="268" Touch="1" Zoom="0">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card4Canvas" X="90" Y="60" W="190" H="268" Touch="1" Zoom="0">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card5Canvas" X="417" Y="60" W="190" H="268" Touch="1" Zoom="0" Center="1">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="Card6Canvas" X="746" Y="60" W="190" H="268" Touch="1" Zoom="0">
+            <Image Name="ImgCard" X="0" Y="0" W="190" H="268" Image="{1,ui/res/WorldBoss/luckcard.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Touch="1" Center="1">
+            <Label Name="TitleLabel" X="-40" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="482" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="PaidChanceCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="TitleCanvas" X="234" Y="622" W="556" H="126" Top="20" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="556" H="126" Image="{1,ui/res/WorldBoss/bg_title_purple.png}" SizeMode="1" />
+            <Label Name="Label" X="-22" Y="52" W="600" H="60" Center="1" Text="Title" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="InfoCanvas" X="312" Y="230" W="400" H="400" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="400" H="372" Center="1" Image="{1,ui/res/WorldBoss/bg_gambling.png}" SizeMode="0" />
+            <Label Name="TitleLabel" X="95" Y="192" W="210" H="50" Center="1" Text="Tips:" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="RangeLabel" X="100" Y="124" W="200" H="60" Center="1" Text="0%-50%" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="SubMitCanvas" X="414" Y="124" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="-40" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="482" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="HeroMemoryCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="HeroCanvas" X="322" Y="0" W="380" H="768" Center="1">
+            <Image Name="bkg" X="3" Y="0" W="374" H="768" Center="1" Image="{1,ui/res/WorldBoss/bg_hero_blue.png}" SizeMode="0" />
+            <Image Name="HeroImg" X="80" Y="360" W="220" H="292" Center="1" Image="{1,icon/hero/1095.png}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="InfoCanvas" X="173" Y="154" W="678" H="230" Center="1">
+            <Image Name="bkg" X="-22" Y="-26" W="722" H="252" Center="1" Image="{1,ui/res/WorldBoss/bg_choose.png}" SizeMode="1" />
+            <Label Name="NameLabel" X="190" Y="168" W="320" H="50" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="Skill1Canvas" X="60" Y="32" W="129" H="134" Touch="1">
+                <Image Name="IconImg" X="12" Y="11" W="106" H="110" Image="{1,icon/skill/1.png}" SizeMode="1" />
+                <Image Name="SelectImg" X="0" Y="0" W="130" H="134" Image="{1,ui/res/WorldBoss/skillselect.png}" SizeMode="1" />
+                <Image Name="WrongImg" X="20" Y="10" W="104" H="106" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+                <Image Name="RightImg" X="0" Y="12" W="126" H="94" Image="{1,ui/res/ok_green.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Skill2Canvas" X="274" Y="32" W="129" H="134" Touch="1" Center="1">
+                <Image Name="IconImg" X="12" Y="11" W="106" H="110" Image="{1,icon/skill/21.png}" SizeMode="1" />
+                <Image Name="SelectImg" X="0" Y="0" W="129" H="134" Image="{1,ui/res/WorldBoss/skillselect.png}" SizeMode="1" />
+                <Image Name="WrongImg" X="20" Y="10" W="104" H="106" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+                <Image Name="RightImg" X="0" Y="12" W="126" H="94" Image="{1,ui/res/ok_green.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Skill3Canvas" X="488" Y="32" W="129" H="134" Touch="1">
+                <Image Name="IconImg" X="12" Y="11" W="106" H="110" Image="{1,icon/skill/41.png}" SizeMode="1" />
+                <Image Name="SelectImg" X="0" Y="0" W="129" H="134" Image="{1,ui/res/WorldBoss/skillselect.png}" SizeMode="1" />
+                <Image Name="WrongImg" X="20" Y="10" W="104" H="106" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+                <Image Name="RightImg" X="0" Y="12" W="126" H="94" Image="{1,ui/res/ok_green.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SubMitCanvas" X="414" Y="70" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="-40" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="482" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="TitleCanvas" X="234" Y="622" W="556" H="126" Top="20" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="556" H="126" Image="{1,ui/res/WorldBoss/bg_title_blue.png}" SizeMode="1" />
+            <Label Name="Label" X="-22" Y="52" W="600" H="60" Center="1" Text="Title" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="TrickQuestionCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="TitleCanvas" X="234" Y="622" W="556" H="126" Top="20" Center="1">
+            <Image Name="ImageBg" X="0" Y="0" W="556" H="126" Image="{1,ui/res/WorldBoss/bg_title_red.png}" SizeMode="1" />
+            <Label Name="Label" X="-22" Y="52" W="600" H="60" Center="1" Text="Title" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Bkg" X="132" Y="400" W="760" H="160" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="384" H="160" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="376" Y="0" W="382" H="160" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="NPC" X="86" Y="400" W="180" H="220">
+            <Image Name="bkg" X="2" Y="-16" W="180" H="221" Image="{1,ui/res/WorldBoss/bg_helpnpc.png}" SizeMode="1" />
+            <Image Name="NPCImg" X="0" Y="0" W="143" H="188" Image="{1,icon/hero/653.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="QuestionLabel" X="248" Y="406" W="600" H="130" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+        <Canvas Name="RightCanvas" X="200" Y="130" W="280" H="260" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="250" H="186" Image="{1,ui/res/WorldBoss/right.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="WrongCanvas" X="550" Y="130" W="280" H="260" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="210" H="196" Image="{1,ui/res/WorldBoss/wrong.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="-40" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="482" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="PlayCanvas" X="262" Y="0" W="500" H="768" Center="3" />
+</Layout>

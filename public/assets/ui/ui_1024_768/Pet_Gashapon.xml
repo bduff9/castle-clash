@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="Pet_GashaponFrame" R_W="1.00" H="768">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="CanvasHouse" X="246" Y="40" W="531" H="600" Center="1">
+        <Canvas Name="HelpCanvas" X="519" Y="342" W="132" H="143">
+            <Image Name="Img" X="0" Y="0" W="132" H="143" Image="{1,ui/res/Pet_Gashapon/help_bk.png}" SizeMode="1" />
+            <Canvas Name="Canvas" X="0" Y="0" W="132" H="143" Touch="1">
+                <Image Name="HelpImg" X="29" Y="1" W="39" H="73" Image="{1,ui/res/Pet_Gashapon/help.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Image Name="Img_3" X="0" Y="0" W="531" H="431" Image="{1,ui/res/Pet_Gashapon/house_3.png}" SizeMode="1" />
+        <Canvas Name="CanvasDoor" X="111" Y="152" W="308" H="230" Center="1" />
+        <Image Name="Img_2" X="0" Y="388" W="530" H="270" Center="1" Image="{1,ui/res/Pet_Gashapon/house_2.png}" SizeMode="1" />
+        <Label Name="NumLabel" X="215" Y="232" W="100" H="60" Center="1" Color="247,231,9" TextAlignment="1" BmpFont="font_1.fnt" FSize="66" />
+        <Canvas Name="EggCanvas_1" X="100" Y="494" W="90" H="92">
+            <Image Name="Tag" X="5" Y="-37" W="79" H="63" Center="1" Image="{1,ui/res/Pet_Gashapon/tag_1.png}" SizeMode="1" />
+            <Label Name="Num" X="0" Y="-25" W="90" H="28" Center="1" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Image Name="Img" X="2" Y="8" W="90" H="92" Image="{1,ui/res/Pet_Gashapon/egg_1.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="EggCanvas_2" X="340" Y="494" W="90" H="92">
+            <Image Name="Tag" X="5" Y="-37" W="80" H="62" Center="1" Image="{1,ui/res/Pet_Gashapon/tag_2.png}" SizeMode="1" />
+            <Label Name="Num" X="0" Y="-25" W="90" H="28" Center="1" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Image Name="Img" X="-1" Y="6" W="90" H="92" Image="{1,ui/res/Pet_Gashapon/egg_2.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="EggCanvas_3" X="213" Y="494" W="105" H="117" Center="1">
+            <Image Name="Tag" X="10" Y="-37" W="84" H="65" Center="1" Image="{1,ui/res/Pet_Gashapon/tag_3.png}" SizeMode="1" />
+            <Label Name="Num" X="7" Y="-25" W="90" H="28" Center="1" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Image Name="Img" X="0" Y="8" W="105" H="117" Image="{1,ui/res/Pet_Gashapon/egg_3.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="HatcheryCanvas" X="82" Y="32" W="183" Touch="1" H="108">
+            <Image Name="Img" X="0" Y="0" W="183" H="108" Image="{1,ui/res/Pet/pet_gashapon_btn.png}" SizeMode="1" />
+            <Label Name="Txt" X="0" Y="30" W="183" H="52" Text="111" Color="241,220,201" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="GashaponCanvas" Right="82" X="268" Y="32" Touch="1" W="183" H="108">
+            <Image Name="Img" X="0" Y="0" W="183" H="108" Image="{1,ui/res/Pet/pet_gashapon_btn.png}" SizeMode="1" />
+            <Label Name="Txt" X="0" Y="30" W="183" H="52" Text="2222" Color="241,220,201" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TipLabel" X="212" Y="0" W="980" H="40" Center="1" Text="" Color="223,222,222" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+    <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" SizeMode="1" />
+    <Canvas Name="CanvasPop" X="112" Y="109" W="800" H="550" Center="3">
+        <Canvas Name="Bkg" X="0" Y="0" W="800" H="550" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="405" H="550" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="395" Y="0" W="405" H="550" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="TitleCanvas" X="187" Y="497" W="426" H="72" Center="1">
+            <Image Name="Img" X="0" Y="0" W="426" H="72" Image="{1,ui/res/Pet/title_2.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="12" W="426" H="72" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Image Name="CommentBkg" X="35" Y="210" W="730" H="280" Image="{1,ui/res/setting/shade_680_93.png}" Center="1" />
+        <ListBox Name="CommentListBox" X="60" Y="216" W="680" H="260" Center="1" Touch="1" Zoom="0" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="680" H="400" Fixed="1">
+                <Label Name="Txt" X="0" Y="0" W="680" H="400" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+            </Template>
+        </ListBox>
+        <Image Name="UpSignImg" X="726" Y="460" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+        <Image Name="DownSignImg" X="726" Y="224" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        <Canvas Name="TaskCanvas" X="60" Y="120" W="660" H="60">
+            <Label Name="Label" X="2" Y="30" W="400" H="30" Text="" Color="147,113,69" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+			 <Label Name="Num" X="200" Y="30" W="200" H="30" Text="" Color="70,152,15" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Canvas Name="Canvas_1" X="0" Y="0" W="71" H="28">
+                <Image Name="ImgBk" X="0" Y="0" W="71" H="28" Image="{1,ui/res/Pet_Gashapon/pro1_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="0" W="71" H="28" Image="{1,ui/res/Pet_Gashapon/pro1.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Canvas_2" X="80" Y="0" W="71" H="28">
+                <Image Name="ImgBk" X="0" Y="0" W="71" H="28" Image="{1,ui/res/Pet_Gashapon/pro1_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="0" W="71" H="28" Image="{1,ui/res/Pet_Gashapon/pro1.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CreditNumCanvas" X="60" Y="60" W="660" H="60">
+            <Label Name="Label" X="2" Y="30" W="400" H="30" Text="" Color="147,113,69" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="Num" X="200" Y="30" W="200" H="30" Text="" Color="70,152,15" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Canvas Name="Canvas_1" X="0" Y="0" W="213" H="28">
+                <Image Name="ImgBk" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="0" Y="0" W="213" H="28" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="Canvas_2" X="220" Y="0" W="213" H="28">
+                <Image Name="ImgBk" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="0" Y="0" W="213" H="28" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="Canvas_3" X="440" Y="0" W="213" H="28">
+                <Image Name="ImgBk" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="0" W="213" H="28" Image="{1,ui/res/Pet_Gashapon/pro.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="0" Y="0" W="213" H="28" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Layout Name="初始化配置文件--只读" 
+    Version="1001"
+    ClientSign="0"
+    ClientSign2="0"
+    GameID="1030019902"
+    Url1="http://config.igg.com/appconf/1030019902/server_config"
+    Url2="http://dkv3ys1ydcyet.cloudfront.net/appconf/1030019902/server_config"
+    Url3="http://config-snd.igg.com/appconf/1030019902/server_config"
+    IggUrl="http://cgi.igg.com:9000/public/guest_user_login_igg?m_guest=%s&amp;m_key=%s&amp;m_data=%s&amp;m_game_id=%d&amp;keep_time=2592000"
+    TermsofServiceUrl="http://www.browsergame.com/member/agreement.php"
+    PrivacyPolicyUrl="http://www.browsergame.com/about/privacy_policy.php"
+    LivechatSupport="http://goto.igg.com/game/livechat/1030019902"
+    PayLivechatSupport="http://goto.igg.com/game/livechat/1030019902/payment"
+    CashShopUrl="http://pay-fb.igg.com/api/get_game_card.php?g_id=1030019902&amp;p_name=android"
+    CashShopUrlBack="https://pay.skyunion.com/android/cc_us_callback.php"
+    CashShopSeq="3160,3156,3161,3158,3162,3159"
+    Forum="http://goto.igg.com/game/forum/1030019902"
+    SubmitBug="http://goto.igg.com/game/service/1030019902"
+    OnlineEvt="http://cc.igg.com/event/?g_id=1030019902"
+    FackBookUrl="http://www.facebook.com/castleclash"
+    GameVideoPushUrl="http://snd-storage.igg.com/push.php"
+    GameVideoPullUrl="http://snd-storage.igg.com/pull.php"
+    CloudDataPushUrl="http://snd-storage.igg.com/protracted/push.php"
+    CloudDataPullUrl="http://snd-storage.igg.com/protracted/pull.php"
+    EventUrl="http://config.igg.com/appconf/1030019902/event_config"
+    EventUrlEx="http://config.igg.com/appconf/1030019902/promotion_event_config"
+    GiftBagUrl="http://event-cc.igg.com/api/get_promotion_giftbag_config.php?g_id=1030019902&amp;iggid=%s"
+    TapJoy="1"
+    BaseKey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA60lDLdbsrd7Ad6yoFxumIMhmG/Sqf4kwQRT2ZyJdGk9xHtAPY39F5/qSK4FZLpA8AO7orJZIK739LENfkfO+ZChqeftxfUlryxSyHf0DzpIvB2Lf7SjB59WyVb8MTMTV4JQKb9FxbBDN60WNtwYwXt19KJRyYf/4WpE2teqGoN6bMrAOxv5VcggpgZrluc2vsFSNOY1k+/+zdI/XyK1pv3Xa9ykc2Aurwo9OcNAyaDvvaqKipkJmejl+2Y44ObagYdykymIvfF3Ctw1mHXEBLva64lq6/Tzda+pxadb/C9CknNJkLe8N6Zl8xBSIq1xII6lMIadOYJELTEcf+EC/mwIDAQAB"
+
+    XAPKFile="0"
+    XAPKFileSize="196731593"
+    XAPKFileVersion="1300700"
+
+    UrlPara="signed_key=%s&amp;uid=%s&amp;username=%s&amp;game_info=Gameversion%s%%26dev_ver%s%%26Os%s&amp;mobile=1&amp;dev_ver=%s&amp;game_ver=%s&amp;l=%s&amp;login"
+    ShareawardsUrl="http://event-cc.igg.com/goto.php?event=share&amp;g_id=1030019902"
+
+    XAPKMD5="4453CF52D0AACC91B187A63E1C2E9716"
+
+>
+</Layout>

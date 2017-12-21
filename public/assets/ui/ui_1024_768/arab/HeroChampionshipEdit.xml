@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroChampionshipEditFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasPopTip" X="181" Y="139" W="500" H="170" Background="{1,ui/res/tip_content.png}" zOrder="99">
+        <Label Name="Title" X="25" Y="126" W="450" H="24" Top="20" Color="84,81,76" TextAlignment="2" BmpFont="font_2.fnt" FSize="24" />
+    </Canvas>
+	<Canvas Name="CanvasPopHeroTip" X="340" Y="210" W="500" H="500" zOrder="99">
+        <Canvas Name="CanvasBigTip" X="0" Y="0" W="500" H="500" Background="{1,ui/res/tip_content.png}">
+            <Label Name="Title" X="25" Y="438" W="450" H="50" Top="12" Color="84,81,76" TextAlignment="2" BmpFont="font_2.fnt" FSize="24" />
+        </Canvas>
+        <Canvas Name="CanvasSmallTip" X="0" Y="125" W="500" H="250" Background="{1,ui/res/tip_content.png}" Center="2">
+            <Label Name="Title" X="20" Y="182" W="450" H="50" Top="18" Color="84,81,76" TextAlignment="2" BmpFont="font_2.fnt" FSize="24" />
+        </Canvas>
+    </Canvas>
+</Layout>

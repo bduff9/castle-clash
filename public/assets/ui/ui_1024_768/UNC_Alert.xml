@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="UNCAlertFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442" Touch="1" Zoom="0">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="InfoCanvs" X="28" Y="50" W="600" H="300">
+        <Label Name="TipLabel" X="20" Y="46" W="560" H="230" Center="1" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="31" />
+    </Canvas>
+    <Canvas Name="ResetCanvas" X="30" Y="50" W="600" H="300">
+        <Label Name="TipLabel" X="50" Y="110" W="500" H="180" Text="1000" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="26" />
+        <Label Name="TopLabel" X="50" Y="70" W="500" H="50" Text="1000" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+        <Label Name="CurLabel" X="50" Y="30" W="500" H="50" Text="1000" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+        <Canvas Name="ResetConfirm" X="177" Y="-80" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="-30" Y="3" W="305" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="CostCanvas" X="54" Y="60" W="137" H="40" Center="1">
+                <Image Name="ProduceImage" X="86" Y="-5" W="30" H="40" Image="{1,ui/res/cash_cangray.png}" SizeMode="0" />
+                <Label Name="NumLabel" X="0" Y="0" W="80" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RewardCanvas" X="30" Y="50" W="600" H="300">
+        <Label Name="SeasonLabel" X="30" Y="220" W="540" H="60" Text="Season" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        <Image Name="line1Img" X="14" Y="160" W="574" H="60" Image="{1,ui/res/WorldBoss/bg_reward.png}" SizeMode="1" />
+        <Label Name="ScoreLabel" X="40" Y="160" W="250" H="50" Text="1000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="RankLabel" X="323" Y="160" W="250" H="50" Text="1000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Image Name="line2Img" X="14" Y="30" W="574" H="60" Image="{1,ui/res/WorldBoss/bg_reward.png}" SizeMode="1" />
+        <Label Name="RewardLabel" X="30" Y="89" W="540" H="60" Text="Reward" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="28" />
+        <Image Name="Res1Img" X="36" Y="34" W="50" H="50" Image="{1,ui/res/redCrystal.png}" SizeMode="0" />
+        <Label Name="Res1NumLabel" X="96" Y="24" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+        <Image Name="Res2Img" X="325" Y="34" W="48" H="48" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0" />
+        <Label Name="Res2NumLabel" X="386" Y="26" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="StatusLabel" X="-150" Y="-130" W="900" H="60" Center="1" Text="1d0h0m" Color="209,114,68" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="30" />
+    </Canvas>
+    <Canvas Name="SubMitCanvas" X="208" Y="-30" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="RankCanvas" X="358" Y="-29" W="245" H="77" Touch="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+</Layout>

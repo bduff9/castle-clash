@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TeamDefendFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="DungeonSelectCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0">
+        <Image Name="ImgBkg" X="-388" Y="0" W="1800" R_H="1.00" Zoom="0" Center="3" Image="{1,ui/res/teamdungeon/bkg.jpg}" SizeMode="0" />
+        <Canvas Name="HelpCanvas" X="-4" Y="602" W="153" H="166" Touch="1" Top="-4">
+            <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+            <Image Name="HelpImg" X="35" Y="60" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="LabelTime" X="150" Y="638" W="200" H="50" Top="80" Text="00:00:00" Color="215,77,15" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+        <Label Name="LabelDungeonCount" X="140" Y="668" W="200" H="50" Top="50" Text="0" Color="255,255,255" TextAlignment="1" FSize="35" />
+        <Canvas Name="CountCanvs" X="135" Y="668" W="500" H="80" Top="20">
+            <ProgressEx Name="CountProgress1" X="0" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress2" X="50" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress3" X="100" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress4" X="150" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress5" X="200" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress6" X="250" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress7" X="300" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress8" X="350" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <Image Name="LightSwordImg1" X="-19" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg2" X="31" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg3" X="81" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg4" X="131" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg5" X="181" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg6" X="231" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg7" X="281" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg8" X="331" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Label Name="LabelTimeNum" X="215" Y="15" W="200" H="53" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ImgAdd" X="430" Y="16" W="60" H="60" Touch="1" Image="{1,ui/res/Addition.png.pvr.ccz}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="DungeonGroupListCanvas" X="232" Y="160" W="560" H="500" Center="1">
+            <Canvas Name="Dungeon_0" X="185" Y="9" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_1" X="380" Y="140" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_2" X="185" Y="277" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_3" X="-30" Y="140" W="200" H="200" Touch="1" />
+            <Canvas Name="DungeonNameCanvas" X="157" Y="40" W="245" H="77" Center="1">
+                <Label Name="LabelDungeonName" X="0" Y="40" W="245" H="77" Center="1" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+				<Label Name="NotOpen" X="-77" Y="-20" W="400" H="77" Center="1" Text="No Open" Color="215,77,15" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Canvas Name="PowerCanvas" X="0" Y="0" W="245" H="77" Center="1">
+                    <Label Name="LabelText" X="-102" Y="-10" W="200" H="77" Text="AAAA:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                    <Image Name="ImgBattlePower" X="106" Y="7" W="52" H="47" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelPower" X="163" Y="-10" W="245" H="77" Text="5000" Color="215,77,15" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+                <Canvas Name="WaitingCanvas" X="0" Y="0" W="245" H="77" Center="1">
+                    <Canvas Name="PersonCanvas" X="74" Y="0" W="96" H="77" Center="1">
+                        <Canvas Name="Person0" X="0" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person1" X="25" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person2" X="50" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person3" X="75" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BtnLastDungeonGroup" X="30" Y="396" W="134" H="130" Touch="1">
+            <Image Name="Img" X="0" Y="0" W="134" H="130" Image="{1,ui/res/HeroTeam/left_arrow.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BtnNextDungeonGroup" X="860" Y="396" W="134" H="130" Touch="1" Right="30">
+            <Image Name="Img" X="0" Y="0" W="134" H="130" RotationY="180" Image="{1,ui/res/HeroTeam/left_arrow.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BottomCanvs" X="137" Y="20" W="750" H="77" Center="1">
+            <Canvas Name="HeroTeamCanvs" X="0" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="JionCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CreateCanvs" X="500" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CancelJionCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RoomCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="PlayerNameCanvas" X="0" Y="0" W="137" H="39">
+            <Image Name="Bkg" X="0" Y="-5" W="137" H="39" Image="{1,ui/res/teamdungeon/name_shade.png}" SizeMode="1" />
+            <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+        </Canvas>
+        <Canvas Name="BottomCanvs" X="137" Y="20" W="750" H="77" Center="1">
+            <Canvas Name="ConsortiaInviteCanvs" X="0" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="FriendInviteCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BeginBattleCanvs" X="500" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="PlayerCanvas" X="10" Y="345" W="288" H="350">
+            <Canvas Name="Player_0" X="0" Y="255" W="288" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="206" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="206" H="61" Image="{1,ui/res/TeamDefend/flag.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/flame_defend.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                    <Image Name="ImgClose" X="120" Y="1" W="60" H="60" Touch="1" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImgHeadSel" X="-6" Y="-2" W="94" H="94" Image="{1,ui/res/TeamDefend/head_sel.png}" SizeMode="1" />
+                    <Image Name="ImgHead" X="-1" Y="1" W="84" H="78" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_1" X="0" Y="170" W="288" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="206" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="206" H="61" Image="{1,ui/res/TeamDefend/flag.png}" SizeMode="1" />
+                    <Image Name="ImgClose" X="120" Y="1" W="60" H="60" Touch="1" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/flame_defend.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImgHeadSel" X="-6" Y="-2" W="94" H="94" Image="{1,ui/res/TeamDefend/head_sel.png}" SizeMode="1" />
+                    <Image Name="ImgHead" X="-1" Y="1" W="84" H="78" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_2" X="0" Y="85" W="288" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="206" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="206" H="61" Image="{1,ui/res/TeamDefend/flag.png}" SizeMode="1" />
+                    <Image Name="ImgClose" X="120" Y="1" W="60" H="60" Touch="1" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/flame_defend.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImgHeadSel" X="-6" Y="-2" W="94" H="94" Image="{1,ui/res/TeamDefend/head_sel.png}" SizeMode="1" />
+                    <Image Name="ImgHead" X="-1" Y="1" W="84" H="78" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_3" X="0" Y="0" W="288" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="206" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="206" H="61" Image="{1,ui/res/TeamDefend/flag.png}" SizeMode="1" />
+                    <Image Name="ImgClose" X="120" Y="1" W="60" H="60" Touch="1" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/flame_defend.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImgHeadSel" X="-6" Y="-2" W="94" H="94" Image="{1,ui/res/TeamDefend/head_sel.png}" SizeMode="1" />
+                    <Image Name="ImgHead" X="-1" Y="1" W="84" H="78" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Label Name="LabelDungeonName" X="20" Y="708" W="328" H="50" Top="10" Text="Dungeon Name" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+        <Canvas Name="TimeCavas" X="412" Y="349" W="200" H="70" Center="3">
+            <Label Name="LabelTime" X="0" Y="0" W="200" H="70" Text="0s" Color="229,79,21" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+        </Canvas>
+        <Canvas Name="BtnCanvas" X="794" Y="340" W="210" H="190" Right="20">
+            <Canvas Name="BtnChange" X="0" Y="0" W="210" H="78" Touch="1" Right="0">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Change" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BtnRotate" X="0" Y="95" W="210" H="78" Touch="1" Right="0">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Rotate" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="EditCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="SceneCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" />
+        <Canvas Name="BtnCanvas" X="794" Y="278" W="210" H="200" Right="20">
+            <Canvas Name="BtnRest" X="0" Y="0" W="210" H="78" Touch="1" Right="0">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Rest" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BtnRotate" X="0" Y="95" W="210" H="78" Touch="1" Right="0">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Rotate" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="TopCanvas" X="0" Y="608" W="400" H="150" Top="10">
+            <Label Name="LabelName" X="92" Y="76" W="212" H="50" Text="Name" Color="255,247,193" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="NextImg" X="300" Y="58" W="93" H="83" Touch="1" RotationY="180" Image="{1,ui/res/TeamDefend/arrow.png}" SizeMode="1" />
+            <Image Name="PreImg" X="3" Y="58" W="93" H="83" Touch="1" Image="{1,ui/res/TeamDefend/arrow.png}" SizeMode="1" />
+            <Canvas Name="IsDefaultCanvas" X="50" Y="0" W="300" H="52" Touch="1" Center="1">
+                <Label Name="Label" X="75" Y="0" W="200" H="50" Text="IsDefault" Color="255,211,91" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="BkgImg" X="0" Y="0" W="58" H="52" Image="{1,ui/res/TeamDefend/tick_bkg.png}" SizeMode="1" />
+                <Image Name="TickImg" X="8" Y="10" W="59" H="44" Image="{1,ui/res/TeamDefend/tick.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasBuild" X="41" Y="0" W="942" H="190" Touch="1" Zoom="0" Center="1">
+            <ListBox Name="ListBoxBuild" X="0" Y="0" W="942" H="190" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="188" H="190" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="0" Y="0" W="186" H="190" Fixed="1" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="168" H="162" Image="{1,ui/res/shop/SubNode_bk_1.png}" SizeMode="1" />
+                        <Image Name="ImgBuild" X="15" Y="18" W="155" H="153" Center="3" SizeMode="1" />
+                        <ProgressEx Name="ProLvl" X="5" Y="10" W="155" H="26" ProgressBackground="{1,ui/res/pro3/pro_hero_bkg_2.png}" ProgressImage="{1,ui/res/pro3/pro_building.png.pvr.ccz}" MaxValue="100" Direction="3" />
+                        <Label Name="LvNum" X="5" Y="8" W="158" H="32" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="34" />
+                        <Image Name="LvlUpImg" X="120" Y="107" W="68" H="76" Touch="1" Image="{1,ui/res/btn_upgrade.png}" SizeMode="1" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Image Name="BulidImg" X="854" Y="10" W="139" H="163" Touch="1" Right="31" Image="{1,ui/res/TeamDefend/build.png}" SizeMode="1" />
+        <Canvas Name="ButtomCanvas" X="0" Y="0" R_W="1.00" H="192" Fixed="2">
+            <Label Name="ButtomTitleLabel" X="0" Y="200" R_W="1.00" H="46" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="46" />
+            <Canvas Name="InfoBtn" X="0" Y="24" W="137" H="143" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="137" H="143" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="18" Y="27" W="100" H="100" Center="1" Image="{1,ui/res/smain/Info.png}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="137" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="DelBtn" X="0" Y="24" W="137" H="143" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="137" H="143" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BtnImage" X="18" Y="27" W="100" H="100" Center="1" Image="{1,ui/res/main/unbuild.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="137" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="BindHeroBtn" X="101" Y="24" W="137" H="143" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="137" H="143" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="18" Y="27" W="100" H="100" Center="1" Image="{1,ui/res/main/BuildingBindHero.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="137" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="HeroInBtn" X="101" Y="24" W="137" H="143" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="137" H="143" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="18" Y="27" W="100" H="100" Center="1" Image="{1,ui/res/main/arena.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="137" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

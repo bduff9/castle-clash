@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="AlertFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="CanvasMain" X="0" Y="40" W="662" H="300" Center="1">
+        <Label Name="TipLabel" X="51" Y="108" W="560" H="180" Center="1" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="31" />
+		
+		<Label Name="NameTipLabel" X="51" Y="108" W="500" H="180" Color="113,62,13" Center="1" TextAlignment="1"  Multline="1" FSize="32" />
+        <Canvas Name="SubMitCanvas" X="208" Y="30" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Label Name="TimeLabel" X="51" Y="80" W="560" H="90" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+		<Label Name="LimitLabel" X="51" Y="-25" W="560" H="90" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        <Canvas Name="FreeGemCanvas" X="76" Y="41" W="240" H="240" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="240" H="240" Image="{1,ui/res/shop/video_bg.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="35" W="240" H="30" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImageFree" X="30" Y="85" W="183" H="90" Image="{1,ui/res/shop/free_2.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="TJOfferCanvas" X="346" Y="41" W="240" H="240" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="240" H="240" Image="{1,ui/res/shop/video_bg.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="35" W="240" H="30" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImageVideo" X="40" Y="57" W="157" H="127" Image="{1,ui/res/shop/video_2.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="TapcashCanvas" X="346" Y="41" W="240" H="240" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="240" H="240" Image="{1,ui/res/shop/video_bg.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="35" W="240" H="30" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImageVideo" X="30" Y="85" W="183" H="90" Image="{1,ui/res/shop/free_2.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

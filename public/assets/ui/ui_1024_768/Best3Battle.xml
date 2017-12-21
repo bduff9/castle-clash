@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SandTableMonsterBattle" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasCenter" X="382" Y="608" W="260" H="160" Top="0" Center="3">
+        <Canvas Name="CanvasTime" X="0" Y="0" W="260" H="80" Center="1">
+            <Label Name="LabelTip" X="-170" Y="50" W="600" H="16" Center="1" Color="220,215,200" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+            <Label Name="LabelTime" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="BtnEndBattle" X="7" Y="74" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="LeftCanvs" X="30" Y="649" W="222" H="100" Fixed="1" Top="10">
+        <Label Name="NameLabel" X="12" Y="50" W="300" H="50" Color="255,255,255" Text="My_ID" TextAlignment="0" FSize="24" />
+        <Image Name="CupImg1" X="10" Y="4" W="50" H="45" Fixed="1" Image="{1,ui/res/cup_50_44.png}" SizeMode="1" />
+        <Image Name="CupImg2" X="77" Y="4" W="50" H="45" Fixed="1" Image="{1,ui/res/cup_50_44.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="RightCanvs" X="810" Y="20" W="222" H="100" Fixed="1" Right="30">
+        <Label Name="NameLabel" X="-90" Y="50" W="300" H="50" Color="255,255,255" Text="Your_ID" TextAlignment="2" FSize="24" />
+        <Image Name="CupImg1" X="10" Y="4" W="50" H="45" Fixed="1" Right="10" Image="{1,ui/res/cup_50_44.png}" SizeMode="1" />
+        <Image Name="CupImg2" X="77" Y="4" W="50" H="45" Fixed="1" Right="77" Image="{1,ui/res/cup_50_44.png}" SizeMode="1" />
+    </Canvas>
+    <Image Name="ImageCupIconPlay" X="0" Y="0" W="92" H="86" Image="{1,ui/res/NewActivityEx/type_4.png}" SizeMode="1" />
+</Layout>

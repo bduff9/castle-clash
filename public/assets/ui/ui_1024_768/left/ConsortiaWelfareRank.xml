@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaWelfareRankFrame" W="1024" H="768">
+    <Canvas Name="CanvasRankMain" X="25" Y="24" W="974" H="629">
+		<Canvas Name="ConsortiaInfoCanvs" X="23" Y="500" W="960" H="106">
+            <Label Name="PowerTitleLabel" X="310" Y="20" W="200" H="80" Color="255,255,255" TextAlignment="2"  FSize="30" BmpFont="font_1.fnt"/>
+            <Label Name="PowerLabel" X="520" Y="20" W="200" H="80" Color="255,255,255" TextAlignment="0"  FSize="30" BmpFont="font_1.fnt"/>
+        </Canvas>
+        <ListBox Name="MainListBox" X="23" Y="40" W="928" H="460" Center="1" RectTouch="0,45,928,445" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="928" H="85">
+                <Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Zoom="0">
+					<Label Name="PowerTitleLabel" X="310" Y="20" W="200" H="45" Color="255,255,255" TextAlignment="2"  FSize="30" BmpFont="font_1.fnt" />
+					<Label Name="PowerLabel" X="520" Y="20" W="200" H="45" Color="255,255,255" TextAlignment="0"  FSize="30" BmpFont="font_1.fnt"/>
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

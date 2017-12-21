@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroRecruitFrame" Inherit="backFrame_1.xml"> 
+    <Canvas Name="HeroRecruitTXCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="Best3Canvs" X="30" Y="560" W="200" H="50" Fixed="1" Touch="1" Zoom="0">
+            <Label Name="Label" X="52" Y="16" W="176" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="Image" X="0" Y="1" W="54" H="54" Image="{1,ui/res/best3/best3money.png}" SizeMode="0" Touch="1" />
+        </Canvas>
+        <Canvas Name="OnceCanvs" X="50" Y="0" W="400" H="646">
+            <Canvas Name="ImgCanvs" X="40" Y="160" W="320" H="429" Center="1">
+                <Image Name="BkImg" X="0" Y="0" W="320" H="429" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="27" Y="23" W="265" H="400" Center="1" Image="{1,ui/res/hero/hero_once.png}" SizeMode="1" />
+                <Label Name="GainsLabel" X="-40" Y="142" W="400" H="50" Center="1" Text="Gain 3 Wei Wang" Color="255,177,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="TitleCanvs" X="25" Y="130" W="350" H="80" Center="1">
+                <Image Name="BkImg" X="0" Y="0" W="350" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="15" W="350" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+            <Canvas Name="BtnCanvs" X="77" Y="40" W="245" H="77" Touch="1" Center="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="180" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Image Name="CashImg" X="180" Y="13" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="MulCanvs" X="500" Y="0" W="400" H="646">
+            <Canvas Name="ImgCanvs" X="40" Y="160" W="320" H="429" Center="1">
+                <Image Name="BkImg" X="0" Y="0" W="320" H="429" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="27" Y="23" W="265" H="400" Center="1" Image="{1,ui/res/hero/hero_mul.png}" SizeMode="1" />
+                <Label Name="GainsLabel" X="-40" Y="142" W="400" H="50" Center="1" Text="Gain 9 Wei Wang" Color="255,177,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="TitleCanvs" X="25" Y="130" W="350" H="80" Center="1">
+                <Image Name="BkImg" X="0" Y="0" W="350" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="15" W="350" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+            <Canvas Name="BtnCanvs" X="77" Y="40" W="245" H="77" Touch="1" Center="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="180" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Image Name="CashImg" X="180" Y="13" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="HeroRecruiCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="SeparateCanvs" X="17" Y="130" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="10" Y="20" W="974" H="629" Touch="1" Zoom="0">
+            <Canvas Name="RecruitInfo_1" X="40" Y="160" W="290" H="440">
+                <Image Name="BkImg" X="3" Y="5" W="284" H="429" Center="3" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+                <Image Name="HeroImg" X="0" Y="21" W="290" H="385" Center="1" SizeMode="1" />
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Image Name="BkImg" X="-4" Y="0" W="298" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="CareerImg" X="0" Y="20" W="48" H="51" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="RecruitInfo_2" X="340" Y="160" W="290" H="440">
+                <Image Name="BkImg" X="3" Y="5" W="284" H="429" Center="3" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+                <Image Name="HeroImg" X="0" Y="21" W="290" H="385" Center="1" SizeMode="1" />
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Image Name="BkImg" X="-4" Y="0" W="298" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="CareerImg" X="0" Y="20" W="48" H="51" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="RecruitInfo_3" X="650" Y="160" W="290" H="440">
+                <Image Name="BkImg" X="3" Y="5" W="284" H="429" Center="3" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+                <Image Name="HeroImg" X="0" Y="21" W="290" H="385" Center="1" SizeMode="1" />
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Image Name="BkImg" X="-4" Y="0" W="298" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="CareerImg" X="0" Y="20" W="48" H="51" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+		<Canvas Name="HonorCanvs" X="30" Y="560" W="200" H="50" Fixed="1" Zoom="0">
+            <Label Name="Label" X="52" Y="16" W="176" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="Image" X="1" Y="6" W="51" H="51" Image="{1,ui/res/main/main_honor.png}" SizeMode="0" Touch="1"  />
+        </Canvas>
+        <Canvas Name="RecruitCanvs" X="40" Y="0" W="914" H="200">
+            <Canvas Name="CashCanvs" X="0" Y="0" W="914" H="200">
+                <Canvas Name="OnceCanvs" X="130" Y="30" W="253" H="160" Touch="1">
+                    <Image Name="BkImg" X="0" Y="-5" W="267" H="170" Image="{1,ui/res/button/btn_264_184.png}" SizeMode="1" />
+                    <Label Name="TimesLabel" X="40" Y="25" W="60" H="60" Text="x1" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+                    <Label Name="NumLabel" X="100" Y="15" W="80" H="60" Text="150" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                    <Image Name="CashImg" X="180" Y="25" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+                <Canvas Name="MultCanvs" X="561" Y="30" W="253" H="160" Touch="1">
+                    <Image Name="BkImg" X="0" Y="-5" W="267" H="170" Image="{1,ui/res/button/btn_264_184.png}" SizeMode="1" />
+                    <Label Name="TimesLabel" X="40" Y="25" W="60" H="60" Text="x3" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+                    <Label Name="NumLabel" X="100" Y="15" W="80" H="60" Text="150" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                    <Image Name="CashImg" X="180" Y="25" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="TencentCashCanvs" X="0" Y="0" W="914" H="200">
+                <Canvas Name="AgainCanvs" X="90" Y="30" W="253" H="200" Touch="1">
+                    <Image Name="BkImg" X="0" Y="-5" W="267" H="170" Image="{1,ui/res/button/btn_264_184.png}" SizeMode="1" />
+                    <Label Name="BigTxtLabel" X="7" Y="50" W="253" H="60" Text="Gems" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                    <Label Name="SmallTxtLabel" X="7" Y="-10" W="170" H="60" Text="Gems" Color="255,255,255" TextAlignment="2" VTextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Image Name="CashImg" X="180" Y="15" W="20" H="45" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+                <Canvas Name="ShareCanvs" X="550" Y="30" W="253" H="200" Touch="1">
+                    <Image Name="BkImg" X="0" Y="-5" W="267" H="170" Image="{1,ui/res/button/btn_264_184.png}" SizeMode="1" />
+                    <Label Name="Label" X="0" Y="25" W="264" H="150" Text="x3" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="HonorCanvs" X="0" Y="0" W="914" H="200">
+                <Canvas Name="HonorOnceCanvs" X="130" Y="30" W="253" H="160" Touch="1">
+                    <Image Name="BkImg" X="0" Y="-5" W="267" H="170" Image="{1,ui/res/button/btn_264_184.png}" SizeMode="1" />
+                    <Label Name="TimesLabel" X="40" Y="25" W="60" H="60" Text="x1" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+                    <Label Name="NumLabel" X="100" Y="20" W="80" H="60" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                    <Image Name="IconImg" X="180" Y="25" W="50" H="50" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="HonorTipCanvs" X="480" Y="0" W="400" H="200">
+                    <Label Name="TipLabel" X="0" Y="40" W="400" H="120" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+  
+	
+	<Canvas Name="RecruitCanvsMenu" X="15" Y="15" W="994" H="646">
+        <Canvas Name="Best3Canvs" X="30" Y="560" W="200" H="50" Fixed="1" Touch="1" Zoom="0" Right="50">
+            <Label Name="Label" X="52" Y="16" W="176" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="Image" X="0" Y="1" W="54" H="54" Image="{1,ui/res/best3/best3money.png}" SizeMode="0" Touch="1"/>
+        </Canvas>
+		<Image Name="OptImg" X="30" Y="520" W="125" H="144" Image="{1,ui/res/hero/heroopt.png}" SizeMode="1"  Touch="1"/>
+        <ListBox Name="RecruitListBox" X="30" Y="30" W="940" H="500" ScrollViewDir="0" >	<!-- ListBox -->
+            <Template Name="" X="0" Y="0" W="340" H="500" Fixed="1">	<!-- Template --> 
+                <Canvas Name="ItemCanvas" X="0" Y="0" W="340" H="500" Touch="1">
+					<Canvas Name="ImgCanvs" X="40" Y="30" W="323" H="438" Center="1">
+						<!--<Image Name="BkImg" X="0" Y="0" W="320" H="429" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />-->
+						<Image Name="Img" X="27" Y="23" W="323" H="438" Center="1" Image="{1,ui/res/hero/hero_once.png}" SizeMode="1" />
+						<Label Name="GainsLabel" X="40" Y="200" W="300" H="50" Center="1" Text="Gain 3 Wei Wang" Color="255,177,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="34" />
+					</Canvas>
+					<Canvas Name="TitleCanvs" X="25" Y="70" W="350" H="80" Center="1">
+						<!--<Image Name="BkImg" X="0" Y="0" W="350" H="67" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />-->
+						<Label Name="Label" X="0" Y="15" W="350" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+					</Canvas>
+					<Canvas Name="CashCanvs" X="77" Y="140" W="245" H="77"  Center="1">
+						<Label Name="Label" X="0" Y="3" W="180" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+						<Image Name="CashImg" X="180" Y="13" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+					</Canvas>
+					<Canvas Name="BtnFreeCanvs" X="77" Y="150" W="212" H="86"  Center="1">
+						<Image Name="BkgImg" X="0" Y="0" W="212" H="86" Image="{1,ui/res/button/btn_212_86.png}" SizeMode="1" />
+						<Label Name="Label" X="0" Y="7" W="212" H="77" Text="Free" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+					</Canvas>
+					<Label Name="FreeTimeLabel" X="0" Y="3" W="250" H="77" Text="" Color="162,233,49" TextAlignment="1" Center="1" BmpFont="font_1.fnt" FSize="24" />
+				</Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

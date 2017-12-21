@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SoulArmsHallInfoFrame" W="662" H="480">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="480">
+		<Image Name="FrameBkg_L" X="0" Y="0" W="333" H="480" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+		<Image Name="FrameBkg_R" X="329" Y="0" W="333" H="480" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+	</Canvas>
+	<Label Name="TitleLabel" X="136" Y="410" W="390" H="100" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+	<Image Name="CloseImg" X="528" Y="350" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+	<Canvas Name="CanvasMain" X="0" Y="40" W="662" H="330" Center="1">
+		<Image Name="IconImg" X="205" Y="220" W="90" H="90"  Image="{1,icon/SoulArms/1.jpg}" SizeMode="1" Center="1" />
+        <Image Name="IconFrame" X="192" Y="210" W="118" H="118"  Image="{1,ui/res/SoulArms/frame1.png}" SizeMode="1" Center="1" />
+		<Label Name="TipLabel" X="51" Y="30" W="560" H="180" Center="1" Color="155,118,52" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+		<Image Name="UpSignImg" X="580" Y="170" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+        <Image Name="DownSignImg" X="580" Y="30" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+	</Canvas>
+</Layout>

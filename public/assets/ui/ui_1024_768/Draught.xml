@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="DraughtFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="17" Y="17" W="994" H="646">
+        <Canvas Name="SeparateCanvs" X="17" Y="213" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasSelect" X="8" Y="280" W="970" H="370" Zoom="0">
+            <ListBox Name="ListBoxSoldier" X="15" Y="116" W="940" H="245" Center="1" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="224" H="245" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="28" Y="20" W="196" H="217" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="196" H="200" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                        <Image Name="ImgSoldier" X="14" Y="57" W="190" H="160" Image="{1,ui/res/11.png}" SizeMode="1" />
+                        <Label Name="LabelNum" X="21" Y="27" W="100" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+                        <Image Name="ImgCancel" X="138" Y="140" W="57" H="63" Touch="1" Image="{1,ui/res/btn_del.png}" SizeMode="1" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Canvas Name="SkillCanvs" X="63" Y="7" W="400" H="96">
+                <Label Name="SkillLvl" X="32" Y="-6" W="97" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="SkillName" X="135" Y="72" W="400" H="25" Color="162,179,235" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                <ProgressEx Name="ProNow" X="115" Y="30" W="280" H="36" ProgressBackground="{1,ui/res/pro/pro_bk_280_36.png}" ProgressImage="{1,ui/res/pro/pro_262_36_2.png}" MaxValue="100" />
+				<ProgressEx Name="ProAll" X="115" Y="30" W="280" H="36" ProgressImage="{1,ui/res/pro/pro_262_36_1.png}" MaxValue="100" />
+                <Label Name="ExpNumLabel" X="161" Y="9" W="180" H="20" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                <Label Name="ExpAddNumLabel" X="396" Y="35" W="100" H="30" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Canvas Name="ImgCanvs" X="33" Y="0" W="100" H="100">
+                    <Image Name="ImgBkg" X="0" Y="0" W="100" H="100" Image="{1,ui/res/task/face_bkg.png}" SizeMode="1" />
+                    <Image Name="SkillImg" X="11" Y="5" W="78" H="90" SizeMode="1" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="DonateCanvs" X="651" Y="19" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasSoldier" X="8" Y="0" W="970" H="250" Touch="1" Zoom="0">
+            <ListBox Name="ListBoxSoldier" X="15" Y="15" W="940" H="245" Center="1" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="224" H="245" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="28" Y="20" W="196" H="217" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="196" H="200" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                        <Image Name="ImgSoldier" X="14" Y="57" W="190" H="160" Image="{1,ui/res/11.png}" SizeMode="1" />
+                        <Label Name="LabelNum" X="21" Y="27" W="100" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+                        <Label Name="LabelAdd" X="130" Y="140" W="100" H="26" Text="" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Canvas Name="BarrackCanvs" X="746" Y="47" W="196" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="196" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+            </Canvas>
+            <Image Name="ImgBkg_L" X="12" Y="27" W="50" H="212" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Image Name="ImgBkg_R" X="908" Y="27" W="50" H="212" Right="12" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

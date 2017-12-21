@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ItemInfoPopFrame" R_W="1.00" R_H="1.00" IsPop="1">
+    <Canvas Name="CanvasList" X="201" Y="182" W="622" H="403" Touch="1" Zoom="0" Center="3">
+        <Label Name="TipLabel" X="50" Y="325" W="520" H="30" Color="161,109,33" TextAlignment="2" BmpFont="font_2.fnt" FSize="20" />
+    </Canvas>
+</Layout>

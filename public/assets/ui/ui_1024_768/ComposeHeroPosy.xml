@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ComposeHeroPosyFrame" Inherit="backFrame_1.xml">
+
+	<Canvas Name="CanvasTab_1" X="120" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+		<Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+		<Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+		<Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+	</Canvas>
+	<Canvas Name="CanvasTab_2" X="310" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+		<Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+		<Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+		<Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+	</Canvas>
+    <Canvas Name="MainCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="37" Y="350" W="920" H="300" Fixed="1" Center="1">
+            <Image Name="ImgBkg" X="9" Y="14" W="691" H="215" Fixed="1" Image="{1,ui/res/hero/posy_compose_bkg.png}" SizeMode="1" />
+            <Image Name="LineImg_1" X="118" Y="103" W="73" H="56" Fixed="1" Image="{1,ui/res/hero/posy_compose_line_1.png}" SizeMode="1" />
+            <Image Name="LineImg_2" X="287" Y="85" W="69" H="61" Fixed="1" Image="{1,ui/res/hero/posy_compose_line_2.png}" SizeMode="1" />
+            <Image Name="LineImg_3" X="440" Y="88" W="73" H="55" Fixed="1" Image="{1,ui/res/hero/posy_compose_line_1.png}" SizeMode="1" />
+            <Image Name="LineImg_4" X="607" Y="77" W="86" H="61" Fixed="1" Image="{1,ui/res/hero/posy_compose_arrow.png}" SizeMode="1" />
+            <Canvas Name="ItemCanvas_1" X="8" Y="86" W="150" H="146">
+                <Image Name="ItemImg" X="0" Y="0" W="150" H="146" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="83" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="1" Y="14" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="96" Y="94" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="ItemCanvas_2" X="164" Y="16" W="150" H="146">
+                <Image Name="ItemImg" X="0" Y="0" W="150" H="146" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="83" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="1" Y="14" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="96" Y="94" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="ItemCanvas_3" X="318" Y="85" W="150" H="146">
+                <Image Name="ItemImg" X="0" Y="0" W="150" H="146" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="83" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="1" Y="14" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="96" Y="94" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="ItemCanvas_4" X="482" Y="14" W="150" H="146">
+                <Image Name="ItemImg" X="0" Y="0" W="150" H="146" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="83" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="1" Y="14" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="96" Y="94" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="ItemCanvas_5" X="691" Y="75" W="188" H="179">
+                <Image Name="ItemImg" X="0" Y="0" W="183" H="174" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="115" Y="105" W="59" H="62" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="4" Y="12" W="61" H="64" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="127" Y="118" W="40" H="40" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            </Canvas>
+			<Label Name="TipLabel" X="6" Y="215" W="800" H="68" Text="" Color="247,202,186" TextAlignment="0" BmpFont="font_1.fnt" FSize="19" />
+            <Canvas Name="ComposeCanvs" X="720" Y="4" W="200" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="200" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="10" Y="3" W="132" H="77" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+                <Image Name="ProduceImage" X="137" Y="22" W="46" H="46" Image="{1,ui/res/redCrystal.png}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="300" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="PosyListCanvs" X="34" Y="26" W="928" H="320" Touch="1" Zoom="0" Right="32">
+            <Canvas Name="LvlCanvas_0" X="5" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_1" X="155" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_2" X="305" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_3" X="455" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_4" X="595" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <ListBox Name="ListBoxPosy" X="0" Y="0" W="928" H="300" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="150" H="300" Fixed="1">
+                    <Canvas Name="ItemCanvas_1" X="8" Y="142" W="148" H="141" Touch="1">
+                        <Image Name="ItemImg" X="0" Y="0" W="148" H="141" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                        <Image Name="LvlImg" X="90" Y="79" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                        <Image Name="PosImg" X="1" Y="10" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                        <Label Name="LvlLabel" X="95" Y="89" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="NumLabel" X="82" Y="21" W="72" H="36" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    </Canvas>
+                    <Canvas Name="ItemCanvas_2" X="8" Y="0" W="148" H="141" Touch="1">
+                        <Image Name="ItemImg" X="0" Y="0" W="148" H="141" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                        <Image Name="LvlImg" X="90" Y="79" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                        <Image Name="PosImg" X="1" Y="10" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                        <Label Name="LvlLabel" X="95" Y="89" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="NumLabel" X="82" Y="21" W="72" H="36" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+
+	 <Canvas Name="MeltingMainCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="27" Y="360" W="920" H="300" Fixed="1" Center="1">
+            <Image Name="ImgBkg" X="-13" Y="-12" W="298" H="221" Fixed="1" Image="{1,ui/res/hero/posy_melting_bkg.png}" SizeMode="1" />
+			<Image Name="ImgBkg1" X="422" Y="-15" W="300" H="183" Fixed="1" Image="{1,ui/res/hero/posy_melting_bkg1.png}" SizeMode="1" />
+            <Image Name="LineImg_1" X="115" Y="119" W="155" H="86" Fixed="1" Image="{1,ui/res/hero/posy_melting_line.png}" SizeMode="1" />
+			<Image Name="LineImg_2" X="445" Y="21" W="144" H="79" Fixed="1" Image="{1,ui/res/hero/posy_melting_line1.png}" SizeMode="1" />
+           
+            <Canvas Name="ItemCanvas_1" X="5" Y="20" W="159" H="152" Touch="1">
+                <Image Name="ItemImg" X="0" Y="0" W="159" H="152" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="102" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="3" Y="17" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="95" Y="112" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+
+			 <Canvas Name="ItemCanvas_3" X="260" Y="38" W="191" H="183">
+                <Image Name="ItemImg" X="0" Y="0" W="191" H="183" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="120" Y="110" W="62" H="65" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="4" Y="17" W="66" H="69" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="133" Y="123" W="40" H="40" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            </Canvas>
+
+
+            <Canvas Name="ItemCanvas_2" X="548" Y="22" W="159" H="152" Touch="1">
+                <Image Name="ItemImg" X="0" Y="0" W="159" H="152" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                <Image Name="LvlImg" X="90" Y="102" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                <Image Name="PosImg" X="3" Y="17" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                <Label Name="LvlLabel" X="95" Y="112" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            
+			<Label Name="TipLabel" X="6" Y="205" W="800" H="68" Text="" Color="247,202,186" TextAlignment="0" BmpFont="font_1.fnt" FSize="19" />
+
+            <Canvas Name="ComposeCanvs" X="720" Y="80" W="200" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="200" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="10" Y="3" W="132" H="77" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+                <Image Name="ProduceImage" X="137" Y="22" W="46" H="46" Image="{1,ui/res/blueCrystal.png}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="300" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="PosyListCanvs" X="34" Y="26" W="928" H="320" Touch="1" Zoom="0" Right="32">
+            <Canvas Name="LvlCanvas_0" X="5" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_1" X="155" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_2" X="305" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_3" X="455" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <Canvas Name="LvlCanvas_4" X="595" Y="270" W="140" H="81" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="5" W="132" H="68" Image="{1,ui/res/hero/posy_compose_btn.png}" SizeMode="1" />
+                <Image Name="ImgBkg_Sel" X="0" Y="0" W="140" H="81" Image="{1,ui/res/hero/posy_compose_btn_sel.png}" SizeMode="1" />
+                <Label Name="Label" X="6" Y="9" W="132" H="68" Text="Lv 4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            </Canvas>
+            <ListBox Name="ListBoxPosy" X="0" Y="0" W="928" H="300" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="150" H="300" Fixed="1">
+                    <Canvas Name="ItemCanvas_1" X="8" Y="142" W="148" H="141" Touch="1">
+                        <Image Name="ItemImg" X="0" Y="0" W="148" H="141" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                        <Image Name="LvlImg" X="90" Y="79" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                        <Image Name="PosImg" X="1" Y="10" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                        <Label Name="LvlLabel" X="95" Y="89" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="NumLabel" X="82" Y="21" W="72" H="36" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    </Canvas>
+                    <Canvas Name="ItemCanvas_2" X="8" Y="0" W="148" H="141" Touch="1">
+                        <Image Name="ItemImg" X="0" Y="0" W="148" H="141" Image="{1,ui/res/hero/posy_item_ept.png}" SizeMode="1" />
+                        <Image Name="LvlImg" X="90" Y="79" W="47" H="49" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                        <Image Name="PosImg" X="1" Y="10" W="50" H="52" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                        <Label Name="LvlLabel" X="95" Y="89" W="40" H="30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                        <Label Name="NumLabel" X="82" Y="21" W="72" H="36" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaActivityFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="629">
+        <Canvas Name="BottomCanvas" X="11" Y="20" W="954" H="180">
+			<Label Name="LabelTitle" X="38" Y="70" W="500" H="50" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+            <Label Name="LabelTip" X="38" Y="30" W="400" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+		<Canvas Name="TerritoryCanvas" X="11" Y="20" W="954" H="160">
+            <Label Name="LabelTitle" X="38" Y="70" W="450" H="50" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+            <Label Name="LabelTip" X="38" Y="20" W="400" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="RewardTitle" X="38" Y="12" W="240" H="50" Text="Reward:" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+            <Image Name="ImgRewardItem" X="224" Y="0" W="80" H="84" Image="{1,icon/bag/item0229.png}" SizeMode="1" />
+            <Label Name="LabRewardNum" X="310" Y="4" W="80" H="60" Text="x10" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+        </Canvas>
+    </Canvas>
+</Layout>

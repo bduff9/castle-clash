@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BingoFrame" R_W="1.00" R_H="1.00">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="FormCanvas" X="0" Y="30" W="1024" H="768" Center="1">
+        <Image Name="Bkg_R" X="558" Y="20" W="458" H="558" Image="{1,ui/res/Bingo/bkg_r.png}" SizeMode="1" />
+        <Image Name="Bkg_L" X="0" Y="0" W="593" H="615" Image="{1,ui/res/Bingo/bkg_l.png}" SizeMode="1" />
+        <Canvas Name="LeftCanvas" X="3" Y="-2" W="580" H="580">
+            <Canvas Name="Reward_1" X="52" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_2" X="132" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_3" X="212" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_4" X="293" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_5" X="374" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_6" X="454" Y="462" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_7" X="454" Y="379" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_8" X="454" Y="300" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_9" X="454" Y="212" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_10" X="454" Y="132" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_11" X="454" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_12" X="374" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_13" X="293" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_14" X="212" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_15" X="132" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_16" X="52" Y="59" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_17" X="52" Y="139" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_18" X="52" Y="219" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_19" X="52" Y="299" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Reward_20" X="52" Y="379" W="80" H="80">
+                <Image Name="ImgTick" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/tick.png}" SizeMode="1" />
+                <Canvas Name="Item" X="0" Y="0" W="80" H="80">
+                    <Image Name="Img" X="0" Y="0" W="79" H="82" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="10" Y="6" W="60" H="60">
+                        <Image Name="Bkg" X="0" Y="0" W="60" H="60" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="18" W="60" H="50" SizeMode="1" />
+                        <Image Name="IconSoul" X="-7" Y="31" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="76" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Sign_1" X="132" Y="379" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_2" X="212" Y="379" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_3" X="293" Y="379" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_4" X="374" Y="379" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_5" X="132" Y="299" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_6" X="212" Y="299" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_7" X="293" Y="299" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_8" X="374" Y="299" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_9" X="132" Y="219" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_10" X="212" Y="219" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_11" X="293" Y="219" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_12" X="374" Y="219" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_13" X="132" Y="139" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_14" X="212" Y="139" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_15" X="293" Y="139" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="Sign_16" X="374" Y="139" W="80" H="80">
+                <Image Name="Sel" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/sel.png}" SizeMode="1" />
+                <Image Name="ImgSmile" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/smile.png}" SizeMode="1" />
+                <Image Name="ImgStar" X="0" Y="0" W="80" H="80" Image="{1,ui/res/Bingo/star.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="RightCanvas" X="631" Y="86" W="320" H="440">
+            <Label Name="TimeLabel" X="10" Y="410" W="220" H="24" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="Time" X="200" Y="410" W="160" H="24" Color="255,78,9" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <ResImage Name="Img_1" X="-7" Y="347" W="48" H="50" Image="{1,ui/res/ActivityEx/coin.png}" SizeMode="1" ResID="37" Touch="1" />
+            <ResImage Name="Img_2" X="225" Y="347" W="48" H="50" Image="{1,ui/res/ActivityEx/coin.png}" SizeMode="1" ResID="37" Touch="1" />
+            <Label Name="Num_1" X="37" Y="348" W="100" H="40" Text="111" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="Num_2" X="271" Y="348" W="80" H="40" Text="111" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="LabelNum_2" X="130" Y="348" W="100" H="40" Text="111" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Canvas Name="RewardCanvas" X="-11" Y="-4" W="344" H="318">
+                <Image Name="Bkg" X="0" Y="0" W="344" H="318" Image="{1,ui/res/Bingo/bkg_content.png}" SizeMode="1" />
+                <Label Name="Tip_1" X="32" Y="250" W="240" H="30" Color="141,104,47" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+                <Label Name="Tip_2" X="32" Y="116" W="240" H="30" Color="141,104,47" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+                <Canvas Name="Item_1_1" X="29" Y="160" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+                <Canvas Name="Item_1_2" X="129" Y="160" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+                <Canvas Name="Item_1_3" X="229" Y="160" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+                <Canvas Name="Item_2_1" X="29" Y="26" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+                <Canvas Name="Item_2_2" X="129" Y="26" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+                <Canvas Name="Item_2_3" X="229" Y="26" W="89" H="89">
+                    <Image Name="Img" X="0" Y="-2" W="89" H="93" Center="3" SizeMode="1" />
+                    <Canvas Name="SoulCanvas" X="9" Y="9" W="70" H="70" Center="3">
+                        <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                        <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                    </Canvas>
+                    <Label Name="Num" X="0" Y="10" W="85" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CloseBtn" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="Bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BackBtn" X="-4" Y="605" W="153" H="166" Touch="1" Top="-3">
+        <Image Name="Bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="34" Y="60" W="88" H="88" Image="{1,ui/res/button/form_back_m.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

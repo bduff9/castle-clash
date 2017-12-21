@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BattleReportFrame" R_W="1.00" R_H="1.00" Background="{1,ui/res/shade.png.pvr.ccz}">
+    <Canvas Name="CanvasWinFlag" X="214" Y="172" W="596" H="596" Top="0" Center="1">
+        <Canvas Name="CanvasPlay" X="0" Y="0" W="596" H="596" />
+        <Image Name="ImageWinBkg" X="0" Y="0" W="596" H="596" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasLeft" X="5" Y="6" W="200" H="762" Top="0">
+        <Image Name="Img_L" X="0" Y="0" W="200" H="762" Image="{1,ui/res/BattleReport/flag_blue.png}" SizeMode="1" />
+        <Label Name="LabelTitle" X="20" Y="710" W="159" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+        <ListBox Name="ListBoxBattle" X="20" Y="30" W="159" H="680" Fixed="1" Center="1" ScrollViewDir="1">
+            <Template Name="" X="0" Y="50" W="159" H="182">
+                <Image Name="ImgBkg" X="-2" Y="7" W="164" H="168" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="8" Y="55" W="159" H="134" SizeMode="1" />
+                <Image Name="ImgDead" X="95" Y="111" W="54" H="42" Image="{1,ui/res/BattleReport/battle_dead.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="19" Y="28" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Template>
+        </ListBox>
+    </Canvas>
+    <Canvas Name="CanvasCenter" X="412" Y="214" W="200" H="340" Center="3">
+        <Label Name="LabelTitle" X="0" Y="200" W="200" H="40" Center="1" Text="Challenge Successful" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Canvas Name="CanvasIntegra" X="0" Y="110" W="200" H="60">
+            <Image Name="ImagePro" X="20" Y="0" W="50" H="60" Center="2" Image="{1,ui/res/best3/best3cup.png}" SizeMode="0" />
+            <Label Name="LabelNum" X="80" Y="0" W="150" H="60" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Label Name="LabelOutTime" X="0" Y="120" W="200" H="40" Center="1" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="30" />
+    </Canvas>
+    <Canvas Name="ExitBtn" X="389" Y="20" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+    </Canvas>
+</Layout>

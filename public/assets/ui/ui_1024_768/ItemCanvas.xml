@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ItemCanvas" W="136" H="164">
+    <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+    <Image Name="Quality" R_X="-0.21" R_Y="-0.01" R_W="1.40" R_H="1.16" Image="{1,ui/res/bag/blue_quality.png}" SizeMode="1" />
+    <Image Name="ImgIcon" R_X="0.03" R_Y="0.20" R_W="0.94" R_H="0.81" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+    <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+    <Image Name="PosyIcon" R_X="0.04" R_Y="0.21" R_W="0.88" R_H="0.78" Image="{1,icon/Posy/000.png}" SizeMode="1" />
+    <Image Name="LvlImg" R_X="0.63" R_Y="0.67" R_W="0.31" R_H="0.25" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+    <Image Name="PosImg" R_X="0.04" R_Y="0.32" R_W="0.31" R_H="0.25" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+    <Label Name="LvlLabel" R_X="0.66" R_Y="0.70" R_W="0.29" R_H="0.19" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    <Canvas Name="PointCanvas" R_X="0.71" Y="124" R_W="0.29" R_H="0.25" Top="-1">
+        <Image Name="ImgBk" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/RoundStone.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

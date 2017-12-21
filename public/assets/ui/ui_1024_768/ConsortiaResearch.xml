@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaResearchFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="CanvasBuffInfo" X="15" Y="15" W="994" H="646" Center="1">
+        <Canvas Name="CanvsTop" X="10" Y="229" W="974" H="403" Center="1">
+            <Canvas Name="CanvasItem" X="79" Y="127" W="194" H="205">
+                <Image Name="BottleImg" X="0" Y="0" W="194" H="205" Image="{1,ui/res/Consortia/small_flag_194-205.png}" SizeMode="1" />
+                <Image Name="IconImg" X="46" Y="76" W="102" H="102" SizeMode="0" />
+            </Canvas>
+            <Label Name="LabelName" X="27" Y="90" W="300" H="34" Color="255,244,206" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="LevelLabel" X="70" Y="40" W="120" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+            <Label Name="LevelNumLabel" X="194" Y="40" W="100" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Canvas Name="InfoBkgCanvs" X="335" Y="33" W="614" H="352">
+                <Image Name="InfoBkg_L" X="0" Y="0" W="309" H="352" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="InfoBkg_R" X="305" Y="0" W="309" H="352" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <ListBox Name="InfoListBox" X="406" Y="43" W="500" H="300" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="600" H="60">
+                    <Label Name="ItemTypeLabel" X="0" Y="5" W="260" H="26" Color="142,219,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="23" />
+                    <Label Name="ItemValueLabel" X="260" Y="5" W="240" H="26" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="206" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="24" Y="33" W="945" H="198" Center="1">
+            <Label Name="ContentLabel" X="31" Y="35" W="880" H="150" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="27" />
+        </Canvas>
+        <Label Name="UpgradeBtnTip" X="544" Y="345" W="239" H="26" Color="226,207,169" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        <Canvas Name="UpgradeCanvs" X="542" Y="255" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="NumLabel" X="20" Y="3" W="142" H="77" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+            <Image Name="ProduceImage" X="170" Y="12" W="46" H="53" Center="2" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="646">
+        <Image Name="BkgImg" X="10" Y="15" W="974" H="629" SizeMode="1" /> 
+        <Canvas Name="CanvasTop" X="20" Y="370" W="950" H="250" Fixed="2">
+            <Canvas Name="SelfWealthCanvs" X="20" Y="186" W="200" H="60" Fixed="1">
+                <Label Name="Label" X="50" Y="10" W="176" H="40" Color="255,248,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                <Image Name="Image" X="1" Y="6" W="50" H="40" Image="{1,ui/res/Consortia/consortia_wealth_self.png}" SizeMode="1" Touch="1" />
+            </Canvas>
+            <ListBox Name="ListBoxMagic" X="180" Y="30" W="840" H="220" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="300" H="220" Fixed="2">
+                    <Canvas Name="CanvasItem" X="40" Y="0" W="220" H="220">
+                        <Image Name="BottleImg" X="13" Y="0" W="194" H="205" Image="{1,ui/res/Consortia/small_flag_194-205.png}" SizeMode="1" />
+                        <Image Name="IconImg" X="60" Y="74" W="102" H="102" SizeMode="1" />
+                        <Label Name="LabelTime" X="0" Y="36" W="220" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+                        <Image Name="ImgCancel" X="148" Y="160" W="57" H="63" Touch="1" RectTouch="-23,-17,80,80" Image="{1,ui/res/btn_del.png}" SizeMode="1" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="350" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasMagic" X="20" Y="12" W="950" H="400">
+            <ListBox Name="ListBoxMagicInfo" X="1" Y="16" W="950" H="380" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="286" H="380" Fixed="1">
+                    <Canvas Name="CanvasItem" X="20" Y="0" W="260" H="380" Touch="1">
+                        <Image Name="BkgImg" X="0" Y="0" W="263" H="378" Image="{1,ui/res/Consortia/big_flag_263-378.png}" SizeMode="1" />
+                        <Image Name="LockImg" X="-2" Y="18" W="263" H="321" Image="{1,ui/res/Consortia/flag_lock_263-321.png}" SizeMode="1" />
+                        <Image Name="InfoImg" X="195" Y="260" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                        <Image Name="IconImg" X="80" Y="200" W="102" H="102" SizeMode="1" />
+                        <Label Name="LabelLockTip" X="10" Y="160" W="245" H="30" Color="213,192,177" TextAlignment="1" BmpFont="font_1.fnt" FSize="19" />
+                        <Label Name="NameLabel" X="10" Y="115" W="240" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                        <Canvas Name="InfoCanvas" X="0" Y="0" W="260" H="200">
+                            <Label Name="LevelLabel" X="50" Y="152" W="100" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                            <Label Name="LevelNumLabel" X="154" Y="152" W="100" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                            <Image Name="Clip" X="58" Y="115" W="150" H="2" Image="{1,ui/res/white_line_2-2.png}" SizeMode="1" />
+                            <Label Name="PayNumLabel" X="42" Y="60" W="100" H="50" Color="255,248,184" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+                            <Image Name="ImgProduce" X="146" Y="60" W="50" H="40" Image="{1,ui/res/Consortia/consortia_wealth_self.png}" SizeMode="1" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

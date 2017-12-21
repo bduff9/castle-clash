@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="NewActivityFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasInfo" X="25" Y="24" W="974" H="629">
+        <Canvas Name="SeparateCanvs" X="310" Y="10" W="61" H="610">
+            <Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="307" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_Up" X="0" Y="303" W="61" H="307" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasLeft" X="17" Y="16" W="310" H="597" Background="{1,ui/res/black_bk_245-595.png}">
+            <ListBox Name="ActivityListBox" X="4" Y="-3" W="302" H="593" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="302" H="110" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="0" Y="5" W="302" H="102" Touch="1" Background="{1,ui/res/NewActivity/btn.png}">
+                        <Label Name="LabelTime" X="130" Y="18" W="180" H="20" Color="165,197,244" TextAlignment="0" FSize="15" />
+                        <Label Name="LabelTitle" X="97" Y="45" W="190" H="34"  Color="215,235,244" TextAlignment="1" FSize="26" />
+                        <Image Name="Img_Type" X="17" Y="5" W="92" H="86" Fixed="1" Image="{1,ui/res/NewActivity/type_1.png}" SizeMode="1" />
+                        <Image Name="Img_Tag" X="222" Y="2" W="77" H="58" Image="{1,ui/res/NewActivity/tag_1.png}" SizeMode="0" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+				
+        </Canvas>
+        <Canvas Name="CanvasContent" X="368" Y="21" W="580" H="580">
+            <Canvas Name="InfoBkgCanvs" X="0" Y="0" W="580" H="580" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="300" H="580" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="280" Y="0" W="300" H="580" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasTitle" X="88" Y="455" W="403" H="94" Center="1">
+                <Image Name="BkgTitle" X="0" Y="0" W="403" H="94" Image="{1,ui/res/NewActivity/title.png}" SizeMode="1" />
+                <Label Name="LabelTitle" X="62" Y="30" W="280" H="60" Text="" Color="255,255,255" TextAlignment="1" FSize="30" />
+            </Canvas>
+			 <Label Name="LabelTimeTag" X="42" Y="425" W="500" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="21" />
+            <Label Name="LabelTime" X="62" Y="390" W="280" H="30" Color="96,65,21" TextAlignment="0" FSize="22" />
+			<Label Name="LabelCommentTag" X="42" Y="351" W="500" H="30" Color="255,255,255" BmpFont="font_1.fnt" TextAlignment="0" FSize="21" />
+            <Label Name="LabelComment" X="62" Y="202" W="462" H="140" Color="96,65,21" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="22" />
+			<Label Name="LabelRewardCommentTag" X="42" Y="198" W="500" H="30" Color="255,255,255" BmpFont="font_1.fnt" TextAlignment="0" FSize="21" />
+            <Label Name="LabelRewardComment" X="62" Y="78" W="455" H="110" Color="91,124,45" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="22" />
+            <Canvas Name="OkBtn" X="167" Y="0" W="245" H="77" Touch="1" Center="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77"  Color="255,255,255" BmpFont="font_1.fnt" TextAlignment="1" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

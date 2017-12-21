@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MainFrame" R_W="1.00" R_H="1.00">
+    <ScrollView Name="MapCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" VC_W="2048" VC_H="1536">
+        <Canvas Name="BkMap" X="0" Y="0" W="2048" H="1536" />
+		<Canvas Name="MapFrame" X="0" Y="0" W="2048" H="1536" Touch="1" />
+        <Canvas Name="CanvasLine" X="0" Y="0" W="2048" H="1536" />
+        <Canvas Name="CanvasFort" X="0" Y="0" W="2048" H="1536" />
+        <Canvas Name="CanvasOperate" X="366" Y="275" W="330" H="350">
+            <Image Name="BkImg" X="76" Y="74" W="250" H="250" Center="3" Image="{1,ui/res/frame/bkg_ring.png}" SizeMode="1" />
+            <Canvas Name="TeamCanvs1" X="218" Y="152" W="97" H="110" Touch="1">
+                <Image Name="BkImg" X="10" Y="6" W="94" H="100" Center="1" Image="{1,ui/res/frame/bkg_team.png}" SizeMode="1" />
+                <Label Name="Label" X="8" Y="33" W="80" H="60" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+            </Canvas>
+            <Canvas Name="TeamCanvs2" X="115" Y="230" W="97" H="110" Touch="1">
+                <Image Name="BkImg" X="10" Y="6" W="94" H="100" Center="1" Image="{1,ui/res/frame/bkg_team.png}" SizeMode="1" />
+                <Label Name="Label" X="8" Y="33" W="80" H="60" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+            </Canvas>
+            <Canvas Name="TeamCanvs3" X="10" Y="152" W="97" H="110" Touch="1">
+                <Image Name="BkImg" X="10" Y="6" W="94" H="100" Center="1" Image="{1,ui/res/frame/bkg_team.png}" SizeMode="1" />
+                <Label Name="Label" X="8" Y="33" W="80" H="60" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+            </Canvas>
+            <Canvas Name="RallyCanvs" X="189" Y="30" W="96" H="96" Touch="1">
+                <Image Name="BkImg" X="11" Y="14" W="96" H="96" Center="3" Image="{1,ui/res/button/rally.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="WatchCanvs" X="56" Y="30" W="96" H="96" Touch="1">
+                <Image Name="BkImg" X="11" Y="14" W="96" H="96" Center="3" Image="{1,ui/res/button/watch.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+    </ScrollView>
+    <Canvas Name="NodeCanvas" X="-300" Y="-400" W="300" H="400">
+        <Canvas Name="CanvasFortCamp" X="0" Y="0" W="168" H="212">
+            <Image Name="ImageRally" X="88" Y="133" W="1" H="1" Center="1" Image="{1,ui/res/territory/rally.png}" SizeMode="2" />
+			<Image Name="ImageRallyFloorRing" X="88" Y="133" W="1" H="1" SizeMode="1" />
+            <Image Name="ImageFort" X="0" Y="0" W="168" H="212" Image="{1,ui/res/territory/camp.png}" SizeMode="1" />
+			<Label Name="LabelName" X="-34" Y="80" W="300" H="50" Text="A quick brown fox" Color="9,52,96" TextAlignment="1" FSize="24" />
+            <Image Name="ImageFlag" X="83" Y="26" W="66" H="64" Image="{1,ui/res/territory/flag_blue.png}" SizeMode="1" />
+            <Image Name="ImageFight" X="58" Y="188" W="1" H="1" Center="1" SizeMode="1" />
+            <Label Name="LabelNum" X="20" Y="0" W="200" H="40" Center="1" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="CanvasFort10" X="0" Y="0" W="107" H="139">
+			<Image Name="ImageRallyFloorRing" X="56" Y="50" W="1" H="1" SizeMode="1" />
+            <Image Name="ImageFort" X="0" Y="0" W="107" H="139" Image="{1,ui/res/territory/fort10.png}" SizeMode="1" />
+			<Image Name="ImageRally" X="26" Y="86" W="1" H="1" Center="1" Image="{1,ui/res/territory/rally.png}" SizeMode="2" />
+            <Image Name="ImageFlag" X="56" Y="34" W="66" H="64" Image="{1,ui/res/territory/flag_blue.png}" SizeMode="1" />
+            <Image Name="ImageFight" X="27" Y="133" W="1" H="1" Center="1" SizeMode="1" />
+            <Label Name="LabelNum" X="20" Y="0" W="200" H="40" Center="1" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+			<Canvas Name="InfoCanvas" X="38" Y="90" W="102" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="102" H="52" Image="{1,ui/res/territory/bg_info_1.png}" SizeMode="1" />
+				<Image Name="ImgHead" X="24" Y="15" W="19" H="26" Image="{1,ui/res/territory/icon_head.png}" SizeMode="1" />
+				<Label Name="NumLabel" X="38" Y="9" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+			<Canvas Name="FightInfoCanvas" X="0" Y="90" W="173" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="173" H="52" Image="{1,ui/res/territory/bg_info_2.png}" SizeMode="1" />
+				<Image Name="ImgAtk" X="22" Y="15" W="29" H="26" Image="{1,ui/res/territory/icon_atk.png}" SizeMode="1" />
+				<Label Name="AtkLabel" X="52" Y="8" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+				<Image Name="ImgDef" X="94" Y="14" W="24" H="25" Image="{1,ui/res/territory/icon_def.png}" SizeMode="1" />
+				<Label Name="DefLabel" X="120" Y="8" W="50" H="40" Text="25" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+        </Canvas>
+        <Canvas Name="CanvasFort30" X="0" Y="0" W="136" H="229">
+			<Image Name="ImageRallyFloorRing" X="72" Y="58" W="1" H="1" SizeMode="1" />
+            <Image Name="ImageFort" X="0" Y="0" W="136" H="229" Image="{1,ui/res/territory/fort30.png}" SizeMode="1" />
+			<Image Name="ImageRally" X="42" Y="105" W="1" H="1" Center="1" Image="{1,ui/res/territory/rally.png}" SizeMode="2" />
+            <Image Name="ImageFlag" X="69" Y="45" W="66" H="64" Image="{1,ui/res/territory/flag_blue.png}" SizeMode="1" />
+            <Image Name="ImageFight" X="48" Y="155" W="1" H="1" Center="1" SizeMode="1" />
+            <Label Name="LabelNum" X="20" Y="0" W="200" H="40" Center="1" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+			<Canvas Name="InfoCanvas" X="50" Y="102" W="102" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="102" H="52" Image="{1,ui/res/territory/bg_info_1.png}" SizeMode="1" />
+				<Image Name="ImgHead" X="24" Y="15" W="19" H="26" Image="{1,ui/res/territory/icon_head.png}" SizeMode="1" />
+				<Label Name="NumLabel" X="38" Y="9" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+			<Canvas Name="FightInfoCanvas" X="10" Y="102" W="173" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="173" H="52" Image="{1,ui/res/territory/bg_info_2.png}" SizeMode="1" />
+				<Image Name="ImgAtk" X="22" Y="15" W="29" H="26" Image="{1,ui/res/territory/icon_atk.png}" SizeMode="1" />
+				<Label Name="AtkLabel" X="52" Y="8" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+				<Image Name="ImgDef" X="94" Y="14" W="24" H="25" Image="{1,ui/res/territory/icon_def.png}" SizeMode="1" />
+				<Label Name="DefLabel" X="120" Y="8" W="50" H="40" Text="25" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+        </Canvas>
+        <Canvas Name="CanvasFort100" X="0" Y="0" W="192" H="209">
+			<Image Name="ImageRallyFloorRing" X="102" Y="70" W="1" H="1" SizeMode="1" />
+            <Image Name="ImageFort" X="0" Y="0" W="192" H="209" Image="{1,ui/res/territory/fort100.png}" SizeMode="1" />
+			<Image Name="ImageRally" X="54" Y="84" W="1" H="1" Image="{1,ui/res/territory/rally.png}" SizeMode="2" />
+            <Image Name="ImageFlag" X="110" Y="46" W="66" H="64" Image="{1,ui/res/territory/flag_blue.png}" SizeMode="1" />
+            <Image Name="ImageFight" X="75" Y="163" W="1" H="1" Center="1" SizeMode="1" />
+            <Label Name="LabelNum" X="20" Y="0" W="200" H="40" Center="1" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+			<Canvas Name="InfoCanvas" X="90" Y="102" W="102" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="102" H="52" Image="{1,ui/res/territory/bg_info_1.png}" SizeMode="1" />
+				<Image Name="ImgHead" X="24" Y="15" W="19" H="26" Image="{1,ui/res/territory/icon_head.png}" SizeMode="1" />
+				<Label Name="NumLabel" X="38" Y="9" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="1" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+			<Canvas Name="FightInfoCanvas" X="56" Y="102" W="173" H="52">
+				<Image Name="ImgBg" X="0" Y="0" W="173" H="52" Image="{1,ui/res/territory/bg_info_2.png}" SizeMode="1" />
+				<Image Name="ImgAtk" X="22" Y="15" W="29" H="26" Image="{1,ui/res/territory/icon_atk.png}" SizeMode="1" />
+				<Label Name="AtkLabel" X="52" Y="8" W="50" H="40" Text="21" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+				<Image Name="ImgDef" X="94" Y="14" W="24" H="25" Image="{1,ui/res/territory/icon_def.png}" SizeMode="1" />
+				<Label Name="DefLabel" X="120" Y="8" W="50" H="40" Text="25" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+			</Canvas>
+        </Canvas>
+        <Image Name="ImageLineNode" X="0" Y="0" W="20" H="21" SizeMode="1" />
+        <Canvas Name="CanvasTroop" X="0" Y="0" W="60" H="100">
+			<Canvas Name="CanvasRun" X="0" Y="0" W="60" H="100">
+				<Image Name="ImgBubble" X="14" Y="50" W="30" H="32" Image="{1,ui/res/frame/bkg_team_l2.png}" SizeMode="1" />
+				<Label Name="LabelNum" X="9" Y="48" W="40" H="40" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+				<Image Name="ImgRole" X="8" Y="0" W="45" H="50" Image="{1,ui/res/territory/001.png}" SizeMode="1" />
+			</Canvas>
+			<Canvas Name="CanvasRest" X="6" Y="0" W="40" H="40">
+				<Image Name="ImgBubble" X="2" Y="0" W="36" H="40" Image="{1,ui/res/frame/bkg_team_l1.png}" SizeMode="1" />
+				<Label Name="LabelNum" X="0" Y="2" W="40" H="40" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+			</Canvas>
+        </Canvas>
+    </Canvas>
+    <Image Name="ImageMapBkgShader" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/dunge/dunge_map_shader.png}" SizeMode="1" />
+    <Canvas Name="HelpCanvas" X="-4" Y="605" W="153" H="166" Touch="1" Top="-3">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="HelpImg" X="35" Y="60" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="TimeCanvas" X="378" Y="643" W="267" H="125" Top="0" Center="1">
+        <Image Name="ImageBg" X="0" Y="0" W="267" H="125" Image="{1,ui/res/frame/round_board.png}" SizeMode="1" />
+        <Label Name="LabelRound" X="33" Y="58" W="200" H="50" Center="1" Text="1/3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        <Label Name="LabelTime" X="33" Y="10" W="200" H="50" Center="1" Text="20:15" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="HomeCanvas" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="TeamCanvas" X="2" Y="0" W="204" H="137" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="204" H="137" Image="{1,ui/res/button/team_204_137.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="52" W="200" H="50" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+    </Canvas>
+	<Canvas Name="FortCheckCanvas" X="912" Y="120" W="100" H="106" Touch="1" Right="6">
+        <Image Name="Img" X="19" Y="6" W="84" H="100" Center="1" Image="{1,ui/res/territory/check.png}" SizeMode="1" />
+        <Label Name="TimeLabel" X="-3" Y="0" W="100" H="40" Center="1" Color="255,66,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+    </Canvas>
+    <Canvas Name="RankCanvas" X="912" Y="2" W="100" H="100" Touch="1" Right="12">
+        <Image Name="ImgBg" X="20" Y="-1" W="77" H="75" Image="{1,ui/res/frame/bkg_rank.png}" SizeMode="1" />
+        <Image Name="Img" X="20" Y="20" W="75" H="64" Image="{1,ui/res/main/trophy.png.pvr.ccz}" SizeMode="1" />
+    </Canvas>
+</Layout>

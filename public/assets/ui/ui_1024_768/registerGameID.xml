@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="RegisterGameIDFrame" W="806" H="727">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="806" H="727" Touch="1" Zoom="0" >
+        <Image Name="FrameBkg_L" X="0" Y="0" W="405" H="727" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="401" Y="0" W="405" H="727" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="203" Y="634" W="400" H="80" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+    <Image Name="CloseImg" X="647" Y="603" W="115" H="117" Touch="1" Top="7" Right="44" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="CanvasMain" X="0" Y="0" W="806" H="620" Center="1" Touch="1" Zoom="0">
+		<Image Name="ImgBkg" X="60" Y="470" W="680" H="88" Image="{1,ui/res/setting/shade_680_88.png}" SizeMode="1" />
+		<Label Name="ContentLabel" X="15" Y="480" W="650" H="80" Center="1" Text="text" Color="255,243,188" TextAlignment="0"  Multline="1" FSize="18" />
+        <Label Name="TxtLabel" X="100" Y="430" W="400" H="40"  Color="126,90,44" TextAlignment="0"  FSize="25" />
+        <EditBox Name="NameEditBox" X="20" Y="360" W="620" H="75" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="1" Padding="{10,5};" Color="255,255,255" />
+		<Label Name="PassTxtLabel" X="100" Y="325" W="400" H="40"  Color="126,90,44" TextAlignment="0"   FSize="25" />
+		<EditBox Name="PassEditBox" X="20" Y="255" W="620" H="75" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="1" Padding="{10,5};" Color="255,255,255" Password="1"/>
+		<Label Name="Pass2TxtLabel" X="100" Y="220" W="400" H="40"  Color="126,90,44" TextAlignment="0"  FSize="25" />
+		<EditBox Name="Pass2EditBox" X="20" Y="150" W="620" H="75" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="1" Padding="{10,5};" Color="255,255,255" Password="1" />
+        <Canvas Name="CanvsOK" X="178" Y="70" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="VersionFrame" W="400" H="199">
+    <Canvas Name="TipCanvs" X="49" Y="48" W="300" H="100" Touch="1" Background="{1,ui/res/button/btn_gray.png.pvr.ccz}">
+        <Label Name="TipLabel" X="0" Y="0" W="300" H="100"  Color="204,204,204" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+    </Canvas>
+    <Canvas Name="UpdateCanvs" X="49" Y="48" W="300" H="100" Touch="1">
+        <Label Name="TipLabel" X="0" Y="59" W="300" H="40" Color="204,204,204" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Progress Name="UpdateProgress" X="0" Y="0" W="300" H="60" Background="{1,ui/res/pro2/pro_back.png.pvr.ccz}" ProgressImage="{1,ui/res/pro2/pro_yellow.png.pvr.ccz};" CurValue="30" MaxValue="100" InsideDist="10" Direction="3" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<NewGuide Name="新手引导">
+  <List Type="1">
+    <List ID="8" Lvl="5" Num="5"/>
+    <List ID="10" Lvl="5" Num="10"/>
+    <List ID="12" Lvl="5" Num="5"/>
+  </List>
+  <List Type="2">
+    <List ID="231" Lvl="60" Num="1"/>
+    <List ID="451" Lvl="60" Num="1"/>
+    <List ID="241" Lvl="60" Num="1"/>
+  </List>
+  <List Type="3">
+    <List ID="9" Lvl="1" Num="1"/>
+  </List>
+</NewGuide>
+<!--字段说明
+Type=类型 1士兵 2英雄 3魔法
+Lvl=等级
+Num=数量-->

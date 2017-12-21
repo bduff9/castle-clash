@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TerritoryBattleWatch" R_W="1.00" R_H="1.00">
+    <Canvas Name="AttUserCanvs" X="120" Y="693" W="222" H="45" Fixed="1" Top="30">
+        <Image Name="BkImg" X="42" Y="0" W="144" H="45" Image="{1,ui/res/main/atr_bk.png.pvr.ccz}" SizeMode="0" />
+        <Label Name="PowerLabel" X="60" Y="10" W="160" H="29" Text="250000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Image Name="PowerImg" X="4" Y="-4" W="50" H="50" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+        <Label Name="NameLabel" X="55" Y="40" W="200" H="30" Text="Name123" Color="255,247,193" TextAlignment="0" FSize="20" />
+		<Image Name="BkConsortiaImg" X="48" Y="-43" W="178" H="54" Image="{1,ui/res/frame/bkg_name.png}" SizeMode="0" />
+        <Label Name="ConsortiaLabel" X="58" Y="-43" W="200" H="50" Text="Con Name123123" Color="186,255,251" TextAlignment="0" FSize="26" />
+        <Image Name="FlagImg" X="-8" Y="-70" W="68" H="68" Image="{1,icon/Corps/1.png}" SizeMode="0" />
+        <Label Name="LeftTitleLab" X="58" Y="-70" W="200" H="50" Text="Left Num:" Color="109,194,225" TextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+        <Label Name="LeftNumLab" X="148" Y="-70" W="60" H="50" Text="13" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="CanvasCenter" X="382" Y="600" W="260" H="160" Top="8" Center="3">
+        <Canvas Name="CanvasTime" X="0" Y="0" W="260" H="80" Center="1">
+            <Label Name="LabelTime" X="0" Y="20" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="20" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="BtnOutWatch" X="7" Y="74" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="DefUserCanvs" X="682" Y="693" W="222" H="45" Fixed="1" Top="30" Right="120">
+        <Image Name="BkImg" X="42" Y="0" W="144" H="45" RotationY="180" Image="{1,ui/res/main/atr_bk.png.pvr.ccz}" SizeMode="0" />
+        <Label Name="PowerLabel" X="16" Y="9" W="160" H="29" Text="250000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+        <Image Name="PowerImg" X="180" Y="-3" W="50" H="50" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+        <Label Name="NameLabel" X="-22" Y="40" W="200" H="30" Text="Name123" Color="255,247,193" TextAlignment="2" FSize="20" />
+        <Image Name="BkConsortiaImg" X="2" Y="-43" W="178" H="54" Image="{1,ui/res/frame/bkg_name.png}" SizeMode="0" />
+		<Label Name="ConsortiaLabel" X="-34" Y="-43" W="200" H="50" Text="Con Name123123" Color="255,141,79" TextAlignment="2" FSize="26" />
+        <Image Name="FlagImg" X="166" Y="-69" W="68" H="68" Image="{1,icon/Corps/1.png}" SizeMode="0" />
+        <Label Name="LeftTitleLab" X="-70" Y="-70" W="200" H="50" Text="Left Num:" Color="225,133,100" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+        <Label Name="LeftNumLab" X="106" Y="-70" W="60" H="50" Text="13" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="CanvasWinFlag" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+        <Canvas Name="CanvasPlay" X="214" Y="10" W="596" H="596" Center="1" />
+        <Label Name="LabelName" X="366" Y="498" W="400" H="50" Center="1" Text="Con Name" Color="255,255,255" TextAlignment="1" FSize="24" />
+        <Canvas Name="BtnExit" X="389" Y="84" W="245" H="77" Touch="1" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WishingWellSelectFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasTab_1" X="30" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="NumLabel" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="240" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="NumLabel" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_3" X="440" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="NumLabel" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_4" X="640" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="NumLabel" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <ListBox Name="ListBoxItem" X="42" Y="45" W="554" H="590" ScrollViewDir="1" EdgeShade="1">
+        <Template Name="" X="0" Y="0" W="660" H="164" Fixed="1">
+            <Canvas Name="ListRow" X="4" Y="0" W="660" H="164" Fixed="1">
+                <Canvas Name="CanvasItem_1" X="0" Y="0" W="136" H="164" Touch="1">
+                    <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+                    <Custom Name="WishingItem" X="18" Y="38" W="100" H="100" File="WishingItemCanvas.xml" />
+                    <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+                </Canvas>
+                <Canvas Name="CanvasItem_2" X="136" Y="0" W="136" H="164" Touch="1">
+                    <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+                    <Custom Name="WishingItem" X="18" Y="38" W="100" H="100" File="WishingItemCanvas.xml" />
+                    <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+                </Canvas>
+                <Canvas Name="CanvasItem_3" X="272" Y="0" W="136" H="164" Touch="1">
+                    <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+                    <Custom Name="WishingItem" X="18" Y="38" W="100" H="100" File="WishingItemCanvas.xml" />
+                    <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+                </Canvas>
+                <Canvas Name="CanvasItem_4" X="408" Y="0" W="136" H="164" Touch="1">
+                    <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+                    <Custom Name="WishingItem" X="18" Y="38" W="100" H="100" File="WishingItemCanvas.xml" />
+                    <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+                </Canvas>
+            </Canvas>
+        </Template>
+    </ListBox>
+    <Canvas Name="InfoCanvas" X="625" Y="45" W="350" H="590">
+        <Image Name="BgImage" X="0" Y="0" W="360" H="590" Image="{1,ui/res/bag/bag_bg.png}" SizeMode="1" />
+        <Canvas Name="CanvasItem" X="108" Y="404" W="136" H="164">
+            <Image Name="LabelBk" R_X="0.06" R_Y="0.00" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+            <Custom Name="WishingItem" X="18" Y="38" W="100" H="100" File="WishingItemCanvas.xml" />
+            <Label Name="LabelNum" R_X="0.18" R_Y="0.06" R_W="0.63" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="28" />
+        </Canvas>
+        <Label Name="NameLabel" X="8" Y="360" W="350" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="MinuteLabel" X="41" Y="246" W="280" H="100" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+        <Canvas Name="PosyCanvas" X="52" Y="264" W="265" H="80">
+            <Image Name="ImgAttack" X="0" Y="20" W="40" H="40" Image="{1,ui/res/attack.png}" SizeMode="1" />
+            <Label Name="LabelAttack" X="42" Y="20" W="100" H="42" Text="+10000" Color="231,213,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImgHeart" X="133" Y="20" W="40" H="40" Image="{1,ui/res/hert_new.png}" SizeMode="1" />
+            <Label Name="LabelHeart" X="180" Y="20" W="100" H="42" Text="+1000" Color="231,213,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Label Name="LimitLabel" X="39" Y="201" W="280" H="70" Color="255,217,63" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+        <Label Name="LimitLabel2" X="39" Y="201" W="280" H="70" Color="255,217,63" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+        <Label Name="TipLabel" X="30" Y="119" W="300" H="70" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        <Canvas Name="SelectButton" X="110" Y="30" W="150" H="77" Touch="1">
+            <Image Name="bkg" X="0" Y="0" W="150" H="77" Image="{1,ui/res/button/btn_150_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="25" W="150" H="33" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="33" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="MaskCanvs" X="580" Y="44" W="61" H="592">
+        <Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="296" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+        <Image Name="SeparateCanvs_Up" X="0" Y="296" W="61" H="296" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

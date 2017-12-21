@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="FlameBattleFrame" R_W="1.00" R_H="1.00" Background="{1,ui/res/shade.png.pvr.ccz}">
+    <Canvas Name="CanvasTop" X="0" Y="492" W="1024" H="276" Top="0" Center="1">
+        <Image Name="ImageVs" X="433" Y="124" W="157" H="142" Top="10" Center="1" Image="{1,ui/res/arena/arena_vs.png}" SizeMode="0" />
+        <Canvas Name="CanvasTime" X="382" Y="68" W="260" H="80" Center="1">
+            <Label Name="LabelTime" X="0" Y="20" W="260" H="40" Center="3" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="20" W="260" H="40" Center="3" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasWinFlag" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Background="{1,ui/res/shade.png.pvr.ccz}">
+        <Canvas Name="CanvasCenter" X="214" Y="172" W="596" H="596" Top="0" Center="1">
+            <Canvas Name="CanvasPlay" X="0" Y="0" W="596" H="596" />
+            <Image Name="ImageWinBkg" X="0" Y="0" W="596" H="596" SizeMode="1" />
+            <Canvas Name="CanvasResult" X="148" Y="0" W="300" H="300" Center="1">
+                <Image Name="ImageResult" X="22" Y="20" W="255" H="275" Top="5" Center="1" Image="{1,ui/res/flame.png}" SizeMode="0" />
+                <Label Name="LabelResult" X="50" Y="50" W="200" H="50" Center="1" Text="X 1" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="42" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasReportExit" X="389" Y="20" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasExit" X="759" Y="20" W="245" H="77" Touch="1" Right="20" Center="1">
+        <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="0" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+</Layout>

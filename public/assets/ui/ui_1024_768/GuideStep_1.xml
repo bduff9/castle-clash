@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="GuideFrameDungen" R_W="1.00" R_H="1.00">
+    <Custom Name="GuideFrameBase" X="0" Y="0" R_W="1.00" R_H="1.00" File="GuideStep.xml" />
+    <Canvas Name="CanvasContent" X="46" Y="33" W="932" H="701" Center="3">
+        <Canvas Name="CanvasBegin" X="0" Y="0" R_W="1.00" R_H="1.00">
+            <Label Name="Label_1" X="181" Y="500" W="580" H="100" Top="101" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+            <Image Name="Image_1" X="175" Y="220" W="582" H="323" Top="158" Center="1" Image="{1,ui/res/guide/01.png}" SizeMode="1" />
+            <Label Name="Label_2" X="181" Y="120" W="580" H="100" Top="481" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+        </Canvas>
+        <Canvas Name="CanvasBegin_1" X="0" Y="0" R_W="1.00" R_H="1.00">
+            <Label Name="Label_1" X="181" Y="500" W="580" H="100" Top="101" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+            <Image Name="Image_1" X="175" Y="220" W="582" H="323" Top="158" Center="1" Image="{1,ui/res/guide/02.png}" SizeMode="1" />
+            <Label Name="Label_2" X="181" Y="120" W="580" H="100" Top="481" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+        </Canvas>
+        <Canvas Name="CanvasEnd" X="0" Y="0" R_W="1.00" R_H="1.00">
+            <Label Name="Label_1" X="106" Y="122" W="720" H="480" Center="1" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+        </Canvas>
+        <Canvas Name="StepBtn" X="801" Y="40" W="131" H="97" Touch="1" Right="0">
+            <Image Name="ImgBkg" X="-46" Y="-5" W="131" H="97" Image="{1,ui/res/guide/guide_begin.png.pvr.ccz}" SizeMode="1" />
+        </Canvas>
+        <Image Name="Img_NPC" X="-145" Y="-48" W="347" H="471" Image="{1,ui/res/guide/npc.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

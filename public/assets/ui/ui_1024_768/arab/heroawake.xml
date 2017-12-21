@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFrame" W="1024" H="768">
+    <Canvas Name="HeroAwakeCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="AtrCanvs" X="390" Y="200" W="560" H="390">
+            <Canvas Name="GradeCanvs" X="0" Y="228" W="560" H="40">
+				<Label Name="Label" X="420" Y="8" W="150" H="25" Center="2" Text="Grade:" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="CurNum" X="50" Y="8" W="150" H="25" Center="2" Text="00/00" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                <Image Name="ArrowImg" X="200" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+				<Label Name="NewNum" X="250" Y="0" W="150" H="40" Center="2" Text="00/00" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="AttackCanvs" X="0" Y="178" W="560" H="40">
+                <Label Name="Label" X="420" Y="8" W="150" H="25" Center="2" Text="Grade:" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+				<Label Name="CurNum" X="50" Y="8" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+				<Image Name="ArrowImg" X="200" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+				<Label Name="NewNum" X="250" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="LifeCanvs" X="0" Y="132" W="560" H="40">
+                <Label Name="Label" X="420" Y="8" W="150" H="25" Center="2" Text="Grade:" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+				<Label Name="CurNum" X="50" Y="8" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+				<Image Name="ArrowImg" X="200" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+				<Label Name="NewNum" X="250" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="AtkSpeedCanvs" X="0" Y="86" W="560" H="40">
+                <Label Name="Label" X="420" Y="8" W="150" H="25" Center="2" Text="Grade:" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+				<Label Name="CurNum" X="50" Y="8" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+				<Image Name="ArrowImg" X="200" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+				<Label Name="NewNum" X="250" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <Canvas Name="MoveSpeedCanvs" X="0" Y="40" W="560" H="40">
+				<Label Name="Label" X="420" Y="8" W="150" H="25" Center="2" Text="Grade:" Color="103,73,37" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+				<Label Name="CurNum" X="50" Y="8" W="150" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+				<Image Name="ArrowImg" X="200" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+				<Label Name="NewNum" X="250" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+		<Label Name="TipLabel" X="57" Y="102" W="880" H="80" Center="1" Color="249,245,229" TextAlignment="2" VTextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+	<Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Label Name="TipLabel" X="41" Y="108" W="580" H="160" Center="1" Color="103,73,37" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="30" />
+            <Label Name="ItemNum" X="303" Y="96" W="120" H="60" Text="200" Color="103,73,37" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

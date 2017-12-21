@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ItemShopFrame" W="1024" H="768">
+    <Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Label Name="NameLabel" X="222" Y="231" W="350" H="32" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+            <Label Name="ShowNumLabel" X="440" Y="174" W="100" H="30" Text="Num:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            <Label Name="haveNum" X="240" Y="174" W="70" H="30" Text="999" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="MaxNum" X="330" Y="174" W="120" H="30" Text="/ 999" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+</Layout>

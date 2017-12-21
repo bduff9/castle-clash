@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossRewardAlert" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Label Name="NameLabel" X="50" Y="270" W="560" H="50" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+    <Canvas Name="CanvasMain" X="0" Y="40" W="662" H="300" Center="1">
+        <Canvas Name="SubMitCanvas" X="208" Y="30" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label1" X="-10" Y="3" W="265" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="RewardCanvs" X="116" Y="137" W="200" H="90" />
+        <Canvas Name="ItemMode" X="127" Y="123" W="90" H="90">
+            <Image Name="Icon" X="3" Y="1" W="81" H="83" SizeMode="1" />
+            <Label Name="Num" X="5" Y="0" W="80" H="20" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="18" />
+        </Canvas>
+    </Canvas>
+</Layout>

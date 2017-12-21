@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroFateLvFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="620" Touch="1" Zoom="0">
+        <ListBox Name="HeroListBox" X="17" Y="458" W="940" H="160" ScrollViewDir="0" EdgeShade="1">
+            <Template Name="" X="0" Y="2" W="150" H="150" Touch="1">
+                <Image Name="ChoiceImg" X="-10" Y="-10" W="170" H="170" Center="3" Image="{1,ui/res/head_selected.png}" SizeMode="1" />
+                <Image Name="HeadBkImg" X="3" Y="3" W="144" H="144" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="HeroImg" X="12" Y="44" W="142" H="118" Image="{1,icon/hero/201_s.png}" SizeMode="1" />
+                <Label Name="NameLabel" X="-2" Y="12" W="160" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Image Name="FateImg" X="0" Y="106" W="42" H="42" Image="{1,ui/res/fate/fate.png}" SizeMode="0" />
+                <Label Name="FateNumLabel" X="-4" Y="102" W="50" H="50" Text="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            </Template>
+        </ListBox>
+        <Canvas Name="bkg" X="20" Y="20" W="930" H="406">
+            <Image Name="Bkg_L" X="0" Y="0" W="466" H="406" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="464" Y="0" W="466" H="406" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        </Canvas>
+        <ListBox Name="LevelListBox" X="46" Y="46" W="878" H="362" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="878" H="65">
+                <Image Name="bkg" X="0" Y="0" W="878" H="65" Image="{1,ui/res/WorldBoss/bg_reward.png}" SizeMode="1" />
+                <Image Name="Icon" X="50" Y="9" W="44" H="48" Center="2" Image="{1,ui/res/fate/fate_icon.png}" SizeMode="0" />
+                <Label Name="FValueLabel" X="100" Y="7" W="124" H="50" Text="10000" Color="143,101,57" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+                <Image Name="FateImg" X="226" Y="7" W="46" H="50" Center="2" Image="{1,ui/res/fate/fate.png}" SizeMode="0" />
+                <Label Name="LvLabel" X="236" Y="7" W="120" H="50" Text="100" Color="143,101,57" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+                <Label Name="AttrLabel" X="310" Y="10" W="450" H="40" Text="HP:+10000" Color="143,101,57" TextAlignment="1" BmpFont="font_2.fnt" FSize="22" />
+                <Image Name="ImgGet" X="760" Y="5" W="89" H="55" Center="2" Image="{1,ui/res/fate/get.png}" SizeMode="0" />
+            </Template>
+        </ListBox>
+        <Canvas Name="SeparateCanvs" X="7" Y="406" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

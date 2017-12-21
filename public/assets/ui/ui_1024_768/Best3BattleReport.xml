@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SandTableMonsterBatleReport" R_W="1.00" R_H="1.00">
+    <Canvas Name="RewardCanvas" X="0" Y="186" R_W="1.00" H="360" Center="1">
+        <Canvas Name="CanvasReward_0" X="362" Y="250" W="300" H="50" Center="1">
+            <Image Name="ImgBkg" X="38" Y="-2" W="42" H="46" Center="2" Image="{1,ui/res/best3/best3money.png}" SizeMode="0" />
+            <Label Name="LabelNum" X="106" Y="2" W="200" H="50" Text="1000" Color="255,255,255" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+            <Label Name="LabelPlus" X="190" Y="4" W="50" H="50" Text="+" Color="0,255,0" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="LabelDelta" X="215" Y="4" W="200" H="50" Text="1000" Color="0,255,0" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Canvas Name="CanvasReward_1" X="362" Y="180" W="300" H="50" Center="1">
+            <Image Name="ImgBkg" X="40" Y="-3" W="38" H="56" Center="2" Image="{1,ui/res/best3/best3cup.png}" SizeMode="0" />
+            <Label Name="LabelNum" X="106" Y="0" W="200" H="50" Text="1000" Color="255,255,255" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+            <Label Name="LabelPlus" X="190" Y="4" W="50" H="50" Text="+" Color="0,255,0" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="LabelDelta" X="215" Y="4" W="200" H="50" Text="1000" Color="0,255,0" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Label Name="LabelTip" X="212" Y="116" W="600" H="50" Center="1" Text="1000" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+    <Canvas Name="ResultRound" X="262" Y="184" W="500" H="87" Center="1">
+        <Image Name="ImgRes1" X="72" Y="0" W="138" H="87" Center="2" Image="{1,ui/res/best3/win.png}" SizeMode="1" />
+        <Image Name="ImgRes2" X="181" Y="0" W="138" H="87" Center="3" Image="{1,ui/res/best3/win.png}" SizeMode="1" />
+        <Image Name="ImgRes3" X="288" Y="0" W="138" H="87" Center="2" Image="{1,ui/res/best3/win.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="WinEffectCanvas" X="62" Y="200" W="900" H="400" Center="1" />
+    <Canvas Name="ExitBtn" X="389" Y="40" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="LevelUp" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" SizeMode="1" />
+        <Canvas Name="CanvasPop" X="181" Y="204" W="662" H="360" Center="3">
+            <Image Name="BoxBg1" X="130" Y="120" W="160" H="170" Image="{1,ui/res/goods_email_item_bk.png}" SizeMode="1" />
+            <Image Name="ImgLvl1" X="146" Y="134" W="130" H="146" Image="{1,icon/best3/1.png}" SizeMode="1" />
+            <Image Name="ImgArrow" X="313" Y="184" W="67" H="47" Image="{1,ui/res/arrow_right.png}" SizeMode="1" />
+            <Image Name="BoxBg2" X="394" Y="120" W="160" H="170" Image="{1,ui/res/goods_email_item_bk.png}" SizeMode="1" />
+            <Image Name="ImgLvl2" X="410" Y="132" W="130" H="146" Image="{1,icon/best3/2.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

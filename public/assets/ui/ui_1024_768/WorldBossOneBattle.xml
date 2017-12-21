@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossOneBattleFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="EditCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="SceneCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" />
+        <Canvas Name="BtnRest" X="794" Y="278" W="210" H="78" Touch="1" Right="20">
+            <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Rest" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="BtnAttr" X="794" Y="370" W="210" H="78" Touch="1" Right="20">
+            <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Rest" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="TopCanvas" X="0" Y="608" W="400" H="150" Top="10">
+            <Label Name="LabelName" X="92" Y="76" W="212" H="50" Text="Name" Color="255,247,193" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="NextImg" X="300" Y="58" W="93" H="83" Touch="1" RotationY="180" Image="{1,ui/res/TeamDefend/arrow.png}" SizeMode="1" />
+            <Image Name="PreImg" X="3" Y="58" W="93" H="83" Touch="1" Image="{1,ui/res/TeamDefend/arrow.png}" SizeMode="1" />
+            <Canvas Name="IsDefaultCanvas" X="50" Y="0" W="300" H="52" Touch="1" Center="1">
+                <Label Name="Label" X="75" Y="0" W="200" H="50" Text="IsDefault" Color="255,211,91" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="BkgImg" X="0" Y="0" W="58" H="52" Image="{1,ui/res/TeamDefend/tick_bkg.png}" SizeMode="1" />
+                <Image Name="TickImg" X="8" Y="10" W="59" H="44" Image="{1,ui/res/TeamDefend/tick.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasBuild" X="25" Y="0" R_W="0.95" H="190" Touch="1" Zoom="0" Background="{1,ui/res/frame/frame_shade.png.pvr.ccz}" Center="1">
+            <ListBox Name="ListBoxBuild" X="0" Y="0" R_W="1.00" H="190" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="175" H="190" Fixed="1">
+                    <Canvas Name="ItemCanvas" X="0" Y="0" W="175" H="150" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="175" H="150" Center="3" SizeMode="1" />
+                        <Image Name="ImageSelected" X="0" Y="0" W="175" H="150" Center="3" Image="{1,ui/res/building_item_bk.png}" SizeMode="1" />
+                        <Image Name="ImgSoldier" X="0" Y="0" W="175" H="150" Center="3" SizeMode="1" />
+                        <Label Name="LvNum" X="0" Y="100" W="175" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                        <Label Name="LabelNum" X="0" Y="0" W="175" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="ButtomCanvas" X="0" Y="0" R_W="1.00" H="300" Fixed="2">
+            <Label Name="ButtomTitleLabel" X="0" Y="300" R_W="1.00" H="46" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="46" />
+            <Canvas Name="InfoBtn" X="0" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/smain/Info.png}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="DelBtn" X="0" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BtnImage" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/clearBtn.png}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="BindHeroBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/BuildingBindHero.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="HeroInBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/arena.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="DraughtBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/sword.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="SelectRowBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/RowSelect.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="RotateRowBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/RowRotate.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+            <Canvas Name="BindHeroTotemBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+                <Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/arena.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BattleCanvas" X="7" Y="558" R_W="1.00" H="200" Top="10">
+        <Canvas Name="BtnBattleEnd" X="389" Y="114" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="245" H="77" Text="Battle" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="CanvasTime" X="382" Y="40" W="260" H="80" Top="80" Center="1">
+            <Label Name="LabelTip" X="-170" Y="50" W="600" H="16" Center="1" Color="220,215,200" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+            <Label Name="LabelTime" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Label Name="LabelBattleId" X="612" Y="144" W="400" H="46" Top="10" Right="12" Text="1" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+    </Canvas>
+	    <Canvas Name="BtnSpeed" X="759" Y="20" W="245" H="77" Touch="1" Right="20">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Image Name="ImageSpeed" X="65" Y="20" W="62" H="41" Image="{1,ui/res/speed.png}" SizeMode="1" />
+        <Label Name="Label" X="135" Y="5" W="100" H="75" Color="222,222,222" TextAlignment="0" BmpFont="font_1.fnt" FSize="45" />
+    </Canvas>
+</Layout>

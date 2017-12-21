@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TeamDungeonFrame" R_W="1.00" R_H="1.00">
+    <Image Name="ImgBkg" X="-388" Y="0" W="1800" R_H="1.00" Touch="1" Zoom="0" Center="3" Image="{1,ui/res/teamdungeon/bkg.jpg}" SizeMode="0" />
+    <Canvas Name="DungeonSelectCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0">
+	    <Canvas Name="HelpCanvas" X="-4" Y="602" W="153" H="166" Touch="1" Top="-4">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="HelpImg" X="35" Y="60" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+    </Canvas>
+        <Label Name="LabelTime" X="150" Y="638" W="200" H="50" Top="80" Text="00:00:00" Color="215,77,15" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+        <Label Name="LabelDungeonCount" X="140" Y="668" W="200" H="50" Top="50" Text="0" Color="255,255,255" TextAlignment="1" FSize="35" />
+        <Canvas Name="CountCanvs" X="135" Y="668" W="500" H="80" Top="20">
+            <ProgressEx Name="CountProgress1" X="0" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress2" X="50" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress3" X="100" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress4" X="150" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress5" X="200" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress6" X="250" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress7" X="300" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <ProgressEx Name="CountProgress8" X="350" Y="20" W="59" H="53" ProgressBackground="{1,ui/res/defensivebattle/sword_dark_59-53.png}" ProgressImage="{1,ui/res/defensivebattle/sword_progress_59-53.png}" CurValue="60" MaxValue="100" Direction="0" />
+            <Image Name="LightSwordImg1" X="-19" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg2" X="31" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg3" X="81" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg4" X="131" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg5" X="181" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg6" X="231" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg7" X="281" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Image Name="LightSwordImg8" X="331" Y="2" W="98" H="92" Image="{1,ui/res/defensivebattle/sword_light_97-92.png}" SizeMode="1" />
+            <Label Name="LabelTimeNum" X="215" Y="15" W="200" H="53" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ImgAdd" X="430" Y="16" W="60" H="60" Touch="1" Image="{1,ui/res/Addition.png.pvr.ccz}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="DungeonGroupListCanvas" X="232" Y="160" W="560" H="500" Center="1">
+            <Canvas Name="Dungeon_0" X="185" Y="9" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_1" X="380" Y="140" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_2" X="185" Y="277" W="200" H="200" Touch="1" />
+            <Canvas Name="Dungeon_3" X="-30" Y="140" W="200" H="200" Touch="1" />
+            <Canvas Name="DungeonNameCanvas" X="157" Y="40" W="245" H="77" Center="1">
+                <Label Name="LabelDungeonName" X="0" Y="40" W="245" H="77" Center="1" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="NotOpen" X="-77" Y="-20" W="400" H="77" Center="1" Text="No Open" Color="215,77,15" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Canvas Name="PowerCanvas" X="0" Y="0" W="245" H="77" Center="1">
+                    <Label Name="LabelText" X="-102" Y="-10" W="200" H="77" Text="AAAA:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                    <Image Name="ImgBattlePower" X="106" Y="7" W="52" H="47" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelPower" X="163" Y="-10" W="245" H="77" Text="5000" Color="215,77,15" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+                <Canvas Name="WaitingCanvas" X="0" Y="0" W="245" H="77" Center="1">
+                    <Canvas Name="PersonCanvas" X="74" Y="0" W="96" H="77" Center="1">
+                        <Canvas Name="Person0" X="0" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person1" X="25" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person2" X="50" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="Person3" X="75" Y="0" W="21" H="42">
+                            <Image Name="Bkg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person_bkg.png}" SizeMode="1" />
+                            <Image Name="PersonImg" X="0" Y="0" W="21" H="42" Image="{1,ui/res/teamdungeon/person.png}" SizeMode="1" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BtnLastDungeonGroup" X="30" Y="396" W="121" H="119" Touch="1">
+            <Image Name="Img" X="0" Y="0" W="121" H="119" Image="{1,ui/res/HeroTeam/left_arrow.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BtnNextDungeonGroup" X="873" Y="396" W="121" H="119" Touch="1" Right="30">
+            <Image Name="Img" X="0" Y="0" W="121" H="119" RotationY="180" Image="{1,ui/res/HeroTeam/left_arrow.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BottomCanvs" X="137" Y="20" W="750" H="77" Center="1">
+            <Canvas Name="HeroTeamCanvs" X="0" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="JionCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CreateCanvs" X="500" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CancelJionCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RoomCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="PlayerNameCanvas" X="0" Y="0" W="137" H="39">
+            <Image Name="Bkg" X="0" Y="-5" W="137" H="39" Image="{1,ui/res/teamdungeon/name_shade.png}" SizeMode="1" />
+            <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+        </Canvas>
+        <Canvas Name="MapCanvas" X="37" Y="-100" W="950" H="862" Center="1">
+            <Image Name="MapBkg" X="0" Y="0" W="950" H="862" Image="{1,ui/res/teamdungeon/dungeon_map1.png}" SizeMode="1" />
+            <Canvas Name="AttackCell0" X="436" Y="715" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell1" X="369" Y="668" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell6" X="501" Y="666" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell2" X="305" Y="622" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell7" X="433" Y="618" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell12" X="566" Y="617" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell3" X="238" Y="575" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell8" X="368" Y="572" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell13" X="499" Y="571" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell18" X="629" Y="570" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell4" X="174" Y="529" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell9" X="304" Y="526" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell14" X="435" Y="524" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell19" X="564" Y="523" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell24" X="693" Y="524" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell5" X="109" Y="480" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell10" X="239" Y="480" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell15" X="370" Y="478" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell20" X="500" Y="476" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell25" X="631" Y="475" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell30" X="756" Y="477" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell11" X="174" Y="432" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell16" X="305" Y="432" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell21" X="435" Y="430" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell26" X="565" Y="430" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell31" X="692" Y="430" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell17" X="241" Y="386" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell22" X="371" Y="386" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell27" X="499" Y="385" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell32" X="629" Y="383" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell23" X="304" Y="338" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell28" X="436" Y="339" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell33" X="565" Y="339" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell29" X="370" Y="293" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell34" X="500" Y="291" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+            <Canvas Name="AttackCell35" X="435" Y="244" W="80" H="55" Touch="1">
+                <Image Name="TouchArea" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/shade.png.pvr.ccz}" SizeMode="1" />
+                <Image Name="BkImg" X="-20" Y="-17" W="121" H="90" Center="3" Image="{1,ui/res/teamdungeon/AttackCell.png}" SizeMode="1" />
+                <Image Name="ImgHero" X="-20" Y="-17" W="121" H="90" Center="3" SizeMode="1" />
+                <Label Name="LabelName" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Color="255,255,255" TextAlignment="1" FSize="20" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BottomCanvs" X="137" Y="20" W="750" H="77" Center="1">
+            <Canvas Name="ConsortiaInviteCanvs" X="0" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="FriendInviteCanvs" X="250" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BeginBattleCanvs" X="500" Y="0" W="245" H="77" Touch="1" Center="2">
+                <Image Name="BkImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="245" H="77" Text="AAAA" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="PlayerCanvas" X="10" Y="345" W="82" H="500">
+            <Canvas Name="Player_0" X="0" Y="255" W="82" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="4" Y="23" W="84" H="78" SizeMode="1" />
+                    <Label Name="LabelNum" X="-1" Y="5" W="84" H="20" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+                </Canvas>
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="161" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="161" H="61" Image="{1,ui/res/teamdungeon/flag.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_1" X="0" Y="170" W="82" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="4" Y="23" W="84" H="78" SizeMode="1" />
+                    <Label Name="LabelNum" X="-1" Y="5" W="84" H="20" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+                </Canvas>
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="161" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="161" H="61" Image="{1,ui/res/teamdungeon/flag.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_2" X="0" Y="85" W="82" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="4" Y="23" W="84" H="78" SizeMode="1" />
+                    <Label Name="LabelNum" X="-1" Y="5" W="84" H="20" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+                </Canvas>
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="161" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="161" H="61" Image="{1,ui/res/teamdungeon/flag.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Player_3" X="0" Y="0" W="82" H="83">
+                <Image Name="BkImg" X="0" Y="0" W="82" H="83" Image="{1,ui/res/teamdungeon/player_bkg.png}" SizeMode="1" />
+                <Canvas Name="CanvasHead" X="0" Y="3" W="82" H="83" Touch="1">
+                    <Image Name="ImgBkg" X="-1" Y="-4" W="84" H="91" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="4" Y="23" W="84" H="78" SizeMode="1" />
+                    <Label Name="LabelNum" X="-1" Y="5" W="84" H="20" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+                </Canvas>
+                <Canvas Name="CanvasBattePower" X="78" Y="7" W="161" H="61">
+                    <Image Name="ImgBkg" X="0" Y="0" W="161" H="61" Image="{1,ui/res/teamdungeon/flag.png}" SizeMode="1" />
+                    <Image Name="ImgBattlePower" X="13" Y="7" W="26" H="23" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+                    <Label Name="LabelName" X="13" Y="32" W="120" H="20" Color="255,255,255" TextAlignment="0" FSize="20" />
+                    <Label Name="LabelBattlePower" X="43" Y="9" W="84" H="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="16" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Label Name="LabelDungeonName" X="20" Y="708" W="328" H="50" Top="10" Text="Dungeon Name" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+        <Canvas Name="TimeCavas" X="412" Y="349" W="200" H="70" Center="3">
+            <Label Name="LabelTime" X="0" Y="0" W="200" H="70" Text="0s" Color="229,79,21" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+        </Canvas>
+        <Canvas Name="HeroTeamCavas" X="0" Y="-32" W="169" H="400">
+            <Canvas Name="BtnTeam1" X="0" Y="250" W="169" H="100" Touch="1" Zoom="0">
+                <Canvas Name="SelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg_Select.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+                </Canvas>
+                <Canvas Name="UnSelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="1" Color="89,187,212" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="BtnTeam2" X="0" Y="150" W="169" H="100" Touch="1" Zoom="0">
+                <Canvas Name="SelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg_Select.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+                </Canvas>
+                <Canvas Name="UnSelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="2" Color="89,187,212" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="BtnTeam3" X="0" Y="50" W="169" H="100" Touch="1" Zoom="0">
+                <Canvas Name="SelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg_Select.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+                </Canvas>
+                <Canvas Name="UnSelectCanvas" X="0" Y="0" W="169" H="100" Center="2">
+                    <Image Name="Img" X="0" Y="-35" W="169" H="171" Center="2" Image="{1,ui/res/teamdungeon/HeroTeamBkg.png}" SizeMode="1" />
+                    <Label Name="LabelTeamId" X="0" Y="0" W="100" H="100" Center="2" Text="3" Color="89,187,212" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="LookPlayerCanvas" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+            <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+            <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="HeroTeamCanvas" X="212" Y="212" W="600" H="440" Center="1">
+            <Image Name="Bkg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" SizeMode="1" />
+            <Canvas Name="CellCanvas" X="90" Y="0" W="420" H="440" Center="3">
+                <Canvas Name="Cell0" X="139" Y="192" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="0" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell1" X="60" Y="134" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell1.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell3" X="217" Y="134" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell3.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell2" X="-19" Y="76" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell4" X="139" Y="76" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell4.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell6" X="295" Y="76" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="6" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell5" X="60" Y="18" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell3.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="5" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell7" X="217" Y="18" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell7.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="7" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+                <Canvas Name="Cell8" X="139" Y="-40" W="140" H="207">
+                    <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell8.png}" SizeMode="1" />
+                    <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                    <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                    <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                        <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                        <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="9" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BtnCanvas" X="237" Y="152" W="550" H="100" Center="1">
+            <Canvas Name="BtnAddFriend" X="0" Y="0" W="210" H="78" Touch="1">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Freind" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="BtnKickOut" X="340" Y="0" W="210" H="78" Touch="1" Right="0">
+                <Image Name="BkImg" X="0" Y="0" W="210" H="78" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="210" H="78" Text="Kick" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="TopCanvas" X="0" Y="668" W="550" H="100" Top="0">
+            <Label Name="LabelName" X="20" Y="50" W="100" H="50" Text="Name" Color="255,247,193" TextAlignment="0" FSize="30" />
+            <Image Name="ImgBattlePower" X="20" Y="0" W="52" H="47" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+            <Label Name="LabelBattlePower" X="75" Y="0" W="100" H="50" Text="0" Color="255,211,91" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossAcitvityDonateFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+        <Canvas Name="InfoCanvas" X="495" Y="24" W="432" H="570">
+            <Label Name="LeftTitleLabel" X="20" Y="350" W="210" H="50" Text="Left:" Color="236,218,172" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LeftResLabel" X="236" Y="350" W="160" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="GetLabel" X="20" Y="254" W="210" H="50" Color="236,218,172" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="ScoreLabel" X="236" Y="254" W="160" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+			<Label Name="TotleScoreTitle" X="16" Y="188" W="400" H="50" Center="1" Text="Accumulate:" Color="236,218,172" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+</Layout>

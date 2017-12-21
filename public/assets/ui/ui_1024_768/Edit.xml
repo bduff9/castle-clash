@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="EditFrame" R_W="1.00" R_H="1.00">
+
+	 <Label Name="TitleLabel" X="20" Y="500" W="220" H="60"  Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" Top="20" />
+
+	 <Canvas Name="CanvasClear" X="0" Y="283" W="257" H="70" Touch="1"  TipId="1002" Right="25">
+          <Image Name="ImgBkg" X="0" Y="0" W="257" H="70" Image="{1,ui/res/edit/button_bkg_blue.png}" SizeMode="1" />
+		  <Image Name="ImgIcon" X="23" Y="0" W="45" H="45" Image="{1,ui/res/edit/clear.png}" SizeMode="0" Center="2" />
+          <Label Name="LabelText" X="80" Y="2" W="180" H="70" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text="" />
+		  <Label Name="LabelText2" X="80" Y="2" W="180" H="70" Color="178,178,178" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text="" />
+     </Canvas>
+	 
+	 <Canvas Name="CanvasRemove" X="0" Y="200" W="257" H="70" Touch="0" Right="25" >
+		  <Image Name="ImgBkg" X="0" Y="0" W="257" H="70" Image="{1,ui/res/edit/button_bkg_blue.png}" SizeMode="1" />
+		  <Canvas Name="CanvasOff" X="0" Y="0" W="257" H="70" Touch="1" >
+			<Image Name="ImgBkgOff" X="23" Y="0" W="45" H="45" Image="{1,ui/res/edit/removeOff.png}" SizeMode="1" Touch="0" TipId="1004" Center="2"/>
+			<Label Name="LabelText" X="80" Y="2" W="180" H="70" Color="178,178,178" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text="" />
+		  </Canvas>
+		  <Canvas Name="CanvasOn" X="0" Y="0" W="257" H="70" Touch="1">
+			<Image Name="ImgBkgOn" X="23" Y="0" W="45" H="45" Image="{1,ui/res/edit/removeOn.png}" SizeMode="1" Touch="0" TipId="1003" Center="2"/>
+			<Label Name="LabelText" X="80" Y="2" W="180" H="70" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text="" />
+		  </Canvas>          
+     </Canvas>
+ 
+	 <Canvas Name="CanvasCloudData" X="25" Y="283" W="257" H="70" Touch="1"  TipId="1000">
+          <Image Name="ImgBkg" X="0" Y="0" W="257" H="70" Image="{1,ui/res/edit/button_bkg_blue.png}" SizeMode="1" />
+          <Label Name="LabelText" X="0" Y="2" W="257" H="70" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text=""/>
+     </Canvas>
+
+	 <Canvas Name="CanvasExit" X="25" Y="200" W="257" H="70" Touch="1"  TipId="1001">
+        <Image Name="ImgBkg" X="0" Y="0" W="257" H="70" Image="{1,ui/res/edit/button_bkg_red.png}" SizeMode="1" />
+		<Label Name="LabelText" X="0" Y="2" W="257" H="70" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" Text=""/>
+    </Canvas>
+	
+	<Canvas Name="ButtomCanvas" X="0" Y="220" R_W="1.00" H="150" Fixed="2">
+		<Label Name="ButtomTitleLabel" X="0" Y="130" R_W="1.00" H="46" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="46" />
+		<Canvas Name="ClearBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+			<Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png}" SizeMode="1" />
+			<Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/clearBtn.png}" SizeMode="0" />
+			<Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+		</Canvas>
+		
+		<Canvas Name="SelectRowBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+			<Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png}" SizeMode="1" />
+			<Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/RowSelect.png}" SizeMode="0" />
+			<Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+		</Canvas>
+		
+		<Canvas Name="RotateRowBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+			<Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png}" SizeMode="1" />
+			<Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/RowRotate.png}" SizeMode="0" />
+			<Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+		</Canvas>
+
+		<Canvas Name="DeleteBtn" X="101" Y="24" W="89" H="93" Fixed="1" Touch="1">
+			<Image Name="FrameImg" X="0" Y="0" W="89" H="93" Image="{1,ui/res/main/Tip_bk.png}" SizeMode="1" />
+			<Label Name="NumLabel" X="0" Y="95" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+			<Image Name="Img" X="14" Y="27" W="60" H="60" Center="1" Image="{1,ui/res/main/clearBtn.png}" SizeMode="0" />
+			<Label Name="NameLabel" X="0" Y="-10" W="89" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+		</Canvas>
+	</Canvas>
+
+	<Label Name="LableTip" X="0" Y="192" R_W="0.9" H="30" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+	<Canvas Name="CanvasSoldier" X="0" Y="0" R_W="0.95" H="190" Touch="1" Zoom="0" Background="{1,ui/res/frame/frame_shade.png.pvr.ccz}" Center="1">
+        <ListBox Name="ListBoxSoldier" X="0" Y="0" R_W="1.00" H="190" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="175" H="190" Fixed="1">
+                <Canvas Name="ItemCanvas" X="0" Y="0" W="175" H="150" Touch="1">			
+                    <Image Name="ImgBkg" X="0" Y="0" W="175" H="150" Center="3" SizeMode="1" />
+                    <Image Name="ImageSelected" X="0" Y="0" W="175" H="150" Center="3" Image="{1,ui/res/building_item_bk.png}" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="0" Y="0" W="175" H="150" Center="3" SizeMode="1" />
+					<Label Name="LvNum" X="0" Y="100" W="175" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                    <Label Name="LabelNum" X="0" Y="0" W="175" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+
+	<Label Name="LabelTitle" X="20" Y="0" W="400" H="70" Top="0" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" Text=""/>
+
+	<Canvas Name="CanvasHomeLayout" X="25" Y="0" W="80" H="270" Top="100" Touch="1" Zoom="0"  >
+		<Canvas Name="CanvasNum1" X="0" Y="180" W="80" H="80" Touch="1" >			
+			<Image Name="ImgBkg" X="0" Y="0" W="80" H="80" Center="3" Image="{1,ui/res/edit/blue_home_bkg.png}" SizeMode="1" />	
+			<Label Name="LabelText2" X="0" Y="0" W="80" H="40" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" Text="" />
+			<Label Name="LabelText" X="0" Y="8" W="80" H="80" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Text="" />
+		</Canvas>
+		<Canvas Name="CanvasNum2" X="0" Y="90" W="80" H="80" Touch="1" >
+			<Image Name="ImgBkg" X="0" Y="0" W="80" H="80" Center="3" Image="{1,ui/res/edit/blue_home_bkg.png}" SizeMode="1" />
+			<Label Name="LabelText2" X="0" Y="0" W="80" H="40" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" Text="" />
+			<Label Name="LabelText" X="0" Y="8" W="80" H="80" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Text="" />
+		</Canvas>
+		<Canvas Name="CanvasNum3" X="0" Y="0" W="80" H="80" Touch="1" >
+			<Image Name="ImgBkg" X="0" Y="0" W="80" H="80" Center="3" Image="{1,ui/res/edit/blue_home_bkg.png}" SizeMode="1" />
+			<Label Name="LabelText2" X="0" Y="0" W="80" H="40" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" Text="" />
+			<Label Name="LabelText" X="0" Y="8" W="80" H="80" Color="218,218,218" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" Text="" />
+		</Canvas>
+	</Canvas>
+</Layout>

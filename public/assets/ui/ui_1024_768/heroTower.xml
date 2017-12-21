@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="heroTowerFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="SeparateCanvs" X="32" Y="185" W="960" H="81" Center="1">
+        <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="HeroCanvas" X="27" Y="228" W="994" H="420" Touch="1" Zoom="0">
+        <Image Name="BkgImg_1" X="188" Y="110" W="746" H="197" Image="{1,ui/res/heroTower/bkg_top.png}" SizeMode="1" />
+        <Canvas Name="BuildingCanvas" X="226" Y="140" W="180" H="200" />
+        <Label Name="LabelTip" X="427" Y="25" W="500" H="60" Color="241,214,176" TextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="22" />
+        <Canvas Name="CanvsGreen" X="440" Y="85" W="142" H="240">
+            <Image Name="FlagImg" X="0" Y="0" W="142" H="150" Image="{1,ui/res/heroTower/flag_green.png}" SizeMode="1" />
+            <Image Name="BkgImg" X="0" Y="52" W="142" H="188" Top="0" Image="{1,ui/res/heroTower/tower_item_bk.png}" SizeMode="1" />
+            <TimerImage Name="RingImg" X="10" Y="62" W="122" H="122" Center="1" Image="{1,ui/res/heroTower/ring_green.png}" TimerType="0" />
+            <Image Name="ShadeImg" X="18" Y="71" W="106" H="106" Center="1" Image="{1,ui/res/heroTower/tower_shade_7.png}" SizeMode="1" />
+            <Image Name="BallImg" X="31" Y="86" W="78" H="78" Touch="1" SizeMode="1" />
+            <Label Name="ExpLabel" X="0" Y="20" W="142" H="30" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvsBlue" X="605" Y="85" W="142" H="240">
+            <Image Name="FlagImg" X="0" Y="0" W="142" H="150" Image="{1,ui/res/heroTower/flag_blue.png}" SizeMode="1" />
+            <Image Name="BkgImg" X="0" Y="52" W="142" H="188" Top="0" Image="{1,ui/res/heroTower/tower_item_bk.png}" SizeMode="1" />
+            <TimerImage Name="RingImg" X="10" Y="62" W="122" H="122" Center="1" Image="{1,ui/res/heroTower/ring_blue.png}" TimerType="0" />
+            <Image Name="ShadeImg" X="18" Y="71" W="106" H="106" Center="1" Image="{1,ui/res/heroTower/tower_shade_7.png}" SizeMode="1" />
+            <Image Name="BallImg" X="31" Y="86" W="78" H="78" Touch="1" Image="{1,ui/res/heroTower/ball_0_0.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="ExpLabel" X="0" Y="20" W="142" H="30" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvsPurple" X="775" Y="85" W="142" H="240">
+            <Image Name="FlagImg" X="0" Y="0" W="142" H="150" Image="{1,ui/res/heroTower/flag_purple.png}" SizeMode="1" />
+            <Image Name="BkgImg" X="0" Y="52" W="142" H="188" Top="0" Image="{1,ui/res/heroTower/tower_item_bk.png}" SizeMode="1" />
+            <TimerImage Name="RingImg" X="10" Y="62" W="122" H="122" Center="1" Image="{1,ui/res/heroTower/ring_purple.png}" TimerType="0" />
+            <Image Name="ShadeImg" X="18" Y="71" W="106" H="106" Center="1" Image="{1,ui/res/heroTower/tower_shade_7.png}" SizeMode="1" />
+            <Image Name="BallImg" X="31" Y="86" W="78" H="78" Touch="1" SizeMode="1" />
+            <Label Name="ExpLabel" X="0" Y="20" W="142" H="30" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="HeroCanvsTop" X="95" Y="265" W="130" H="130" Touch="1">
+            <Image Name="Img" X="14" Y="12" W="109" H="105" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="6" Y="11" W="127" H="130" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+            <Image Name="HeroImg" X="13" Y="48" W="125" H="106" SizeMode="1" />
+            <Label Name="LvlLabel" X="40" Y="28" W="70" H="20" Text="LV101" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            <Label Name="AddLabel" X="89" Y="110" W="80" H="30" Text="+116" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+            <Image Name="CareerImg" X="10" Y="23" W="25" H="27" SizeMode="1" />
+			            <Canvas Name="StarCanvs" X="-1" Y="104" W="34" H="34">
+                <Image Name="AwakeImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="-5" Y="3" W="44" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="HeroCanvsCenter" X="32" Y="128" W="135" H="137" Touch="1">
+            <Image Name="Img" X="17" Y="16" W="109" H="105" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="9" Y="8" W="127" H="130" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+            <Image Name="HeroImg" X="17" Y="45" W="125" H="106" SizeMode="1" />
+            <Label Name="LvlLabel" X="40" Y="24" W="70" H="20" Text="LV101" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            <Label Name="AddLabel" X="89" Y="107" W="80" H="30" Top="0" Text="+116" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+            <Image Name="CareerImg" X="11" Y="21" W="25" H="27" SizeMode="1" />
+			            <Canvas Name="StarCanvs" X="-1" Y="104" W="34" H="34">
+                <Image Name="AwakeImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="-5" Y="3" W="44" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="HeroCanvsBottom" X="95" Y="0" W="135" H="137" Touch="1">
+            <Image Name="Img" X="17" Y="16" W="109" H="105" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="9" Y="11" W="127" H="130" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+            <Image Name="HeroImg" X="17" Y="48" W="125" H="106" SizeMode="1" />
+            <Label Name="LvlLabel" X="40" Y="28" W="70" H="20" Text="LV101" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            <Label Name="AddLabel" X="89" Y="107" W="80" H="30" Text="+116" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+            <Image Name="CareerImg" X="11" Y="22" W="25" H="27" SizeMode="1" />
+			            <Canvas Name="StarCanvs" X="-1" Y="104" W="34" H="34">
+                <Image Name="AwakeImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="-5" Y="3" W="44" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasPop" X="330" Y="246" W="320" H="220" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgBkg" X="139" Y="-19" W="42" H="42" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Label Name="LabelTip" X="17" Y="178" W="286" H="26" Center="1" Color="84,81,76" TextAlignment="0" VTextAlignment="2" BmpFont="font_2.fnt" FSize="16" />
+            <Label Name="LabelCur" X="17" Y="108" W="286" H="70" Center="1" Color="84,81,76" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="14" />
+            <Label Name="LabelTipNext" X="17" Y="82" W="286" H="26" Center="1" Color="84,81,76" TextAlignment="0" VTextAlignment="2" BmpFont="font_2.fnt" FSize="16" />
+            <Label Name="LabelNext" X="17" Y="12" W="286" H="70" Center="1" Color="84,81,76" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="14" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="ListBoxCanvs" X="29" Y="35" W="970" H="185" Touch="1" Zoom="0">
+        <ListBox Name="HeroListBox" X="12" Y="5" W="945" H="185" Center="1" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="180" H="185" Fixed="1">
+                <Canvas Name="HeroCanvs" X="20" Y="0" W="170" H="185" Touch="1">
+                    <Image Name="ImgBkg" X="3" Y="8" W="164" H="168" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="HeroImg" X="14" Y="57" W="159" H="134" SizeMode="1" />
+                    <Label Name="LvlLabel" X="55" Y="28" W="90" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+                    <Label Name="AddLabel" X="108" Y="128" W="80" H="50" Top="7" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+                    <Image Name="CareerImg" X="10" Y="28" W="32" H="34" SizeMode="1" />
+                    <Image Name="AwakeImg" X="10" Y="120" W="45" H="45" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="StarImg" X="10" Y="120" W="45" H="45" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="StarNumLabel" X="0" Y="115" W="61" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+					<Image Name="CareerImgTalent" X="18" Y="24" W="36" H="36" SizeMode="1" />
+					<Image Name="talentIconBg" X="8" Y="14" W="57" H="56" Image="{1,ui/res/talentIconBg.png}" SizeMode="1" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Image Name="ImgBkg_L" X="10" Y="6" W="50" H="170" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Image Name="ImgBkg_R" X="909" Y="6" W="50" H="170" Right="11" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="NextCanvs" X="35" Y="670" W="106" H="78" Touch="1">
+        <Image Name="Bkg" X="0" Y="0" W="106" H="78" Image="{1,ui/res/barrack_refresh.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

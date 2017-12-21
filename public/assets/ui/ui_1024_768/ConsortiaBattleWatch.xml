@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaBattleWatch" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasCenter" X="382" Y="608" W="260" H="160" Top="0" Center="3">
+        <Canvas Name="CanvasTime" X="0" Y="0" W="260" H="80" Center="1">
+            <Label Name="LabelTip" X="-170" Y="50" W="600" H="16" Center="1" Color="220,215,200" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+            <Label Name="LabelTime" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Label Name="LabelTime_1" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="BtnEndBattle" X="7" Y="74" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasRightTop" X="724" Y="368" W="300" H="400" Top="0" Right="0">
+        <Label Name="LabelName" X="-112" Y="344" W="400" H="46" Top="10" Right="12" Color="255,255,255" TextAlignment="2" FSize="28" />
+        <Label Name="LabelLoot" X="56" Y="270" W="240" H="50" Top="80" Right="4" Color="220,215,200" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+        <Canvas Name="ScoreCanvas" X="106" Y="228" W="180" H="39" Top="133" Right="14">
+            <Image Name="ImagePro" X="140" Y="-7" W="50" H="50" Fixed="1" Right="-10" Image="{1,ui/res/best3/best3cup.png}" SizeMode="0" />
+            <Label Name="LabelNum" X="0" Y="-8" W="144" H="50" Color="222,222,222" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasDamage" X="858" Y="150" W="150" H="80" Background="{1,ui/res/soldier_list_bkg.png.pvr.ccz}" Right="16">
+        <Canvas Name="CanvasStar" X="29" Y="2" W="92" H="40" Center="1">
+            <Image Name="ImageStar1" X="0" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar2" X="31" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar3" X="63" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_1" X="0" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_2" X="31" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+            <Image Name="ImageStar_3" X="63" Y="0" W="28" H="40" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="LabelDamage" X="0" Y="40" W="150" H="36" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="CanvasSoldier" X="0" Y="0" R_W="1.00" H="170" Touch="1" Zoom="0">
+        <ListBox Name="ListBoxSoldier" X="0" Y="0" R_W="1.00" H="165" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="137" H="150" Fixed="1">
+                <Canvas Name="ItemCanvas" X="0" Y="0" W="142" H="140" Touch="1">
+                    <Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="ImgBkg1" X="12" Y="3" W="118" H="120" Center="1" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                    <Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+                    <Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />
+                    <Image Name="ImgDead" X="14" Y="5" W="112" H="115" Image="{1,ui/res/heroDead.png}" SizeMode="1" />
+                    <ProgressEx Name="ProgressHp" X="17" Y="0" W="107" H="16" Center="1" ProgressBackground="{1,ui/res/pro3/pro_hero_bkg.png.pvr.ccz}" ProgressImage="{1,ui/res/pro3/pro_hero.png.pvr.ccz}" MaxValue="100" Direction="3" />
+                    <Label Name="LabelNum" X="11" Y="15" W="120" H="24" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TruntableFrame" R_W="1.00" R_H="1.00">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="FormCanvas" X="0" Y="30" W="1024" H="768" Center="1">
+        <Canvas Name="BkgCanvs" X="39" Y="0" W="946" H="704" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="499" H="704" Image="{1,ui/res/Truntable/bkg.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="447" Y="0" W="499" H="704" RotationY="180" Image="{1,ui/res/Truntable/bkg.png}" SizeMode="1" />
+            <Image Name="Bkg_C" X="188" Y="353" W="569" H="174" Center="1" Image="{1,ui/res/Truntable/bkg_c.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="Item_1" X="101" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_2" X="201" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_3" X="302" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_4" X="402" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_5" X="503" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_6" X="603" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_7" X="704" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_8" X="806" Y="533" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_9" X="806" Y="433" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_10" X="806" Y="333" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_11" X="806" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_12" X="704" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_13" X="603" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_14" X="503" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_15" X="402" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_16" X="302" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_17" X="201" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_18" X="101" Y="233" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_19" X="101" Y="333" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="Item_20" X="101" Y="433" W="117" H="111">
+            <Image Name="Bkg" X="0" Y="0" W="117" H="111" Image="{1,ui/res/Truntable/item.png}" SizeMode="1" />
+            <Image Name="Sel" X="3" Y="-1" W="111" H="114" Center="3" Image="{1,ui/res/Truntable/sel.png}" SizeMode="1" />
+            <Image Name="Img" X="14" Y="9" W="89" H="93" Center="3" SizeMode="1" />
+            <Canvas Name="SoulCanvas" X="23" Y="18" W="70" H="70">
+                <Image Name="Bkg" X="0" Y="0" W="70" H="70" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="Img" X="4" Y="20" W="70" H="60" SizeMode="1" />
+                <Image Name="IconSoul" X="-4" Y="41" W="34" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="Count" X="20" Y="11" W="80" H="26" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="Num" X="23" Y="60" W="80" H="40" Color="255,99,38" TextAlignment="2" BmpFont="font_1.fnt" FSize="40" />
+        </Canvas>
+        <Canvas Name="CenterCanvas" X="223" Y="351" W="578" H="177" Center="1">
+            <Image Name="Bkg_1" X="55" Y="45" W="203" H="78" Image="{1,ui/res/Truntable/btn_bkg.png}" SizeMode="1" />
+            <Image Name="Bkg_10" X="320" Y="45" W="203" H="78" Right="55" Image="{1,ui/res/Truntable/btn_bkg.png}" SizeMode="1" />
+            <Canvas Name="Go_1" X="59" Y="50" W="193" H="66" Touch="1">
+                <Image Name="Bkg" X="0" Y="0" W="193" H="66" Image="{1,ui/res/Truntable/btn.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="193" H="66" Text="x1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="Go_10" X="326" Y="50" W="193" H="66" Touch="1" Right="59">
+                <Image Name="Bkg" X="0" Y="0" W="193" H="66" Image="{1,ui/res/Truntable/btn.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="193" H="66" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Label Name="LuckyLabel" X="90" Y="130" W="220" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="LuckyNum" X="315" Y="129" W="100" H="30" Color="255,230,62" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+            <ResImage Name="Img_1" X="14" Y="0" W="48" H="50" Image="{1,ui/res/ActivityEx/coin.png}" SizeMode="1" ResID="37" Touch="1" />
+            <ResImage Name="Img_2" X="281" Y="0" W="48" H="50" Image="{1,ui/res/ActivityEx/coin.png}" SizeMode="1" ResID="37" Touch="1" />
+            <Label Name="Num_1" X="61" Y="2" W="100" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="Num_2" X="328" Y="2" W="100" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="LabelNum_2" X="123" Y="2" W="160" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Label Name="TimeLabel" X="473" Y="661" W="120" H="30" Color="255,78,9" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+        <Image Name="TimeImg" X="438" Y="662" W="27" H="27" Image="{1,ui/res/timer.png}" SizeMode="0" />
+        <Label Name="TipLabel" X="102" Y="144" W="820" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Canvas Name="RewardBkg" X="0" Y="18" W="1024" H="108">
+            <Image Name="Img_1" X="62" Y="0" W="108" H="108" Image="{1,ui/res/Truntable/img_1.png}" SizeMode="1" />
+            <Image Name="Img_2" X="59" Y="0" W="71" H="108" Image="{1,ui/res/Truntable/img_2.png}" SizeMode="1" />
+            <Image Name="Img_3" X="300" Y="0" W="83" H="108" Image="{1,ui/res/Truntable/img_3.png}" SizeMode="1" />
+            <Image Name="Img_4" X="894" Y="0" W="71" H="108" RotationY="180" Right="59" Image="{1,ui/res/Truntable/img_2.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="RewardCanvas" X="0" Y="17" W="1024" H="108">
+            <Canvas Name="RewardItem_1" X="61" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/dunge/box1_open.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_2" X="191" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_3" X="321" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_4" X="451" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_5" X="581" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_6" X="711" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="RewardItem_7" X="841" Y="0" W="130" H="108">
+                <Image Name="Img" X="7" Y="-6" W="115" H="119" Center="1" Image="{1,ui/res/domain/box1.png}" SizeMode="0" />
+                <Label Name="Num" X="0" Y="5" W="130" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CloseBtn" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="Bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BackBtn" X="-4" Y="605" W="153" H="166" Touch="1" Top="-3">
+        <Image Name="Bkg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="Img" X="34" Y="60" W="88" H="88" Image="{1,ui/res/button/form_back_m.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

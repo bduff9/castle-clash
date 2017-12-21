@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ChampionshopBattleWatch" R_W="1.00" R_H="1.00">
+    <Canvas Name="AttUserCanvs" X="10" Y="676" W="200" H="90" Fixed="1" Top="2">
+        <Image Name="BkImg" X="0" Y="0" W="200" H="90" Image="{1,ui/res/frame/frame_302_178_b.png}" SizeMode="1" />
+        <Label Name="LvlLabel" X="20" Y="50" W="160" H="30" Center="1" Text="lvl" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="NameLabel" X="0" Y="26" W="200" H="30" Center="1" Text="Name123" Color="255,247,193" TextAlignment="1" FSize="20" />
+    </Canvas>
+    <Canvas Name="CanvasTime" X="382" Y="694" W="260" H="60" Top="14" Center="1">
+        <Label Name="LabelTime" X="0" Y="20" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        <Label Name="LabelTime_1" X="0" Y="20" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+    </Canvas>
+    <Canvas Name="BtnOutWatch" X="749" Y="27" W="245" H="77" Touch="1" Right="30">
+        <Image Name="bkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="DefUserCanvs" X="814" Y="676" W="200" H="90" Fixed="1" Top="2" Right="10">
+        <Image Name="BkImg" X="0" Y="0" W="200" H="90" Image="{1,ui/res/frame/frame_302_178_r.png}" SizeMode="1" />
+        <Label Name="LvlLabel" X="20" Y="50" W="160" H="30" Center="1" Text="lvl" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="NameLabel" X="0" Y="26" W="200" H="30" Center="1" Text="Name123" Color="255,247,193" TextAlignment="1" FSize="20" />
+    </Canvas>
+    <Canvas Name="CanvasReport" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+        <Canvas Name="CanvasPlay" X="214" Y="160" W="596" H="500" Center="1" />
+        <Canvas Name="CanvasWin" X="217" Y="142" W="590" H="500" Center="1">
+            <Label Name="LabelLvl" X="172" Y="246" W="245" H="50" Text="lvl" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImgClip" X="244" Y="196" W="42" H="42" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="LabelNum" X="295" Y="194" W="80" H="48" Text="100" Color="222,222,222" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="CanvasFail" X="217" Y="140" W="590" H="500" Center="1">
+            <Label Name="LabelLvl" X="172" Y="226" W="245" H="50" Text="lvl" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ImgClip" X="244" Y="176" W="42" H="42" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="LabelNum" X="295" Y="174" W="80" H="48" Text="100" Color="222,222,222" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Label Name="LabelErrorTip" X="212" Y="400" W="600" H="50" Center="1" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Canvas Name="BtnExit" X="389" Y="84" W="245" H="77" Touch="1" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

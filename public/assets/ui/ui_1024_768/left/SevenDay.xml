@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SevenDayFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+        <Canvas Name="CanvasContent" X="12" Y="25" W="950" H="320" Center="1">
+            <ListBox Name="BoxListBox" X="0" Y="0" W="950" H="320" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="950" H="145">
+                    <Canvas Name="ItemCanvs" X="10" Y="0" W="928" H="145" Zoom="0">
+                        <Label Name="Name" X="30" Y="80" W="630" H="45" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                        <Label Name="CountLabel" X="500" Y="77" W="150" H="50" Color="238,85,24" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                        <Canvas Name="IconItemCanvs1" X="20" Y="0" W="110" H="110" Touch="1">
+                            <Image Name="Img" X="0" Y="7" W="75" H="75" SizeMode="1" />
+                            <Label Name="ValueLabel" X="50" Y="5" W="90" H="66" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="29" />
+                        </Canvas>
+                        <Canvas Name="IconItemCanvs2" X="120" Y="0" W="110" H="110" Touch="1">
+                            <Image Name="Img" X="0" Y="7" W="75" H="75" SizeMode="1" />
+                            <Label Name="ValueLabel" X="50" Y="5" W="90" H="66" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="29" />
+                        </Canvas>
+                        <Canvas Name="IconItemCanvs3" X="220" Y="0" W="110" H="110" Touch="1">
+                            <Image Name="Img" X="0" Y="7" W="75" H="75" SizeMode="1" />
+                            <Label Name="ValueLabel" X="50" Y="5" W="90" H="66" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="29" />
+                        </Canvas>
+                        <Canvas Name="IconItemCanvs4" X="320" Y="0" W="110" H="110" Touch="1">
+                            <Image Name="Img" X="0" Y="7" W="75" H="75" SizeMode="1" />
+                            <Label Name="ValueLabel" X="50" Y="5" W="90" H="66" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="29" />
+                        </Canvas>
+                        <Canvas Name="IconItemCanvs5" X="420" Y="0" W="110" H="110" Touch="1">
+                            <Image Name="Img" X="0" Y="7" W="75" H="75" SizeMode="1" />
+                            <Label Name="ValueLabel" X="50" Y="5" W="90" H="66" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="29" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

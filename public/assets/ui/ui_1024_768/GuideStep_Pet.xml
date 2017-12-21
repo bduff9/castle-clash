@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="GuidePetFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" />
+    <Canvas Name="CanvasStep_Main" X="212" Y="204" W="600" H="360" Center="3">
+        <Canvas Name="StepBtn" X="389" Y="59" W="179" H="78" Touch="1" Zoom="0" Right="32">
+            <Image Name="ImgBkg" X="0" Y="0" W="179" H="78" Image="{1,ui/res/guide/btn_skip.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="20" W="179" H="50" Center="1" Text="Skip" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="94" Y="118" W="504" H="247">
+            <Image Name="FrameBkg" X="0" Y="0" W="504" H="247" Image="{1,ui/res/guide/content.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="54" Y="28" W="410" H="190" Center="2" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="25" />
+        </Canvas>
+        <Image Name="NpcImg" X="-50" Y="190" W="250" H="276" Image="{1,icon/pet/40001.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasStep_Sub_R" X="375" Y="321" W="504" H="247">
+        <Canvas Name="StepBtn" X="18" Y="-66" W="179" H="78" Touch="1" Zoom="0" Right="307">
+            <Image Name="ImgBkg" X="0" Y="0" W="179" H="78" Image="{1,ui/res/guide/btn_skip.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="20" W="179" H="50" Center="1" Text="Skip" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="0" Y="0" W="504" H="247">
+            <Image Name="FrameBkg" X="0" Y="0" W="504" H="247" Image="{1,ui/res/guide/content.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="36" Y="28" W="410" H="190" Center="2" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="25" />
+        </Canvas>
+        <Image Name="NpcImg" X="386" Y="73" W="250" H="276" RotationY="180" Right="-137" Image="{1,icon/pet/40001.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasStep_Sub_L" X="224" Y="86" W="504" H="247">
+        <Canvas Name="StepBtn" X="337" Y="-63" W="179" H="78" Touch="1" Zoom="0" Right="-12">
+            <Image Name="ImgBkg" X="0" Y="0" W="179" H="78" Image="{1,ui/res/guide/btn_skip.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="20" W="179" H="50" Center="1" Text="Skip" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="40" Y="0" W="504" H="247">
+            <Image Name="FrameBkg" X="0" Y="0" W="504" H="247" Image="{1,ui/res/guide/content.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="54" Y="28" W="410" H="190" Center="2" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="25" />
+        </Canvas>
+        <Image Name="NpcImg" X="-105" Y="73" W="250" H="276" Image="{1,icon/pet/40001.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

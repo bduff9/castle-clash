@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SoulArmsSkillFrame" W="1024" H="768">
+    <Canvas Name="CanvasSkilDesc" X="25" Y="24" W="974" H="560" Touch="1" Zoom="0">
+        <Label Name="TipLabel" X="80" Y="525" W="800" H="50" Color="155,118,52" TextAlignment="2" BmpFont="font_2.fnt" FSize="24" />
+    </Canvas>
+</Layout>

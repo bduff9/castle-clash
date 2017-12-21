@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="EventHelp" Inherit="backFrame_1.xml">
+    <Canvas Name="HelpCanvs" X="25" Y="24" W="974" H="630">
+        <Canvas Name="RuleCanvs" X="37" Y="324" W="900" H="300" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="453" H="264" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="448" Y="0" W="450" H="264" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="ChangeNameBkgImg" X="244" Y="218" W="426" H="72" Image="{1,ui/res/hero/skillChangeNamebg.png}" SizeMode="1" />
+            <Label Name="SelectNameLabel" X="160" Y="240" W="580" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="LabelTip" X="70" Y="35" W="760" H="184" Center="1" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="27" />
+            <Image Name="UpSignImg" X="824" Y="210" W="37" H="26" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="DownSignImg" X="823" Y="27" W="37" H="26" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="RewardIntroCanvs" X="37" Y="38" W="900" H="300" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="453" H="264" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="448" Y="0" W="450" H="264" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="ChangeNameBkgImg" X="244" Y="218" W="426" H="72" Image="{1,ui/res/hero/skillChangeNamebg.png}" SizeMode="1" />
+            <Label Name="SelectNameLabel" X="160" Y="240" W="580" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="LabelTip" X="70" Y="35" W="760" H="184" Center="1" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="27" />
+            <Image Name="UpSignImg" X="824" Y="210" W="37" H="26" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="DownSignImg" X="823" Y="27" W="37" H="26" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

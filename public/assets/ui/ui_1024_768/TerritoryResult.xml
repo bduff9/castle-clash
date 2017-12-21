@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TerritoryResult" R_W="1.00" R_H="1.00">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="CanvasResult" X="201" Y="150" W="622" H="548" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="622" H="548" Center="1" Image="{1,ui/res/territory/report.png}" SizeMode="1" />
+        <Canvas Name="CanvasItem1" X="0" Y="352" W="622" H="96">
+            <Label Name="LabelPos" X="57" Y="8" W="60" H="80" Center="2" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Image Name="ImageFlag" X="104" Y="-15" W="100" H="100" Image="{1,ui/res/territory/flag_blue.png}" SizeMode="0" />
+            <Label Name="LabelName" X="200" Y="18" W="300" H="60" Center="2" Text="A quick brown fox" Color="255,234,177" TextAlignment="0" FSize="24" />
+            <Image Name="ImageScore" X="422" Y="15" W="44" H="66" Center="2" Image="{1,ui/res/Consortia/bkg_fort.png}" SizeMode="0" />
+            <Label Name="LabelScore" X="472" Y="23" W="100" H="50" Center="2" Text="1200" Color="255,234,177" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvasItem2" X="0" Y="255" W="622" H="96">
+            <Label Name="LabelPos" X="57" Y="8" W="60" H="80" Center="2" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Image Name="ImageFlag" X="104" Y="-15" W="100" H="100" Image="{1,ui/res/territory/flag_green.png}" SizeMode="0" />
+            <Label Name="LabelName" X="200" Y="18" W="300" H="60" Center="2" Text="A quick brown fox" Color="255,234,177" TextAlignment="0" FSize="24" />
+            <Image Name="ImageScore" X="422" Y="15" W="44" H="66" Center="2" Image="{1,ui/res/Consortia/bkg_fort.png}" SizeMode="0" />
+            <Label Name="LabelScore" X="472" Y="23" W="100" H="50" Center="2" Text="1200" Color="255,234,177" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvasItem3" X="0" Y="161" W="622" H="96">
+            <Label Name="LabelPos" X="57" Y="8" W="60" H="80" Center="2" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Image Name="ImageFlag" X="104" Y="-15" W="100" H="100" Image="{1,ui/res/territory/flag_purple.png}" SizeMode="0" />
+            <Label Name="LabelName" X="200" Y="18" W="300" H="60" Center="2" Text="A quick brown fox" Color="255,234,177" TextAlignment="0" FSize="24" />
+            <Image Name="ImageScore" X="422" Y="15" W="44" H="66" Center="2" Image="{1,ui/res/Consortia/bkg_fort.png}" SizeMode="0" />
+            <Label Name="LabelScore" X="472" Y="23" W="100" H="50" Center="2" Text="1200" Color="255,234,177" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        </Canvas>
+        <Canvas Name="CanvasItem4" X="0" Y="65" W="622" H="96">
+            <Label Name="LabelPos" X="57" Y="8" W="60" H="80" Center="2" Text="4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+            <Image Name="ImageFlag" X="104" Y="-15" W="100" H="100" Image="{1,ui/res/territory/flag_red.png}" SizeMode="0" />
+            <Label Name="LabelName" X="200" Y="18" W="300" H="60" Center="2" Text="A quick brown fox" Color="255,234,177" TextAlignment="0" FSize="24" />
+            <Image Name="ImageScore" X="422" Y="15" W="44" H="66" Center="2" Image="{1,ui/res/Consortia/bkg_fort.png}" SizeMode="0" />
+            <Label Name="LabelScore" X="472" Y="23" W="100" H="50" Center="2" Text="1200" Color="255,234,177" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnExit" X="389" Y="64" W="245" H="77" Touch="1" Center="1">
+        <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+</Layout>

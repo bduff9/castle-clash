@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PetFrame" W="1024" H="768">
+    <Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Touch="1" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Label Name="Label_1" X="40" Y="253" W="260" H="36" Color="95,68,32" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+            <Image Name="AtkImg" X="340" Y="243" W="57" H="51" Image="{1,ui/res/soldier/ico_attack.png}" SizeMode="1" />
+            <Label Name="AtkNum" X="400" Y="247" W="170" H="34" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            <Label Name="AtkNumAdd" X="402" Y="247" W="170" H="34" Color="118,235,47" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            <Label Name="Label_3" X="40" Y="195" W="300" H="36" Color="95,68,32" TextAlignment="1" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="AddNum" X="396" Y="197" W="170" H="34" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            <Label Name="AddNumAdd" X="402" Y="197" W="170" H="34" Color="118,235,47" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+        </Canvas>
+    </Canvas>
+</Layout>

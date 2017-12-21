@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="AppPromotionFrame" Inherit="normalFrame_1.xml">
+    <Image Name="AppImg" X="40" Y="50" W="930" H="600" Center="1" Touch="1" Zoom="0" SizeMode="0" />
+</Layout>

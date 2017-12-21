@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PlayerFrameStyle" W="1024" H="768">
+    <Canvas Name="AttrCanvs" X="237" Y="700" W="550" H="65" Fixed="1" Top="3" Center="1">
+        <Canvas Name="MoneyCanvs" X="0" Y="0" W="244" H="50" Fixed="1">
+            <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+            <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Money.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="Label" X="46" Y="-8" W="178" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Image Name="Image" X="10" Y="16" W="46" H="46" Fixed="1" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" Touch="1" RectTouch="-100,0,190,55"/>
+            <Label Name="MaxLabel" X="48" Y="41" W="170" H="20" Color="255,247,193" TextAlignment="2" BmpFont="font_1.fnt" FSize="14" />
+        </Canvas>
+        <Canvas Name="CrystalCanvs" X="300" Y="0" W="244" H="50" Fixed="1">
+            <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+            <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Crystal.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="Label" X="46" Y="-8" W="178" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Image Name="Image" X="10" Y="16" W="46" H="46" Fixed="1" Image="{1,ui/res/crystal.png.pvr.ccz}" SizeMode="1" Touch="1" RectTouch="-100,0,190,55" />
+            <Label Name="MaxLabel" X="48" Y="41" W="170" H="20" Color="255,247,193" TextAlignment="2" BmpFont="font_1.fnt" FSize="14" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CashCanvs" X="810" Y="699" W="200" H="45" Fixed="1" Top="24" Right="14">
+        <Image Name="BkImg" X="25" Y="0" W="144" H="45" Image="{1,ui/res/main/atr_bk.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="Label" X="41" Y="10" W="114" H="29" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+        <Image Name="Image" X="4" Y="-1" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="1" />
+        <Image Name="BtnImg" X="153" Y="-5" W="58" H="56" Touch="1" RectTouch="-150,0,200,56" Image="{1,ui/res/Addition.png.pvr.ccz}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="HonorCanvs" X="15" Y="626" W="200" H="50" Fixed="1" Top="92">
+        <Image Name="BkImg" X="40" Y="9" W="170" H="41" Image="{1,ui/res/main/honor_bk.png}" SizeMode="1" />
+        <Label Name="Label" X="52" Y="16" W="176" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+        <Image Name="Image" X="1" Y="6" W="51" H="51" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

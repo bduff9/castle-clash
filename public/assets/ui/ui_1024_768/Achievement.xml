@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="AchievementFrame" Inherit="normalFrame_1.xml">
+    <ListBox Name="TaskInfoListBox" X="40" Y="41" W="945" H="598" ScrollViewDir="1" EdgeShade="1">	<!-- ListBox -->
+        <Template Name="" X="0" Y="0" W="952" H="148" >  <!-- Template -->
+            <Canvas Name="ItemCanvas" X="-5" Y="-10" W="936" H="148" >	
+				<Canvas Name="BkgCanvs" X="12" Y="10" W="952" H="145">
+					<Image Name="BkgImg_L" X="0" Y="0" W="468" H="145" Image="{1,ui/res/achievement/achievement_bk.png}" SizeMode="1" />
+					<Image Name="BkgImg_R" X="463" Y="0" W="472" H="145" RotationY="180" Image="{1,ui/res/achievement/achievement_bk.png}" SizeMode="1" />
+				</Canvas>
+                <!--<Image Name="BackImg" X="0" Y="0" W="952" H="137" Image="{1,ui/res/achievement/achievement_bk.png}" SizeMode="1"/>-->
+                <Canvas Name="LeftCanvs" X="50" Y="0" W="167" H="140">
+					<Image Name="IconBk" X="0" Y="14" W="167" H="140" Center="1" Image="{1,ui/res/flag_bk.png}" SizeMode="1" />
+                    <Image Name="IconImg" X="0" Y="25" W="120" H="120" Center="1" SizeMode="1" />
+                    <Image Name="ImgStar_1" X="16" Y="33" W="46" H="45" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Image Name="ImgStar_3" X="103" Y="33" W="46" H="45" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Image Name="ImgStar_2" X="29" Y="15" W="61" H="60" Center="1" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="MidCanvs" X="180" Y="0" W="540" H="137">
+                    <Label Name="LabelComment" X="50" Y="68" W="530" H="90" Text="" Color="255,255,255" TextAlignment="0" VTextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="20" />
+                    <!--<Progress Name="CompletedProgress" X="90" Y="31" W="360" H="32" Background="{1,ui/res/progress/pro_bk.png.pvr.ccz}" Center="1" ProgressImage="{1,ui/res/progress/pro_orange.png.pvr.ccz};" CurValue="60" MaxValue="100" InsideDist="10" Direction="3" /> -->
+
+					<ProgressEx Name="CompletedProgressEx" X="50" Y="36" W="362" H="48" ProgressBackground="{1,ui/res/achievement/achievement_progress_bk.png}" ProgressImage="{1,ui/res/achievement/achievement_progress.png}" MaxValue="100" />
+
+                    <Label Name="CompletedLabel" X="45" Y="48" W="362" H="27" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                </Canvas>
+                <Canvas Name="RightCanvs" X="720" Y="0" W="200" H="137">
+                    <Canvas Name="RewardCanvs" X="4" Y="38" W="196" H="77" Touch="1">
+                        <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="-47" Y="16" W="146" H="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+                        <Image Name="RewardImg" X="104" Y="15" W="35" H="50" Image="{1,ui/res/cash_cangray.png}" SizeMode="0" />
+						<Label Name="LabelText" X="-47" Y="16" W="196" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Template>
+    </ListBox>
+</Layout>

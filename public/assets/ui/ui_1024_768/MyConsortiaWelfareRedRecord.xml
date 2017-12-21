@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaWelfareRedRecordFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="370" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+	
+	<Label Name="TxtLabel" X="30" Y="220" W="180" H="100" Color="162,128,80" TextAlignment="2" BmpFont="font_2.fnt" FSize="28" />
+    <Image Name="Img" X="220" Y="240" W="50" H="50" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0" />
+	 <Label Name="HeroClipNumLabel" X="280" Y="220" W="200" H="100" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28"  />
+
+	 <ListBox Name="RedRecordListBox" X="16" Y="40" W="928" H="410" Center="1" RectTouch="0,45,928,365" ScrollViewDir="1">
+		<Template Name="" X="0" Y="0" W="928" H="85">
+			<Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Touch="1" Zoom="0">
+				<Canvas Name="BkgImgCanvs" X="0" Y="0" W="928" H="79">
+					<Image Name="BkgImgCanvs_L" X="0" Y="0" W="466" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+					<Image Name="BkgImgCanvs_R" X="462" Y="0" W="466" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+				</Canvas>
+				<Image Name="BoxImg" X="20" Y="9" W="40" H="40" Top="20"  SizeMode="0" />
+					
+				<Label Name="TimeLabel" X="749" Y="26" W="150" H="26" Center="2" Text="" Color="93,93,93" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+					
+				<Canvas Name="DismissCanvs" X="739" Y="6" W="168" H="66" Touch="1" Center="2">
+					<Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+					<Label Name="TxtLabel" X="0" Y="3" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+				</Canvas>
+			</Canvas>
+		</Template>
+	</ListBox>
+</Layout>

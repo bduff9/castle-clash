@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WishingItemCanvas" W="100" H="100">
+    <Canvas Name="ItemCanvs" X="0" Y="0" R_W="1.00" R_H="1.00">
+        <Image Name="Quality" R_X="-0.10" R_Y="-0.10" R_W="1.20" R_H="1.20" Image="{1,ui/res/bag/blue_quality.png}" SizeMode="1" />
+        <Image Name="ImgIcon" R_X="0.00" R_Y="0.02" R_W="1.00" R_H="1.00" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+        <Image Name="PosyIcon" R_X="0.05" R_Y="0.05" R_W="0.90" R_H="0.90" Image="{1,icon/Posy/000.png}" SizeMode="1" />
+        <Image Name="LvlImg" R_X="0.57" R_Y="0.64" R_W="0.30" R_H="0.30" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+        <Image Name="PosImg" R_X="0.05" R_Y="0.11" R_W="0.30" R_H="0.30" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+        <Label Name="LvlLabel" R_X="0.55" R_Y="0.64" R_W="0.38" R_H="0.30" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="HeroSoulCanvas" R_X="0.05" R_Y="0.05" R_W="0.90" R_H="0.90">
+        <Image Name="HeadBkImg" R_X="0.02" R_Y="0.02" R_W="0.96" R_H="0.96" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+        <Image Name="HeroImg" R_X="0.09" R_Y="0.30" R_W="0.96" R_H="0.84" Image="{1,icon/hero/1096_s.png}" SizeMode="1" />
+        <Image Name="IconSoul" R_X="-0.09" R_Y="0.66" R_W="0.42" R_H="0.51" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

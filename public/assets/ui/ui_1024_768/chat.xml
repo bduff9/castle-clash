@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ChatFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasBk" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" zOrder="-5">
+        <Image Name="ImgBkg" X="0" Y="0" R_W="2.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    </Canvas>
+    
+
+
+	
+	<Canvas Name="CanvasFrame" X="0" Y="0" R_W="1.00" R_H="1.00" >
+	<Image Name="ImgBkg_1" X="-100" Y="0" W="949" H="768" zOrder="-3" Image="{1,ui/res/chat/chat_bkg.png}" SizeMode="1" />
+	<Image Name="ImgBkg" X="0" Y="0" W="949" H="768" zOrder="-3" Image="{1,ui/res/chat/chat_bkg.png}" SizeMode="1" />
+    <Canvas Name="CanvasPause" X="937" Y="12" W="73" H="92" Touch="1" Zoom="0" zOrder="-2">
+        <Image Name="ImgBkg" X="0" Y="0" W="73" H="92" Image="{1,ui/res/chat/chat_pause_bk.png}" SizeMode="1" />
+        <Image Name="ImgPause" X="-7" Y="15" W="64" H="61" Touch="1" Center="2" Image="{1,ui/res/chat/chat_pause.png}" SizeMode="1" />
+    </Canvas>
+
+    <Canvas Name="CanvasMain" X="0" Y="0" W="932" H="768" Touch="1" Zoom="0" Center="2">
+        <Canvas Name="CanvasTab" X="0" Y="671" W="932" H="97" Touch="1" Zoom="0" Top="0">
+            <Canvas Name="CanvasTab_1" X="10" Y="0" W="216" H="97" Touch="1" Zoom="0" Top="0">
+                <Image Name="ImgSelected" X="0" Y="0" W="216" H="97" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="9" W="215" H="88" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="22" W="216" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CanvasTab_2" X="230" Y="0" W="216" H="97" Touch="1" Zoom="0" Top="0">
+                <Image Name="ImgSelected" X="0" Y="0" W="216" H="97" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="9" W="215" H="88" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="22" W="216" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="CanvasTab_3" X="450" Y="0" W="216" H="97" Touch="1" Zoom="0" Top="0">
+                <Image Name="ImgSelected" X="0" Y="0" W="216" H="97" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+                <Image Name="Img" X="0" Y="9" W="215" H="88" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="22" W="216" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasTop" X="0" Y="568" W="900" H="108" Touch="1" Zoom="0" Top="92">
+            <Canvas Name="ImgLeft" X="0" Y="0" W="890" H="108" Touch="1" Zoom="0" Background="{1,ui/res/chat/chat_top_left.png}" zOrder="-3" />
+            <Canvas Name="ImgRight" X="880" Y="0" W="23" H="108" Touch="1" Zoom="0" Background="{1,ui/res/chat/chat_top_right.png}" zOrder="-3" />
+            <Canvas Name="CanvasRecord" X="105" Y="20" W="592" H="67" Touch="1" Background="{1,ui/res/chat/chat_voice_record.png}">
+                <Label Name="Label" X="0" Y="0" R_W="0.92" R_H="1.00" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+                <Label Name="LabelName" X="0" Y="0" W="200" H="67" Color="255,255,255" TextAlignment="0" FSize="24" />
+            </Canvas>
+            <Canvas Name="CanvasEditChat" X="105" Y="26" W="682" H="60">
+                <EditBox Name="EditChat_1" X="0" Y="2" W="592" H="56" Background="{1,ui/res/Consortia/consortia_edit_black.png}" Center="2" Padding="{10,10};" Color="255,255,255" />
+                <EditBox Name="EditChat_3" X="0" Y="2" W="592" H="56" Background="{1,ui/res/Consortia/consortia_edit_black.png}" Center="2" Padding="{10,10};" Color="255,255,255" />
+                <EditBox Name="EditChat_4" X="0" Y="2" W="592" H="56" Background="{1,ui/res/Consortia/consortia_edit_black.png}" Center="2" Padding="{10,10};" Color="255,255,255" />
+                <Canvas Name="CanvasSocialChatChoose" X="0" Y="2" W="682" H="56" Background="{1,ui/res/Consortia/consortia_edit_black.png}" Center="2">
+                    <Label Name="LabelText" X="20" Y="0" R_W="0.95" R_H="1.00" Touch="1" Zoom="0" Color="81,78,78" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="BtnEmoji" X="702" Y="15" W="87" H="78" Touch="1" Right="111">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/btn_emoji.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasSend" X="798" Y="15" W="87" H="79" Touch="1" Right="15">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/chat_send.png}" SizeMode="1" />
+                <Label Name="LabelTime" X="0" Y="-10" W="87" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="CanvasPrivateSend" X="798" Y="15" W="87" H="79" Touch="1" Right="15">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/chat_send.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasTypeVoice" X="10" Y="15" W="87" H="79" Touch="1" Right="803">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/btn_voice.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasTypeText" X="10" Y="15" W="87" H="79" Touch="1" Right="803">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/btn_text.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasTrumpet" X="10" Y="15" W="87" H="79" Touch="1" Right="803">
+                <Image Name="ImgBkg" X="0" Y="0" W="87" H="79" Image="{1,ui/res/chat/btn_trumpet.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="-1" Y="-10" W="90" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasChat" X="2" Y="20" W="900" H="550" Touch="1" Zoom="0" Top="198">
+            <ListBox Name="ListBoxWorld" X="0" Y="0" W="900" H="550" Touch="1" Zoom="0" ScrollViewDir="1" VFillOrder="1">
+                <Template Name="" X="0" Y="0" W="900" H="122">
+                    <Canvas Name="CanvasItem" X="0" Y="0" W="900" H="122" Touch="1" Zoom="0">
+                        <Image Name="Img" X="88" Y="88" W="27" H="23" Image="{1,ui/res/chat/chat_ico.png}" SizeMode="1" />
+                        <Label Name="LabelName" X="68" Y="88" W="400" H="28" Color="159,211,48" TextAlignment="0" FSize="22" />
+                        <Label Name="LabelTime" X="700" Y="88" W="160" H="28" Color="164,161,127" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+                        <Image Name="ImgMsg" X="8" Y="22" W="49" H="47" Touch="1" Image="{1,ui/res/chat/chat_msg_enable.png}" SizeMode="1" />
+                        <Canvas Name="ImgContent" X="60" Y="4" W="820" H="86" Background="{1,ui/res/chat/chat_content_bkg.png}" />
+                        <Label Name="LabelContent" X="74" Y="22" W="800" H="48" Color="255,255,255" TextAlignment="0" FSize="24" />
+                        <Image Name="ImgFlagOther" X="8" Y="9" W="50" H="50" Image="{1,ui/res/chat/world_flag2.png}" SizeMode="1" />
+                        <Image Name="ImgFlagSelf" X="8" Y="7" W="60" H="52" Image="{1,ui/res/chat/world_flag1.png}" SizeMode="1" />
+                        <Image Name="ImgEmoji" X="102" Y="28" W="42" H="42" SizeMode="1" />
+                        <Image Name="ImgHero" X="8" Y="25" W="44" H="40" Touch="1" Image="{1,ui/res/button/seek.png}" SizeMode="1" />
+                    </Canvas>
+                    <Canvas Name="CanvasSystem" X="0" Y="9" W="900" H="122">
+                        <Label Name="LabelName" X="18" Y="72" W="500" H="32" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+                        <Label Name="LabelContent" X="18" Y="9" W="800" H="50" Color="255,233,191" TextAlignment="0" VTextAlignment="0" FSize="24" />
+                    </Canvas>
+                    <Image Name="Clip" X="10" Y="0" W="880" H="2" Background="{1,ui/res/chat/chat_clip.png}" Center="1" SizeMode="1" />
+                </Template>
+            </ListBox>
+            <ListBox Name="ListBoxChat" X="0" Y="0" W="900" H="550" Touch="1" Zoom="0" ScrollViewDir="1" VFillOrder="1">
+                <Template Name="" X="0" Y="0" W="900" H="122">
+                    <Canvas Name="CanvasItem" X="0" Y="0" W="900" H="122" Touch="1" Zoom="0">
+                        <Image Name="Img" X="88" Y="88" W="27" H="23" Image="{1,ui/res/chat/chat_ico.png}" SizeMode="1" />
+                        <Label Name="LabelName" X="68" Y="88" W="400" H="28" Color="159,211,48" TextAlignment="0" FSize="22" />
+                        <Label Name="LabelTime" X="700" Y="88" W="160" H="28" Color="164,161,127" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+                        <Image Name="ImgMsg" X="8" Y="22" W="49" H="47" Touch="1" Image="{1,ui/res/chat/chat_msg_enable.png}" SizeMode="1" />
+                        <Canvas Name="ImgContent" X="60" Y="4" W="820" H="86" Background="{1,ui/res/chat/chat_content_bkg.png}" />
+                        <Label Name="LabelContent" X="74" Y="26" W="800" H="48" Color="255,255,255" TextAlignment="0" FSize="24" />
+                    </Canvas>
+                    <Canvas Name="CanvasInvite" X="0" Y="0" W="900" H="122" Touch="1" Zoom="0">
+                        <Image Name="MarkImg" X="20" Y="64" W="46" H="46" SizeMode="1" />
+                        <Label Name="LabelName" X="70" Y="72" W="300" H="32" Color="165,162,156" TextAlignment="0" FSize="32" />
+                        <Label Name="LabelContentTip" X="18" Y="35" W="750" H="26" Color="253,253,253" TextAlignment="0" VTextAlignment="0" FSize="24" />
+                        <Label Name="LabelContent" X="18" Y="9" W="750" H="26" Color="253,253,253" TextAlignment="0" VTextAlignment="0" FSize="24" />
+                        <Canvas Name="BattlePowerCanvas" X="606" Y="72" W="200" H="32">
+                            <Image Name="Img" X="0" Y="0" W="32" H="32" Center="2" Image="{1,ui/res/main/power_img.png.pvr.ccz}" SizeMode="1" />
+                            <Label Name="LabelNum" X="32" Y="0" W="160" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+                        </Canvas>
+                        <Canvas Name="JionCanvs" X="712" Y="28" W="168" H="66" Touch="1" Right="20" Center="2">
+                            <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                            <Label Name="TxtLabel" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                        </Canvas>
+                    </Canvas>
+                    <Image Name="Clip" X="10" Y="0" W="880" H="2" Background="{1,ui/res/chat/chat_clip.png}" Center="1" SizeMode="1" />
+                </Template>
+            </ListBox>
+            <ListBox Name="ListBoxRoom" X="0" Y="0" W="900" H="550" ScrollViewDir="1" VFillOrder="1">
+                <Template Name="" X="0" Y="0" W="900" H="122">
+                    <Canvas Name="CanvasItem" X="0" Y="0" W="900" H="122" Touch="1" Zoom="0">
+                        <Image Name="Img" X="88" Y="88" W="27" H="23" Image="{1,ui/res/chat/chat_ico.png}" SizeMode="1" />
+                        <Label Name="LabelName" X="68" Y="88" W="400" H="28" Color="159,211,48" TextAlignment="0" FSize="22" />
+                        <Label Name="LabelTime" X="700" Y="88" W="160" H="28" Color="164,161,127" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+                        <Image Name="ImgMsg" X="8" Y="22" W="49" H="47" Touch="1" Image="{1,ui/res/chat/chat_msg_enable.png}" SizeMode="1" />
+                        <Canvas Name="ImgContent" X="60" Y="4" W="820" H="86" Background="{1,ui/res/chat/chat_content_bkg.png}" />
+                        <Label Name="LabelContent" X="74" Y="26" W="800" H="48" Color="255,255,255" TextAlignment="0" FSize="24" />
+                        <Canvas Name="CanvasVoice" X="0" Y="28" W="50" H="44" Touch="1">
+                            <Image Name="ImgVoice" X="0" Y="0" W="50" H="44" Image="{1,ui/res/chat/btn_voice.png}" SizeMode="1" />
+                        </Canvas>
+						                        <Image Name="ImgEmoji" X="102" Y="30" W="42" H="42" SizeMode="1" />
+                        <Image Name="ImgHero" X="8" Y="30" W="44" H="40" Touch="1" Image="{1,ui/res/button/seek.png}" SizeMode="1" />
+                    </Canvas>
+                    <Image Name="Clip" X="10" Y="0" W="880" H="2" Background="{1,ui/res/chat/chat_clip.png}" Center="1" SizeMode="1" />
+                </Template>
+            </ListBox>
+            <ListBox Name="ListBoxConsortia" X="0" Y="0" W="900" H="550" ScrollViewDir="1" VFillOrder="1">
+                <Template Name="" X="0" Y="0" W="900" H="122">
+                    <Canvas Name="CanvasItem" X="0" Y="0" W="900" H="122" Touch="1" Zoom="0">
+                        <Image Name="Img" X="88" Y="88" W="27" H="23" Image="{1,ui/res/chat/chat_ico.png}" SizeMode="1" />
+                        <Label Name="LabelName" X="68" Y="88" W="400" H="28" Color="156,212,49" TextAlignment="0" FSize="22" />
+                        <Image Name="ImgMsg" X="8" Y="22" W="49" H="47" Touch="1" Image="{1,ui/res/chat/chat_msg_enable.png}" SizeMode="1" />
+                        <Canvas Name="ImgContent" X="60" Y="4" W="820" H="86" Background="{1,ui/res/chat/chat_content_bkg.png}" />
+                        <Label Name="LabelContent" X="74" Y="26" W="800" H="48" Color="255,255,255" TextAlignment="0" FSize="24" />
+                        <Canvas Name="CanvasVoice" X="0" Y="28" W="50" H="44" Touch="1">
+                            <Image Name="ImgVoice" X="0" Y="0" W="50" H="44" Image="{1,ui/res/chat/btn_voice.png}" SizeMode="1" />
+                        </Canvas>
+                        <Image Name="ImgMoreContent" X="60" Y="20" W="60" H="59" Touch="1" Image="{1,ui/res/button/seek.png}" SizeMode="1" />
+                        <Image Name="ImgEmoji" X="102" Y="30" W="42" H="42" SizeMode="1" />
+                        <Image Name="ImgHero" X="8" Y="30" W="44" H="40" Touch="1" Image="{1,ui/res/button/seek.png}" SizeMode="1" />
+                    </Canvas>
+                    <Canvas Name="CanvasChatBro" X="0" Y="9" W="900" H="122">
+                        <Image Name="MarkImg" X="20" Y="64" W="46" H="46" SizeMode="1" />
+                        <Label Name="LabelName" X="70" Y="72" W="300" H="32" Color="165,162,156" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+                        <Label Name="LabelTime" X="700" Y="72" W="160" H="28" Color="164,161,127" TextAlignment="0" BmpFont="font_2.fnt" FSize="16" />
+                        <Label Name="LabelContent" X="18" Y="9" W="800" H="50" Color="253,253,253" TextAlignment="0" VTextAlignment="0" FSize="24" />
+                    </Canvas>
+                    <Image Name="Clip" X="10" Y="9" W="880" H="2" Background="{1,ui/res/chat/chat_clip.png}" Center="1" SizeMode="1" />
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="CanvasMenu_1" X="33" Y="238" W="206" H="348" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgLeft" X="-16" Y="154" W="39" H="39" Center="2" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Canvas Name="CanvasVisit" X="20" Y="224" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasChat" X="20" Y="156" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasAddFriend" X="20" Y="88" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasAddBlack" X="20" Y="20" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Label Name="NameLabel" X="8" Y="294" W="190" H="30" Center="1" Color="126,90,44" TextAlignment="1" FSize="26" />
+        </Canvas>
+        <Canvas Name="CanvasMenu_2" X="219" Y="256" W="206" H="146" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgLeft" X="-15" Y="54" W="37" H="38" Center="2" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Canvas Name="CanvasDelFriend" X="20" Y="24" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Label Name="NameLabel" X="8" Y="96" W="190" H="30" Center="1" Color="126,90,44" TextAlignment="1" FSize="26" />
+        </Canvas>
+        <Canvas Name="CanvasPop" X="300" Y="261" W="240" H="110" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgBkg" X="100" Y="-17" W="40" H="40" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Label Name="Label" X="15" Y="15" W="210" H="80" Color="84,81,76" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="16" />
+        </Canvas>
+        <Canvas Name="CanvasMsgChoosePopMenu" X="94" Y="357" W="700" H="240" zOrder="99">
+            <Canvas Name="CanvasPopMenuItem1" X="0" Y="160" W="700" H="79" Touch="1" Zoom="0">
+                <Image Name="BkgImgCanvs_L" X="0" Y="0" W="352" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Image Name="BkgImgCanvs_R" X="348" Y="0" W="352" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="CanvasPopMenuItem2" X="0" Y="80" W="700" H="79" Touch="1" Zoom="0">
+                <Image Name="BkgImgCanvs_L" X="0" Y="0" W="352" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Image Name="BkgImgCanvs_R" X="348" Y="0" W="352" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="CanvasPopMenuItem3" X="0" Y="0" W="700" H="79" Touch="1" Zoom="0">
+                <Image Name="BkgImgCanvs_L" X="0" Y="0" W="352" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Image Name="BkgImgCanvs_R" X="348" Y="0" W="352" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasMenuConsortia" X="219" Y="256" W="206" H="146" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgLeft" X="-15" Y="54" W="37" H="38" Center="2" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Canvas Name="CanvasLook" X="20" Y="24" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Label Name="NameLabel" X="8" Y="96" W="190" H="30" Center="1" Color="126,90,44" TextAlignment="1" FSize="26" />
+        </Canvas>
+        <Canvas Name="MenuConsortiaInvite" X="299" Y="182" W="206" H="420" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgLeft" X="-16" Y="190" W="39" H="39" Center="2" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Canvas Name="CanvasVisit" X="20" Y="292" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasChat" X="20" Y="224" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasAddFriend" X="20" Y="156" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasInvite" X="20" Y="88" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Canvas Name="CanvasAddBlack" X="20" Y="20" W="168" H="66" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+            <Label Name="NameLabel" X="8" Y="362" W="190" H="30" Center="1" Color="126,90,44" TextAlignment="1" FSize="26" />
+        </Canvas>
+        <Canvas Name="CanvasVoiceTip" X="333" Y="251" W="266" H="266" zOrder="99" Center="3">
+            <Image Name="ImgBkg" X="0" Y="0" W="266" H="266" Image="{1,ui/res/chat/chat_voice_tip_bkg.png}" SizeMode="0" />
+            <Image Name="ImgTip_1" X="105" Y="76" W="55" H="155" Center="1" Image="{1,ui/res/chat/chat_voice_tip1.png}" SizeMode="0" />
+            <Canvas Name="CanvasTip_2" X="71" Y="76" W="164" H="155">
+                <Image Name="ImgTip_2" X="0" Y="0" W="89" H="142" Image="{1,ui/res/chat/chat_voice_tip2.png}" SizeMode="0" />
+                <ProgressEx Name="ProgressVolume" X="89" Y="0" W="75" H="93" ProgressImage="{1,ui/res/chat/chat_voice_tip2_1.png}" CurValue="100" MaxValue="100" Direction="0" />
+            </Canvas>
+            <Image Name="ImgTip_3" X="70" Y="83" W="126" H="123" Center="1" Image="{1,ui/res/chat/chat_voice_tip3.png}" SizeMode="0" />
+            <Label Name="LabelTip" X="8" Y="7" W="250" H="68" Center="1" Color="255,255,255" TextAlignment="1" FSize="26" />
+        </Canvas>
+        <Canvas Name="CanvasConsortiaTip" X="0" Y="0" W="860" H="240" Zoom="0">
+            <Canvas Name="Canvas" X="0" Y="0" W="860" H="240" Touch="1" Zoom="0">
+                <Canvas Name="ImgContent" X="60" Y="4" W="845" H="230" Background="{1,ui/res/chat/chat_content_bkg.png}" />
+                <Label Name="LabelContent" X="90" Y="20" W="780" H="200" Color="75,88,32" TextAlignment="0" Multline="1" FSize="24" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasEmoji" X="-50" Y="18" W="960" H="340" />
+    </Canvas>
+	</Canvas>
+	    <Canvas Name="CanvasTip" X="937" Y="292" W="66" H="183" Touch="1" Zoom="0" zOrder="-2" Center="2">
+        <Image Name="ImgBkg" X="0" Y="0" W="66" H="183" Image="{1,ui/res/chat/chat_tip.png}" SizeMode="1" />
+        <Image Name="ImgMessage" X="3" Y="64" W="60" H="55" Center="2" Image="{1,ui/res/chat/message.png}" SizeMode="1" />
+        <Image Name="ImgChatIcon" X="15" Y="76" W="36" H="30" Center="3" Image="{1,ui/res/chat/chat_icon.png}" SizeMode="1" />
+		
+		<Canvas Name="NumCanvas" X="34" Y="140" W="30" H="30">
+			<Image Name="ImgBk" X="0" Y="0" W="30" H="30" Center="3" Image="{1,ui/res/RoundStone.png}" SizeMode="1" />
+			<Label Name="NumLabel" X="3" Y="6" W="24" H="18" Center="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+		</Canvas>
+    </Canvas>
+</Layout>

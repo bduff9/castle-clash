@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BuyBuffFrame" W="1024" H="768">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="1024" H="768">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="514" H="768" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="510" Y="0" W="514" H="768" RotationY="180" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Image Name="CloseImg" X="875" Y="651" W="115" H="117" Touch="1" Top="-4" Right="34" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+	<Image Name="BackImg" X="15" Y="652" W="115" H="117" Touch="1" Top="-4" Image="{1,ui/res/button/form_back.png}" SizeMode="1" />
+    <Canvas Name="CanvasTab_1" X="134" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="324" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="68" W="160" H="52" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasInfo" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="9" Y="229" W="974" H="403">
+            <Canvas Name="CanvasItem" X="79" Y="127" W="194" H="205">
+                <Image Name="BottleImg" X="0" Y="0" W="194" H="205" Image="{1,ui/res/Consortia/small_flag_194-205.png}" SizeMode="1" />
+                <Image Name="IconImg" X="46" Y="76" W="102" H="102" SizeMode="0" />
+            </Canvas>
+            <Label Name="LabelName" X="27" Y="78" W="300" H="34" Text="" Color="255,244,206" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="InfoBkgCanvs" X="335" Y="33" W="614" H="352">
+                <Image Name="InfoBkg_L" X="0" Y="0" W="309" H="352" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="InfoBkg_R" X="305" Y="0" W="309" H="352" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <ListBox Name="InfoListBox" X="406" Y="43" W="500" H="300" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="600" H="60">
+                    <Label Name="ItemTypeLabel" X="0" Y="5" W="260" H="26" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="23" />
+                    <Label Name="ItemValueLabel" X="260" Y="5" W="240" H="26"  Color="255,244,206" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                </Template>
+            </ListBox>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="206" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="ContentCanvs" X="24" Y="33" W="945" H="198" Center="1">
+            <Label Name="ContentLabel" X="31" Y="35" W="880" H="150" Text="" Color="255,244,206" TextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="27" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvasTop" X="20" Y="370" W="950" H="270" Fixed="2">
+            <Image Name="BottleImg" X="55" Y="31" W="194" H="205" Image="{1,ui/res/Consortia/small_flag_194-205.png}" SizeMode="1" />
+            <Image Name="IconImg" X="100" Y="107" W="102" H="102" SizeMode="1" />
+            <Label Name="NameLabel" X="324" Y="184" W="360" H="34" Text="" Color="255,248,184" TextAlignment="0" VTextAlignment="2" BmpFont="font_1.fnt" FSize="34" />
+            <Canvas Name="NumCanvas" X="322" Y="132" W="300" H="35">
+                <Label Name="Name" X="0" Y="0" W="120" H="35" Text="" Color="170,203,254" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelNum" X="120" Y="0" W="140" H="35" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+            <Canvas Name="SpaceCanvas" X="320" Y="92" W="300" H="35">
+                <Label Name="Name" X="0" Y="0" W="120" H="35" Text="" Color="170,203,254" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelNum" X="120" Y="0" W="140" H="35" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+            <Canvas Name="WealthCanvas" X="320" Y="52" W="300" H="35">
+                <Label Name="Name" X="0" Y="0" W="120" H="35" Text="" Color="170,203,254" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelNum" X="120" Y="0" W="140" H="35" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            </Canvas>
+            <Label Name="LabelTip" X="321" Y="178" W="400" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+            <Canvas Name="BuyCanvs" X="645" Y="146" W="245" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="-4" Y="11" W="142" H="60" Center="2" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="35" />
+                <Image Name="ProduceImage" X="173" Y="14" W="50" H="40" Center="2" Image="{1,ui/res/Consortia/consortia_wealth_self.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="ReturnCanvs" X="645" Y="45" W="245" H="77" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="350" W="960" H="81">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="CanvasItems" X="20" Y="20" W="950" H="350">
+            <Canvas Name="CanvasItem_1" X="51" Y="5" W="259" H="330" >
+                <Image Name="BkgImg" X="0" Y="0" W="263" H="378" Image="{1,ui/res/Consortia/big_flag_263-378.png}" SizeMode="1" />
+                <Image Name="LockImg" X="-2" Y="18" W="263" H="321" Image="{1,ui/res/Consortia/flag_lock_263-321.png}" SizeMode="1" />
+                <Image Name="InfoImg" X="195" Y="260" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                <Image Name="IconImg" X="80" Y="200" W="102" H="102" SizeMode="1" />
+                <Label Name="LabelTip" X="10" Y="133" W="245" H="30" Color="213,192,177" TextAlignment="1" BmpFont="font_1.fnt" FSize="19" />
+                <Canvas Name="InfoCanvas" X="0" Y="0" W="259" H="200">
+                    <Label Name="LevelLabel" X="99" Y="153" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="LevelNumLabel" X="141" Y="152" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="NameLabel" X="0" Y="115" W="240" H="50" Text="" Center="1" Color="255,255,255" TextAlignment="1" VTextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="Clip" X="58" Y="115" W="150" H="2" Image="{1,ui/res/white_line_2-2.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="82" Y="66" W="100" H="40" Text="" Color="255,248,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="CanvasItem_2" X="345" Y="5" W="259" H="330" Center="1">
+                <Image Name="BkgImg" X="0" Y="0" W="263" H="378" Image="{1,ui/res/Consortia/big_flag_263-378.png}" SizeMode="1" />
+                <Image Name="LockImg" X="-2" Y="18" W="263" H="321" Image="{1,ui/res/Consortia/flag_lock_263-321.png}" SizeMode="1" />
+                <Image Name="InfoImg" X="195" Y="260" W="68" H="69" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                <Image Name="IconImg" X="80" Y="200" W="102" H="102" SizeMode="1" />
+                <Label Name="LabelTip" X="10" Y="133" W="245" H="30" Color="213,192,177" TextAlignment="1" BmpFont="font_1.fnt" FSize="19" />
+                <Canvas Name="InfoCanvas" X="0" Y="0" W="259" H="200">
+                    <Label Name="LevelLabel" X="99" Y="153" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="LevelNumLabel" X="141" Y="152" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="NameLabel" X="0" Y="115" W="240" H="50" Text="" Center="1" Color="255,255,255" TextAlignment="1" VTextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="Clip" X="58" Y="115" W="150" H="2" Image="{1,ui/res/white_line_2-2.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="82" Y="66" W="100" H="40" Text="" Color="255,248,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="CanvasItem_3" X="651" Y="5" W="259" H="330" Right="50">
+                <Image Name="BkgImg" X="0" Y="0" W="263" H="378" Image="{1,ui/res/Consortia/big_flag_263-378.png}" SizeMode="1" />
+                <Image Name="LockImg" X="-2" Y="18" W="263" H="321" Image="{1,ui/res/Consortia/flag_lock_263-321.png}" SizeMode="1" />
+                <Image Name="InfoImg" X="195" Y="260" W="68" H="69" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+                <Image Name="IconImg" X="80" Y="200" W="102" H="102" SizeMode="1" />
+                <Label Name="LabelTip" X="10" Y="133" W="245" H="30" Color="213,192,177" TextAlignment="1" BmpFont="font_1.fnt" FSize="19" />
+                <Canvas Name="InfoCanvas" X="0" Y="0" W="259" H="200">
+                    <Label Name="LevelLabel" X="99" Y="153" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="LevelNumLabel" X="141" Y="152" W="100" H="40" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="NameLabel" X="0" Y="115" W="240" H="50" Text="" Center="1" Color="255,255,255" TextAlignment="1" VTextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                    <Image Name="Clip" X="58" Y="115" W="150" H="2" Image="{1,ui/res/white_line_2-2.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="82" Y="66" W="100" H="40" Text="" Color="255,248,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ShopItemCanvas" W="176" H="214">
+    <Image Name="LabelBk" R_X="0.06" R_Y="0.02" R_W="0.90" R_H="0.41" Image="{1,ui/res/bag/blue_labelbk.png}" SizeMode="1" />
+    <Image Name="Quality" R_X="-0.18" R_Y="0.00" R_W="1.34" R_H="1.11" Image="{1,ui/res/bag/blue_quality.png}" SizeMode="1" />
+    <Image Name="ImgIcon" R_X="0.03" R_Y="0.20" R_W="0.94" R_H="0.81" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+    <Label Name="LabelNum" R_X="0.18" R_Y="0.07" R_W="0.55" R_H="0.19" Color="46,26,10" TextAlignment="1" BmpFont="font_2.fnt" FSize="26" />
+    <Image Name="PosyIcon" R_X="0.06" R_Y="0.21" R_W="0.88" R_H="0.78" Image="{1,icon/Posy/000.png}" SizeMode="1" />
+    <Image Name="LvlImg" R_X="0.63" R_Y="0.67" R_W="0.31" R_H="0.25" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+    <Image Name="PosImg" R_X="0.04" R_Y="0.32" R_W="0.31" R_H="0.25" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+    <Label Name="LvlLabel" R_X="0.66" R_Y="0.70" R_W="0.29" R_H="0.19" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    <Image Name="ImgCoin" R_X="0.67" R_Y="0.06" R_W="0.22" R_H="0.20" Image="{1,ui/res/itemshop/exploit.png}" SizeMode="1" />
+    <Label Name="LabelCount" R_X="0.34" R_Y="0.27" R_W="0.49" R_H="0.14" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+</Layout>

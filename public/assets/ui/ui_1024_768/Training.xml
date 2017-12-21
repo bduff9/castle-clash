@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TrainingFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="CanvasInfo" X="25" Y="24" W="974" H="629">
+        <Canvas Name="CanvasAttackRatio" X="335" Y="391" W="625" H="207">
+            <Image Name="BkImage" X="0" Y="0" W="625" H="207" Image="{1,ui/res/soldier/soldier_type_bk.png}" SizeMode="1" />
+            <Label Name="NameLabel" X="144" Y="154" W="300" H="40" Color="248,210,139" TextAlignment="1" BmpFont="font_2.fnt" FSize="22" />
+            <Image Name="ImageAttackRatio_1" X="44" Y="52" W="76" H="76" Touch="1" Image="{1,ui/res/soldier/denfense_type_1.png}" SizeMode="1" />
+            <Image Name="ImageAttackRatio_2" X="160" Y="52" W="76" H="76" Touch="1" Image="{1,ui/res/soldier/denfense_type_2.png}" SizeMode="1" />
+            <Image Name="ImageAttackRatio_3" X="277" Y="52" W="76" H="76" Touch="1" Image="{1,ui/res/soldier/denfense_type_3.png}" SizeMode="1" />
+            <Image Name="ImageAttackRatio_4" X="393" Y="52" W="76" H="76" Touch="1" Image="{1,ui/res/soldier/denfense_type_4.png}" SizeMode="1" />
+            <Image Name="ImageAttackRatio_5" X="509" Y="52" W="76" H="76" Touch="1" Image="{1,ui/res/soldier/denfense_type_5.png}" SizeMode="1" />
+            <Label Name="LabelAttackRatio_1" X="0" Y="0" W="74" H="22" Color="232,228,228" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LabelAttackRatio_2" X="90" Y="0" W="74" H="22" Color="232,228,228" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LabelAttackRatio_3" X="180" Y="0" W="74" H="22" Color="232,228,228" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LabelAttackRatio_4" X="270" Y="0" W="74" H="22" Color="232,228,228" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LabelAttackRatio_5" X="360" Y="0" W="74" H="22" Color="232,228,228" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="InfoCanvsRight_Buttom" X="336" Y="30" W="614" H="352">
+            <Canvas Name="InfoBkgCanvs" X="0" Y="6" W="614" H="352" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="309" H="352" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="305" Y="0" W="309" H="352" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            </Canvas>
+            <ListBox Name="DefenseListBox" X="47" Y="72" W="520" H="240" Center="1" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="520" H="36">
+                    <Label Name="ItemTypeLabel" X="0" Y="5" W="240" H="26" Color="126,90,44" TextAlignment="2" BmpFont="font_2.fnt" FSize="23" />
+                    <Label Name="ItemValueLabel" X="250" Y="5" W="280" H="26" Color="255,245,205" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+                </Template>
+            </ListBox>
+            <Label Name="TipLabel" X="67" Y="46" W="480" H="80" Center="1" Color="182,19,19" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="26" />
+            <Canvas Name="UpgradeBtn" X="184" Y="0" W="245" H="77" Touch="1" Center="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="NumLabel" X="27" Y="0" W="142" H="77" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+                <Image Name="ProduceImage" X="173" Y="14" W="43" H="47" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="CanvasTopUpgrade" X="207" Y="-2" W="200" H="126" Center="1">
+                <Canvas Name="CanvasSpeed" X="0" Y="0" W="196" H="77" Touch="1">
+                    <Image Name="Image" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="0" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    <Image Name="ProduceImage" X="138" Y="15" W="35" H="47" Center="2" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+                <ProgressEx Name="ProUpgrade" X="10" Y="78" W="180" H="36" Center="1" ProgressBackground="{1,ui/res/pro/pro_bk_180_36.png}" ProgressImage="{1,ui/res/pro/pro_180_36.png}" MaxValue="100" Direction="3" />
+                <Label Name="LabelTotalNum" X="20" Y="78" W="160" H="36" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasLeft" X="0" Y="11" W="356" H="600">
+            <Image Name="Top_L" X="42" Y="481" W="100" H="94" Image="{1,ui/res/soldier/soldier_img_top.png}" SizeMode="1" />
+            <Image Name="Top_R" X="215" Y="481" W="100" H="94" RotationY="180" Right="41" Image="{1,ui/res/soldier/soldier_img_top.png}" SizeMode="1" />
+            <Image Name="BkImage" X="35" Y="164" W="286" H="432" Center="1" Image="{1,ui/res/soldier/soldier_img_bk.png}" SizeMode="1" />
+            <Image Name="TypeImage_L" X="28" Y="505" W="82" H="82" Image="{1,ui/res/soldier/soldier_img_type.png}" SizeMode="1" />
+            <Image Name="TypeImage_R" X="246" Y="505" W="82" H="82" Right="28" Image="{1,ui/res/soldier/soldier_img_type.png}" SizeMode="1" />
+            <Image Name="ImageAttackType" X="39" Y="520" W="58" H="58" Touch="1" SizeMode="1" />
+            <Image Name="ImageDenfenseType" X="258" Y="520" W="58" H="58" Touch="1" SizeMode="1" />
+            <Image Name="InfoImage" X="13" Y="180" W="330" H="444" Center="1" SizeMode="1" />
+            <Image Name="FlagImage" X="39" Y="10" W="278" H="169" Center="1" Image="{1,ui/res/soldier/soldier_img_flag.png}" SizeMode="1" />
+            <Canvas Name="AtrCanvs" X="10" Y="10" W="328" H="169">
+                <Image Name="BkImg" X="39" Y="0" W="278" H="169" SizeMode="1" />
+                <Image Name="NameImage" X="7" Y="146" W="313" H="84" Center="1" Image="{1,ui/res/soldier/soldier_img_name.png}" SizeMode="1" />
+                <Label Name="NameLabel" X="44" Y="178" W="240" H="50" Center="1" Color="255,255,254" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+                <Canvas Name="AtrCanvs_1" X="30" Y="0" W="278" H="169">
+				    <Image Name="AtkImg" X="30" Y="130" W="29" H="27" Image="{1,ui/res/soldier/ico_attack.png}" SizeMode="1" />
+                    <Label Name="AtkNumLabel" X="60" Y="130" W="80" H="30" Text="" Color="231,213,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Label Name="AtkAddLabel" X="90" Y="130" W="90" H="30" Text="" Color="67,156,39" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+					<Image Name="HpImg" X="30" Y="90" W="29" H="27" Image="{1,ui/res/soldier/ico_hp.png}" SizeMode="1" />
+                    <Label Name="HpNumLabel" X="60" Y="90" W="80" H="30" Text="" Color="231,213,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Label Name="HpAddLabel" X="90" Y="90" W="90" H="30" Text="" Color="67,156,39" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+					<Image Name="CrystalImg" X="30" Y="50" W="29" H="27" Image="{1,ui/res/crystal.png}" SizeMode="1" />
+                    <Label Name="CrystalNumLabel" X="60" Y="50" W="80" H="30" Text="" Color="231,213,184" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Label Name="CrystalAddLabel" X="90" Y="50" W="90" H="30" Text="" Color="67,156,39" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                </Canvas>
+                <Canvas Name="AtrCanvs_2" X="30" Y="0" W="278" H="169">
+                    <Image Name="RoquetImg" X="30" Y="130" W="29" H="27" Image="{1,ui/res/hero/ico_roquet.png}" SizeMode="1" />
+                    <Label Name="RoquetNumLabel" X="60" Y="130" W="90" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="DodgeImg" X="150" Y="130" W="29" H="27" Image="{1,ui/res/hero/ico_dodge.png}" SizeMode="1" />
+                    <Label Name="DodgeNumLabel" X="180" Y="130" W="90" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="CritImg" X="30" Y="90" W="29" H="27" Image="{1,ui/res/hero/ico_crit.png}" SizeMode="1" />
+                    <Label Name="CritNumLabel" X="60" Y="90" W="80" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="HitImg" X="150" Y="90" W="29" H="27" Image="{1,ui/res/hero/ico_hit.png}" SizeMode="1" />
+                    <Label Name="HitNumLabel" X="180" Y="90" W="80" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                    <Image Name="TenacityImg" X="30" Y="50" W="29" H="27" Image="{1,ui/res/hero/ico_tenacity.png}" SizeMode="1" />
+                    <Label Name="TenacityNumLabel" X="60" Y="50" W="90" H="30" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="18" />
+                </Canvas>
+                <Image Name="AtrNextImg" X="284" Y="76" W="44" H="60" Touch="1" Right="0" Image="{1,ui/res/hero/atr_next.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasPop" X="300" Y="261" W="240" H="110" Background="{1,ui/res/tip_content.png}" zOrder="99">
+            <Image Name="ImgBkg" X="100" Y="-17" W="40" H="40" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+            <Label Name="Label" X="15" Y="15" W="210" H="80" Color="84,81,76" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="16" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="629" Center="1">
+        <Label Name="LabelTip" X="37" Y="20" W="900" H="40" Center="1" Color="255,168,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+        <Canvas Name="CanvasSoldier" X="107" Y="50" W="760" H="560" Center="1">
+            <Canvas Name="Soldier_1" X="10" Y="379" W="164" H="168" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_2" X="210" Y="378" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_3" X="410" Y="377" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_4" X="610" Y="374" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_5" X="10" Y="192" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_6" X="205" Y="192" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_7" X="405" Y="192" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_8" X="605" Y="192" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_9" X="10" Y="6" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_10" X="205" Y="6" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_11" X="405" Y="6" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Canvas Name="Soldier_12" X="605" Y="6" W="162" H="166" Touch="1">
+                <Image Name="ImgBkg" X="-1" Y="-1" W="164" H="168" Center="3" Image="{1,ui/res/head_bk_soldier.png}" SizeMode="1" />
+                <Image Name="ImgSoldier" X="12" Y="49" W="159" H="134" SizeMode="1" />
+                <Label Name="LabelName" X="9" Y="23" W="140" H="26" Color="230,230,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Label Name="LabelTip" X="21" Y="50" W="120" H="100" Color="205,205,205" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="13" />
+                <Image Name="ImageLvl" X="-3" Y="117" W="51" H="52" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="LabelNum" X="2" Y="130" W="40" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+            <Image Name="ImageArrow_2" X="160" Y="436" W="67" H="47" Image="{1,ui/res/arrow_right.png}" SizeMode="1" />
+            <Image Name="ImageArrow_3" X="360" Y="435" W="67" H="47" Image="{1,ui/res/arrow_right.png}" SizeMode="1" />
+            <Image Name="ImageArrow_4" X="560" Y="438" W="67" H="47" Image="{1,ui/res/arrow_right.png}" SizeMode="1" />
+            <Image Name="ImageArrow_5" X="70" Y="347" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_6" X="265" Y="347" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_7" X="465" Y="347" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_8" X="665" Y="347" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_9" X="70" Y="160" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_10" X="265" Y="160" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_11" X="465" Y="160" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Image Name="ImageArrow_12" X="665" Y="160" W="47" H="38" Image="{1,ui/res/arrow_down.png}" SizeMode="1" />
+            <Canvas Name="CanvasTopUpgrade" X="195" Y="285" W="200" H="126">
+                <Canvas Name="CanvasSpeed" X="0" Y="0" W="196" H="77" Touch="1">
+                    <Image Name="Image" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="0" W="140" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    <Image Name="ProduceImage" X="141" Y="17" W="35" H="47" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                </Canvas>
+                <ProgressEx Name="ProUpgrade" X="10" Y="78" W="180" H="36" Center="1" ProgressBackground="{1,ui/res/pro/pro_bk_180_36.png}" ProgressImage="{1,ui/res/pro/pro_180_36.png}" MaxValue="100" Direction="3" />
+                <Label Name="LabelTotalNum" X="20" Y="78" W="160" H="36" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

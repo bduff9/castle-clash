@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="VipFrame" W="1024" H="768">
+    <Canvas Name="CanvsMain" X="34" Y="38" W="960" H="600" Touch="1" Zoom="0" Center="1">
+        <Canvas Name="CanvasPage_1" X="0" Y="0" W="960" H="600" Zoom="0" Touch="0">
+            <Canvas Name="BottomCanvas" X="0" Y="3" W="920" H="442" Center="1">
+                <Canvas Name="RewardCanvas1" X="206" Y="278" W="140" H="47">
+                    <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+                </Canvas>
+                <Canvas Name="RewardCanvas2" X="390" Y="278" W="140" H="47" Center="1">
+                    <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+                </Canvas>
+                <Canvas Name="RewardCanvas3" X="574" Y="278" W="140" H="47">
+                    <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+                </Canvas>
+                <Label Name="LabelTip" X="262" Y="140" W="520" H="90" Text="Text" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" FSize="25" Center="0" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasPage_2" X="0" Y="0" W="960" H="600" Touch="1" Zoom="0">
+            <ListBox Name="ListBoxNobilityLevel" X="62" Y="54" W="840" H="500" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="840" H="90" Fixed="1">
+                    <Canvas Name="CanvasRankItem" X="0" Y="0" W="840" H="90" Fixed="1" Touch="1" Zoom="0">
+                        <Label Name="LabeNobilityName" X="105" Y="41" W="210" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" Text="PingMin" />
+                        <Canvas Name="PowerCanvas" X="105" Y="0" W="140" H="47">
+                            <Label Name="LabelNum" X="50" Y="0" W="168" H="47" Text="5555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                        <Canvas Name="PressPowerCanvas" X="311" Y="19" W="140" H="47">
+                            <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="5555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                        <Canvas Name="CashCanvas" X="446" Y="19" W="140" H="47">
+                            <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="5555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                        <Canvas Name="HonorCanvas" X="571" Y="19" W="140" H="47">
+                            <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="5555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                        <Canvas Name="HeroClipCanvas" X="716" Y="19" W="140" H="47">
+                            <Label Name="LabelNum" X="58" Y="0" W="168" H="47" Text="5555" Color="230,230,230" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                </Template>
+            </ListBox>
+        </Canvas>
+    </Canvas>
+</Layout>

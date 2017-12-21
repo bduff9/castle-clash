@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossAcitvityDonateFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+        <Canvas Name="BtnHelp" X="6" Y="638" W="90" H="100" Touch="1">
+            <Image Name="bkg" X="0" Y="0" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="LeftCanvas" X="40" Y="15" W="440" H="610">
+            <Image Name="BossImgbg" X="30" Y="23" W="384" H="554" Image="{1,ui/res/WorldBoss/BossBg.png}" SizeMode="1" />
+            <Image Name="BossImg" X="-16" Y="150" W="420" H="422" Image="{1,icon/hero/652.png}" SizeMode="0" />
+            <Image Name="RankImg" X="0" Y="512" W="68" H="76" Touch="1" Image="{1,ui/res/button/btn_68_76.png}" SizeMode="1" />
+            <Image Name="BoardImg" X="39" Y="108" W="367" H="83" Image="{1,ui/res/Consortia/borad.png}" SizeMode="0" />
+            <ProgressEx Name="ProCreate" X="60" Y="141" W="320" H="38" ProgressBackground="{1,ui/res/pro/pro_bk_320_38.png}" ProgressImage="{1,ui/res/pro/pro_320_38.png}" MaxValue="100" Direction="3" />
+            <Label Name="ExpNumLabel" X="50" Y="136" W="340" H="50" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+            <Canvas Name="BtnReward" X="170" Y="36" W="104" H="94" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="104" H="94" Image="{1,ui/res/WorldBoss/box.png}" SizeMode="1" />
+                <Label Name="Label" X="-88" Y="29" W="280" H="36" Center="3" Color="249,232,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="CanvasTime" X="20" Y="50" W="400" H="80">
+                <Label Name="Label" X="0" Y="36" W="400" H="40" Center="1" Text="Ending in:" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <Label Name="LabelTime" X="0" Y="0" W="400" H="40" Center="1" Text="5:00" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="InfoCanvas" X="495" Y="24" W="432" H="570">
+           <Image Name="Bkg" X="0" Y="30" W="429" H="541" Image="{1,ui/res/WorldBoss/content_bg.png}" SizeMode="1" />
+			<Image Name="BtnBkg" X="14" Y="10" W="406" H="112" Image="{1,ui/res/WorldBoss/BtnBg.png}" SizeMode="1" />
+            <Label Name="LeftTitleLabel" X="20" Y="350" W="210" H="50" Text="Left:" Color="236,218,172" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="LeftResLabel" X="236" Y="350" W="160" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <Image Name="operatebg" X="120" Y="298" W="184" H="50" Image="{1,ui/res/bag/operatebg.png}" SizeMode="1" />
+            <Canvas Name="minusBtn" X="64" Y="300" W="60" H="60" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="50" H="50" Image="{1,ui/res/button/minus.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="haveNum" X="110" Y="298" W="210" H="50" Text="Will Get:" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="plusBtn" X="310" Y="300" W="60" H="60" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="50" H="50" Image="{1,ui/res/button/plus.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="GetLabel" X="20" Y="254" W="210" H="50" Color="236,218,172" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+            <Label Name="ScoreLabel" X="236" Y="254" W="160" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+            <Image Name="TextBkg" X="66" Y="124" W="294" H="126" Image="{1,ui/res/WorldBoss/bkg_text.png}" SizeMode="1" />
+            <Label Name="TotleScoreTitle" X="16" Y="188" W="400" H="50" Center="1" Text="Accumulate:" Color="236,218,172" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="TotleScore" X="16" Y="146" W="400" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <Canvas Name="SelectCanvas" X="480" Y="416" W="446" H="120">
+            <Canvas Name="BtnLeft" X="70" Y="18" W="110" H="96" Touch="1">
+                <Image Name="bkg" X="6" Y="0" W="90" H="90" RotationY="180" Image="{1,ui/res/button/arrow_right.png}" SizeMode="1" />
+            </Canvas>
+            <Image Name="ImgRes" X="176" Y="16" W="110" H="116" Image="{1,ui/res/giftbag/type_2.png}" SizeMode="1" />
+            <Label Name="NumLabel" X="80" Y="0" W="300" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+            <Canvas Name="BtnRight" X="290" Y="18" W="110" H="96" Touch="1">
+                <Image Name="bkg" X="0" Y="0" W="90" H="90" Image="{1,ui/res/button/arrow_right.png}" SizeMode="1" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="BtnDonate" X="610" Y="52" W="198" H="62" Touch="1">
+            <Image Name="bkg" X="0" Y="0" W="198" H="62" Image="{1,ui/res/button/btn_198_62_g.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="2" W="198" H="62" Text="Donate" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

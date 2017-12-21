@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossActivityLeaderFrame" W="1024" H="768">
+    <Canvas Name="CanvasPage_Main" X="25" Y="24" W="974" H="740">
+        <Canvas Name="InfoRight" X="475" Y="20" W="432" H="566">
+            <Canvas Name="CanvasTop" X="69" Y="328" W="294" H="158" Center="1">
+                <Label Name="Label" X="7" Y="95" W="280" H="36" Center="1" Text="Top:" Color="118,77,40" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="CanvasBottom" X="69" Y="136" W="294" H="158" Center="1">
+                <Label Name="Label" X="7" Y="85" W="280" H="36" Center="1" Text="Bottom:" Color="118,77,40" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

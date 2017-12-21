@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MainTaskFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="15" Y="15" W="994" H="646">
+        <Canvas Name="CanvsTop" X="10" Y="230" W="974" H="403">
+            <Canvas Name="InfoCanvs" X="28" Y="24" W="918" H="352" Right="28">
+                <Canvas Name="InfoBkgCanvs" X="0" Y="5" W="918" H="352" Center="1">
+                    <Image Name="Bkg_L" X="0" Y="0" W="461" H="352" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                    <Image Name="Bkg_R" X="459" Y="0" W="461" H="352" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+                </Canvas>
+                <Canvas Name="BuildingImage" X="10" Y="20" W="320" H="320" />
+                <Label Name="NameLabel" X="326" Y="274" W="500" H="36" Text="11111" Color="255,220,166" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+                <Label Name="StatusLabel" X="425" Y="274" W="200" H="36" Text="(22222)" Color="84,133,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="36" />
+                <Label Name="ContentLabel" X="325" Y="100" W="550" H="160" Text="111111" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="26" />
+                <Label Name="TipLabel" X="39" Y="-5" W="840" H="80" Center="1" Text="22222" Color="84,133,37" TextAlignment="1" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="26" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="17" Y="205" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="ButtomCanvas" X="10" Y="20" W="974" H="240" Center="1">
+            <Image Name="ImgBkg_L" X="16" Y="8" W="50" H="202" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Image Name="ImgBkg_R" X="908" Y="8" W="50" H="202" Right="16" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Label Name="RewardLabel" X="54" Y="150" W="200" H="42" Text="cash:" Color="255,220,166" TextAlignment="0" BmpFont="font_1.fnt" FSize="42" />
+            <Canvas Name="CashCanvs" X="70" Y="62" W="160" H="50">
+                <Label Name="NumLabel" X="0" Y="8" W="100" H="42" Text="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+                <Image Name="RewardImg" X="100" Y="0" W="55" H="55" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+            </Canvas>
+            <Canvas Name="GoBtn" X="659" Y="59" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Text="Go" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

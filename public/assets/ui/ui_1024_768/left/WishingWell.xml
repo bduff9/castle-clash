@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WishingWell" R_W="1.00" H="768">
+    <Canvas Name="CanvasMain" X="-256" Y="0" W="1536" H="768" Center="1">
+        <Canvas Name="CanvasRewardTip" X="300" Y="208" W="390" H="170">
+            <Label Name="TitleLabel" X="30" Y="120" W="300" H="32" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+            <Label Name="TimeLabel" X="110" Y="120" W="200" H="32" Color="255,0,0" TextAlignment="0" BmpFont="font_2.fnt" FSize="24" />
+        </Canvas>
+    </Canvas>
+</Layout>

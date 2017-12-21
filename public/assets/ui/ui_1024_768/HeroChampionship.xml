@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroChampionshipFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+        <Canvas Name="BtnHelp" X="6" Y="638" W="90" H="100" Touch="1">
+            <Image Name="bkg" X="0" Y="0" W="83" H="95" Image="{1,ui/res/button/help_83_95.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="LeftCanvas" X="20" Y="15" W="440" H="610">
+            <Canvas Name="PlayerInfoCanvs" X="0" Y="480" W="375" H="100">
+				<Image Name="ImgBkg" X="0" Y="12" W="375" H="95"  Image="{1,ui/res/board_311-95_s.png}" SizeMode="1" />
+				<Image Name="RankImg" X="10" Y="25" W="68" H="76" Touch="1" Image="{1,ui/res/button/btn_68_76.png}" SizeMode="1" />
+				<Label Name="SegmentLabel" X="80" Y="50" W="250" H="66" Color="255,211,4" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+				<Image Name="NumImg" X="76" Y="-20" W="82" H="35" Top="35" Image="{1,ui/res/HeroChampionship/Rank_My_bg.png}" SizeMode="1" />
+				<Label Name="RankLabel" X="83" Y="15" W="70" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+				<Label Name="Name" X="175" Y="25" W="100" H="45" Color="255,255,255" TextAlignment="1" FSize="20" />
+				<Image Name="StarImg" X="296" Y="30" W="35" H="35"  SizeMode="0" />
+				<Label Name="PowerLabel" X="330" Y="15" W="70" H="66" Color="255,255,255" TextAlignment="0"  FSize="22" BmpFont="font_1.fnt"/>
+			</Canvas>
+			<ListBox Name="BoxListBox" X="0" Y="155" W="385" H="340"  ScrollViewDir="1">
+				<Template Name="" X="0" Y="0" W="385" H="70">
+					<Canvas Name="ItemCanvs" X="0" Y="0" W="375" H="70"  Zoom="0">
+						<Image Name="ImgBkg" X="0" Y="0" W="375" H="70"  Image="{1,ui/res/board_311-95.png}" SizeMode="1" />
+						<Image Name="NumImg" X="17" Y="7" W="60" H="45" Top="10" Image="{1,ui/res/rank/rank_bk.png}" SizeMode="1" />
+						<Label Name="RankLabel" X="13" Y="5" W="70" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+						<Label Name="Name" X="80" Y="15" W="150" H="45" Color="255,255,255" TextAlignment="0" FSize="22" />
+						<Label Name="SegmentLabel" X="215" Y="15" W="150" H="50" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+					</Canvas>
+				</Template>
+			</ListBox>
+        </Canvas>
+        <Canvas Name="MapCanvas" X="395" Y="175" W="560" H="428">
+			<Image Name="ImgMap" X="0" Y="0" W="560" H="428" Image="{1,ui/res/HeroChampionship/map1.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint1" X="90" Y="280" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint2" X="40" Y="220" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint3" X="90" Y="150" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint4" X="400" Y="280" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint5" X="450" Y="220" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+			<Image Name="ImgMapPoint6" X="400" Y="150" W="72" H="82" Image="{1,ui/res/HeroChampionship/mapPiont.png}" SizeMode="1" />
+		</Canvas>
+		<Label Name="MapLabel" X="550" Y="550" W="250" H="36"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+		<Label Name="OverTimeTitle" X="550" Y="260" W="250" H="50"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="OverTime" X="550" Y="220" W="250" H="50"  Color="253,99,52" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+		<Canvas Name="SeparateCanvs" X="17" Y="120" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+		<Canvas Name="BtnFormation" X="530" Y="40" W="196" H="77" Touch="1" >
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+		<Canvas Name="BtnBattle" X="745" Y="40" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+		<Canvas Name="BtnReward" X="745" Y="40" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+		<Canvas Name="RewardCanvas" X="0" Y="30" W="432" H="570">
+            <Label Name="LastDamageTitle" X="30" Y="0" W="280" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+			<Image Name="HonorImg" X="275" Y="0" W="42" H="46"  SizeMode="0" Image="{1,ui/res/best3/best3money.png}" Touch="1" />
+            <Label Name="LastDamage" X="320" Y="0" W="250" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="MaxDamageTitle" X="30" Y="60" W="280" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+			<Image Name="GoldImg" X="270" Y="55" W="50" H="60"  SizeMode="0" Image="{1,ui/res/giftbag/type_4.png}" Touch="1" />
+            <Label Name="MaxDamage" X="320" Y="60" W="250" H="50" Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+    </Canvas>
+
+</Layout>

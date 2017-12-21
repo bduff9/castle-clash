@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroBookFrame" Inherit="normalFrame_1.xml">
+    <Image Name="BackImg" X="15" Y="652" W="115" H="117" Touch="1" Top="-1" Image="{1,ui/res/button/form_back.png}" SizeMode="1" />
+    <Canvas Name="CanvasTab_1" X="134" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="324" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="HeroDevourCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="SeparateCanvs" X="17" Y="205" W="960" H="81" Center="1">
+            <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="12" Y="233" W="970" H="403">
+            <Canvas Name="HeroCanvs" X="65" Y="179" W="196" H="200">
+                <Image Name="HeadBkImg" X="0" Y="0" W="196" H="200" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="IconImg" X="14" Y="57" W="190" H="160" SizeMode="1" />
+                <Label Name="LvlLabel" X="0" Y="20" W="196" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                <Image Name="AwakeImg" X="-5" Y="130" W="61" H="60" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="-5" Y="130" W="61" H="60" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="-6" Y="133" W="61" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="SkillCanvs" X="57" Y="49" W="400" H="96">
+                <Label Name="SkillLvl" X="192" Y="55" W="80" H="25" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="SkillLabel" X="135" Y="57" W="50" H="25" Color="162,179,235" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="SkillName" X="135" Y="57" W="500" H="25" Color="162,179,235" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <ProgressEx Name="ProCreateAdd" X="115" Y="15" W="280" H="36" ProgressBackground="{1,ui/res/pro/pro_bk_280_36.png}" ProgressImage="{1,ui/res/pro/pro_262_36_2.png}" MaxValue="100" Direction="3" />
+                <ProgressEx Name="ProCreate" X="115" Y="15" W="280" H="36" ProgressImage="{1,ui/res/pro/pro_262_36_1.png}" MaxValue="100" Direction="3" />
+                <Label Name="ExpNumLabel" X="169" Y="-9" W="180" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                <Label Name="ExpAddNumLabel" X="399" Y="23" W="100" H="30" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="LvAddNumLabel" X="250" Y="55" W="100" H="25" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Canvas Name="ImgCanvs" X="33" Y="-10" W="100" H="100">
+                    <Image Name="ImgBkg" X="0" Y="0" W="100" H="100" SizeMode="1" />
+                    <Image Name="SkillImg" X="5" Y="10" W="90" H="80" SizeMode="1" />
+                </Canvas>
+                <Label Name="SkillNowLv" X="32" Y="-12" W="100" H="25" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+            <ListBox Name="DevourListBox" X="310" Y="162" W="650" H="180" ScrollViewDir="0">
+                <Template Name="" X="30" Y="0" W="200" H="160" Fixed="1">
+                    <Canvas Name="ItemCanvs" X="10" Y="0" W="160" H="160" Touch="1">
+                        <Image Name="BkImg" X="0" Y="0" W="160" H="160" Center="3" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+                        <Custom Name="IconImg" X="16" Y="-18" W="134" H="164" File="ItemCanvas.xml" />
+                        <Label Name="NumLabel" X="0" Y="20" W="145" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="60" Y="102" W="120" H="60" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Canvas Name="UpgradeCanvs" X="660" Y="40" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Image Name="ImgBkg_L" X="14" Y="26" W="50" H="365" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Image Name="ImgBkg_R" X="906" Y="26" W="50" H="365" Right="14" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        </Canvas>
+		<Canvas Name="InfoCanvs1" X="12" Y="233" W="970" H="403">
+			<Label Name="FateLvlTip" X="256" Y="280" W="680" H="80" Color="240,216,162" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="24" />
+            <Canvas Name="HeroCanvs" X="30" Y="180" W="196" H="200">
+                <Image Name="HeadBkImg" X="0" Y="0" W="196" H="200" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="IconImg" X="14" Y="57" W="190" H="160" SizeMode="1" />
+                <Label Name="LvlLabel" X="0" Y="20" W="196" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                <Image Name="AwakeImg" X="-5" Y="130" W="61" H="60" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="-5" Y="130" W="61" H="60" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="-6" Y="133" W="61" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            </Canvas>
+            <Canvas Name="SkillCanvs" X="40" Y="60" W="400" H="96">
+                <Label Name="SkillLvl" X="58" Y="55" W="80" H="25" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="SkillLabel" X="0" Y="57" W="50" H="25" Color="162,179,235" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="SkillName" X="100" Y="60" W="500" H="40" Color="162,179,235" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <ProgressEx Name="ProCreateAdd" X="100" Y="25" W="180" H="36" ProgressBackground="{1,ui/res/pro/pro_bk_280_36.png}" ProgressImage="{1,ui/res/pro/pro_262_36_2.png}" MaxValue="100" Direction="3" />
+                <ProgressEx Name="ProCreate" X="100" Y="25" W="180" H="36" ProgressImage="{1,ui/res/pro/pro_262_36_1.png}" MaxValue="100" Direction="3" />
+                <Label Name="ExpNumLabel" X="100" Y="3" W="180" H="22" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+                <Label Name="ExpAddNumLabel" X="280" Y="27" W="100" H="30" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Label Name="LvAddNumLabel" X="160" Y="65" W="100" H="25" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+				<Label Name="FateAddLvLabel" X="160" Y="65" W="100" H="25" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+                <Canvas Name="ImgCanvs" X="0" Y="0" W="97" H="96">
+                    <Image Name="ImgBkg" X="0" Y="0" W="97" H="96" SizeMode="1" />
+                    <Image Name="SkillImg" X="5" Y="10" W="90" H="80" SizeMode="1" />
+                </Canvas>
+                <Label Name="SkillNowLv" X="0" Y="-5" W="97" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            </Canvas>
+            <ListBox Name="DevourListBox"  X="220" Y="130" W="725" H="180" ScrollViewDir="0">
+                <Template Name="" X="0" Y="0" W="140" H="180" Fixed="1">
+                    <Canvas Name="ItemCanvs" X="10" Y="0" W="140" H="160" Touch="1">
+                        <Image Name="BkImg" X="0" Y="0" W="120" H="117" Center="3" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+                        <Custom Name="IconImg" X="14" Y="0" W="120" H="145" File="ItemCanvas.xml" />
+                        <Label Name="NumLabel" X="0" Y="20" W="145" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="40" Y="102" W="120" H="60" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Canvas Name="UpgradeCanvs" X="660" Y="40" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Image Name="ImgBkg_L" X="14" Y="26" W="50" H="365" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Image Name="ImgBkg_R" X="906" Y="26" W="50" H="365" Right="14" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+			
+			<Canvas Name="HeroAdd" X="30" Y="-15" W="165" H="100" Touch="1">
+				<Image Name="BkgImg" X="0" Y="0" W="165" H="53" Image="{1,ui/res/hero/hero_book_change_btn.png}" SizeMode="1" />
+				<Label Name="Label" X="0" Y="8" W="165" H="40" Text="Upgrade" Color="231,222,181" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+			</Canvas>
+			<Canvas Name="PropsAdd" X="190" Y="-33" W="165" H="100" Touch="1">
+				<Image Name="BkgImg" X="30" Y="23" W="165" H="53" Image="{1,ui/res/hero/hero_book_change_btn.png}" SizeMode="1" />
+				<Image Name="BkgSelImg" X="0" Y="0" W="222" H="96" Image="{1,ui/res/hero/hero_book_change_btn_sel.png}" SizeMode="1" />
+				<Label Name="Label" X="30" Y="31" W="165" H="40" Text="Upgrade" Color="231,222,181" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+			</Canvas>
+			
+        </Canvas>
+        <Canvas Name="ChoiceCanvs" X="12" Y="25" W="970" H="200">
+            <ListBox Name="BookListBox" X="35" Y="21" W="900" H="180" Center="1" ScrollViewDir="0">
+                <Template Name="" X="30" Y="10" W="200" H="160" Fixed="1">
+                    <Canvas Name="ItemCanvs" X="10" Y="0" W="160" H="160" Touch="1">
+                        <Image Name="BkImg" X="0" Y="0" W="160" H="160" Center="3" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+                        <Custom Name="IconImg" X="16" Y="-18" W="134" H="164" File="ItemCanvas.xml" />
+                        <Label Name="NumLabel" X="0" Y="20" W="145" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="60" Y="102" W="120" H="60" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                </Template>
+            </ListBox>
+            <Image Name="ImgBkg_L" X="14" Y="3" W="50" H="202" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+            <Image Name="ImgBkg_R" X="906" Y="3" W="50" H="202" Right="14" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="PromotionCanvs" X="12" Y="25" W="950" H="340">
+            <Label Name="Consume" X="36" Y="150" W="650" H="60" Color="248,227,208" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="MoneyLabel" X="30" Y="54" W="200" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+            <Image Name="MoneyImg" X="230" Y="66" W="50" H="50" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" Touch="1" />
+            <Label Name="HonorLabel" X="350" Y="54" W="160" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+            <Image Name="HonorImg" X="510" Y="68" W="50" H="50" Image="{1,ui/res/main/main_honor.png}" SizeMode="1" Touch="1"/>
+            <Label Name="StarLabel" X="650" Y="54" W="160" H="80" Color="255,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="42" />
+            <Image Name="StarImg" X="810" Y="66" W="45" H="60" Image="{1,ui/res/dunge/dungeon_fire.png}" SizeMode="0" Touch="1" />
+            <Canvas Name="BtnPromotion" X="660" Y="248" W="245" H="77" Touch="1">
+                <Image Name="BkgImg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="3" W="245" H="77" Text="Upgrade" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                <!--<Image Name="FrameLight" X="-54" Y="-43" W="354" H="164" Center="3" Image="{1,ui/res/button/btn_frame_283_164.png}" SizeMode="1" />-->
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

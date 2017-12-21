@@ -1,0 +1,155 @@
+<config width="1024" height="768">
+  <Block>
+    <List ID="340" X="170" Y="214"/>
+    <List ID="341" X="373" Y="293"/>
+    <List ID="342" X="483" Y="120"/>
+    <List ID="343" X="634" Y="256"/>
+    <List ID="344" X="880" Y="320"/>
+    <List ID="345" X="981" Y="105"/>
+    <List ID="346" X="1239" Y="181"/>
+    <List ID="347" X="1401" Y="330"/>
+    <List ID="348" X="1536" Y="87"/>
+    <List ID="349" X="1822" Y="237"/>
+  </Block>
+  <Line>
+    <List Id0="1" Id1="2">
+      <List XX="169" YY="203.5"/>
+      <List XX="180" YY="181"/>
+      <List XX="191" YY="158"/>
+      <List XX="214" YY="148"/>
+      <List XX="239" YY="149"/>
+      <List XX="263" YY="157"/>
+      <List XX="278" YY="177"/>
+      <List XX="282" YY="202"/>
+      <List XX="286" YY="227"/>
+      <List XX="295" YY="251"/>
+      <List XX="313" YY="269"/>
+      <List XX="338" YY="275"/>
+      <List XX="363" YY="271"/>
+    </List>
+    <List Id0="2" Id1="3">
+      <List XX="381" YY="276.5"/>
+      <List XX="394" YY="255"/>
+      <List XX="397" YY="230"/>
+      <List XX="392" YY="205"/>
+      <List XX="414" YY="193"/>
+      <List XX="434" YY="178"/>
+      <List XX="443" YY="154"/>
+      <List XX="452" YY="130"/>
+      <List XX="466" YY="109"/>
+      <List XX="481" YY="89"/>
+    </List>
+    <List Id0="3" Id1="4">
+      <List XX="488" YY="102.5"/>
+      <List XX="512" YY="110"/>
+      <List XX="524" YY="132"/>
+      <List XX="544" YY="148"/>
+      <List XX="569" YY="150"/>
+      <List XX="594" YY="150"/>
+      <List XX="619" YY="145"/>
+      <List XX="638" YY="162"/>
+      <List XX="642" YY="187"/>
+      <List XX="639" YY="212"/>
+      <List XX="630" YY="236"/>
+    </List>
+    <List Id0="4" Id1="5">
+      <List XX="636" YY="228.5"/>
+      <List XX="628" YY="253"/>
+      <List XX="620" YY="277"/>
+      <List XX="617" YY="302"/>
+      <List XX="624" YY="326"/>
+      <List XX="642" YY="344"/>
+      <List XX="666" YY="352"/>
+      <List XX="691" YY="355"/>
+      <List XX="716" YY="354"/>
+      <List XX="740" YY="347"/>
+      <List XX="760" YY="332"/>
+      <List XX="780" YY="316"/>
+      <List XX="801" YY="302"/>
+      <List XX="825" YY="294"/>
+      <List XX="850" YY="296"/>
+      <List XX="872" YY="308"/>
+    </List>
+    <List Id0="5" Id1="6">
+      <List XX="884" YY="297.5"/>
+      <List XX="884" YY="272"/>
+      <List XX="869" YY="252"/>
+      <List XX="858" YY="229"/>
+      <List XX="852" YY="204"/>
+      <List XX="855" YY="179"/>
+      <List XX="870" YY="159"/>
+      <List XX="892" YY="146"/>
+      <List XX="916" YY="139"/>
+      <List XX="940" YY="131"/>
+      <List XX="961" YY="117"/>
+      <List XX="973" YY="95"/>
+    </List>
+    <List Id0="6" Id1="7">
+      <List XX="981" YY="86.5"/>
+      <List XX="1001" YY="71"/>
+      <List XX="1026" YY="66"/>
+      <List XX="1051" YY="64"/>
+      <List XX="1076" YY="68"/>
+      <List XX="1097" YY="83"/>
+      <List XX="1104" YY="107"/>
+      <List XX="1105" YY="132"/>
+      <List XX="1122" YY="151"/>
+      <List XX="1147" YY="156"/>
+      <List XX="1172" YY="157"/>
+      <List XX="1197" YY="155"/>
+      <List XX="1221" YY="148"/>
+      <List XX="1245" YY="139"/>
+    </List>
+    <List Id0="7" Id1="8">
+      <List XX="1233" YY="156.5"/>
+      <List XX="1256" YY="146"/>
+      <List XX="1281" YY="145"/>
+      <List XX="1299" YY="163"/>
+      <List XX="1303" YY="188"/>
+      <List XX="1291" YY="210"/>
+      <List XX="1278" YY="232"/>
+      <List XX="1266" YY="254"/>
+      <List XX="1261" YY="279"/>
+      <List XX="1275" YY="300"/>
+      <List XX="1297" YY="312"/>
+      <List XX="1322" YY="317"/>
+      <List XX="1347" YY="316"/>
+      <List XX="1372" YY="312"/>
+      <List XX="1397" YY="310"/>
+    </List>
+    <List Id0="8" Id1="9">
+      <List XX="1397" YY="300.5"/>
+      <List XX="1395" YY="275"/>
+      <List XX="1379" YY="255"/>
+      <List XX="1385" YY="230"/>
+      <List XX="1404" YY="213"/>
+      <List XX="1427" YY="203"/>
+      <List XX="1452" YY="197"/>
+      <List XX="1472" YY="182"/>
+      <List XX="1485" YY="160"/>
+      <List XX="1491" YY="135"/>
+      <List XX="1498" YY="111"/>
+      <List XX="1513" YY="91"/>
+    </List>
+    <List Id0="9" Id1="10">
+      <List XX="1538" YY="78.5"/>
+      <List XX="1557" YY="62"/>
+      <List XX="1580" YY="52"/>
+      <List XX="1605" YY="47"/>
+      <List XX="1630" YY="53"/>
+      <List XX="1645" YY="73"/>
+      <List XX="1649" YY="98"/>
+      <List XX="1650" YY="123"/>
+      <List XX="1651" YY="148"/>
+      <List XX="1654" YY="173"/>
+      <List XX="1665" YY="196"/>
+      <List XX="1685" YY="212"/>
+      <List XX="1709" YY="221"/>
+      <List XX="1734" YY="224"/>
+      <List XX="1759" YY="224"/>
+      <List XX="1784" YY="221"/>
+      <List XX="1809" YY="216"/>
+      <List XX="1834" YY="212"/>
+    </List>
+  </Line>
+</config>

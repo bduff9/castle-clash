@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="UNCRankFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasRankMain" X="25" Y="24" W="974" H="629">
+        <Image Name="ImgBkg_L" X="16" Y="18" W="50" H="600" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Image Name="ImgBkg_R" X="908" Y="18" W="50" H="600" Right="16" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Canvas Name="BkgImgCanvs" X="10" Y="500" W="960" H="106">
+            <Image Name="BkgImgCanvs_L" X="0" Y="0" W="476" H="106" Image="{1,ui/res/rank/rank_title.png}" SizeMode="1" />
+            <Image Name="BkgImgCanvs_R" X="472" Y="0" W="478" H="106" RotationY="180" Image="{1,ui/res/rank/rank_title.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="SelfInfoCanvs" X="23" Y="500" W="960" H="106">
+            <Image Name="RankImg" X="18" Y="17" W="166" H="79" Image="{1,ui/res/rank/rank_bk_my.png}" SizeMode="1" />
+            <Image Name="CupImg" X="76" Y="20" W="50" H="44" Image="{1,ui/res/cup_50_44.png}" SizeMode="0" />
+            <Label Name="RankLabel" X="17" Y="50" W="168" H="60" Text="10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+            <Image Name="ScoreImg" X="226" Y="21" W="60" H="60" Image="{1,ui/res/uncharted/score.png}" SizeMode="1"  />
+            <Label Name="NumLabel" X="290" Y="20" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="RewardLabel" X="400" Y="14" W="160" H="80" Text="Reward:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="Res1Img" X="570" Y="26" W="58" H="58" Image="{1,ui/res/redCrystal.png}" SizeMode="0" Touch="1" />
+            <Label Name="Res1NumLabel" X="630" Y="20" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+            <Image Name="Res2Img" X="743" Y="26" W="52" H="52" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0" Touch="1" />
+            <Label Name="Res2NumLabel" X="806" Y="20" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <ListBox Name="MainListBox" X="23" Y="40" W="928" H="460" Center="1" RectTouch="0,45,928,445" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="928" H="85">
+                <Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Zoom="0">
+                    <Canvas Name="BkgImgCanvs" X="0" Y="0" W="928" H="79">
+                        <Image Name="BkgImgCanvs_L" X="0" Y="0" W="466" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                        <Image Name="BkgImgCanvs_R" X="462" Y="0" W="466" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                    </Canvas>
+                    <Image Name="RankImg" X="19" Y="9" W="164" H="62" Top="8" Image="{1,ui/res/rank/rank_bk.png}" SizeMode="1" />
+                    <Label Name="RankLabel" X="17" Y="22" W="168" H="60" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+                    <Label Name="Name" X="-12" Y="0" W="220" H="50" Color="93,165,214" TextAlignment="1" FSize="22" />
+                    <Image Name="ScoreImg" X="229" Y="10" W="52" H="52" Image="{1,ui/res/uncharted/score.png}" SizeMode="1"  />
+                    <Label Name="NumLabel" X="290" Y="4" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                    <Label Name="RewardLabel" X="400" Y="0" W="140" H="80" Text="Reward:" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+                    <Image Name="Res1Img" X="554" Y="15" W="50" H="50" Image="{1,ui/res/redCrystal.png}" SizeMode="0" Touch="1" />
+                    <Label Name="Res1NumLabel" X="608" Y="4" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                    <Image Name="Res2Img" X="716" Y="15" W="43" H="48" Image="{1,ui/res/hero_clip.png.pvr.ccz}" SizeMode="0" Touch="1" />
+                    <Label Name="Res2NumLabel" X="776" Y="4" W="220" H="66" Text="1200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Label Name="LabelLoading" X="0" Y="300" W="960" H="60" Text="Loading..." Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="49" />
+        <Canvas Name="PageCanvs" X="13" Y="5" W="948" H="150" Center="1">
+            <Image Name="ButtomImg" X="0" Y="0" W="948" H="150" Image="{1,ui/res/rank/page_buttom.png}" SizeMode="1" />
+            <Canvas Name="BkgCanvs" X="77" Y="0" W="794" H="85" Center="1">
+                <Image Name="ImgBkg_L" X="0" Y="0" W="399" H="85" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+                <Image Name="ImgBkg_R" X="395" Y="0" W="399" H="85" RotationY="180" Image="{1,ui/res/rank/page_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="FristCanvs" X="135" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="41" Y="14" W="29" H="29" Center="3" Image="{1,ui/res/rank/page_frist.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="PreCanvs" X="247" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="44" Y="14" W="24" H="29" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="NextCanvs" X="359" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="44" Y="14" W="24" H="29" RotationY="180" Center="3" Image="{1,ui/res/rank/page_pre.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="LastCanvs" X="471" Y="10" W="112" H="58" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="112" H="58" Image="{1,ui/res/button/btn_112_58.png}" SizeMode="1" />
+                <Image Name="Img" X="41" Y="14" W="29" H="29" RotationY="180" Center="3" Image="{1,ui/res/rank/page_frist.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="CanvasPage" X="595" Y="10" W="207" H="63">
+                <Image Name="ImgBkg" X="0" Y="0" W="207" H="63" Image="{1,ui/res/rank/page_bk_frame2.png}" SizeMode="1" />
+                <Image Name="ImgPageSearch" X="141" Y="2" W="64" H="57" Touch="1" Image="{1,ui/res/rank/page_search.png}" SizeMode="1" />
+                <Canvas Name="CanvasPage" X="0" Y="0" W="207" H="63">
+                    <EditBox Name="EditPage" X="0" Y="2" W="150" H="50" Padding="{10,0};" Color="255,255,255" FSize="25" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

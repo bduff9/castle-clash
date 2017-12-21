@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="GetReward" R_W="1.00" R_H="1.00">
+<Image Name="ImgBkg" X="0" Y="0" R_W="1.0" R_H="1.0" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+	<Canvas Name="CanvasFrame" X="0" Y="0"  R_W="1.0" R_H="1.0" Touch="1" Zoom="0">
+    <Canvas Name="FrameCa" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" />
+    <Canvas Name="ExitBtn" X="389" Y="40" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="ShopExitCa" X="107" Y="40" W="810" H="77" Center="1">
+        <Canvas Name="BuyBtn" X="140" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="TimesLabel" X="42" Y="15" W="70" H="80" Text="x1" Color="255,255,255" TextAlignment="1" VTextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+            <Label Name="NumLabel" X="100" Y="18" W="80" H="60" Text="150" Color="255,255,255" TextAlignment="2" VTextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="CashImg" X="180" Y="15" W="39" H="52" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+        </Canvas>
+        <Canvas Name="ExitBtn" X="460" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="UseExitCa" X="107" Y="40" W="810" H="77" Center="1">
+        <Canvas Name="ContinueBtn" X="140" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ExitBtn" X="460" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="MultGiftExitCa" X="107" Y="40" W="810" H="77" Center="1">
+        <Canvas Name="BtnOnce" X="80" Y="0" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+        <Canvas Name="BtnMult" X="307" Y="0" W="196" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77_g.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+        <Canvas Name="ExitBtn" X="540" Y="0" W="196" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_orange_196_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="AllItem" X="0" Y="160" R_W="1.00" H="400" Center="1">
+        <Custom Name="CanvasItem_1" R_X="0.12" Y="240" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_2" R_X="0.28" Y="240" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_3" X="449" Y="240" W="125" H="125" Touch="1" Center="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_4" R_Right="0.28" Y="240" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_5" R_Right="0.12" Y="240" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_6" R_X="0.12" Y="34" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_7" R_X="0.28" Y="34" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_8" X="449" Y="34" W="125" H="125" Touch="1" Center="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_9" R_Right="0.28" Y="34" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+        <Custom Name="CanvasItem_10" R_Right="0.12" Y="34" W="125" H="125" Touch="1" File="RewardItemCanvas.xml" />
+    </Canvas>
+    <Canvas Name="BoxCa" X="413" Y="430" W="197" H="180" Center="1">
+        <Canvas Name="EffectCa" X="0" Y="0" W="197" H="180" />
+        <Image Name="ImgBox" X="0" Y="0" W="197" H="180" Image="{1,ui/res/bag/box.png}" SizeMode="0" />
+    </Canvas>
+    <Canvas Name="ItemInfoAlert" X="181" Y="163" W="662" H="442" Touch="1" Zoom="0" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+        <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Custom Name="CanvasItem" X="70" Y="122" W="136" H="164" File="ItemCanvas.xml" />
+            <Canvas Name="HeroCanvs" X="-143" Y="246" W="150" H="150">
+                <Image Name="HeadBkImg" X="10" Y="10" W="130" H="130" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="IconImg" X="18" Y="44" W="130" H="110" SizeMode="1" />
+                <Label Name="LvlLabel" X="35" Y="25" W="80" H="18" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                <Image Name="AwakeImg" X="5" Y="96" W="40" H="40" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                <Image Name="StarImg" X="5" Y="96" W="40" H="40" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                <Label Name="StarNumLabel" X="11" Y="103" W="30" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                <Image Name="CareerImg" X="6" Y="23" W="26" H="28" SizeMode="1" />
+            </Canvas>
+			<Canvas Name="HeroSoulCanvas" X="60" Y="136" W="150" H="150">
+				<Image Name="HeadBkImg" X="10" Y="10" W="130" H="130" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+				<Image Name="HeroImg" X="18" Y="44" W="130" H="110" SizeMode="1" />
+				<Image Name="IconSoul" X="-6" Y="96" W="45" H="60" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+			</Canvas>
+			<Canvas Name="PetCanvas" X="60" Y="136" W="140" H="150">
+				<Image Name="bkg" X="8" Y="10" W="120" H="130" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+				<Image Name="ImgPetHead" X="10" Y="43" W="114" H="108" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+			</Canvas>
+            <Label Name="NameLabel" X="222" Y="231" W="350" H="50" Color="249,245,229" TextAlignment="0" BmpFont="font_1.fnt" FSize="31" />
+            <Label Name="TipLabel" X="83" Y="25" W="500" H="120" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+            <Label Name="HeroTipLabel" X="83" Y="25" W="500" H="250" Color="126,90,44" Center="1" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+			<Image Name="HeroTipUpSignImg" X="576" Y="260" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="HeroTipDownSignImg" X="576" Y="20" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+	</Canvas>
+</Layout>

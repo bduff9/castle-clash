@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="InviteFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <EditBox Name="ContentEdit" X="81" Y="149" W="500" H="160" Background="{1,ui/res/Consortia/consortia_edit.png}" Center="1" Padding="{10,5};" Color="255,255,255" FSize="25" />
+    <Canvas Name="SubMitCanvas" X="203" Y="53" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="NumLabel" X="27" Y="0" W="145" H="77" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+        <Image Name="ProduceImage" X="179" Y="17" W="40" H="46" Image="{1,ui/res/Consortia/consortia_wealth.png}" SizeMode="0" />
+    </Canvas>
+</Layout>

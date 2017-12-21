@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ConsortiaWelfareHouseFrame" W="1024" H="768">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="1024" H="768" Touch="1" Zoom="0" >
+        <Image Name="FrameBkg_L" X="0" Y="0" W="514" H="768" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="510" Y="0" W="514" H="768" RotationY="180" Image="{1,ui/res/form_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Image Name="CloseImg" X="880" Y="651" W="115" H="117" Touch="1" Top="-4" Right="29" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="CanvasTab_1" X="20" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    <Canvas Name="CanvasTab_2" X="210" Y="628" W="178" H="140" Touch="1" Zoom="0" Top="0">
+        <Image Name="ImgSelected" X="0" Y="0" W="178" H="140" Image="{1,ui/res/tab_selected.png}" SizeMode="1" />
+        <Image Name="Img" X="0" Y="30" W="178" H="110" Top="0" Image="{1,ui/res/tab.png}" SizeMode="1" />
+		<Image Name="ImgRoundStone" X="120" Y="30" W="30" H="30" Top="10" Image="{1,ui/res/RoundStone.png}" SizeMode="1" />
+        <Label Name="Label" X="8" Y="44" W="160" H="52" Center="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+		<Label Name="NumLabel" X="8" Y="44" W="160" H="52"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+    
+    <Canvas Name="CanvsBox" X="32" Y="10" W="960" H="650" Touch="1" Zoom="0">
+        <Canvas Name="InfoCanvs" X="20" Y="0" W="430" H="640" >
+            <Canvas Name="SeparateCanvs" X="420" Y="30" W="61" H="592">
+				<Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="307" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+				<Image Name="SeparateCanvs_Up" X="0" Y="302" W="61" H="307" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+			</Canvas>
+			<Image Name="Bg1Img" X="37" Y="47" W="360" H="270" SizeMode="1" Center="1" Image="{1,ui/res/flag_bk_254_267.png}"/>
+			<Image Name="BgImg" X="37" Y="197" W="391" H="391" SizeMode="1" Center="1" Image="{1,ui/res/domain/welfareBg.png}"/>
+            
+			<TimerImage Name="RingImg" X="10" Y="243" W="312" H="312" Center="1" Image="{1,ui/res/domain/ring.png}" TimerType="0" />
+			
+			<Image Name="upImg" X="37" Y="533" W="81" H="64" SizeMode="1" Center="1"  Image="{1,ui/res/domain/up.png}"/>
+			<Image Name="downImg" X="34" Y="280" W="66" H="55" SizeMode="1"  Image="{1,ui/res/domain/horn.png}"/>
+			<Image Name="down1Img" X="332" Y="279" W="66" H="55" SizeMode="1" RotationY="180"  Image="{1,ui/res/domain/horn.png}"/>
+			<Image Name="BoxImg" X="150" Y="300" W="230" H="239" SizeMode="1"  Center="1" Image="" Touch="1"/>
+			<Label Name="BoxPersentNumLabel" X="120" Y="290" W="200" H="50"  Color="244,222,179" TextAlignment="1"  FSize="36"  BmpFont="font_1.fnt" />
+			<Label Name="BoxTitleLabel" X="40" Y="160" W="400" H="50" Center="1"  Color="191,111,205" TextAlignment="1"    FSize="32"  BmpFont="font_1.fnt" />
+			<Label Name="BoxNumLabel" X="10" Y="100" W="200" H="50"  Color="255,255,255" TextAlignment="2"  FSize="38"  BmpFont="font_1.fnt" />
+			<Label Name="BoxMaxLabel" X="210" Y="100" W="200" H="50"   Color="191,111,205" TextAlignment="0"    FSize="32"  BmpFont="font_1.fnt" />
+			<Label Name="CoolingTimeLabel" X="120" Y="100" W="200" H="50"   Color="191,111,205" TextAlignment="1"    FSize="32"  BmpFont="font_1.fnt" />
+            <Label Name="BoxTipLabel" X="40" Y="40" W="400" H="50" Center="1"  Color="207,199,180" TextAlignment="1" Multline="1" FSize="23"  BmpFont="font_1.fnt" />
+			<Image Name="lightImg" X="37" Y="47" W="69" H="66" SizeMode="1"  Image="{1,ui/res/domain/light.png}"/>
+			<Canvas Name="RankCanvs" X="5" Y="540" W="80" H="100" Touch="1" >
+				<Image Name="RankImg" X="0" Y="0" W="68" H="76" SizeMode="1"  Image="{1,ui/res/button/btn_68_76.png}"/>
+			</Canvas>
+			<Image Name="HelpImg" X="350" Y="540" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+			<Canvas Name="CanvasTip" X="50" Y="261" W="320" H="110" Background="{1,ui/res/tip_content.png}" zOrder="99">
+				 <Image Name="ImgBkg" X="100" Y="87" W="40" H="40" Rotation="90" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+				 <Label Name="Label" X="15" Y="15" W="290" H="80" Color="84,81,76" TextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="16" />
+			</Canvas>
+			
+        </Canvas>
+
+		 <Canvas Name="NullInfoCanvs" X="490" Y="95" W="450" H="500" >
+            <Canvas Name="SeparateCanvs" X="0" Y="38" W="450" H="480">
+				<Image Name="SeparateCanvs_Down" X="0" Y="0" W="230" H="480"  Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+				<Image Name="SeparateCanvs_Up" X="220" Y="00" W="230" H="480" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+			</Canvas>
+			<Image Name="Bg1Img" X="37" Y="250" W="111" H="113" SizeMode="1" Center="1" Image="{1,ui/res/domain/slime.png}"/>	
+			<Label Name="TipLabel" X="340" Y="220" W="400" H="26" Center="1" Text="" Color="173,123,48" TextAlignment="1" BmpFont="font_2.fnt" FSize="26" />
+        </Canvas>
+
+		
+		<ListBox Name="BoxListBox" X="485" Y="120" W="460" H="500"  ScrollViewDir="1">
+			<Template Name="" X="0" Y="0" W="440" H="115">
+				<Canvas Name="ItemCanvs" X="0" Y="2" W="460" H="115" Touch="1" Zoom="0">
+					<Canvas Name="BkgImgCanvs" X="0" Y="0" W="450" H="110">
+						<Image Name="BkgImgCanvs_L" X="0" Y="0" W="235" H="110" Image="{1,ui/res/frame_bk_466-142.png}" SizeMode="1" />
+						<Image Name="BkgImgCanvs_R" X="220" Y="0" W="235" H="110" RotationY="180" Image="{1,ui/res/frame_bk_466-142.png}" SizeMode="1" />
+					</Canvas>
+					<Image Name="BoxImg" X="15" Y="-10" W="128" H="133"  SizeMode="0" />
+					
+					<Label Name="TimeLabel" X="170" Y="18" W="250" H="70"  Text="" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="46" />
+					
+				</Canvas>
+			</Template>
+		</ListBox>
+		<Image Name="setBkgImg" X="485" Y="30" W="460" H="92" Image="{1,ui/res/Consortia/setting.png}" SizeMode="1" />
+		<Canvas Name="GetDomainBoxCanvs" X="603" Y="35" W="240" H="80" Touch="1" >
+            <Image Name="ImgBkg" X="0" Y="0" W="240" H="80" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="240" H="80" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+
+    </Canvas>
+    <Canvas Name="CanvsSnatch" X="0" Y="0" W="960" H="650" Center="1">
+		<Canvas Name="CanvsGiftList" X="15" Y="35" W="960" H="598" Center="1">
+			 <ListBox Name="GiftListBox" X="0" Y="0" W="960" H="598" ScrollViewDir="1" EdgeShade="1">	<!-- ListBox -->
+				<Template Name="" X="10" Y="0" W="952" H="148" >
+					<Canvas Name="ItemCanvs" X="0" Y="-10" W="936" H="148" >
+						<Canvas Name="BkgCanvs" X="12" Y="10" W="952" H="145">
+							<Image Name="BkgImg_L" X="0" Y="0" W="468" H="145" Image="{1,ui/res/achievement/achievement_bk.png}" SizeMode="1" />
+							<Image Name="BkgImg_R" X="463" Y="0" W="472" H="145" RotationY="180" Image="{1,ui/res/achievement/achievement_bk.png}" SizeMode="1" />
+						</Canvas>
+						<Image Name="BoxImg" X="40" Y="25" W="128" H="133"  SizeMode="0" />
+						<Label Name="TimeLabel" X="5" Y="18" W="200" H="60"  Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+						<Label Name="GiftTitleLabel" X="170" Y="95" W="220" H="18" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+						<Label Name="NameLabel" X="170" Y="50" W="300" H="28" Text="" Color="107,166,206" TextAlignment="0" FSize="30" BmpFont="font_1.fnt" />
+					
+						 <Canvas Name="ViewCanvs" X="500" Y="13" W="196" H="77" Touch="1" Center="2">
+							<Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+							<Label Name="TxtLabel" X="0" Y="4" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+						</Canvas>
+						<Canvas Name="SnatchCanvs" X="720" Y="13" W="196" H="77" Touch="1" Center="2">
+							<Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+							<Label Name="TxtLabel" X="0" Y="4" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+						</Canvas>
+					</Canvas>
+				</Template>
+			</ListBox>
+		</Canvas>
+		 <Canvas Name="PacketNullInfoCanvs" X="20" Y="10" W="920" H="630" >
+            <Canvas Name="SeparateCanvs" X="0" Y="38" W="900" H="580">
+				<Image Name="SeparateCanvs_Down" X="0" Y="0" W="460" H="580"  Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+				<Image Name="SeparateCanvs_Up" X="450" Y="00" W="460" H="580" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+			</Canvas>
+			<Image Name="Bg1Img" X="37" Y="310" W="111" H="113" SizeMode="1" Center="1" Image="{1,ui/res/domain/slime.png}"/>	
+			<Label Name="TipLabel" X="340" Y="280" W="400" H="26" Center="1" Text="" Color="173,123,48" TextAlignment="1" BmpFont="font_2.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+  
+	<Canvas Name="CanvsSalary" X="20" Y="0" W="960" H="650" >
+		<Canvas Name="SeparateCanvs" X="455" Y="40" W="61" H="592">
+			<Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="307" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+			<Image Name="SeparateCanvs_Up" X="0" Y="302" W="61" H="307" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+		</Canvas>
+		<Image Name="BgImg" X="50" Y="165" W="406" H="408" Image="{1,ui/res/domain/SalaryBg.png}" SizeMode="1" />
+		<Label Name="JobTitleLabel" X="40" Y="580" W="200" H="50"   Color="233,192,121" TextAlignment="0"    FSize="28"  BmpFont="font_2.fnt" />
+		<Label Name="JobLabel" X="200" Y="580" W="200" H="50"  Color="255,255,255" TextAlignment="0"  FSize="26"  BmpFont="font_1.fnt" />
+		<Image Name="JobImg" X="295" Y="580" W="43" H="48" Image="" SizeMode="1" />
+		
+		<Canvas Name="CanvsMeri" X="140" Y="50" W="400" H="400">	
+			<Image Name="MeriImg" X="85" Y="285" W="58" H="62" Touch="1" Image="" SizeMode="1" />
+			<Label Name="MeriLabel" X="15" Y="240" W="200" H="50"  Color="255,255,255" TextAlignment="1"  FSize="38"  BmpFont="font_1.fnt" />
+		</Canvas>
+		<Label Name="NewMemberTipLabel" X="150" Y="300" W="200" H="170" Color="255,223,95" TextAlignment="1" VTextAlignment="1" BmpFont="font_2.fnt" Multline="1" FSize="30" />
+		<Canvas Name="CanvsAdd" X="520" Y="40" W="500" H="650">
+			<Image Name="Bkg" X="0" Y="30" W="429" H="541" Image="{1,ui/res/WorldBoss/content_bg.png}" SizeMode="1" />
+            <Canvas Name="TextBkg" X="66" Y="130" W="294" H="350" Background="{1,ui/res/WorldBoss/bkg_text.png}" SizeMode="1" />
+			<Image Name="TitleBkg" X="45" Y="420" W="335" H="83" Image="{1,ui/res/domain/SalaryTitleBg.png}" SizeMode="1" />
+			<Label Name="TitleLabel" X="16" Y="435" W="400" H="70"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="35" />
+            <Label Name="ActiveTitleLabel" X="16" Y="356" W="400" H="50"  Color="249,231,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+            <Label Name="ActiveLabel" X="16" Y="302" W="400" H="60"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+            <Label Name="PersonalTitleLabel" X="16" Y="220" W="400" H="60"  Color="249,231,184" TextAlignment="1" BmpFont="font_1.fnt" FSize="24" />
+			<Label Name="PersonalDescLabel" X="16" Y="205" W="400" H="60"  Color="124,88,39" TextAlignment="1" BmpFont="font_2.fnt" FSize="18" />
+            <Label Name="PersonalLabel" X="16" Y="171" W="400" H="60"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="38" />
+		</Canvas>
+		<Label Name="TimeTitleLabel" X="35" Y="115" W="400" H="50"   Color="233,192,121" TextAlignment="1"    FSize="24"  BmpFont="font_1.fnt" />
+		<Label Name="TimeLabel" X="35" Y="60" W="400" H="80" Color="250,78,18" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="26" />
+		<Canvas Name="GetSalaryCanvs" X="120" Y="60" W="240" H="80" Touch="1" >
+            <Image Name="ImgBkg" X="0" Y="0" W="240" H="80" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+            <Label Name="TxtLabel" X="0" Y="3" W="240" H="80" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+		<Image Name="HelpImg" X="400" Y="540" W="68" H="76" Touch="1" Image="{1,ui/res/btn_info.png}" SizeMode="1" />
+    </Canvas>
+    
+</Layout>

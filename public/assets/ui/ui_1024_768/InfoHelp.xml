@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="InfoHelp" Inherit="normalFrame_1.xml">
+    <Canvas Name="InfoCanvas" X="25" Y="24" W="974" H="630">
+        <Canvas Name="InfoBkgCanvs" X="27" Y="10" W="920" H="596" Center="1">
+            <Image Name="Bkg_L" X="0" Y="6" W="462" H="590" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="458" Y="6" W="462" H="590" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="LabelContent" X="88" Y="86" W="780" H="460" Text="text" Color="255,255,255" TextAlignment="0" VTextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="27" />
+        <Image Name="UpSignImg" X="872" Y="528" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+        <Image Name="DownSignImg" X="872" Y="76" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

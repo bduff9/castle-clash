@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="TeamDungeonFrame" R_W="1.00" R_H="1.00">
+    <Image Name="Bkg" X="-388" Y="0" W="1800" R_H="1.00" Center="3" Image="{1,ui/res/teamdungeon/bkg.jpg}" SizeMode="0" />
+    <Canvas Name="HeroTeamListCanvas" X="-288" Y="180" W="1600" H="600" Touch="1" Zoom="0" Center="1">
+        <Canvas Name="HeroTeamListSubCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Center="1">
+            <Canvas Name="HeroTeamCanvas_1" X="500" Y="0" W="600" H="440" Center="1">
+                <Image Name="Bkg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="3" Image="{1,ui/res/tip_content.png}" SizeMode="1" />
+                <Canvas Name="CellCanvas" X="90" Y="0" W="420" H="440" Center="3">
+                    <Canvas Name="Cell0" X="139" Y="192" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="0" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell1" X="60" Y="134" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell1.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell3" X="217" Y="134" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell3.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell2" X="-19" Y="76" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell4" X="139" Y="76" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell4.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="4" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell6" X="295" Y="76" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell0.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="6" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell5" X="60" Y="18" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell3.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="5" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell7" X="217" Y="18" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell7.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="7" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                    <Canvas Name="Cell8" X="139" Y="-40" W="140" H="207">
+                        <Image Name="CellImg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/HeroTeam/HeroTeamCell8.png}" SizeMode="1" />
+                        <Image Name="SelectImg" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1" Image="{1,ui/res/HeroTeam/SelectCell.png}" SizeMode="1" />
+                        <Image Name="ImgHero" X="0" Y="100" W="140" H="100" Center="1" SizeMode="0" />
+                        <Canvas Name="TouchArea" X="21" Y="120" W="98" H="70" Touch="1" Zoom="0" Center="1">
+                            <Image Name="ImgBack" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="0" />
+                            <Label Name="Label" X="0" Y="0" R_W="1.00" R_H="1.00" Text="9" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnCanvas" X="162" Y="152" W="700" H="100" Center="1">
+        <Canvas Name="BtnClearCell" X="0" Y="0" W="196" H="77" Touch="1">
+            <Image Name="BkImg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="196" H="77" Text="Clear" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="BtnReset" X="252" Y="0" W="196" H="77" Touch="1" Center="1">
+            <Image Name="BkImg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="196" H="77" Text="Reset" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+        <Canvas Name="BtnSave" X="504" Y="0" W="196" H="77" Touch="1" Right="0">
+            <Image Name="BkImg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_171_58.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="196" H="77" Text="Save" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnLastTeam" X="34" Y="360" W="88" H="89" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="88" H="89" Image="{1,ui/res/button/arrow_left.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BtnNextTeam" X="902" Y="360" W="88" H="89" Touch="1" Right="34">
+        <Image Name="Img" X="0" Y="0" W="88" H="89" RotationY="180" Image="{1,ui/res/button/arrow_left.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasTop" X="0" Y="578" W="327" H="190" Top="0">
+        <Image Name="ImgBorad" X="18" Y="108" W="290" H="82" Image="{1,ui/res/HeroTeam/HeroTeamBorad.png}" SizeMode="1" />
+        <Image Name="ImgPower" X="68" Y="119" W="48" H="44" Image="{1,ui/res/power_img.png}" SizeMode="0" />
+        <Label Name="LabelHeroTeamPower" X="128" Y="118" W="150" H="50" Text="123" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+    </Canvas>
+    <Canvas Name="FilterCanvs" X="50" Y="152" W="78" H="78" Touch="1">
+        <Canvas Name="FilterBtn" X="0" Y="0" W="78" H="78" Touch="1" Center="3">
+            <Image Name="BkgImg" X="0" Y="0" W="78" H="78" Image="{1,ui/res/herotag/herotag_btn.png}" SizeMode="1" />
+            <Image Name="Img" X="12" Y="15" W="54" H="48" Center="3" Image="{1,ui/res/herotag/herotag_0.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+    <ListBox Name="ListBoxHero" X="0" Y="0" R_W="1.00" H="165" ScrollViewDir="0">
+        <Template Name="" X="0" Y="0" W="137" H="150" Fixed="1">
+            <Canvas Name="ItemCanvas" X="0" Y="0" W="142" H="140" Touch="1">
+                <Image Name="ImgBkg" X="4" Y="2" W="133" H="136" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                <Image Name="ImgBkg1" X="12" Y="3" W="118" H="120" Center="1" Image="{1,ui/res/head_bk1.png}" SizeMode="1" />
+                <Image Name="ImageSelected" X="-5" Y="-8" W="152" H="156" Center="3" SizeMode="1" />
+                <Image Name="ImgSoldier" X="14" Y="40" W="129" H="109" SizeMode="1" />
+                <Label Name="LabelNum" X="25" Y="15" W="120" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                <Canvas Name="StarCanvs" X="-1" Y="104" W="34" H="34">
+                    <Image Name="AwakeImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/hero/awake1.png}" SizeMode="1" />
+                    <Image Name="StarImg" X="0" Y="0" W="36" H="36" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                    <Label Name="StarNumLabel" X="-5" Y="3" W="44" H="34" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="15" />
+                </Canvas>
+                <Image Name="CareerImg" X="9" Y="10" W="33" H="33" SizeMode="1" />
+                <Image Name="talentIconBg" X="0" Y="0" W="51" H="50" Image="{1,ui/res/talentIconBg.png}" SizeMode="1" />
+            </Canvas>
+        </Template>
+    </ListBox>
+    <Canvas Name="CanvasHomeSet" X="15" Y="588" W="300" H="100" Top="80">
+        <Label Name="LabelTitle" X="-16" Y="44" W="200" H="60" Text="LineUp:" Color="225,162,1" TextAlignment="2" BmpFont="font_1.fnt" FSize="34" />
+        <Label Name="LabelTeam" X="195" Y="46" W="120" H="60" Text="2/3" Color="255,246,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="40" />
+        <Label Name="LabelActive" X="13" Y="2" W="300" H="60" Text="Not Use" Color="156,208,15" TextAlignment="1" BmpFont="font_1.fnt" FSize="32" />
+    </Canvas>
+    <Label Name="LabelHeroNum" X="460" Y="700" W="400" H="60" Top="8" Right="164" Text="Hero:3/6" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="34" />
+</Layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="UNCBatleReport" R_W="1.00" R_H="1.00">
+    <Canvas Name="FrameCa" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" />
+    <Canvas Name="ExitBtn" X="389" Y="40" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="FailButtonCanvas" X="232" Y="40" W="560" H="77" Center="1">
+        <Canvas Name="ExitBtn" X="0" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="PassBtn" X="315" Y="0" W="245" H="77" Touch="1" Right="0">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="-30" Y="3" W="305" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Canvas Name="CostCanvas" X="54" Y="60" W="137" H="40" Center="1">
+                <Image Name="ProduceImage" X="86" Y="-5" W="30" H="40" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="0" />
+                <Label Name="NumLabel" X="0" Y="0" W="80" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RewardCanvas" X="0" Y="200" R_W="1.00" H="550" Center="1">
+        <Canvas Name="PropRewardCanvas" X="449" Y="200" W="125" H="125" Center="1">
+            <Custom Name="CanvasItem" X="-5" Y="-20" W="136" H="164" Center="1" File="ItemCanvas.xml" />
+            <Label Name="LabelName" X="-87" Y="-14" W="300" H="40" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ResourceRewardCanvas" X="412" Y="0" W="200" H="200" Center="1">
+            <Canvas Name="CanvasReward_0" X="0" Y="100" W="200" H="70" Center="1">
+                <Image Name="ImgBkg" X="20" Y="0" W="70" H="70" Center="2" Image="{1,ui/res/uncharted/score.png}" SizeMode="0" />
+                <Label Name="LabelNum" X="100" Y="5" W="200" H="60" Center="2" Text="1000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+            <Canvas Name="CanvasReward_1" X="0" Y="28" W="200" H="70" Center="1">
+                <Image Name="ImgBkg" X="22" Y="2" W="66" H="66" Center="2" Image="{1,ui/res/uncharted/sp.png}" SizeMode="0" />
+                <Label Name="LabelNum" X="100" Y="5" W="200" H="60" Center="2" Text="1000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="WinEffectCanvas" X="62" Y="200" W="900" H="400" Center="1" />
+</Layout>

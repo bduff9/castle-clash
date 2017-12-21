@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MyConsortiaFrame" W="1024" H="768">
+    <Canvas Name="CanvsCreate" X="32" Y="10" W="960" H="650" Center="1">
+        <Label Name="NameLabel" X="65" Y="524" W="300" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="NameLabelTip" X="703" Y="524" W="160" H="40" Color="159,136,95" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        <Label Name="MarkLabel" X="65" Y="448" W="300" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+        <Canvas Name="ProduceCanvas" X="681" Y="451" W="140" H="50" />
+        <Label Name="MemoLabel" X="65" Y="373" W="300" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="MemoLabelTip" X="702" Y="370" W="180" H="40" Color="159,136,95" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        <Label Name="BattlePowerLabel" X="65" Y="206" W="300" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="CanvsSearch" X="32" Y="10" W="960" H="650" Center="1">
+        <Label Name="NameLabel" X="150" Y="552" W="240" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="LabelTip" X="150" Y="465" W="500" H="40" Color="255,250,196" TextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+    </Canvas>
+    <Canvas Name="CanvsMyself" X="32" Y="10" W="960" H="650" Center="1">
+        <Canvas Name="InfoCanvs" X="0" Y="448" W="960" H="187" Center="1">
+            <Label Name="ProclaimLabel" X="407" Y="91" W="540" H="65" Color="167,203,254" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="23" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasBuffInfo" X="15" Y="15" W="994" H="646" Center="1">
+        <Label Name="UpgradeBtnTip" X="544" Y="345" W="239" H="26" Color="226,207,169" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    </Canvas>
+</Layout>

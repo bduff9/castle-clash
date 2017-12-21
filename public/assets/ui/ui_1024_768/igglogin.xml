@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="IggLoginFrame" R_W="1" R_H="1">
+    <Image Name="BkImg" Center="3" W="1800" R_H="1" Touch="1" Zoom="0" Image="{1,ui/res/igg_login.jpg}" SizeMode="0" />
+</Layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WBTrickFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="EntranceCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="ScoreCanvas" X="137" Y="70" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="330" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="120" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="LuckCardCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Touch="1" Center="1">
+            <Label Name="TitleLabel" X="330" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="120" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="PaidChanceCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="330" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="120" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="HeroMemoryCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="330" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="120" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="TrickQuestionCanvas" X="0" Y="0" W="1024" H="768" Center="3">
+        <Canvas Name="ScoreCanvas" X="137" Y="16" W="750" H="60" Center="1">
+            <Label Name="TitleLabel" X="330" Y="5" W="518" H="50" Text="Tips:" Color="239,215,169" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="ScoreLabel" X="120" Y="5" W="200" H="50" Text="2035" Color="239,215,169" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+    </Canvas>
+</Layout>

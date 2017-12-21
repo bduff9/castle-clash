@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="STAlertFrame" W="662" H="442">
+    <Canvas Name="UpgradeCanvs" X="28" Y="50" W="600" H="300">
+        <Canvas Name="OutputCanvs" X="97" Y="104" W="500" H="40">
+            <Label Name="Label" X="380" Y="7" W="150" H="25" Center="2" Text="Output:" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+            <Label Name="CurNum" X="86" Y="7" W="100" H="25" Center="2" Text="00/00" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ArrowImg" X="210" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+            <Label Name="NewNum" X="287" Y="0" W="150" H="40" Center="2" Text="00/00" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="StockCanvs" X="97" Y="50" W="500" H="40">
+            <Label Name="Label" X="381" Y="7" W="150" H="25" Center="2" Text="Stock:" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="25" />
+            <Label Name="CurNum" X="84" Y="7" W="100" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ArrowImg" X="210" Y="5" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+            <Label Name="NewNum" X="286" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+    </Canvas>
+	<Canvas Name="InfoCanvs" X="28" Y="50" W="600" H="300">
+        <Label Name="LvlLabel" X="360" Y="245" W="150" H="25" Text="LV:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="LvlNum" X="200" Y="245" W="150" H="25" Text="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="OutputLabel" X="360" Y="205" W="150" H="25" Text="Output:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="OutputNum" X="200" Y="205" W="150" H="25" Text="200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="StockLabel" X="360" Y="170" W="150" H="25" Text="Stock:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="StockNum" X="200" Y="170" W="150" H="25" Text="00/00" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel" X="206" Y="10" W="380" H="140" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+    </Canvas>
+</Layout>

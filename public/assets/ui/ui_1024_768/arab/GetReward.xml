@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="GetReward" R_W="1.00" R_H="1.00">
+    <Canvas Name="ItemInfoAlert" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Label Name="NameLabel" X="222" Y="231" W="350" H="50" Color="249,245,229" TextAlignment="2" BmpFont="font_1.fnt" FSize="31" />
+        </Canvas>
+    </Canvas>
+</Layout>

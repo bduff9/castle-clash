@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="DefensiveBattleWatchFrame" R_W="1.00" R_H="1.00">
+<!-- <Custom Name="PlayerBaseInfo" X="0" Y="0" R_W="1.00" R_H="1.00" File="PlayerFrameStyle.xml" /> -->
+	<Canvas Name="CanvasCenter" X="382" Y="608" W="260" H="160" Top="0" Center="3">
+		<Canvas Name="CanvasTime" X="0" Y="0" W="260" H="80" Center="1">
+			<Label Name="LabelTip" X="-4" Y="50" W="600" H="16" Color="220,215,200" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" Center="1" />
+			<Label Name="LabelTime" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+			<Label Name="LabelTime_1" X="0" Y="0" W="260" H="40" Color="242,242,242" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+		</Canvas>
+		<Canvas Name="BtnEndBattle" X="7" Y="74" W="245" H="77" Touch="1" Top="9" Center="1">
+            <Image Name="Image" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="0" W="245" H="77" Text="Battle" Color="222,222,222" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+	</Canvas>
+	<Label Name="LabelBattleId" X="812" Y="712" W="400" H="46" Top="10" Right="12" Text="1" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="50" />
+	<Label Name="LabelBattleBegin" X="450" Y="451" W="400" H="46" Text="Battle 1 Begin !!!" Color="255,255,255" Center="1" TextAlignment="1" BmpFont="font_1.fnt" FSize="50" />
+       <Canvas Name="BtnSpeed" X="788" Y="20" W="196" H="77" Touch="1" Right="40">
+        <Image Name="Image" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+        <Image Name="ImageSpeed" X="50" Y="20" W="62" H="41" Image="{1,ui/res/speed.png}" SizeMode="1" />
+        <Label Name="Label" X="114" Y="5" W="100" H="75" Text="" Color="222,222,222" TextAlignment="0" BmpFont="font_1.fnt" FSize="45" />
+    </Canvas>
+   <Canvas Name="CanvasBox" X="416" Y="285" W="200" H="250" Touch="1" Center="1" >
+		<Canvas Name="CanvasBox" X="0" Y="0" W="200" H="250" Touch="0" >
+			<Image Name="IconImg" X="0" Y="100" W="146" H="124" Image="{1,ui/res/defensivebattle/chest.png}" SizeMode="1" Center="1" />
+			<!--<Label Name="LabelCreditNum" X="64" Y="-2" W="122" H="80" Color="255,255,255" Text="-5" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />-->
+			<!--<Image Name="CreditImg" X="143" Y="16" W="57" H="57" Image="{1,ui/res/cash.png.pvr.ccz}" SizeMode="1" /> -->
+		</Canvas>
+		<Canvas Name="CanvasReward" X="0" Y="0" W="200" H="250" Touch="0">
+			<Image Name="IconImg" X="0" Y="100" W="146" H="124" Image="{1,ui/res/defensivebattle/chest.png}" SizeMode="1" Touch="0" Center="1" />
+			<Label Name="LabelReward" X="-46" Y="31" W="800" H="80" Color="255,255,255" Text="" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" Touch="0" Center="1"/>
+			<Label Name="LabelRewardNum" X="-50" Y="0" W="300" H="80" Color="255,255,255" Text="" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" Touch="0" Center="1"/>
+		</Canvas>
+	</Canvas>
+</Layout>

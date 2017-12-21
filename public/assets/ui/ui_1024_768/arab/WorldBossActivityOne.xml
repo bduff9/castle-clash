@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossAcitvityOneFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+        <Canvas Name="InfoLegion" X="495" Y="24" W="432" H="570">
+            <Label Name="LastDamageTitle" X="16" Y="356" W="400" H="50" Center="1" Text="Left:" Color="118,77,40" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Label Name="MaxDamageTitle" X="16" Y="258" W="400" H="50" Center="1" Text="Left:" Color="118,77,40" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="InterludeBattleFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="FrameCanvas" R_X="0.00" R_Y="0.00" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" />
+    <Canvas Name="LeftBottomSmall" X="0" Y="0" W="585" H="585">
+        <Image Name="0" X="-116" Y="111" W="503" H="503" Image="" SizeMode="1" />
+        <Image Name="1" X="-147" Y="-169" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="2" X="191" Y="-117" W="609" H="536" Image="" SizeMode="1" />
+        <Image Name="3" X="120" Y="49" W="609" H="536" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="RightTopSmall" X="439" Y="183" W="585" H="585" Top="0" Right="0">
+        <Image Name="0" X="246" Y="216" W="503" H="503" Image="" SizeMode="1" />
+        <Image Name="1" X="125" Y="-60" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="2" X="-33" Y="182" W="557" H="536" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="Bottom" X="-1085" Y="0" W="2109" H="468" Right="0">
+        <Image Name="0" X="1600" Y="-201" W="820" H="703" Image="" SizeMode="1" />
+        <Image Name="1" X="1267" Y="-200" W="820" H="703" Image="" SizeMode="1" />
+        <Image Name="2" X="-132" Y="-166" W="820" H="644" Image="" SizeMode="1" />
+        <Image Name="3" X="989" Y="-165" W="820" H="585" Image="" SizeMode="1" />
+        <Image Name="4" X="771" Y="-160" W="703" H="585" Image="" SizeMode="1" />
+        <Image Name="5" X="200" Y="-183" W="703" H="644" Image="" SizeMode="1" />
+        <Image Name="6" X="433" Y="-187" W="806" H="644" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="Left" X="0" Y="-239" W="304" H="1007" Top="0">
+        <Image Name="0" X="-139" Y="336" W="585" H="562" Image="" SizeMode="1" />
+        <Image Name="1" X="-135" Y="561" W="585" H="585" Image="" SizeMode="1" />
+        <Image Name="2" X="-63" Y="548" W="351" H="304" Image="" SizeMode="1" />
+        <Image Name="3" X="71" Y="515" W="382" H="351" Image="" SizeMode="1" />
+        <Image Name="4" X="282" Y="655" W="201" H="181" Image="" SizeMode="1" />
+        <Image Name="5" X="111" Y="378" W="421" H="375" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="Top" X="0" Y="300" W="2109" H="468" Top="0">
+        <Image Name="0" X="-103" Y="124" W="585" H="585" Image="" SizeMode="1" />
+        <Image Name="1" X="140" Y="139" W="573" H="509" Image="" SizeMode="1" />
+        <Image Name="2" X="168" Y="-30" W="573" H="509" Image="" SizeMode="1" />
+        <Image Name="3" X="368" Y="21" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="4" X="688" Y="32" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="5" X="1008" Y="-9" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="6" X="1322" Y="25" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="7" X="1600" Y="16" W="712" H="703" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="Right" X="720" Y="0" W="304" H="1007" Right="0">
+        <Image Name="0" X="-19" Y="-171" W="468" H="703" Image="" SizeMode="1" />
+        <Image Name="1" X="-50" Y="103" W="547" H="539" Image="" SizeMode="1" />
+        <Image Name="2" X="-236" Y="-15" W="351" H="351" Image="" SizeMode="1" />
+        <Image Name="3" X="-72" Y="227" W="585" H="703" Image="" SizeMode="1" />
+        <Image Name="4" X="-130" Y="125" W="351" H="351" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="RightTopBig" X="124" Y="-132" W="900" H="900" Top="0" Right="0">
+        <Image Name="0" X="-145" Y="264" W="820" H="820" Image="" SizeMode="1" />
+        <Image Name="1" X="142" Y="234" W="820" H="820" Image="" SizeMode="1" />
+        <Image Name="2" X="356" Y="94" W="644" H="644" Image="" SizeMode="1" />
+        <Image Name="3" X="-201" Y="429" W="351" H="351" Image="" SizeMode="1" />
+        <Image Name="4" X="50" Y="178" W="585" H="585" Image="" SizeMode="1" />
+        <Image Name="5" X="142" Y="4" W="585" H="585" Image="" SizeMode="1" />
+        <Image Name="6" X="-162" Y="-21" W="550" H="562" Image="" SizeMode="1" />
+        <Image Name="7" X="-339" Y="-22" W="351" H="304" Image="" SizeMode="1" />
+        <Image Name="8" X="-98" Y="319" W="351" H="304" Image="" SizeMode="1" />
+        <Image Name="9" X="-83" Y="216" W="351" H="304" Image="" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="LeftBottomBig" X="0" Y="0" W="900" H="900">
+        <Image Name="0" X="-107" Y="-147" W="1171" H="1171" Image="" SizeMode="1" />
+        <Image Name="1" X="230" Y="15" W="585" H="539" Image="" SizeMode="1" />
+        <Image Name="2" X="80" Y="214" W="557" H="536" Image="" SizeMode="1" />
+        <Image Name="3" X="291" Y="302" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="4" X="413" Y="78" W="703" H="703" Image="" SizeMode="1" />
+        <Image Name="5" X="666" Y="602" W="351" H="351" Image="" SizeMode="1" />
+        <Image Name="6" X="923" Y="324" W="351" H="292" Image="" SizeMode="1" />
+        <Image Name="7" X="942" Y="85" W="304" H="281" Image="" SizeMode="1" />
+        <Image Name="8" X="590" Y="28" W="440" H="419" Image="" SizeMode="1" />
+        <Image Name="9" X="907" Y="584" W="351" H="304" Image="" SizeMode="1" />
+        <Image Name="10" X="1176" Y="85" W="304" H="281" Image="" SizeMode="1" />
+        <Image Name="11" X="825" Y="28" W="440" H="419" Image="" SizeMode="1" />
+        <Image Name="12" X="714" Y="335" W="351" H="304" Image="" SizeMode="1" />
+    </Canvas>
+</Layout>

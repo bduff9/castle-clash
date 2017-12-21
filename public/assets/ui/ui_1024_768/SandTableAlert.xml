@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="STAlertFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442" Touch="1" Zoom="0">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="STLvlUpCanvas" X="28" Y="50" W="600" H="300">
+        <Label Name="lvlLabel" X="10" Y="230" W="580" H="50" Center="1" Text="LV20" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+        <Label Name="tipLabel" X="10" Y="190" W="580" H="50" Center="1" Text="(new field)" Color="103,73,37" TextAlignment="1" BmpFont="font_2.fnt" FSize="26" />
+        <Canvas Name="field1" X="110" Y="60" W="110" H="150" />
+        <Canvas Name="field2" X="256" Y="60" W="110" H="150" />
+        <Canvas Name="field3" X="400" Y="60" W="110" H="150" />
+    </Canvas>
+    <Canvas Name="FieldCanvs" X="38" Y="39" W="260" H="300">
+        <Label Name="ProName" X="0" Y="225" W="220" H="50" Text="Name" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Canvas Name="Field" X="57" Y="65" W="110" H="150" />
+    </Canvas>
+    <Canvas Name="UpgradeCanvs" X="28" Y="50" W="600" H="300">
+        <Canvas Name="StarCanvs" X="155" Y="168" W="500" H="100">
+            <Image Name="CurImg" X="110" Y="13" W="72" H="74" Center="2" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+            <Label Name="CurNum" X="170" Y="13" W="72" H="74" Center="2" Text="2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Image Name="ArrowImg" X="240" Y="30" W="58" H="39" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+            <Image Name="NewImg" X="310" Y="13" W="72" H="74" Center="2" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+            <Label Name="NewNum" X="370" Y="13" W="72" H="74" Center="2" Text="3" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="OutputCanvs" X="97" Y="104" W="500" H="40">
+            <Label Name="Label" X="85" Y="7" W="150" H="25" Center="2" Text="Output:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="25" />
+            <Label Name="CurNum" X="242" Y="7" W="100" H="25" Center="2" Text="00/00" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+            <Label Name="NewNum" X="400" Y="0" W="150" H="40" Center="2" Text="00/00" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+        <Canvas Name="StockCanvs" X="97" Y="50" W="500" H="40">
+            <Label Name="Label" X="85" Y="7" W="150" H="25" Center="2" Text="Stock:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="25" />
+            <Label Name="CurNum" X="242" Y="7" W="100" H="25" Center="2" Text="0000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Image Name="ArrowImg" X="340" Y="4" W="46" H="31" Center="2" Image="{1,ui/res/arrow_right_brow.png}" SizeMode="1" />
+            <Label Name="NewNum" X="400" Y="0" W="150" H="40" Center="2" Text="0000" Color="0,255,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="InfoCanvs" X="28" Y="50" W="600" H="300">
+        <Label Name="LvlLabel" X="200" Y="245" W="150" H="25" Text="LV:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="LvlNum" X="360" Y="245" W="150" H="25" Text="20" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="OutputLabel" X="200" Y="205" W="150" H="25" Text="Output:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="OutputNum" X="360" Y="205" W="150" H="25" Text="200" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="StockLabel" X="200" Y="170" W="150" H="25" Text="Stock:" Color="103,73,37" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+        <Label Name="StockNum" X="360" Y="170" W="150" H="25" Text="00/00" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="TipLabel" X="206" Y="10" W="380" H="140" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+    </Canvas>
+    <Canvas Name="SubMitCanvas" X="208" Y="-32" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="NumLabel" X="30" Y="3" W="142" H="77" Text="100" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        <Image Name="ProduceImage" X="173" Y="15" W="43" H="47" Center="2" Image="{1,ui/res/redCrystal.png}" SizeMode="0" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Text="OK" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    </Canvas>
+    <Canvas Name="EventCanvas" X="28" Y="50" W="600" H="300">
+        <Image Name="EventImg" X="203" Y="116" W="200" H="150" Image="{1,ui/res/smain/boss_tip.png}" SizeMode="0" />
+        <Label Name="EventTip" X="50" Y="-4" W="500" H="120" Text="Boss Event" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="42" />
+    </Canvas>
+    <Canvas Name="BossRSCanvas" X="28" Y="50" W="600" H="300">
+        <Label Name="EventTip" X="57" Y="190" W="500" H="120" Text="You Win Boss Awards:" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="42" />
+        <Canvas Name="ItemCanvas" X="90" Y="36" W="150" H="150">
+            <Custom Name="item" X="0" Y="20" W="134" H="164" File="ItemCanvas.xml" />
+            <Label Name="itemNum" X="0" Y="40" W="130" H="60" Text="X1" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="36" />
+            <Label Name="Name" X="-45" Y="-26" W="240" H="60" Center="1" Text="Name1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ResCanvas1" X="244" Y="40" W="150" H="150">
+            <Image Name="res" X="0" Y="58" W="120" H="120" Image="{1,ui/res/blueCrystal.png}" SizeMode="1" />
+            <Label Name="resNum" X="0" Y="36" W="120" H="60" Text="X2" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="36" />
+			<Label Name="resNumAdd" X="0" Y="36" W="120" H="60" Text="X2" Color="118,235,47" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+            <Label Name="Name" X="-25" Y="-32" W="200" H="60" Center="1" Text="Name2" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ResCanvas2" X="380" Y="40" W="150" H="150">
+            <Image Name="res" X="0" Y="58" W="120" H="120" Image="{1,ui/res/blueCrystal.png}" SizeMode="1" />
+            <Label Name="resNum" X="0" Y="36" W="120" H="60" Text="X2" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="36" />
+			<Label Name="resNumAdd" X="0" Y="36" W="120" H="60" Text="X2" Color="118,235,47" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+            <Label Name="Name" X="-25" Y="-32" W="200" H="60" Center="1" Text="Name3" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="VisitFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="ForceCanvs" X="10" Y="699" W="222" H="45" Fixed="1" Top="24">
+        <Image Name="BkImg" X="42" Y="0" W="144" H="45" Image="{1,ui/res/main/atr_bk.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="ForceLabel" X="48" Y="10" W="160" H="29" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Image Name="Image" X="4" Y="-1" W="52" H="47" Image="{1,ui/res/main/power_img.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="NameLabel" X="55" Y="43" W="140" H="24" Color="255,247,193" TextAlignment="0" FSize="20" />
+    </Canvas>
+    <Canvas Name="SelfMoneyCanvs" X="10" Y="632" W="244" H="50" Fixed="1" Top="86">
+            <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+            <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Money.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="Label" X="46" Y="-12" W="178" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            <Image Name="Image" X="10" Y="16" W="41" H="41" Fixed="1" Image="{1,ui/res/money.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="MaxLabel" X="48" Y="41" W="170" H="20" Color="255,247,193" TextAlignment="2" BmpFont="font_1.fnt" FSize="14" />
+    </Canvas>
+    <Canvas Name="SelfCrystalCanvs" X="10" Y="562" W="244" H="50" Fixed="1" Top="156">
+            <Image Name="ProBackImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_bkg.png.pvr.ccz}" SizeMode="1" />
+            <Image Name="ProImg" X="0" Y="0" W="224" H="42" Image="{1,ui/res/main/pro_Crystal.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="Label" X="46" Y="-12" W="178" H="32" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            <Image Name="Image" X="10" Y="16" W="41" H="41" Fixed="1" Image="{1,ui/res/crystal.png.pvr.ccz}" SizeMode="1" />
+            <Label Name="MaxLabel" X="48" Y="41" W="170" H="20" Color="255,247,193" TextAlignment="2" BmpFont="font_1.fnt" FSize="14" />
+    </Canvas>
+    <Label Name="NameLabel" X="612" Y="712" W="400" H="46" Top="10" Right="12" Color="255,255,255" TextAlignment="2" FSize="28" />
+
+	<Canvas Name="TargetNobilityCanvs" X="10" Y="699" W="186" H="45" Fixed="1" Top="40" Right="5" >
+        <Image Name="BkImg" X="42" Y="0" W="144" H="45" Image="{1,ui/res/main/atr_bk.png.pvr.ccz}" SizeMode="0" />
+        <Label Name="LabelBattlePower" X="70" Y="10" W="160" H="29" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+        <Image Name="ImageNobility" X="-10" Y="-15" W="75" H="75" Touch="0" Image="{1,icon/Nobility/0.png}" SizeMode="0" />
+        <Label Name="NameLabel" X="-15" Y="50" W="200" H="30" Color="255,247,193" TextAlignment="2" FSize="28" />
+    </Canvas>
+
+	<Canvas Name="BtnLike" X="99" Y="7" W="100" H="100" Touch="1" Top="75" Right="0" >
+		<Image Name="Image" X="0" Y="0" W="100" H="100" Image="{1,ui/res/tencent/like.png}" SizeMode="1" />			
+		<Label Name="LabelLikeNum" X="0" Y="-30" W="100" H="50" Text="6/6" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="24"  />
+	</Canvas>
+    <Canvas Name="CanvasExit" X="14" Y="7" W="211" H="102" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="211" H="102" Image="{1,ui/res/back_home.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

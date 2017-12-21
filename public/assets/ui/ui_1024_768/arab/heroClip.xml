@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroClipFrame" W="0" H="0">
+    <Canvas Name="HeroCanvs" X="24" Y="25" W="974" H="629">
+		<ListBox Name="HeroListBox" X="17" Y="162" W="910" H="450" Center="1" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="300" H="450" Fixed="1">
+                <Canvas Name="InfoCanvs" X="0" Y="0" W="300" H="450" Touch="1">
+                    <Label Name="NameLabel" X="50" Y="18" W="200" H="60" Center="1" Text="Name" Color="103,73,37" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Label Name="TipName" X="255" Y="572" W="640" H="40" Color="154,213,67" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+    </Canvas>
+</Layout>

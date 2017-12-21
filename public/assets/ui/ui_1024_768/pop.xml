@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PopFrame" R_W="1.0" R_H="1.0">
+<Image Name="ImgBkg" X="0" Y="0" R_W="1.0" R_H="1.0"  Touch="1" Zoom="0" SizeMode="1" />
+</Layout>

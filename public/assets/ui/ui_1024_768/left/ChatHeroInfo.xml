@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ChatHeroInfoFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="CanvasFrame" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Canvas Name="CanvasPage_2" X="0" Y="0" W="662" H="300" Center="1">
+                <Canvas Name="MoreAtrCanvs" X="41" Y="60" W="580" H="220" Center="1">
+                    <Label Name="Tenacity" X="30" Y="0" W="260" H="40" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+                    <Label Name="TenacityValue" X="300" Y="0" W="240" H="40" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                    <Label Name="Hit" X="30" Y="40" W="260" H="40" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+                    <Label Name="HitValue" X="300" Y="40" W="240" H="40" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                    <Label Name="Crit" X="30" Y="80" W="260" H="40" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+                    <Label Name="CritValue" X="300" Y="80" W="240" H="40" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                    <Label Name="Dodge" X="30" Y="120" W="260" H="40" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+                    <Label Name="DodgeValue" X="300" Y="120" W="240" H="40" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                    <Label Name="Roquet" X="30" Y="160" W="260" H="40" Color="159,123,89" TextAlignment="2" BmpFont="font_2.fnt" FSize="26" />
+                    <Label Name="RoquetValue" X="300" Y="160" W="240" H="40" Color="144,99,8" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

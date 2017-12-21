@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PlayerMoneyFrame" Inherit="normalFrame_1.xml">
+	<Canvas Name="InfoBkgCanvs" X="27" Y="40" W="920" H="596" Center="1">
+        <Image Name="Bkg_L" X="0" Y="6" W="462" H="590" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        <Image Name="Bkg_R" X="458" Y="6" W="462" H="590" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="560" Touch="1" Zoom="0">
+		<ListBox Name="MoneyListBox" X="0" Y="80" W="900" H="500" ScrollViewDir="1">
+			 <Template Name="" X="0" Y="0" W="800" H="100" Fixed="1">
+				   <Canvas Name="ItemCanvs" X="70" Y="0" W="800" H="100">
+					   <Canvas Name="GoldCanvs" X="10" Y="0" W="300" H="90">
+							<Image Name="ImgBkg" X="0" Y="10" W="80" H="80"  Image="{1,ui/res/PlayerRes/resBg.png}" SizeMode="1" />
+							<Image Name="Img" X="13" Y="26" W="55" H="55"  Image="{1,ui/res/redCrystal.png}" SizeMode="1" Touch="1" />
+							<ProgressEx Name="ProMoney" X="80" Y="30" W="280" H="36" ProgressBackground="{1,ui/res/PlayerRes/exp_315_37_Bg.png}" ProgressImage="{1,ui/res/PlayerRes/exp_315_37.png}" MaxValue="100" Direction="3" />
+							<Label Name="RankLabel" X="80" Y="6" W="280" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+						</Canvas>
+						<Canvas Name="MagicCanvs" X="440" Y="0" W="300" H="90">
+							<Image Name="ImgBkg" X="0" Y="10" W="80" H="80"  Image="{1,ui/res/PlayerRes/resBg.png}" SizeMode="1" />
+							<Image Name="Img" X="13" Y="26" W="55" H="55"  Image="{1,ui/res/redCrystal.png}" SizeMode="1" Touch="1" />
+							<ProgressEx Name="ProMoney" X="80" Y="30" W="280" H="36" ProgressBackground="{1,ui/res/PlayerRes/exp_315_37_Bg.png}" ProgressImage="{1,ui/res/PlayerRes/exp_315_37.png}" MaxValue="100" Direction="3" />
+							<Label Name="RankLabel" X="80" Y="6" W="280" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+						</Canvas>
+				   </Canvas>
+			  </Template>
+		 </ListBox>
+	</Canvas>
+	<Canvas Name="CanvasTip" X="0" Y="0" W="400" H="180" Background="{1,ui/res/tip_content.png}" zOrder="99">
+        <Image Name="ImgBkg" X="-17" Y="-16" W="40" H="40" Rotation="0" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" Center="2"/>
+        <Label Name="Label" X="25" Y="15" W="360" H="150" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="16" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="InfoFrame" W="770" H="660">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="770" H="660">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="387" H="660" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="383" Y="0" W="387" H="660" RotationY="180" Image="{1,ui/res/info_bk.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="44" Y="562" W="620" H="60" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="40" />
+    <Image Name="CloseImg" X="659" Y="549" W="96" H="96" Touch="1" Top="15" Right="15" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    <Label Name="ContentLabel" X="40" Y="39" W="680" H="520" Top="101" Center="1" Color="126,90,44" TextAlignment="0" VTextAlignment="0" Multline="1" FSize="26" />
+</Layout>

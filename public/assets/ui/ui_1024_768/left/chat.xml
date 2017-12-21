@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ChatFrame" W="1010" H="768">
+    <Canvas Name="CanvasMain" X="0" Y="0" W="932" H="768" Touch="1" Zoom="0" Center="2">
+        <Canvas Name="CanvasTop" X="0" Y="568" W="900" H="108" Touch="1" Zoom="0" Top="92">
+            <Canvas Name="CanvasEditChat" X="105" Y="26" W="682" H="60">
+                <Canvas Name="CanvasSocialChatChoose" X="0" Y="2" W="682" H="56" Background="{1,ui/res/Consortia/consortia_edit_black.png}" Center="2">
+                    <Label Name="LabelText" X="10" Y="0" R_W="0.95" R_H="1.00" Touch="1" Zoom="0" Color="255,255,255" TextAlignment="0" FSize="24" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="CanvasMsgChoosePopMenu" X="94" Y="357" W="700" H="240" zOrder="99">
+            <Canvas Name="CanvasPopMenuItem1" X="0" Y="160" W="700" H="79" Touch="1" Zoom="0">
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="CanvasPopMenuItem2" X="0" Y="80" W="700" H="79" Touch="1" Zoom="0">
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+            <Canvas Name="CanvasPopMenuItem3" X="0" Y="0" W="700" H="79" Touch="1" Zoom="0">
+                <Label Name="Label" X="10" Y="0" W="680" H="79" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

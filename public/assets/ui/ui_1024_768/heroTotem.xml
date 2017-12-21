@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="heroTotemFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="SeparateCanvs" X="32" Y="185" W="960" H="81" Center="1">
+        <Image Name="Bkg_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        <Image Name="Bkg_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="HeroCanvas" X="27" Y="228" W="994" H="420" Touch="1" Zoom="0">
+		<Image Name="Imgbk" X="10" Y="20" W="635" H="338"  Image="{1,ui/res/hero/totem_bkg.png}" SizeMode="1" Center="1"/>
+		<Image Name="GemIconImg" X="516" Y="189" W="102" H="98" SizeMode="1" Image="{1,ui/res/hero/totem_ui_gem.png}" />		
+		<Canvas Name="BuildingCanvas" X="230" Y="150" W="180" H="200" />
+	   <Canvas Name="InfoBkg" X="270" Y="0" W="800" H="400" >
+			<Image Name="IconImg" X="418" Y="191" W="107" H="106" SizeMode="1" Touch="1" Image="{1,ui/res/hero/totem_skill_null.png}" />
+			<Label Name="SkillLvl" X="425" Y="145" W="97" H="40" Color="255,233,158" TextAlignment="1" BmpFont="font_1.fnt" FSize="34" />
+			<Label Name="Attack" X="320" Y="325" W="300" H="80" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+			<Image Name="AttackIconImg" X="620" Y="340" W="55" H="50" SizeMode="1"  Image="{1,ui/res/attack.png}" Touch="1" />
+        </Canvas>
+		<Label Name="HeroSkillLvl" X="468" Y="117" W="97" H="40" Color="255,241,194" TextAlignment="2" BmpFont="font_1.fnt" FSize="34" />
+		<Label Name="BuildingSkillLvl" X="563" Y="117" W="97" H="40" Color="241,182,124" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+		<Label Name="LabelTip" X="430" Y="20" W="500" H="60" Color="241,214,176" TextAlignment="0" BmpFont="font_1.fnt" Multline="1" FSize="22" />
+		<Canvas Name="HeroSkillCanvas" X="280" Y="300" W="600" H="280" Background="{1,ui/res/tip_content.png}" zOrder="99">
+			 <Image Name="ImgBkg" X="370" Y="120" W="42" H="42" Rotation="180" Right="-16"  Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+			<Label Name="NameLabel" X="30" Y="220" W="560" H="40" Center="1" Color="255,244,28" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+		    <ListBox Name="CommentListBox" X="40" Y="20" W="520" H="200" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="550" H="400" Fixed="1">
+                    <Label Name="CommentLabel" X="0" Y="0" W="510" H="400" Color="162,128,80" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+                </Template>
+            </ListBox>
+			<Image Name="UpSignImg" X="530" Y="200" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_up.png}" SizeMode="1" />
+            <Image Name="DownSignImg" X="530" Y="30" W="37" H="26" Touch="1" Image="{1,ui/res/hero/sign_down.png}" SizeMode="1" />
+			
+        </Canvas>
+        <Canvas Name="HeroCanvsTop" X="250" Y="20" W="130" H="130" Touch="1" >
+            <Image Name="Img" X="14" Y="12" W="109" H="105" Image="{1,ui/res/frame/frame_brow.png}" SizeMode="1" />
+            <Image Name="ImgBkg" X="6" Y="11" W="127" H="130" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+            <Image Name="HeroImg" X="13" Y="48" W="125" H="106" Image="{1,ui/res/11.png}" SizeMode="1" />
+            <Label Name="LvlLabel" X="30" Y="28" W="150" H="20" Center="1" Text="LV101" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+            <Label Name="AddLabel" X="89" Y="110" W="80" H="30" Text="+116" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="24" />
+            <Image Name="CareerImg" X="10" Y="23" W="25" H="27" Image="{1,ui/res/hero/heroType_1.png.pvr.ccz}" SizeMode="1" />
+        </Canvas>
+        
+    </Canvas>
+    <Canvas Name="ListBoxCanvs" X="29" Y="35" W="970" H="185" Touch="1" Zoom="0">
+        <ListBox Name="HeroListBox" X="12" Y="5" W="945" H="185" Center="1" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="180" H="185" Fixed="1">
+                 <Canvas Name="HeroCanvs" X="20" Y="0" W="179" H="184" Touch="1">
+					<Image Name="ChoiceImg" X="0" Y="0" W="179" H="184" Center="3" Image="{1,ui/res/head_selected.png}" SizeMode="1" />
+					<Image Name="ImgBkg" X="11" Y="12" W="157" H="160" Center="3" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                    <Image Name="HeroImg" X="22" Y="57" W="152" H="128" SizeMode="1" />
+                    <Label Name="LvlLabel" X="20" Y="24" W="157" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+					<Image Name="gemImg" X="120" Y="117" W="54" H="58" Image="{1,ui/res/hero/totem_ui_gem_b.png}" SizeMode="1" />
+                    <Label Name="AddLabel" X="107" Y="70" W="80" H="50" Top="13" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+					<Image Name="CareerImg" X="19" Y="27" W="33" H="33" SizeMode="1" />
+					<Image Name="talentIconBg" X="10" Y="17" W="51" H="50" Image="{1,ui/res/talentIconBg.png}" SizeMode="1" />
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Image Name="ImgBkg_L" X="10" Y="6" W="50" H="170" RotationY="180" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+        <Image Name="ImgBkg_R" X="909" Y="6" W="50" H="170" Right="11" Image="{1,ui/res/listbox_left.png}" SizeMode="1" />
+    </Canvas>
+	 <Canvas Name="FilterCanvs" X="956" Y="63" W="83" H="115" Touch="1" Right="-15">
+        <Image Name="BkgImg" X="0" Y="0" W="83" H="115" Image="{1,ui/res/herotag/herotag_bkg.png}" SizeMode="1" />
+        <Canvas Name="FilterBtn" X="8" Y="12" W="66" H="91" Touch="1" Center="3">
+            <Image Name="BkgImg" X="0" Y="0" W="66" H="91" Image="{1,ui/res/herotag/herotag_btn.png}" SizeMode="1" />
+            <Image Name="Img" X="8" Y="19" W="50" H="45" Center="3" Image="{1,ui/res/herotag/herotag_0.png}" SizeMode="1" />
+        </Canvas>
+    </Canvas>
+</Layout>

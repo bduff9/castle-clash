@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PetHatcheryFrame" W="1024" H="768">
+    <Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Label Name="LabelTitle" X="310" Y="120" W="290" H="50" Color="143,101,57" TextAlignment="0" BmpFont="font_2.fnt" FSize="30" />
+            <Label Name="LabelTime" X="100" Y="120" W="200" H="50" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

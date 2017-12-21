@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="FlameFrame" W="1024" H="768">
+    <Canvas Name="BaseInfoCanvas" X="32" Y="5" W="960" H="640">
+        <Canvas Name="CanvasRight" X="326" Y="260" W="614" H="352" Right="20">
+            <Canvas Name="CanvsItem_1" X="17" Y="270" W="580" H="60" Center="1">
+                <Label Name="LabelTag" X="30" Y="30" W="520" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelContent" X="30" Y="0" W="520" H="30" Color="122,88,42" TextAlignment="2" VTextAlignment="0" BmpFont="font_2.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="CanvsItem_2" X="17" Y="170" W="580" H="60" Center="1">
+                <Label Name="LabelTag" X="30" Y="30" W="520" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelContent" X="30" Y="0" W="520" H="30" Color="122,88,42" TextAlignment="2" VTextAlignment="0" BmpFont="font_2.fnt" FSize="22" />
+            </Canvas>
+            <Canvas Name="CanvsItem_3" X="17" Y="70" W="580" H="60" Center="1">
+                <Label Name="LabelTag" X="30" Y="30" W="520" H="30" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="LabelContent" X="30" Y="0" W="520" H="30" Color="122,88,42" TextAlignment="2" VTextAlignment="0" BmpFont="font_2.fnt" FSize="22" />
+            </Canvas>
+        </Canvas>
+        <Canvas Name="ButtomCanvas" X="11" Y="50" W="954" H="180">
+            <Label Name="LabelTimeTag" X="180" Y="130" W="800" H="32" Color="248,230,182" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+            <Label Name="LabelTime" X="26" Y="130" W="200" H="30" Color="255,96,9" TextAlignment="0" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+    </Canvas>
+</Layout>

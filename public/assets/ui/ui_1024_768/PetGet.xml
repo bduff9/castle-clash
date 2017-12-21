@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PetGet" R_W="1.00" R_H="1.00">
+    <Canvas Name="FrameCa" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0">
+        <Image Name="ShadeBg" X="0" Y="0" R_W="1.00" R_H="1.00" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="AllItem" X="0" Y="150" R_W="1.00" H="420" Center="1">
+        <Canvas Name="Item_1" R_X="0.12" Y="230" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_2" R_X="0.28" Y="230" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_3" X="446" Y="230" W="133" H="145" Center="1">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_4" R_Right="0.28" Y="230" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_5" R_Right="0.12" Y="230" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_6" R_X="0.12" Y="34" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_7" R_X="0.28" Y="34" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_8" X="445" Y="34" W="133" H="145" Center="1">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_9" R_Right="0.28" Y="34" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+        <Canvas Name="Item_10" R_Right="0.12" Y="34" W="133" H="145">
+            <Image Name="bkg" X="0" Y="0" W="133" H="145" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+            <Image Name="ImgPetHead" X="2" Y="36" W="126" H="120" Image="{1,icon/pet/40001_s.png}" SizeMode="1" />
+            <Label Name="LvlNum" X="-14" Y="14" W="160" H="24" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BoxCa" X="416" Y="430" W="192" H="220" Center="1">
+        <Canvas Name="EffectCa" X="0" Y="0" W="192" H="220" />
+        <Image Name="ImgEgg" X="0" Y="0" W="192" H="220" Center="3" Image="{1,ui/res/Pet/b_egg2.png}" SizeMode="1" />
+    </Canvas>
+	<Canvas Name="BottomCanvas" X="107" Y="40" W="810" H="77" Center="1">
+        <Canvas Name="ContinueBtn" X="140" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        <Canvas Name="ExitBtn" X="460" Y="0" W="245" H="77" Touch="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+</Layout>

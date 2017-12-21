@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="PlayerSearchFrame" R_W="1.00" R_H="1.00" IsPop="1">
+    <Canvas Name="PopFrame" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+            <Canvas Name="CanvasBottom" X="57" Y="46" W="548" H="120" Background="{1,ui/res/setting/shade_680_93.png}" Center="1">
+                <Canvas Name="CanvasTip" X="84" Y="0" W="380" H="120" Center="1">
+                    <Label Name="Tip_1" X="-57" Y="54" W="520" H="60" Center="1" Text="111" Color="95,74,57" TextAlignment="1" VTextAlignment="2" BmpFont="font_2.fnt" FSize="22" />
+                </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BuildUpgradeAddTimeFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="0" W="974" H="740" Center="1">
+        <Canvas Name="SeparateCanvs" X="7" Y="394" W="960" H="81" Touch="1" Zoom="0" Center="1">
+            <Image Name="SeparateCanvs_L" X="0" Y="0" W="482" H="81" Image="{1,ui/res/separate.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_R" X="478" Y="0" W="482" H="81" RotationY="180" Image="{1,ui/res/separate.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="BuildCanvs" X="23" Y="457" W="928" H="180" Center="1">
+            <Canvas Name="BuildingImg" X="240" Y="-10" W="180" H="183" />
+            <Label Name="NameLabel" X="442" Y="78" W="400" H="34" Text="Name" Color="255,243,188" TextAlignment="0" BmpFont="font_1.fnt" FSize="35" />
+            <Label Name="TimeTitle" X="442" Y="24" W="400" H="34" Text="time:" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="TimeLabel" X="480" Y="24" W="240" H="34" Text="111" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="SpeedLabel" X="480" Y="-10" W="240" H="34" Text="+111" Color="255,0,0" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+        <ListBox Name="BoxListBox" X="23" Y="48" W="928" H="366" Center="1" Touch="1" Zoom="0" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="928" H="85">
+                <Canvas Name="ItemCanvs" X="0" Y="2" W="928" H="79" Touch="1" Zoom="0">
+                    <Canvas Name="BkgImgCanvs" X="0" Y="0" W="928" H="79">
+                        <Image Name="BkgImgCanvs_L" X="0" Y="0" W="466" H="79" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                        <Image Name="BkgImgCanvs_R" X="462" Y="0" W="466" H="79" RotationY="180" Image="{1,ui/res/rank/rank_item.png}" SizeMode="1" />
+                    </Canvas>
+                    <Canvas Name="IconCanvs" X="68" Y="-3" W="108" H="80">
+                        <Image Name="ImgBkg" X="0" Y="0" W="108" H="80" Image="{1,ui/res/flag_bk.png}" SizeMode="1" />
+                        <Image Name="Img" X="12" Y="0" W="90" H="90" SizeMode="1" />
+                        <Label Name="Label" X="41" Y="7" W="60" H="32" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="29" />
+                    </Canvas>
+                    <Label Name="Label" X="187" Y="12" W="300" H="50" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="22" />
+                    <Canvas Name="BtnUse" X="700" Y="5" W="168" H="66" Touch="1">
+                        <Image Name="Img" X="0" Y="0" W="168" H="66" Image="{1,ui/res/button/btn_168_66.png}" SizeMode="1" />
+                        <Label Name="Label" X="0" Y="3" W="168" H="66" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+                    </Canvas>
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Canvas Name="BtnFormation" X="364" Y="0" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="FreeLabel" X="0" Y="0" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+            <Canvas Name="CanvsCash" X="0" Y="0" W="245" H="77">
+                <Label Name="Num" X="26" Y="0" W="150" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+                <Image Name="Image" X="174" Y="17" W="40" H="44" Center="2" Image="{1,ui/res/cash_cangray.png}" SizeMode="0" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="NextCanvs" X="35" Y="670" W="106" H="78" Touch="1">
+        <Image Name="Bkg" X="0" Y="0" W="106" H="78" Image="{1,ui/res/barrack_refresh.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

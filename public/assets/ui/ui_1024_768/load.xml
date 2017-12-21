@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="LoadFrame" R_W="1.00" R_H="1.00">
+    <Canvas Name="TopCanvas" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" />
+    <Image Name="BackgroundImg" Center="3" W="1800" R_H="1" Image="{1,ui/res/load_bk.jpg}" SizeMode="0" />
+    <Canvas Name="ChatCanvas" X="0" Y="90" W="151" H="108" Touch="1">
+        <Image Name="Image" X="0" Y="0" W="151" H="108" Image="{1,ui/res/chat.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="5" W="151" H="18" Text="Live Support" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="16" />
+    </Canvas>
+    <Canvas Name="LoadCanvs" X="79" Y="0" W="865" H="90" Fixed="1" Center="1">
+        <Image Name="LoadProBkImg" X="0" Y="30" W="865" H="15" Center="1" Image="{1,ui/res/load_pro_bk.png.pvr.ccz}" SizeMode="1" />
+        <Image Name="LoadProImg" X="0" Y="30" W="865" H="15" Center="1" Image="{1,ui/res/load_pro.png.pvr.ccz}" SizeMode="1" />
+        <Label Name="VersionLabel" X="565" Y="0" W="300" H="30" Text="Version" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="20" />
+        <Label Name="TipLabel" X="6" Y="50" W="850" H="30" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="20" />
+        <Label Name="LoadPreLabel" X="860" Y="19" W="80" H="40" Text="100%" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    </Canvas>
+</Layout>

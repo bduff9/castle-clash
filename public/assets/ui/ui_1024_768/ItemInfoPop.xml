@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ItemInfoPopFrame" R_W="1.00" R_H="1.00" IsPop="1">
+    <Image Name="ImgBkg" X="0" Y="0" R_W="1.00" R_H="1.00" Touch="1" Zoom="0" Image="{1,ui/res/shade.png}" SizeMode="1" />
+    <Canvas Name="CanvasInfo" X="201" Y="182" W="622" H="403" Touch="1" Zoom="0" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="622" H="403">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="313" H="403" Image="{1,ui/res/itempop/fm_bk.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="311" Y="0" W="313" H="403" RotationY="180" Image="{1,ui/res/itempop/fm_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="TitleBkgCanvs" X="164" Y="345" W="294" H="40" Top="18" Center="1">
+            <Image Name="L" X="0" Y="0" W="149" H="40" Image="{1,ui/res/itempop/title_bk.png}" SizeMode="1" />
+            <Image Name="R" X="147" Y="0" W="149" H="40" RotationY="180" Image="{1,ui/res/itempop/title_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="TitleLabel" X="0" Y="345" W="622" H="40" Top="18" Center="1" Color="161,109,33" TextAlignment="1" BmpFont="font_2.fnt" FSize="32" />
+        <Canvas Name="CanvasItem" X="67" Y="189" W="128" H="133">
+            <Image Name="Img" X="0" Y="0" W="128" H="133" SizeMode="1" />
+            <Label Name="NumLabel_1" X="0" Y="5" W="110" H="40" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="28" />
+        </Canvas>
+        <Label Name="NameLabel" X="230" Y="263" W="380" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+        <Canvas Name="ViewCanvs" X="533" Y="307" W="62" H="56" Touch="1" Right="27">
+            <Image Name="Bkg" X="0" Y="0" W="62" H="56" Image="{1,ui/res/button/seek.png}" SizeMode="1" />
+        </Canvas>
+        <Label Name="SumLabel" X="230" Y="210" W="160" H="40" Color="147,100,60" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+        <Label Name="NumLabel_2" X="405" Y="210" W="160" H="40" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+        <Image Name="ContentBkg" X="51" Y="60" W="520" H="120" Background="{1,ui/res/frame/shade_brown.png}" Center="1" SizeMode="1" />
+        <Label Name="ContentLabel" X="71" Y="60" W="480" H="110" Center="1" Color="110,71,16" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="22" />
+    </Canvas>
+    <Canvas Name="CanvasList" X="201" Y="182" W="622" H="403" Touch="1" Zoom="0" Center="3">
+        <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="622" H="403">
+            <Image Name="FrameBkg_L" X="0" Y="0" W="313" H="403" Image="{1,ui/res/itempop/fm_bk.png}" SizeMode="1" />
+            <Image Name="FrameBkg_R" X="311" Y="0" W="313" H="403" RotationY="180" Image="{1,ui/res/itempop/fm_bk.png}" SizeMode="1" />
+        </Canvas>
+        <ListBox Name="ListBoxItem" X="43" Y="45" W="535" H="280" Center="1" ScrollViewDir="1">
+            <Template Name="" X="0" Y="0" W="535" H="96" Fixed="1">
+                <Canvas Name="ListRow" X="0" Y="0" W="535" H="96" Fixed="1" Touch="1" Zoom="0">
+                    <Canvas Name="CanvasItem_1" X="5" Y="4" W="95" H="95">
+                        <Image Name="Bkg" X="0" Y="0" W="95" H="95" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                        <Image Name="Icon" X="4" Y="3" W="84" H="88" SizeMode="1" />
+                        <Canvas Name="HeroCanvas" X="5" Y="3" W="85" H="85" Center="1">
+                            <Image Name="HeadBkImg" X="0" Y="0" W="85" H="85" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                            <Image Name="HeroImg" X="4" Y="22" W="85" H="70" SizeMode="1" />
+                            <Image Name="AwakeImg" X="-5" Y="58" W="26" H="26" SizeMode="1" />
+                            <Image Name="StarImg" X="62" Y="61" W="26" H="26" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                            <Label Name="StarNum" X="65" Y="66" W="19" H="19" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                            <Image Name="CareerImg" X="3" Y="8" W="16" H="18" SizeMode="1" />
+                            <Image Name="IconSoul" X="-6" Y="47" W="31" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PetCanvas" X="8" Y="5" W="75" H="82">
+                            <Image Name="Bkg" X="0" Y="0" W="75" H="82" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+                            <Image Name="Img" X="2" Y="20" W="71" H="68" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PosyCanvas" X="-17" Y="-17" W="126" H="126">
+                            <Image Name="PosyIcon" X="24" Y="19" W="79" H="85" SizeMode="1" />
+                            <Image Name="LvlImg" X="72" Y="79" W="27" H="26" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                            <Image Name="PosImg" X="27" Y="17" W="27" H="26" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                            <Label Name="LvlLabel" X="75" Y="85" W="25" H="20" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Label Name="Num" X="5" Y="5" W="92" H="33" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    </Canvas>
+                    <Canvas Name="CanvasItem_2" X="110" Y="4" W="95" H="95">
+                        <Image Name="Bkg" X="0" Y="0" W="95" H="95" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                        <Image Name="Icon" X="4" Y="3" W="84" H="88" SizeMode="1" />
+                        <Canvas Name="HeroCanvas" X="5" Y="3" W="85" H="85" Center="1">
+                            <Image Name="HeadBkImg" X="0" Y="0" W="85" H="85" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                            <Image Name="HeroImg" X="4" Y="22" W="85" H="70" SizeMode="1" />
+                            <Image Name="AwakeImg" X="-5" Y="58" W="26" H="26" SizeMode="1" />
+                            <Image Name="StarImg" X="62" Y="61" W="26" H="26" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                            <Label Name="StarNum" X="66" Y="66" W="19" H="19" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                            <Image Name="CareerImg" X="3" Y="8" W="16" H="18" SizeMode="1" />
+                            <Image Name="IconSoul" X="-6" Y="47" W="31" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PetCanvas" X="8" Y="5" W="75" H="82">
+                            <Image Name="Bkg" X="0" Y="0" W="75" H="82" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+                            <Image Name="Img" X="2" Y="20" W="71" H="68" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PosyCanvas" X="-17" Y="-17" W="126" H="126">
+                            <Image Name="PosyIcon" X="24" Y="19" W="79" H="85" SizeMode="1" />
+                            <Image Name="LvlImg" X="72" Y="79" W="27" H="26" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                            <Image Name="PosImg" X="27" Y="17" W="27" H="26" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                            <Label Name="LvlLabel" X="75" Y="85" W="25" H="20" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Label Name="Num" X="5" Y="5" W="92" H="33" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    </Canvas>
+                    <Canvas Name="CanvasItem_3" X="220" Y="4" W="95" H="95">
+                        <Image Name="Bkg" X="0" Y="0" W="95" H="95" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                        <Image Name="Icon" X="4" Y="3" W="84" H="88" SizeMode="1" />
+                        <Canvas Name="HeroCanvas" X="5" Y="3" W="85" H="85" Center="1">
+                            <Image Name="HeadBkImg" X="0" Y="0" W="85" H="85" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                            <Image Name="HeroImg" X="4" Y="22" W="85" H="70" SizeMode="1" />
+                            <Image Name="AwakeImg" X="-5" Y="58" W="26" H="26" SizeMode="1" />
+                            <Image Name="StarImg" X="62" Y="61" W="26" H="26" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                            <Label Name="StarNum" X="66" Y="66" W="19" H="19" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                            <Image Name="CareerImg" X="3" Y="8" W="16" H="18" SizeMode="1" />
+                            <Image Name="IconSoul" X="-6" Y="47" W="31" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PetCanvas" X="8" Y="5" W="75" H="82">
+                            <Image Name="Bkg" X="0" Y="0" W="75" H="82" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+                            <Image Name="Img" X="2" Y="20" W="71" H="68" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PosyCanvas" X="-17" Y="-17" W="126" H="126">
+                            <Image Name="PosyIcon" X="24" Y="19" W="79" H="85" SizeMode="1" />
+                            <Image Name="LvlImg" X="72" Y="79" W="27" H="26" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                            <Image Name="PosImg" X="27" Y="17" W="27" H="26" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                            <Label Name="LvlLabel" X="75" Y="85" W="25" H="20" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Label Name="Num" X="5" Y="5" W="92" H="33" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    </Canvas>
+                    <Canvas Name="CanvasItem_4" X="330" Y="4" W="95" H="95">
+                        <Image Name="Bkg" X="0" Y="0" W="95" H="95" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                        <Image Name="Icon" X="4" Y="3" W="84" H="88" SizeMode="1" />
+                        <Canvas Name="HeroCanvas" X="5" Y="3" W="85" H="85" Center="1">
+                            <Image Name="HeadBkImg" X="0" Y="0" W="85" H="85" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                            <Image Name="HeroImg" X="4" Y="22" W="85" H="70" SizeMode="1" />
+                            <Image Name="AwakeImg" X="-5" Y="58" W="26" H="26" SizeMode="1" />
+                            <Image Name="StarImg" X="62" Y="61" W="26" H="26" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                            <Label Name="StarNum" X="66" Y="66" W="19" H="19" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                            <Image Name="CareerImg" X="3" Y="8" W="16" H="18" SizeMode="1" />
+                            <Image Name="IconSoul" X="-6" Y="47" W="31" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PetCanvas" X="8" Y="5" W="75" H="82">
+                            <Image Name="Bkg" X="0" Y="0" W="75" H="82" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+                            <Image Name="Img" X="2" Y="20" W="71" H="68" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PosyCanvas" X="-17" Y="-17" W="126" H="126">
+                            <Image Name="PosyIcon" X="24" Y="19" W="79" H="85" SizeMode="1" />
+                            <Image Name="LvlImg" X="72" Y="79" W="27" H="26" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                            <Image Name="PosImg" X="27" Y="17" W="27" H="26" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                            <Label Name="LvlLabel" X="75" Y="85" W="25" H="20" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Label Name="Num" X="5" Y="5" W="92" H="33" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    </Canvas>
+                    <Canvas Name="CanvasItem_5" X="440" Y="4" W="95" H="95">
+                        <Image Name="Bkg" X="0" Y="0" W="95" H="95" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                        <Image Name="Icon" X="4" Y="3" W="84" H="88" SizeMode="1" />
+                        <Canvas Name="HeroCanvas" X="5" Y="3" W="85" H="85" Center="1">
+                            <Image Name="HeadBkImg" X="0" Y="0" W="85" H="85" Image="{1,ui/res/head_bk.png}" SizeMode="1" />
+                            <Image Name="HeroImg" X="4" Y="22" W="85" H="70" SizeMode="1" />
+                            <Image Name="AwakeImg" X="-5" Y="58" W="26" H="26" SizeMode="1" />
+                            <Image Name="StarImg" X="62" Y="61" W="26" H="26" Image="{1,ui/res/star_72_74.png}" SizeMode="1" />
+                            <Label Name="StarNum" X="66" Y="66" W="19" H="19" Text="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                            <Image Name="CareerImg" X="3" Y="8" W="16" H="18" SizeMode="1" />
+                            <Image Name="IconSoul" X="-6" Y="47" W="31" H="44" Image="{1,ui/res/hero/ico_clip.png}" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PetCanvas" X="8" Y="5" W="75" H="82">
+                            <Image Name="Bkg" X="0" Y="0" W="75" H="82" Image="{1,ui/res/Pet/add_item_ico_1.png}" SizeMode="1" />
+                            <Image Name="Img" X="2" Y="20" W="71" H="68" SizeMode="1" />
+                        </Canvas>
+                        <Canvas Name="PosyCanvas" X="-17" Y="-17" W="126" H="126">
+                            <Image Name="PosyIcon" X="24" Y="19" W="79" H="85" SizeMode="1" />
+                            <Image Name="LvlImg" X="72" Y="79" W="27" H="26" Image="{1,ui/res/hero/posy_item_lvl.png}" SizeMode="1" />
+                            <Image Name="PosImg" X="27" Y="17" W="27" H="26" Image="{1,ui/res/hero/posy_pos_1.png}" SizeMode="1" />
+                            <Label Name="LvlLabel" X="75" Y="85" W="25" H="20" Text="1" Color="242,222,244" TextAlignment="1" BmpFont="font_1.fnt" FSize="18" />
+                        </Canvas>
+                        <Label Name="Num" X="5" Y="5" W="92" H="33" Text="x10" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                    </Canvas>
+                </Canvas>
+            </Template>
+        </ListBox>
+        <Label Name="TipLabel" X="50" Y="325" W="520" H="30" Color="161,109,33" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+    </Canvas>
+    <Label Name="TipLabel" X="212" Y="10" W="600" H="77" Center="1" Color="255,78,9" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+    <Canvas Name="ComfirmBtn" X="389" Y="104" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="NumLabel" X="30" Y="3" W="142" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="31" />
+        <Image Name="ProduceImage" X="173" Y="16" W="42" H="46" Image="{1,ui/res/itemshop/exploit.png}" SizeMode="0" />
+    </Canvas>
+</Layout>

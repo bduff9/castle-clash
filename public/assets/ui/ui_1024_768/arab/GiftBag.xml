@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="GiftBagFrame" W="1024" H="768">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="629" Touch="1" Zoom="0">
+        <Canvas Name="CanvasContent" X="272" Y="10" W="696" H="596">
+            <Canvas Name="CanvasPop" X="0" Y="552" W="600" H="170" Background="{1,ui/res/tip_content.png}" zOrder="99">
+				<Label Name="Title" X="275" Y="143" W="300" H="24" Color="84,81,76" TextAlignment="2" BmpFont="font_2.fnt" Top="20" FSize="24" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Layout>

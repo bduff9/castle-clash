@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="CashRewardFrame" W="1024" H="768">
+	<ListBox Name="CashRewardListBox" X="40" Y="42" W="946" H="596" Center="1" ScrollViewDir="1" EdgeShade="1">
+        <Template Name="" X="0" Y="0" W="932" H="144">
+			<Canvas Name="ItemCanvas" X="-15" Y="0" W="928" H="142">
+                <Label Name="LabelComment" X="215" Y="31" W="395" H="140" Text="" Color="192,255,238" TextAlignment="2" BmpFont="font_1.fnt" Multline="1" FSize="22" />
+                <Label Name="CompletedLabel" X="241" Y="31" W="340" H="32" Color="114,236,1" TextAlignment="2" BmpFont="font_1.fnt" FSize="22" />
+			</Canvas>
+        </Template>
+    </ListBox>
+	<Canvas Name="CanvasSignInfo" X="32" Y="42" W="974" H="600">
+        <Canvas Name="CanvasBottom" X="0" Y="0" W="960" H="150">
+            <Label Name="LabelTip" X="-180" Y="100" W="900" H="50" Text="Tip:" Color="255,234,177" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+        </Canvas>
+    </Canvas>
+</Layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="WorldBossBattleReportFrame" R_W="1.00" R_H="1.00" Background="{1,ui/res/shade.png.pvr.ccz}">
+    <Canvas Name="CanvasWinFlag" X="214" Y="172" W="596" H="596" Top="0" Center="1">
+        <Canvas Name="CanvasPlay" X="0" Y="0" W="596" H="596" />
+        <Image Name="ImageWinBkg" X="0" Y="0" W="596" H="596" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasCenter" X="417" Y="284" W="190" H="340" Center="1">
+        <Label Name="LabelTitle" X="-5" Y="86" W="200" H="30" Center="1" Color="230,230,89" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="LabelDamage" X="-5" Y="76" W="200" H="30" Center="1" Color="255,0,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        <Label Name="LabelContent" X="-5" Y="10" W="200" H="28" Center="1" Color="89,187,230" TextAlignment="1" BmpFont="font_1.fnt" FSize="22" />
+    </Canvas>
+    <Canvas Name="ExitBtn" X="389" Y="20" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_red_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="29" />
+    </Canvas>
+</Layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="CashRewardFrame" W="1024" H="768">
+    <Canvas Name="ChoiceCanvs" X="27" Y="30" W="970" H="184" Center="1">
+        <ListBox Name="HeroListBox" X="12" Y="0" W="945" H="184" Center="3" ScrollViewDir="0">
+            <Template Name="" X="0" Y="0" W="170" H="184" Fixed="1">
+                <Canvas Name="HeroCanvs" X="0" Y="0" W="179" H="184" Touch="1">
+                    <Label Name="NameLabel" X="10" Y="24" W="157" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

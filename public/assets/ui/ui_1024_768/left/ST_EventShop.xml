@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="ST_EventShop" W="1024" H="768">
+    <Canvas Name="CanvasPop" X="181" Y="163" W="662" H="442" Center="3">
+        <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+             <Label Name="haveNum" X="280" Y="174" W="70" H="30" Text="999" Color="255,255,255" TextAlignment="2" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="MaxNum" X="374" Y="174" W="120" H="30" Text="/ 999" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+            <Label Name="TipLabel" X="83" Y="25" W="500" H="120" Color="126,90,44" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="31" />
+        </Canvas>
+    </Canvas>
+</Layout>

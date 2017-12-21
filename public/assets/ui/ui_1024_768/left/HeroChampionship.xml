@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroChampionshipFrame" Inherit="normalFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="740">
+		<Canvas Name="RewardCanvas" X="0" Y="30" W="432" H="570">
+            <Label Name="LastDamageTitle" X="30" Y="0" W="280" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+			<Image Name="HonorImg" X="275" Y="0" W="42" H="46"  SizeMode="0" Image="{1,ui/res/best3/best3money.png}"/>
+            <Label Name="LastDamage" X="320" Y="0" W="250" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+            <Label Name="MaxDamageTitle" X="30" Y="60" W="280" H="50"  Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="26" />
+			<Image Name="GoldImg" X="270" Y="55" W="50" H="60"  SizeMode="0" Image="{1,ui/res/giftbag/type_4.png}" />
+            <Label Name="MaxDamage" X="320" Y="60" W="250" H="50" Color="236,218,172" TextAlignment="0" BmpFont="font_1.fnt" FSize="32" />
+        </Canvas>
+    </Canvas>
+
+</Layout>

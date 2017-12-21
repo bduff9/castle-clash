@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Sound >
+	<List Type="1" Tip="背景音乐" >
+		<List ID="1" Path="sound/background1.ogg" />
+		<List ID="2" Path="sound/Star.ogg" Tip="战报星星音效"/>
+		<List ID="3" Path="sound/Enemy_Attack.ogg" Tip="敌人来袭音效"/>
+		<List ID="4" Path="sound/Set_Soldier.ogg" Tip="战斗放置小兵的音效"/>
+		<List ID="5" Path="sound/Click_Wrong.ogg" Tip="点击按钮错误时的提升音效"/>
+		<List ID="6" Path="sound/Click_Task.ogg" Tip="点击任务_成就按钮时的特殊提示音效"/>
+		<List ID="7" Path="sound/Building.ogg" Tip="建筑移动后放置的音效"/>
+		<List ID="8" Path="sound/Get_Hero.ogg" Tip="抽取英雄的音效"/>
+		<List ID="9" Path="sound/Enemy_Attack.ogg" Tip="片头翻页的音效"/>
+		<List ID="10" Path="sound/Finish_Task.ogg" Tip="任务领取音效"/>
+		<List ID="11" Path="sound/Finish_Achievement.ogg" Tip="成就领取音效"/>
+		<List ID="12" Path="sound/Grave.ogg" Tip="墓地风格背景音效"/>
+		<List ID="13" Path="sound/Ocean.ogg" Tip="海洋风格背景音效"/>
+		<List ID="14" Path="sound/ToyCity.ogg" Tip="欢乐时光背景音效"/>
+		<List ID="15" Path="sound/Harvest.ogg" Tip="感恩节背景音效"/>
+		<List ID="16" Path="sound/Christmas.ogg" Tip="圣诞节背景音效"/>
+		
+		<List ID="148" Path="sound/Battleground.ogg" Tip="战斗背景音乐"/>
+		<List ID="149" Path="sound/Loading.ogg" Tip="加载音乐"/>
+	</List>
+	<List Type="2" Tip="特效音乐" >
+		<!--老东西<List ID="100" Path="sound/Chain_Fall_Drop.mp3" Tip="收取金币资源的音效"/>
+		<List ID="101" Path="sound/Female_Death.mp3" Tip="女兵种死亡音效01"/>
+		<List ID="102" Path="sound/Female2_Death.mp3" Tip="女兵种死亡音效02"/>
+		<List ID="103" Path="sound/Female3_Death.mp3" Tip="女兵种死亡音效03"/>
+		<List ID="111" Path="sound/Male_Death01.mp3" Tip="男兵种死亡音效01"/>
+		<List ID="112" Path="sound/Male_Death02.mp3" Tip="男兵种死亡音效02"/>
+		<List ID="113" Path="sound/Male_Death03.mp3" Tip="男兵种死亡音效03"/>-->
+
+		<List ID="150" Path="sound/Click_Barracks.ogg" Tip="点击兵营发出声音"/>
+		<List ID="151" Path="sound/Click_Base.ogg" Tip="点击基地发出声音"/>
+		<List ID="152" Path="sound/Click_Altar.ogg" Tip="点击英雄祭坛发出声音"/>
+		<List ID="153" Path="sound/Click_Prophouse.ogg" Tip="点击道具屋发出声音"/>
+		<List ID="154" Path="sound/Click_Heroseat.ogg" Tip="点击英雄王座声音"/>
+		<List ID="155" Path="sound/Click_arena.ogg" Tip="点击竞技场发出的声音"/>
+		<List ID="156" Path="sound/Click_Wall.ogg" Tip="点击城墙声音"/>
+		<List ID="157" Path="sound/Click_Training.ogg" Tip="点击训练场发出的声音"/>
+		
+		<List ID="158" Path="sound/Click_Button.ogg" Tip="按钮UI点击声音"/>
+		<List ID="159" Path="sound/Click_Building.ogg" Tip="建筑升级声音"/>
+		<List ID="160" Path="sound/Building.ogg" Tip="建筑建造声音"/>
+		
+		<List ID="161" Path="sound/Click_Magictower.ogg" Tip="点击魔法塔发出的声音"/>
+		<List ID="162" Path="sound/Click_Arrowtower.ogg" Tip="点击弓箭塔声音"/>
+		<List ID="163" Path="sound/Click_Firetower.ogg" Tip="点击火炮塔声音"/>
+		
+		<List ID="164" Path="sound/Click_Goldstore.ogg" Tip="点击金库声音"/>
+		<List ID="165" Path="sound/Click_Mineralstore.ogg" Tip="点击水晶仓库声音"/>
+		<List ID="166" Path="sound/Get_Gold.ogg" Tip="收取金矿声音"/>
+		<List ID="167" Path="sound/Get_Mineral.ogg" Tip="收取水晶矿声音"/>
+		<List ID="168" Path="sound/Click_mineral.ogg" Tip="点击水晶矿发出的声音"/>
+		
+		<List ID="169" Path="sound/Click_Stone.ogg" Tip="点击石头声音"/>
+		<List ID="170" Path="sound/Click_Tree.ogg" Tip="点击树木声音"/>
+		<List ID="171" Path="sound/Click_Wall.ogg" Tip="点击城墙声音"/>
+
+		<List ID="172" Path="sound/Move_Building.ogg" Tip="移动建筑物声音"/>
+		<List ID="173" Path="sound/Click_Gold.ogg" Tip="点击金矿发出的声音"/>
+		<List ID="174" Path="sound/Clean_Tree.ogg" Tip="树木被消除后的音效"/>
+		<List ID="175" Path="sound/Click_Wrong.ogg" Tip="移动建筑物错误声音"/>
+		<List ID="176" Path="sound/FinishTask.ogg" Tip="任务领取音效"/>
+		
+		<List ID="177" Path="sound/Escape.ogg" Tip="图腾攻击时音效"/>
+		<!--小兵死亡音效-->
+		<List ID="201" Path="sound/Soldier1_Death.ogg" TimeGap="1" Tip="守卫者"/>
+		<List ID="202" Path="sound/Soldier2_Death.ogg" TimeGap="1" Tip="狩猎者"/>
+		<List ID="203" Path="sound/Soldier3_Death.ogg" TimeGap="1" Tip="掌焰者"/>
+		<List ID="204" Path="sound/Soldier4_Death.ogg" TimeGap="1" Tip="树妖"/>
+		<List ID="205" Path="sound/Soldier510_Death.ogg" TimeGap="1" Tip="咆哮之锤"/>
+		<List ID="206" Path="sound/Soldier6_Death.ogg" TimeGap="1" Tip="森林猎手"/>
+		<List ID="207" Path="sound/Soldier7_Death.ogg" TimeGap="1" Tip="狮鹫"/>
+		<List ID="208" Path="sound/Soldier8_Death.ogg" TimeGap="1" Tip="机甲"/>
+		<List ID="209" Path="sound/Soldier9_Death.ogg" TimeGap="1" Tip="蛮荒主宰"/>
+		<List ID="210" Path="sound/Soldier510_Death.ogg" TimeGap="1" Tip="狂炎之枪"/>
+		<List ID="211" Path="sound/Soldier11_Death.ogg" TimeGap="1" Tip="精灵龙"/>
+		<List ID="212" Path="sound/Soldier12_Death.ogg" TimeGap="1" Tip="飞机"/>
+		<!--小兵攻击音效-->
+		<List ID="301" Path="sound/Soldier1_Attack.ogg" TimeGap="1" Tip="守卫者"/>
+		<List ID="302" Path="sound/Soldier2_Attack.ogg" TimeGap="1" Tip="狩猎者"/>
+		<List ID="303" Path="sound/Soldier3_Attack.ogg" TimeGap="1" Tip="掌焰者"/>
+		<List ID="304" Path="sound/Soldier4_Attack.ogg" TimeGap="1" Tip="树妖"/>
+		<List ID="305" Path="sound/Soldier5_Attack.ogg" TimeGap="1" Tip="咆哮之锤"/>
+		<List ID="306" Path="sound/Soldier6_Attack.ogg" TimeGap="1" Tip="森林猎手"/>
+		<List ID="307" Path="sound/Soldier7_Attack.ogg" TimeGap="1" Tip="狮鹫"/>
+		<List ID="308" Path="sound/Soldier8_Attack.ogg" TimeGap="1" Tip="机甲"/>
+		<List ID="309" Path="sound/Soldier9_Attack.ogg" TimeGap="1" Tip="蛮荒主宰"/>
+		<List ID="310" Path="sound/Soldier10_Attack.ogg" TimeGap="1" Tip="狂炎之枪"/>
+		<List ID="311" Path="sound/Soldier11_Attack.ogg" TimeGap="1" Tip="精灵龙"/>
+		<List ID="312" Path="sound/Soldier12_Attack.ogg" TimeGap="1" Tip="飞机"/>
+		<!--命中音效-->
+		<List ID="401" Path="sound/Hit.ogg" Tip="通用单位被命中时的音效"/>
+		<!--小兵出生音效-->
+		<List ID="501" Path="sound/Soldier_Birth.ogg" Tip="小兵建造出来的音效"/>
+		<!--建筑攻击音效-->
+		<List ID="601" Path="sound/Arrowtower_Attack.ogg" Tip="弓箭塔攻击声音"/>
+		<List ID="602" Path="sound/Magictower_Attack.ogg" Tip="魔法塔攻击声音"/>
+		<List ID="603" Path="sound/FireTower_Attack.ogg" Tip="火炮塔攻击声音"/>
+		<List ID="604" Path="sound/Arrowtower_Attack.ogg" Tip="哨塔攻击声音"/>
+		<!--建筑命中音效-->
+		<List ID="651" Path="sound/FireTower_Hit.ogg" Tip="火炮塔命中声音"/>
+		<!--建筑爆炸音效-->
+		<List ID="701" Path="sound/Building_Bomb.ogg" Tip="建筑爆炸声音"/>
+		
+		<!--战报音效-->
+		<List ID="801" Path="sound/Battle_Win.ogg" Tip="战报胜利声音"/>
+		<List ID="802" Path="sound/Battle_Lose.ogg" Tip="战报失败声音"/>
+		
+		<!--英雄音效-->
+		<List ID="901" Path="sound/Hero_StarUp.ogg" Tip="英雄升星级时的音效"/>
+		<List ID="902" Path="sound/Hero_Useskill.ogg" Tip="英雄施放技能音效"/>
+		<List ID="903" Path="sound/Hero_Eatskill.ogg" Tip="英雄吞噬升技能时音效"/>
+		
+		<!--魔法界面-->
+		<List ID="1001" Path="sound/Click_mineral.ogg" Tip="购买魔法"/>
+		<List ID="1002" Path="sound/Click_Button.ogg" Tip="点击进入升级界面"/>
+		<List ID="1003" Path="sound/Click_Button.ogg" Tip="点击魔法升级按钮"/>
+		<List ID="1004" Path="sound/Click_Button.ogg" Tip="点击升级加速按钮"/>
+		
+		<!--成就界面-->
+		<List ID="1011" Path="sound/Get_Gold.ogg" Tip="领取宝石音效"/>
+		<List ID="1012" Path="sound/Building_Bomb.ogg" Tip="成就刷新的音效"/>
+		<List ID="1013" Path="sound/Get_Achievement.ogg" Tip="成就获得的音效"/>
+		
+		<!--副本界面-->
+		<List ID="1021" Path="sound/Click_Button.ogg" Tip="点击大关卡"/>
+		<List ID="1022" Path="sound/Click_Button.ogg" Tip="点击小关卡"/>
+		<List ID="1023" Path="sound/Click_Button.ogg" Tip="购买关卡次数"/>
+		
+		<!--魔法音效-->
+		<List ID="1031" Path="sound/Arrow Rain2.ogg" Tip="箭雨"/>
+		<List ID="1032" Path="sound/Restoration.ogg" Tip="生命連接"/>
+		<List ID="1033" Path="sound/Ares' Fervor.ogg" Tip="英雄"/>
+		<List ID="1034" Path="sound/Windstorm.ogg" Tip="風暴"/>
+		<List ID="1035" Path="sound/Guardian Angel.ogg" Tip="守護天使"/>
+		<List ID="1036" Path="sound/Meteor2.ogg" Tip="隕石風暴"/>
+		<List ID="1037" Path="sound/Disaster.ogg" Tip="天崩地裂"/>
+		<List ID="1038" Path="sound/Ares' Frenzy.ogg" Tip="狂怒"/>
+		<List ID="1039" Path="sound/Phoenix Flight.ogg" Tip="鳳凰涅槃"/>
+		<List ID="1040" Path="sound/Snowstorm1.ogg" Tip="暴風雪"/>
+		
+		<!--道具屋-->
+		<List ID="1041" Path="sound/item_Chest_open.ogg" Tip="宝箱出现"/>
+		<List ID="1042" Path="sound/item_Reward.ogg" Tip="奖励弹出"/>	
+		
+		<!--2016.11新增音效-->
+		<List ID="1043" Path="sound/Doorway.ogg" Tip="怪攻传送门"/>
+		<List ID="1044" Path="sound/Billboards.ogg" Tip="悬赏公告牌"/>	
+		<List ID="1045" Path="sound/MoveHero01.ogg" TimeGap="1" Tip="沙盘英雄移动"/>
+		<List ID="1046" Path="sound/Get_Reward.ogg" Tip="领取奖励"/>
+		<List ID="1047" Path="sound/Magic_House.ogg" Tip="点击魔法屋"/>
+		<List ID="1048" Path="sound/Battle_Hero.ogg" Tip="9宫格上阵英雄"/>
+		<List ID="1049" Path="sound/Aggregation.ogg" Tip="插旗"/>
+		<List ID="1050" Path="sound/Remind01.ogg" Tip="提醒"/>
+		<List ID="1051" Path="sound/Extract_Egg.ogg" Tip="抽宠物蛋"/>
+		<List ID="1052" Path="sound/Switching_Scene.ogg" Tip="切换场景"/>
+		<List ID="1053" Path="sound/MoveHero02.ogg" Tip="据点战英雄移动"/>
+		<List ID="1054" Path="sound/Make_War.ogg" Tip="据点战开战"/>
+		
+		<!--2017.10新增音效-->
+		<List ID="1055" Path="sound/Hammer.ogg" Tip="雷神宝藏雷电音效"/>
+		<List ID="1056" Path="sound/Winning.ogg" Tip="中奖音效"/>
+		
+		<!--2017.12新增音效-->
+		<List ID="1057" Path="sound/Cursor.ogg" Tip="转盘跳格子音效"/>
+		<List ID="1058" Path="sound/Selected.ogg" Tip="转盘中奖音效"/>
+	</List>
+</Sound>
+<!-- 注意: ID号不允许重复!!! 
+TimeGap:是否需要间隔 1：需要 0和不填：不需要
+-->

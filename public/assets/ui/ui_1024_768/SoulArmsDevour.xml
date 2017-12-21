@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="SoulArmsDevourFrame" Inherit="backFrame_1.xml">
+    <Canvas Name="CanvasMain" X="25" Y="24" W="974" H="560" Touch="1" Zoom="0">
+        <Canvas Name="LeftCanvs" X="10" Y="25" W="356" H="600">
+            <Canvas Name="CanvasItem" X="30" Y="170" W="340" H="330">
+                <Image Name="BkgImg" X="0" Y="10" W="331" H="348" Image="{1,ui/res/Consortia/small_flag_194-205.png}" SizeMode="1" />
+				<Label Name="SoulArmsTitleLabel" X="-40" Y="70" W="400" H="77" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+                <Label Name="SoulArmsLabel" X="-40" Y="30" W="400" H="77" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+                <Label Name="SoulArmsAddLabel" X="-40" Y="0" W="400" H="77" Center="1" Color="0,255,0" TextAlignment="1" BmpFont="font_1.fnt" FSize="28" />
+                <Image Name="IconImg" X="75" Y="135" W="180" H="180" Image="{1,ui/res/SoulArms/SoulArmsIcon.png}" SizeMode="1" />
+            </Canvas>
+			<Label Name="TitleLabel" X="-20" Y="126" W="420" H="50"  Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+            <Image Name="img1" X="20" Y="0" W="99" H="94" Touch="1" Image="{1,ui/res/SoulArms/1.png}" SizeMode="1" />
+            <Image Name="img2" X="130" Y="0" W="99" H="94" Touch="1" Image="{1,ui/res/SoulArms/2.png}" SizeMode="1" />
+            <Image Name="img3" X="240" Y="0" W="99" H="94" Touch="1" Image="{1,ui/res/SoulArms/3.png}" SizeMode="1" />
+            
+        </Canvas>
+        <Canvas Name="SeparateCanvs" X="360" Y="20" W="61" H="600">
+            <Image Name="SeparateCanvs_Down" X="0" Y="0" W="61" H="305" RotationX="180" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+            <Image Name="SeparateCanvs_Up" X="0" Y="290" W="61" H="305" Image="{1,ui/res/separate_v_61-307.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="Bkg" X="400" Y="20" W="560" H="600">
+            <Image Name="Bkg_L" X="0" Y="0" W="295" H="590" Image="{1,ui/res/SoulArms/SoulArmsInfo_bk.png}" SizeMode="1" />
+            <Image Name="Bkg_R" X="271" Y="0" W="295" H="590" RotationY="180" Image="{1,ui/res/SoulArms/SoulArmsInfo_bk.png}" SizeMode="1" />
+        </Canvas>
+        <Canvas Name="InfoCanvs" X="390" Y="-5" W="560" H="520">
+            <Canvas Name="IntroCanvs" X="10" Y="10" W="550" H="550">
+                <Canvas Name="Bkg1" X="35" Y="30" W="480" H="550" Center="1">
+                    <Image Name="Bkg_L" X="0" Y="0" W="255" H="550" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+                    <Image Name="Bkg_R" X="245" Y="0" W="255" H="550" RotationY="180" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+                </Canvas>
+                <Image Name="TitleImgBkg1" X="215" Y="520" W="426" H="72" Center="1" Image="{1,ui/res/hero/skillChangeNamebg.png}" SizeMode="1" />
+                <Label Name="TitleLabel" X="65" Y="546" W="420" H="50" Center="1" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="26" />
+                <Label Name="Label" X="55" Y="108" W="440" H="80" Top="42" Center="1" Color="155,118,52" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+                <Label Name="ContentLabel" X="55" Y="0" W="440" H="150" Center="1" Color="155,118,52" TextAlignment="0" VTextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+            </Canvas>
+            <Canvas Name="BottomCanvs" X="10" Y="30" W="550" H="260">
+               <Canvas Name="CanvasBtnDevour" X="100" Y="0" W="196" H="77" Fixed="1" Touch="1" Center="1" >
+					<Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+					<Label Name="Label" X="0" Y="4" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+				</Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="DevourCanvs" X="400" Y="-5" W="550" H="600">
+            <Canvas Name="Bkg1" X="35" Y="450" W="480" H="130" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="255" H="130" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="245" Y="0" W="255" H="130" RotationY="180" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Canvas Name="TopCanvs" X="50" Y="455" W="550" H="200">
+                <Image Name="DevourImgBg0" X="20" Y="21" W="80" H="80" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                <Image Name="DevourImg0" X="43" Y="44" W="34" H="34" Image="{1,ui/res/SoulArms/DevourImg.png}" SizeMode="1" />
+                <Image Name="DevourImgBg1" X="135" Y="21" W="80" H="80" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                <Image Name="DevourImg1" X="158" Y="44" W="34" H="34" Image="{1,ui/res/SoulArms/DevourImg.png}" SizeMode="1" />
+                <Image Name="DevourImgBg2" X="250" Y="21" W="80" H="80" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                <Image Name="DevourImg2" X="273" Y="44" W="34" H="34" Image="{1,ui/res/SoulArms/DevourImg.png}" SizeMode="1" />
+                <Image Name="DevourImgBg3" X="365" Y="21" W="80" H="80" Image="{1,ui/res/giftbag/item.png}" SizeMode="1" />
+                <Image Name="DevourImg3" X="388" Y="44" W="34" H="34" Image="{1,ui/res/SoulArms/DevourImg.png}" SizeMode="1" />
+                <Canvas Name="ItemCanvs0" X="-5" Y="-10" W="100" H="120" Touch="1">
+                    <Image Name="IconImg" X="14" Y="20" W="100" H="100" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="20" W="100" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="AddNumLabel" X="10" Y="70" W="100" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="ItemCanvs1" X="110" Y="-10" W="100" H="120" Touch="1">
+                    <Image Name="IconImg" X="14" Y="20" W="100" H="100" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="20" W="100" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="AddNumLabel" X="10" Y="70" W="100" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="ItemCanvs2" X="225" Y="-10" W="100" H="120" Touch="1">
+                    <Image Name="IconImg" X="14" Y="20" W="100" H="100" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="20" W="100" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="AddNumLabel" X="10" Y="70" W="100" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+                <Canvas Name="ItemCanvs3" X="340" Y="-10" W="100" H="120" Touch="1">
+                    <Image Name="IconImg" X="14" Y="20" W="100" H="100" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                    <Label Name="NumLabel" X="0" Y="20" W="100" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                    <Label Name="AddNumLabel" X="10" Y="70" W="100" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="Bkg2" X="35" Y="50" W="480" H="370" Center="1">
+                <Image Name="Bkg_L" X="0" Y="0" W="255" H="370" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+                <Image Name="Bkg_R" X="245" Y="0" W="255" H="370" RotationY="180" Image="{1,ui/res/SoulArms/InfoFrame_bk.png}" SizeMode="1" />
+            </Canvas>
+            <Label Name="TipLabel" X="40" Y="402" W="490" H="60" Color="155,118,52" TextAlignment="0" BmpFont="font_2.fnt" FSize="28" />
+            <ListBox Name="DevourListBox" X="10" Y="105" W="520" H="300" ScrollViewDir="1">
+                <Template Name="" X="0" Y="0" W="520" H="150" Fixed="1">
+                    <Canvas Name="ItemCanvs0" X="30" Y="0" W="140" H="150" Touch="1">
+                        <Image Name="IconImg" X="14" Y="20" W="130" H="130" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="0" Y="20" W="130" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="0" Y="90" W="140" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                    <Canvas Name="ItemCanvs1" X="180" Y="0" W="140" H="150" Touch="1">
+                        <Image Name="IconImg" X="14" Y="20" W="130" H="130" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="0" Y="20" W="130" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="0" Y="90" W="140" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+                    <Canvas Name="ItemCanvs2" X="330" Y="0" W="140" H="150" Touch="1">
+                        <Image Name="IconImg" X="14" Y="20" W="130" H="130" Image="{1,icon/bag/item0001.png}" SizeMode="1" />
+                        <Label Name="NumLabel" X="0" Y="20" W="130" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+                        <Label Name="AddNumLabel" X="0" Y="90" W="140" H="60" Color="0,255,0" TextAlignment="2" BmpFont="font_1.fnt" FSize="25" />
+                    </Canvas>
+
+                </Template>
+            </ListBox>
+			<Canvas Name="CanvasBack"  X="70" Y="20" W="196" H="77" Fixed="1" Touch="1">
+				<Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+				<Label Name="Label" X="0" Y="0" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+			</Canvas>
+            <Canvas Name="CanvasConfirm" X="300" Y="20" W="196" H="77" Fixed="1" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+                <Label Name="Label" X="0" Y="0" W="196" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="23" />
+            </Canvas>
+			
+        </Canvas>
+    </Canvas>
+    <Canvas Name="CanvasTip" X="0" Y="0" W="400" H="180" Background="{1,ui/res/tip_content.png}" zOrder="99">
+        <Image Name="ImgBkg" X="180" Y="-16" W="40" H="40" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+        <Label Name="Label" X="25" Y="15" W="360" H="150" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+    </Canvas>
+</Layout>

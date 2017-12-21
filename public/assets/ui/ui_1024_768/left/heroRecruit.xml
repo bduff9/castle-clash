@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="HeroRecruitFrame" W="1024" H="768">
+    <Canvas Name="HeroRecruiCanvs" X="15" Y="15" W="994" H="646">
+        <Canvas Name="InfoCanvs" X="10" Y="20" W="974" H="629" Touch="1" Zoom="0">
+            <Canvas Name="RecruitInfo_1" X="40" Y="160" W="290" H="440">
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="RecruitInfo_2" X="340" Y="160" W="290" H="440">
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Canvas>
+            <Canvas Name="RecruitInfo_3" X="650" Y="160" W="290" H="440">
+                <Canvas Name="TitleCanvs" X="0" Y="0" W="290" H="80" Center="1">
+                    <Label Name="NameLabel" X="0" Y="10" W="290" H="50" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="20" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <Canvas Name="RecruitCanvs" X="40" Y="0" W="914" H="200">
+            <Canvas Name="HonorCanvs" X="0" Y="0" W="914" H="200">
+                <Canvas Name="HonorTipCanvs" X="480" Y="0" W="400" H="200">
+                    <Label Name="TipLabel" X="0" Y="40" W="400" H="120" Color="255,255,255" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="24" />
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="RecruitCanvsMenu" X="15" Y="15" W="994" H="646">
+        <ListBox Name="RecruitListBox" X="30" Y="30" W="940" H="500" ScrollViewDir="0" >
+            <Template Name="" X="0" Y="0" W="340" H="500" Fixed="1">
+                <Canvas Name="ItemCanvas" X="0" Y="0" W="340" H="500" Touch="1">
+					<Canvas Name="TitleCanvs" X="25" Y="70" W="350" H="80" Center="1">
+						<Label Name="Label" X="0" Y="15" W="350" H="50" Text="Name" Color="255,255,255" TextAlignment="1" VTextAlignment="0" BmpFont="font_1.fnt" FSize="28" />
+					</Canvas>
+				</Canvas>
+            </Template>
+        </ListBox>
+    </Canvas>
+</Layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="MyConsortiaCheckInAlertFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Canvas Name="CanvasMain" X="0" Y="40" W="662" H="300" Center="1" Touch="1" Zoom="0">
+        <Label Name="TipLabel" X="51" Y="180" W="560" H="180" Center="1" Color="249,245,229" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="31" />
+		<ListBox Name="RewardListBox" X="0" Y="140" W="600" H="150" Center="1" ScrollViewDir="0">
+			<Template Name="" X="0" Y="0" W="240" H="100" Fixed="1" Center="1">
+				<Canvas Name="ItemCanvas" X="0" Y="0" W="240" H="100" >
+					<Image Name="ImgBkg" X="0" Y="0" W="75" H="66" Image="" SizeMode="1" Touch="1"/>
+					<Label Name="Label" X="80" Y="20" W="240" H="30" Text="" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="30" />
+				</Canvas>
+			</Template>
+		</ListBox>
+      
+        <Canvas Name="SubMitCanvas" X="208" Y="20" W="245" H="77" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="3" W="245" H="77" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+        
+       <Canvas Name="CanvasTip" X="0" Y="0" W="400" H="180" Background="{1,ui/res/tip_content.png}" zOrder="99">
+			<Image Name="ImgBkg" X="180" Y="-16" W="40" H="40" Rotation="270" Center="1" Image="{1,ui/res/tip_arrow.png}" SizeMode="0" />
+			<Label Name="Label" X="25" Y="15" W="360" H="150" Color="84,81,76" TextAlignment="0" BmpFont="font_2.fnt" Multline="1" FSize="20" />
+		</Canvas>
+        
+    </Canvas>
+</Layout>

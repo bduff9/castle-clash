@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="InterludeFrame" R_W="1" R_H="1">
+    <Image Name="BkImg" Center="3" R_W="1" R_H="1" Touch="1" Zoom="0" Image="{1,ui/res/interlude/Interlude_bk.jpg}" SizeMode="1" />
+	<Image Name="LogoImg" Center="3" W="380" H="391" Image="{1,ui/res/interlude/001.png}" SizeMode="1" />
+	<Label Name="LoadLabel" Center="1" R_Y="0.35" W="200" H="50" Color="255,255,255" Text="Loading...." TextAlignment="0" BmpFont="font_1.fnt" FSize="30" /> 
+	<Canvas Name="CanvasBack" X="14" Y="7" W="211" H="102" Touch="1">
+		<Image Name="Img" X="0" Y="0" W="211" H="102" Image="{1,ui/res/back_home.png}" SizeMode="1" />
+    </Canvas>
+
+</Layout>

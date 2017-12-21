@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="BossTimingFrame" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="370" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+   <Image Name="operatebg" X="140" Y="170" W="200" H="67" Image="{1,ui/res/bag/operatebg.png}" SizeMode="1" Center="1" />
+	<Label Name="TxtLabel" X="50" Y="220" W="550" H="100" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="28" />
+	 <Label Name="TimeTxtLabel" X="50" Y="155" W="200" H="100" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" Multline="1" FSize="28"  Center="1"/>
+    <Canvas Name="OKCanvs" X="376" Y="70" W="196" H="77" Touch="1" >
+        <Image Name="Img" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+        <Label Name="Txt" X="0" Y="3" W="196" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+    <Canvas Name="CancelCanvs" X="90" Y="70" W="196" H="77" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="196" H="77" Image="{1,ui/res/button/btn_196_77.png}" SizeMode="1" />
+        <Label Name="Txt" X="0" Y="3" W="196" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+	<Canvas Name="PreBtn" X="132" Y="170" W="100" H="65" Touch="1" >
+        <Image Name="Img" X="0" Y="0" W="64" H="65" Image="{1,ui/res/button/minus.png}" SizeMode="1" Right="1"/>
+        <Label Name="Txt" X="0" Y="3" W="196" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+    <Canvas Name="LstBtn" X="430" Y="170" W="100" H="65" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="64" H="65" Image="{1,ui/res/button/plus.png}" SizeMode="1" />
+        <Label Name="Txt" X="0" Y="3" W="196" H="77" Text="" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="36" />
+    </Canvas>
+</Layout>

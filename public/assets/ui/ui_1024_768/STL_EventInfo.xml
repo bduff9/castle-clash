@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="STL_EventInfo" W="662" H="442">
+    <Canvas Name="FrameBkgCanvs" X="0" Y="0" W="662" H="442">
+        <Image Name="FrameBkg_L" X="0" Y="0" W="333" H="442" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+        <Image Name="FrameBkg_R" X="329" Y="0" W="333" H="442" RotationY="180" Image="{1,ui/res/form_bk_662_442.png}" SizeMode="1" />
+    </Canvas>
+    <Label Name="TitleLabel" X="136" Y="356" W="390" H="80" Top="6" Center="1" Color="236,236,236" TextAlignment="1" BmpFont="font_1.fnt" FSize="25" />
+    <Image Name="CloseImg" X="528" Y="324" W="115" H="117" Touch="1" Top="1" Right="19" Image="{1,ui/res/button/form_close_m.png}" SizeMode="1" />
+    <Canvas Name="CanvasMain" X="0" Y="35" W="662" H="300" Center="1">
+        <Label Name="LabelTag" X="76" Y="256" W="500" H="35" Text="111111:" Color="103,73,37" TextAlignment="0" BmpFont="font_2.fnt" FSize="35" />
+        <Canvas Name="CanvasItems" X="0" Y="90" W="662" H="125">
+            <Canvas Name="ItemCanvs1" X="150" Y="0" W="125" H="125">
+                <Image Name="ImgIcon" X="-1" Y="-4" W="128" H="133" Center="3" Image="{1,icon/Posy/000.png}" SizeMode="1" />
+                <Label Name="LabelName" X="-40" Y="-38" W="210" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+            <Label Name="OrLabel_1" X="290" Y="45" W="70" H="35" Center="3" Text="or" Color="103,73,37" TextAlignment="1" BmpFont="font_2.fnt" FSize="35" />
+            <Canvas Name="ItemCanvs2" X="400" Y="0" W="125" H="125">
+                <Image Name="Bk" X="-5" Y="-5" W="136" H="135" Image="{1,ui/res/bag/itemBox.png}" SizeMode="1" />
+                <Image Name="ImgIcon" X="10" Y="14" W="101" H="102" Image="{1,icon/bag/item0000.png}" SizeMode="1" />
+                <Label Name="LabelName" X="-40" Y="-35" W="210" H="40" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Canvas Name="SubMitCanvas" X="208" Y="-32" W="245" H="77" Touch="1" Center="1">
+        <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+        <Label Name="Label" X="115" Y="3" W="115" H="77" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="36" />
+        <Image Name="Image" X="50" Y="14" W="47" H="62" Image="{1,ui/res/smain/copperkey.png}" SizeMode="1" />
+    </Canvas>
+</Layout>

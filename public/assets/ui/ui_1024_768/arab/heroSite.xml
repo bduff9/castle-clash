@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="heroSiteFrame" W="1024" H="768">
+    <Canvas Name="AtrCanvs" X="400" Y="243" W="560" H="370">
+        <Label Name="AtkLabel" X="272" Y="280" W="170" H="39" Text="ATTACK:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+        <Label Name="AtkNumLabel" X="160" Y="280" W="100" H="39" Text="100" Color="255,245,210" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="AtkNumAddLabel" X="-6" Y="280" W="150" H="39" Text="100" Color="118,235,47" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="HpLabel" X="272" Y="230" W="170" H="39" Text="LIFE:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+        <Label Name="HpNumLabel" X="160" Y="230" W="100" H="39" Text="100" Color="255,245,210" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="HpNumAddLabel" X="-6" Y="230" W="150" H="39" Text="100" Color="118,235,47" TextAlignment="2" BmpFont="font_1.fnt" FSize="24" />
+        <Label Name="AtkSpeedLabel" X="272" Y="180" W="170" H="39" Text="ATK SPEED:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+        <Label Name="AtkSpeedNumLabel" X="160" Y="180" W="100" H="39" Text="100" Color="255,245,210" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="MoveSpeedLabel" X="272" Y="130" W="170" H="39" Text="MOVE SPEED:" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="20" />
+        <Label Name="MoveSpeedNumLabel" X="160" Y="130" W="100" H="39" Text="100" Color="255,245,210" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+        <Label Name="PowerLabel" X="272" Y="80" W="170" H="39" Text="POWER" Color="126,90,44" TextAlignment="0" BmpFont="font_2.fnt" FSize="22" />
+        <Label Name="PowerNumLabel" X="160" Y="80" W="100" H="39" Text="100" Color="255,245,210" TextAlignment="2" BmpFont="font_1.fnt" FSize="26" />
+		<Canvas Name="SkillInfoCanvs" X="420" Y="220" W="76" H="79" Top="50" />
+		<Canvas Name="TalentCanvs" X="420" Y="150" W="76" H="79" Center="2" />
+		<Canvas Name="PetCanvs" X="420" Y="50" W="76" H="83" />
+    </Canvas>
+</Layout>

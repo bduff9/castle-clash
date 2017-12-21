@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Layout Name="CBOpponentMember" R_W="1.00" R_H="1.00">
+    <Image Name="Bkg" X="-388" Y="0" W="1800" R_H="1.00" Center="3" Image="{1,ui/res/teamdungeon/bkg.jpg}" SizeMode="0" />
+    <ListBox Name="ListBoxMember" X="0" Y="150" R_W="1.00" H="580" Center="1" ScrollViewDir="0">
+        <Template Name="" X="0" Y="0" R_W="1.00" R_H="1.00" Center="1">
+            <Canvas Name="CanvasItem1" X="0" Y="260" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem2" X="0" Y="0" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem3" X="230" Y="260" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem4" X="230" Y="0" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem5" X="460" Y="260" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem6" X="460" Y="0" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem7" X="690" Y="260" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+            <Canvas Name="CanvasItem8" X="690" Y="0" W="218" H="243" Touch="1">
+                <Image Name="ImgBkg" X="0" Y="0" W="218" H="243" Image="{1,ui/res/Consortia/castle.png}" SizeMode="1" />
+                <Image Name="ImgSelect" X="72" Y="146" W="77" H="78" Image="{1,ui/res/dunge/dunge_shine.png}" SizeMode="1" />
+                <Image Name="ImgPower" X="35" Y="33" W="34" H="32" Image="{1,ui/res/power_img.png}" SizeMode="1" />
+                <Label Name="LabelPower" X="73" Y="32" W="120" H="30" Text="7752000" Color="255,255,255" TextAlignment="0" BmpFont="font_1.fnt" FSize="34" />
+            </Canvas>
+        </Template>
+    </ListBox>
+    <Canvas Name="DotsCanvas" X="324" Y="120" W="376" H="32" Center="1">
+        <Image Name="dark0" X="0" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark1" X="40" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark2" X="80" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark3" X="120" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark4" X="160" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark5" X="200" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark6" X="240" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark7" X="280" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark8" X="320" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="dark9" X="360" Y="8" W="16" H="16" Image="{1,ui/res/Consortia/dot_dark.png}" SizeMode="1" />
+        <Image Name="light" X="-8" Y="0" W="32" H="32" Image="{1,ui/res/Consortia/dot_light.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BtnCanvas" X="162" Y="20" W="700" H="100" Center="1">
+        <Image Name="ImgAdd" X="507" Y="19" W="50" H="50" Touch="1" Image="{1,ui/res/Addition.png.pvr.ccz}" SizeMode="1" />
+        <Canvas Name="BtnChallenge" X="227" Y="0" W="245" H="76" Touch="1" Center="1">
+            <Image Name="ImgBkg" X="0" Y="0" W="245" H="77" Image="{1,ui/res/button/btn_245_77.png}" SizeMode="1" />
+            <Label Name="Label" X="0" Y="42" W="245" H="41" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+            <Label Name="LabelTimes" X="0" Y="2" W="245" H="41" Color="255,255,255" TextAlignment="1" BmpFont="font_1.fnt" FSize="30" />
+        </Canvas>
+    </Canvas>
+    <Canvas Name="BtnLastTeam" X="0" Y="330" W="118" H="119" Touch="1">
+        <Image Name="Img" X="0" Y="0" W="118" H="119" RotationY="180" Image="{1,ui/res/button/arrow_right.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BtnNextTeam" X="906" Y="330" W="118" H="119" Touch="1" Right="0">
+        <Image Name="Img" X="0" Y="0" W="118" H="119" Image="{1,ui/res/button/arrow_right.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="BtnClose" X="871" Y="605" W="153" H="166" Touch="1" Top="-3" Right="0">
+        <Image Name="CloseFlagImg" X="0" Y="0" W="153" H="166" Image="{1,ui/res/close_flag.png}" SizeMode="1" />
+        <Image Name="CloseImg" X="31" Y="64" W="96" H="96" Image="{1,ui/res/button/form_close.png}" SizeMode="1" />
+    </Canvas>
+    <Canvas Name="CanvasTop" X="332" Y="578" W="359" H="190" Top="0" Center="1">
+        <Image Name="ImgBorad" X="0" Y="91" W="359" H="99" Image="{1,ui/res/frame/flag_board.png}" SizeMode="1" />
+        <Image Name="ImgFlag" X="12" Y="90" W="80" H="80" Image="{1,ui/res/HeroTeam/HeroTeamFlag.png}" SizeMode="1" />
+        <Label Name="LabelName" X="100" Y="117" W="550" H="50" Text="123" Color="255,255,255" TextAlignment="0" FSize="35" />
+    </Canvas>
+</Layout>
