@@ -24,3 +24,6 @@
 - Create admin screens for heroes
 - Create basic hero entry screen
 - Create basic hero view screen
+- Image recognition?
+  - Pixfinder <https://www.npmjs.com/package/pixfinder>
+  - Maybe also OCR after we identify the areas to look in?
