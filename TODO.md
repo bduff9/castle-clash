@@ -27,3 +27,4 @@
 - Image recognition?
   - Pixfinder <https://www.npmjs.com/package/pixfinder>
   - Maybe also OCR after we identify the areas to look in?
+- Loader? <https://github.com/danilowoz/react-content-loader>
