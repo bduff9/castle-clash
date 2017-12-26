@@ -3,6 +3,7 @@
 ## Files
 
 - Fill structure (<https://guide.meteor.com/structure.html>)
+  - Example Todos app (<https://github.com/meteor/todos>)
 
 ## Database
 

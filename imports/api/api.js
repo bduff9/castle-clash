@@ -1,3 +1,5 @@
 'use strict';
 
-// This defines all the collections, publications and methods that the application provides as an API to the client
+// Users schema
+import './users/methods';
+import './users/server/publications';

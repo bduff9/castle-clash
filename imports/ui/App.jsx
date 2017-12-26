@@ -34,7 +34,7 @@ App.propTypes = {
 };
 
 export default withTracker(props => {
-	const userHandle = Meteor.subscribe('userData'),
+	const userHandle = Meteor.subscribe('Users.currentUserInfo'),
 			userReady = userHandle.ready(),
 			loggingIn = Meteor.loggingIn(),
 			userID = Meteor.userId();

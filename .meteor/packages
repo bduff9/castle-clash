@@ -29,3 +29,7 @@ mdg:validated-method
 http
 session
 aldeed:collection2
+reywood:publish-composite
+dburles:collection-helpers
+ddp-rate-limiter
+app-prod-security
