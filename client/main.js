@@ -7,9 +7,8 @@ import { render } from 'react-dom';
 
 import '/imports/startup/client';
 
-import App from '../imports/ui/App';
+import AppContainer from '../imports/ui/containers/AppContainer';
 
 Meteor.startup(() => {
-	// Mount app
-	render(<App />, document.getElementById('react-root'));
+	render(<AppContainer />, document.getElementById('react-root'));
 });
