@@ -1,10 +1,13 @@
 'use strict';
 
-// Setup OAuth services
-import './configure-services';
+// Setup Accounts package
+import './configure-accounts';
 
 // Setup email services
 import './configure-email';
+
+// Setup OAuth services
+import './configure-services';
 
 // This defines a starting set of data to be loaded if the app is loaded with an empty db.
 import './fixtures';
@@ -13,4 +16,4 @@ import './fixtures';
 import './security';
 
 // This defines all the collections, publications and methods that the application provides as an API to the client
-import '../../api/api';
+import './register-api';

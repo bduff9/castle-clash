@@ -11,6 +11,6 @@ Package.onUse(function (api) {
 
 	api.use([
 		'browser-policy',
-		'force-ssl',
+		'force-ssl'
 	]);
 });
