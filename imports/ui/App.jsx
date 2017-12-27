@@ -1,11 +1,11 @@
 'use strict';
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import Helmet from 'react-helmet';
 
+import { authenticatedType, loggingInType, pageReadyType, userType, userIDType } from '../api/types';
 //import { Routes } from '../../startup/client/Routes.jsx';
 //import { Loading } from '../pages/Loading.jsx';
 
@@ -26,11 +26,11 @@ const App = ({ authenticated, loggingIn, pageReady, userID }) => {
 };
 
 App.propTypes = {
-	authenticated: PropTypes.bool.isRequired,
-	loggingIn: PropTypes.bool.isRequired,
-	pageReady: PropTypes.bool.isRequired,
-	user: PropTypes.object,
-	userID: PropTypes.string
+	authenticated: authenticatedType.isRequired,
+	loggingIn: loggingInType.isRequired,
+	pageReady: pageReadyType.isRequired,
+	user: userType,
+	userID: userIDType
 };
 
 export default withTracker(props => {
