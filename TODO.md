@@ -10,6 +10,7 @@
 - Figure out needed tables
   - Create files and definitions for:
     - Users
+      - Use meteor-collection-hooks for Meteor.users? (<https://github.com/matb33/meteor-collection-hooks/>)
     - Heroes
     - My Heroes
 
