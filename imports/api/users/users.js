@@ -1,14 +1,10 @@
 'use strict';
 
 import { Meteor } from 'meteor/meteor';
-import { Mongo } from 'meteor/mongo';
+//import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 
-class UsersCollection extends Mongo.Collection {
-	//TODO: add any custom insert, update, or delete logic here
-}
-
-const Users = Meteor.users;//new UsersCollection('users');
+const Users = Meteor.users;//new Mongo.Collection('users');
 
 // Deny all client-side updates since we will be using methods to manage this collection
 Users.deny({
@@ -18,53 +14,6 @@ Users.deny({
 });
 
 // Define the User schema here
-const UserCountry = new SimpleSchema({
-	name: {
-		type: String
-	},
-	code: {
-		type: String,
-		regEx: /^[A-Z]{2}$/
-	}
-});
-
-const UserProfile = new SimpleSchema({
-	firstName: {
-		type: String,
-		optional: true
-	},
-	lastName: {
-		type: String,
-		optional: true
-	},
-	birthday: {
-		type: Date,
-		optional: true
-	},
-	gender: {
-		type: String,
-		allowedValues: ['Male', 'Female'],
-		optional: true
-	},
-	organization : {
-		type: String,
-		optional: true
-	},
-	website: {
-		type: String,
-		regEx: SimpleSchema.RegEx.Url,
-		optional: true
-	},
-	bio: {
-		type: String,
-		optional: true
-	},
-	country: {
-		type: UserCountry,
-		optional: true
-	}
-});
-
 Users.schema = new SimpleSchema({
 	username: {
 		type: String,
@@ -98,7 +47,7 @@ Users.schema = new SimpleSchema({
 		type: Date
 	},
 	profile: {
-		type: UserProfile,
+		type: Object,
 		optional: true
 	},
 	// Make sure this services field is in your schema if you're using any of the accounts packages
@@ -120,8 +69,8 @@ Users.schema = new SimpleSchema({
 
 Users.attachSchema(Users.schema);
 
-// This represents the keys from Lists objects that should be published to the client.
-// If we add secret properties to List objects, don't list them here to keep them private to the server.
+// This represents the keys from User objects that should be published to the client.
+// If we add secret properties to User objects, don't list them here to keep them private to the server.
 Users.publicFields = {
 	//TODO: define public fields
 };

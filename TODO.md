@@ -2,15 +2,13 @@
 
 ## Files
 
-- Fill structure (<https://guide.meteor.com/structure.html>)
-  - Example Todos app (<https://github.com/meteor/todos>)
+- Example Todos app (<https://github.com/meteor/todos>)
 
 ## Database
 
 - Figure out needed tables
   - Create files and definitions for:
     - Users
-      - Use meteor-collection-hooks for Meteor.users? (<https://github.com/matb33/meteor-collection-hooks/>)
     - Heroes
     - My Heroes
 

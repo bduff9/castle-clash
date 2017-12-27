@@ -33,3 +33,4 @@ ddp-rate-limiter
 app-prod-security
 aldeed:collection2-core@2.0.1
 aldeed:schema-index
+matb33:collection-hooks
