@@ -3,7 +3,7 @@
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import SimpleSchema from 'simpl-schema';
 import { DDPRateLimiter } from 'meteor/ddp-rate-limiter';
 
 import Users from './users';
@@ -18,11 +18,9 @@ const USERS_METHODS = _.pluck([
 if (Meteor.isServer) {
 	// Only allow 5 user operations per connection per second
 	DDPRateLimiter.addRule({
-		name (name) {
-			return _.contains(USERS_METHODS, name);
-		},
+		name: (name) => _.contains(USERS_METHODS, name),
 
 		// Rate limit per connection ID
-		connectionId () { return true; }
+		connectionId: () => true
 	}, 5, 1000);
 }

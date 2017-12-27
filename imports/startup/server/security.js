@@ -23,10 +23,8 @@ const AUTH_METHODS = [
 
 // Only allow 2 login attempts per connection per 5 seconds
 DDPRateLimiter.addRule({
-	name (name) {
-		return _.contains(AUTH_METHODS, name);
-	},
+	name: name => _.contains(AUTH_METHODS, name),
 
 	// Rate limit per connection ID
-	connectionId () { return true; },
+	connectionId: () => true
 }, 2, 5000);
