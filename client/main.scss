@@ -2,6 +2,13 @@
 @import "{}/node_modules/bootstrap/scss/bootstrap.scss";
 
 // Global namespace
+html,
+body,
+#react-root,
+#app {
+  height: 100%;
+  width: 100%;
+}
 
 // App layout
 
