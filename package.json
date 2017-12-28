@@ -9,8 +9,10 @@
     "initApp": "meteor npm prune && meteor npm i",
     "prestart": "meteor npm run initApp",
     "predebug": "meteor npm run initApp",
-    "start": "meteor run --inspect --settings settings.json",
-    "debug": "meteor debug --inspect-brk --settings settings.json",
+    "start": "meteor run --settings settings.json",
+    "debug": "meteor run --inspect --settings settings.json",
+    "debug-brk": "meteor run --inspect-brk --settings settings.json",
+    "debug-old": "meteor debug --settings settings.json",
     "test": "meteor test --driver-package=practicalmeteor:mocha --port=3004"
   },
   "dependencies": {
