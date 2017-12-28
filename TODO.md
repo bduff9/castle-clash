@@ -19,12 +19,15 @@
 
 ## App
 
-- *Create basic sign in (Password, Google, Facebook, Twitter)*
+- Try removing router prop's from AppContainer?
+- *Pick favicon*
+- Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage
 - Assign users to admin
 - Create admin screens for heroes
 - Create basic hero entry screen
 - Create basic hero view screen
+- Loader? <https://github.com/danilowoz/react-content-loader>
+- Animated page transitions
 - Image recognition?
   - Pixfinder <https://www.npmjs.com/package/pixfinder>
   - Maybe also OCR after we identify the areas to look in?
-- Loader? <https://github.com/danilowoz/react-content-loader>

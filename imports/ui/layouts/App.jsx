@@ -4,9 +4,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import { authenticatedType, loggingInType, pageReadyType, userType, userIDType } from '../helpers/types';
+import { authenticatedType, historyType, locationType, loggingInType, matchType, pageReadyType, userType, userIDType } from '../helpers/types';
 import Routes from '../../startup/client/Routes.jsx';
-import Loading from '../components/Loading';
+import Header from '../components/Header';
+import SideBar from '../components/SideBar';
 
 const AppGrid = styled.div`
 	display: grid;
@@ -17,15 +18,7 @@ const AppGrid = styled.div`
 		"sidebar maincontent";
 `;
 
-const Header = styled.header`
-	grid-area: header;
-`;
-
-const SideBar = styled.section`
-	grid-area: sidebar;
-`;
-
-const App = ({ authenticated, loggingIn, pageReady, user, userID }) => {
+const App = ({ appReady, authenticated, loggingIn, user, userID, ...rest }) => {
 	return (
 		<AppGrid id="app">
 			<Helmet
@@ -34,18 +27,20 @@ const App = ({ authenticated, loggingIn, pageReady, user, userID }) => {
 				titleTemplate="%s | Castle Clash Tracker"
 				link={[{ rel: 'icon', sizes: '16x16 32x32', href: '/favicon.png?v=1' }]}
 				meta={[{ 'charset': 'utf-8' }, { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge' }, { 'name': 'viewport', 'content': 'width=device-width, initial-scale=1, user-scalable=no' }]} />
-			<Header user={user}>Header</Header>
-			<SideBar authenticated={authenticated}>Side Bar</SideBar>
-			{pageReady ? <Routes authenticated={authenticated} loggingIn={loggingIn} key={`current-user-${userID}`} /> : <Loading />
-			}
+			<Header user={user} />
+			{authenticated ? <SideBar /> : null}
+			{appReady ? <Routes authenticated={authenticated} loggingIn={loggingIn} user={user} key={`current-user-${userID}`} /> : null}
 		</AppGrid>
 	);
 };
 
 App.propTypes = {
+	appReady: pageReadyType.isRequired,
 	authenticated: authenticatedType.isRequired,
+	history: historyType,
+	location: locationType,
 	loggingIn: loggingInType.isRequired,
-	pageReady: pageReadyType.isRequired,
+	match: matchType,
 	user: userType,
 	userID: userIDType
 };
