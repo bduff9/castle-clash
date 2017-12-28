@@ -63,8 +63,28 @@ Users.schema = new SimpleSchema({
 	heartbeat: {
 		type: Date,
 		optional: true
+	},
+	first_name: String,
+	last_name: String,
+	email: /\S+@\S+\.\S+/,
+	game_name: String,
+	line_name: String,
+	game_platform: {
+		type: String,
+		allowedValues: ['Android', 'iOS', 'Windows']
+	},
+	game_server: {
+		type: String,
+		allowedValues: ['Taiwan', 'US']
+	},
+	is_admin: {
+		type: Boolean,
+		defaultValue: false
+	},
+	guild: {
+		type: String,
+		optional: true
 	}
-	//TODO: define custom fields on schema
 });
 
 Users.attachSchema(Users.schema);
@@ -72,7 +92,15 @@ Users.attachSchema(Users.schema);
 // This represents the keys from User objects that should be published to the client.
 // If we add secret properties to User objects, don't list them here to keep them private to the server.
 Users.publicFields = {
-	//TODO: define public fields
+	first_name: 1,
+	last_name: 1,
+	email: 1,
+	game_name: 1,
+	line_name: 1,
+	game_platform: 1,
+	game_server: 1,
+	is_admin: 1,
+	guild: 1
 };
 
 Users.helpers({
