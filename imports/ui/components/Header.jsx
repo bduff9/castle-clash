@@ -32,6 +32,7 @@ const Header = ({ user }) => (
 			:
 			(
 				<div>
+					<HeaderNavLink to="/fdhbjska">404 Page</HeaderNavLink>
 					<HeaderNavLink to="/login">Login</HeaderNavLink>
 					<HeaderNavLink to="/register">Register</HeaderNavLink>
 				</div>
