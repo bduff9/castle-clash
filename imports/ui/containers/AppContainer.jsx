@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 
 import App from '../layouts/App';
 
-export default withRouter(withTracker((props) => {
+export default withRouter(withTracker(() => {
 	const userHandle = Meteor.subscribe('Users.currentUserInfo'),
 			userReady = userHandle.ready(),
 			loggingIn = Meteor.loggingIn(),
@@ -17,7 +17,6 @@ export default withRouter(withTracker((props) => {
 		authenticated: !loggingIn && !!Meteor.userId(),
 		loggingIn,
 		user,
-		userID,
-		...props
+		userID
 	};
 })(App));
