@@ -19,9 +19,7 @@
 
 ## App
 
-- Try removing router prop's from AppContainer?
-- *Pick favicon*
-- Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage
+- *Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage*
 - Assign users to admin
 - Create admin screens for heroes
 - Create basic hero entry screen

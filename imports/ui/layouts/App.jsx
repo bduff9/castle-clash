@@ -4,7 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import { authenticatedType, historyType, locationType, loggingInType, matchType, pageReadyType, userType, userIDType } from '../helpers/types';
+import { authenticatedType, loggingInType, pageReadyType, userType, userIDType } from '../helpers/types';
 import Routes from '../../startup/client/Routes.jsx';
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
@@ -25,7 +25,7 @@ const App = ({ appReady, authenticated, loggingIn, user, userID, ...rest }) => {
 				htmlAttributes={{ lang: 'en', 'amp': undefined }}
 				title="Welcome"
 				titleTemplate="%s | Castle Clash Tracker"
-				link={[{ rel: 'icon', sizes: '16x16 32x32', href: '/favicon.png?v=1' }]}
+				link={[{ rel: 'icon', sizes: '16x16 32x32', href: '/favicon.ico?v=1' }]}
 				meta={[{ 'charset': 'utf-8' }, { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge' }, { 'name': 'viewport', 'content': 'width=device-width, initial-scale=1, user-scalable=no' }]} />
 			<Header user={user} />
 			{authenticated ? <SideBar /> : null}
@@ -37,10 +37,7 @@ const App = ({ appReady, authenticated, loggingIn, user, userID, ...rest }) => {
 App.propTypes = {
 	appReady: pageReadyType.isRequired,
 	authenticated: authenticatedType.isRequired,
-	history: historyType,
-	location: locationType,
 	loggingIn: loggingInType.isRequired,
-	match: matchType,
 	user: userType,
 	userID: userIDType
 };
