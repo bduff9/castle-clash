@@ -8,18 +8,18 @@
 
 - Figure out needed tables
   - Create files and definitions for:
-    - Users
     - Heroes
     - My Heroes
 
 ## Assets
 
-- c1 - c4.png for backgrounds
 - Sort through assets in public/assets
 
 ## App
 
+- Remove Bootstrap and add in Bulma with Swatch (Yeti?)
 - *Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage*
+- Include accounts logic (onCreate, merge, etc.?)
 - Assign users to admin
 - Create admin screens for heroes
 - Create basic hero entry screen
