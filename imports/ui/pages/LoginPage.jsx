@@ -4,30 +4,38 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
 import { matchType } from '../helpers/types';
+import LoginForm from '../components/LoginForm';
+import RegisterForm from '../components/RegisterForm';
 
 class LoginPage extends Component {
 	constructor () {
 		super();
 		this.state = {
-			test: 0
+			email: '',
+			password: ''
 		};
+		this._updateEmail = this._updateEmail.bind(this);
+		this._updatePassword = this._updatePassword.bind(this);
 	}
 
-	componentDidUpdate (prevProps, prevState) {
-		const { test: prevTest } = prevState;
-		const { test } = this.state;
-		if (prevTest !== test) return;
-		console.log(prevTest, test);
-		this.setState({ test: test + 1 });
+	_updateEmail (ev) {
+		const value = ev.target.value;
+		this.setState({ email: value });
+	}
+	_updatePassword (ev) {
+		const value = ev.target.value;
+		this.setState({ password: value });
 	}
 
 	render () {
 		const { match } = this.props;
-		const pageTitle = (match.path === '/login' ? 'Login' : 'Register');
+		const isLogin = (match.path === '/login');
+		const pageTitle = (isLogin ? 'Login' : 'Register');
 		return (
 			<div>
 				<Helmet title={pageTitle} />
-				TODO: {pageTitle}
+				<h1 className="is-size-1">{pageTitle}</h1>
+				{isLogin ? <LoginForm {...this.state} /> : <RegisterForm {...this.state} />}
 			</div>
 		);
 	}

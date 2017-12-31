@@ -17,8 +17,9 @@
 
 ## App
 
-- Remove Bootstrap and add in Bulma with Swatch (Yeti?)
 - *Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage*
+  - Finish registration page
+  - Call update state funcs from login/register to keep username/password values between toggles
 - Include accounts logic (onCreate, merge, etc.?)
 - Assign users to admin
 - Create admin screens for heroes

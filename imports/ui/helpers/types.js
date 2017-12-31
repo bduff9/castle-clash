@@ -6,6 +6,18 @@ export const authenticatedType = bool;
 
 export const componentType = func;
 
+export const formikErrorType = object;
+
+export const formikErrorsType = object;
+
+export const handleBlurType = func;
+
+export const handleChangeType = func;
+
+export const handleResetType = func;
+
+export const handleSubmitType = func;
+
 export const locationType = shape({
 	hash: string.isRequired,
 	key: string,
@@ -26,6 +38,8 @@ export const historyType = shape({
 	replace: func.isRequired
 });
 
+export const isSubmittingType = func;
+
 export const loggingInType = bool;
 
 export const matchType = shape({
@@ -37,6 +51,10 @@ export const matchType = shape({
 
 export const pageReadyType = bool;
 
+export const touchedType = object;
+
 export const userType = object; //TODO: can we make this more specific?
 
 export const userIDType = string;
+
+export const valuesType = object;
