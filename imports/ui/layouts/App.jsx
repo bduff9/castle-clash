@@ -14,10 +14,10 @@ const background = Math.floor(Math.random() * 4) + 1;
 const AppGrid = styled.div`
 	display: grid;
 	grid-template-rows: minmax(50px, auto) 1fr;
-	grid-template-columns: minmax(200px, auto) 1fr;
+	grid-template-columns: minmax(200px, auto) 1fr minmax(200px, auto);
 	grid-template-areas:
-		"header header"
-		"sidebar maincontent";
+		"header header header"
+		"sidebar maincontent emptyspace";
 	background-image: url("/backgrounds/c${background}.png");
 	background-size: cover;
 `;
