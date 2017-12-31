@@ -1,5 +1,7 @@
-// Bootstrap
-@import "{}/node_modules/bootstrap/scss/bootstrap.scss";
+/*! bulmaswatch v0.6.1 | MIT License */
+@import "../node_modules/bulmaswatch/yeti/variables";
+@import "../node_modules/bulma-scss-version/bulma";
+@import "../node_modules/bulmaswatch/yeti/overrides";
 
 // Global namespace
 html,
