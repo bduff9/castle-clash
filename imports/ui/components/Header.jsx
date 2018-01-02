@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { userType } from '../helpers/types';
@@ -16,10 +17,10 @@ const HeaderEl = styled.nav`
 const Header = ({ user }) => (
 	<HeaderEl className="navbar">
 		<div className="navbar-brand">
-			<a className="navbar-item" href="/">
+			<NavLink className="navbar-item" to="/">
 				<i className="fa fa-gamepad fa-2x"></i>
 				&nbsp; CC DB
-			</a>
+			</NavLink>
 		</div>
 		<div className="navbar-menu">
 			<div className="navbar-start"></div>

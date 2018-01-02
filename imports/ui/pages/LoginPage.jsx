@@ -34,8 +34,30 @@ class LoginPage extends Component {
 		return (
 			<div>
 				<Helmet title={pageTitle} />
-				<h1 className="is-size-1">{pageTitle}</h1>
+				<h1 className="is-size-1 has-text-centered">{pageTitle}</h1>
 				{isLogin ? <LoginForm {...this.state} /> : <RegisterForm {...this.state} />}
+				<hr />
+				<h4 className="has-text-centered">{pageTitle} quickly with:</h4>
+				<div className="buttons">
+					<button className="button is-primary">
+						<span className="icon">
+							<i className="fa fa-facebook"></i>
+						</span>
+						<span>Facebook</span>
+					</button>
+					<button className="button is-danger">
+						<span className="icon">
+							<i className="fa fa-google"></i>
+						</span>
+						<span>Google</span>
+					</button>
+					<button className="button is-info">
+						<span className="icon">
+							<i className="fa fa-twitter"></i>
+						</span>
+						<span>Twitter</span>
+					</button>
+				</div>
 			</div>
 		);
 	}

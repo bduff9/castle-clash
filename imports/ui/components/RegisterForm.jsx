@@ -23,6 +23,46 @@ const RegisterForm = ({
 }) =>
 	<Form>
 		<div className="field">
+			<label className="label" htmlFor="first_name">Name</label>
+			<div className="field-body">
+				<div className="field">
+					<div className="control has-icons-left">
+						<input
+							className={`input ${getFieldStatus('first_name', errors, touched)}`}
+							id="first_name"
+							name="first_name"
+							placeholder="First Name"
+							type="text"
+							value={values.first_name}
+							onBlur={handleBlur}
+							onChange={handleChange} />
+						<span className="icon is-small is-left">
+							<i className="fa fa-address-card"></i>
+						</span>
+					</div>
+				</div>
+				<div className="field">
+					<div className="control has-icons-left">
+						<input
+							className={`input ${getFieldStatus('last_name', errors, touched)}`}
+							id="last_name"
+							name="last_name"
+							placeholder="Last Name"
+							type="text"
+							value={values.last_name}
+							onBlur={handleBlur}
+							onChange={handleChange} />
+						<span className="icon is-small is-left">
+							<i className="fa fa-address-card"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			{errors.first_name && touched.first_name && <p className="help is-danger">{errors.first_name}</p>}
+			{errors.last_name && touched.last_name && <p className="help is-danger">{errors.last_name}</p>}
+		</div>
+
+		<div className="field">
 			<label className="label" htmlFor="email">Email</label>
 			<div className="control has-icons-left">
 				<input
@@ -60,62 +100,34 @@ const RegisterForm = ({
 			{errors.password && touched.password && <p className="help is-danger">{errors.password}</p>}
 		</div>
 
+		<div className="field">
+			<label className="label" htmlFor="confirmPassword">Confirm Password</label>
+			<div className="control has-icons-left">
+				<input
+					className={`input ${getFieldStatus('confirmPassword', errors, touched)}`}
+					id="confirmPassword"
+					name="confirmPassword"
+					placeholder="Confirm Password"
+					type="password"
+					value={values.confirmPassword}
+					onBlur={handleBlur}
+					onChange={handleChange} />
+				<span className="icon is-small is-left">
+					<i className="fa fa-lock"></i>
+				</span>
+			</div>
+			{errors.confirmPassword && touched.confirmPassword && <p className="help is-danger">{errors.confirmPassword}</p>}
+		</div>
+
 		<div className="field is-grouped">
 			<div className ="control">
-				<button className={`button is-primary${isSubmitting ? ' is-loading' : ''}`} type="submit">Login</button>
+				<button className={`button is-primary${isSubmitting ? ' is-loading' : ''}`} type="submit">Register</button>
 			</div>
 			<div className ="control">
 				<NavLink className="button is-link" to="/login">Login</NavLink>
 			</div>
 		</div>
 		{error && error.message && <p className="help is-danger">{error.message}</p>}
-
-{/*
-		<Field>
-			<Label>Confirm Password</Label>
-			<Control>
-				<Input
-					isColor={getFormControlOutlineColor({ hasError: errors.confirmPassword, isTouched: touched.confirmPassword })}
-					type="password"
-					name="confirmPassword"
-					value={values.confirmPassword}
-					onChange={handleChange}
-					onBlur={handleBlur}
-					placeholder="Confirm Password" />
-			</Control>
-			{errors.confirmPassword && touched.confirmPassword && <Help isColor="danger">{errors.confirmPassword}</Help>}
-		</Field>
-
-		<Field>
-			<Label>First Name</Label>
-			<Control>
-				<Input
-					isColor={getFormControlOutlineColor({ hasError: errors.first_name, isTouched: touched.last_name })}
-					type="text"
-					name="first_name"
-					value={values.first_name}
-					onChange={handleChange}
-					onBlur={handleBlur}
-					placeholder="First Name" />
-			</Control>
-			{errors.first_name && touched.first_name && <Help isColor="danger">{errors.first_name}</Help>}
-		</Field>
-
-		<Field>
-			<Label>Last Name</Label>
-			<Control>
-				<Input
-					isColor={getFormControlOutlineColor({ hasError: errors.last_name, isTouched: touched.last_name })}
-					type="text"
-					name="last_name"
-					value={values.last_name}
-					onChange={handleChange}
-					onBlur={handleBlur}
-					placeholder="Last Name" />
-			</Control>
-			{errors.last_name && touched.last_name && <Help isColor="danger">{errors.last_name}</Help>}
-		</Field>
-*/}
 	</Form>;
 
 RegisterForm.propTypes = {

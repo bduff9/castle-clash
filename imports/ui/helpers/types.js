@@ -38,7 +38,7 @@ export const historyType = shape({
 	replace: func.isRequired
 });
 
-export const isSubmittingType = func;
+export const isSubmittingType = bool;
 
 export const loggingInType = bool;
 
