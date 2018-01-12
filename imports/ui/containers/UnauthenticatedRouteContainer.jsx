@@ -10,7 +10,7 @@ import {
 } from '../helpers/types';
 
 /**
- * @typedef {Object} UnauthenticatedRouteContainerProps
+ * @typedef {{ authenticated: Boolean, component: Object, exact: Boolean, location?: Object, loggingIn: Boolean, path: String }} UnauthenticatedRouteContainerProps
  * @type {React.SFC<UnauthenticatedRouteContainerProps>}
  */
 const UnauthenticatedRouteContainer = ({

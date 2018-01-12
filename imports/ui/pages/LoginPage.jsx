@@ -32,34 +32,38 @@ class LoginPage extends Component {
 	render () {
 		/** @type {object} */
 		const { match } = this.props;
-		const isLogin = (match.path === '/login');
-		const pageTitle = (isLogin ? 'Login' : 'Register');
+		const isLogin = match.path === '/login';
+		const pageTitle = isLogin ? 'Login' : 'Register';
 		return (
 			<div>
 				<Helmet title={pageTitle} />
 				<h1 className="is-size-1 has-text-centered">{pageTitle}</h1>
-				{isLogin ? <LoginForm {...this.state} /> : <RegisterForm {...this.state} />}
+				{isLogin ? (
+					<LoginForm {...this.state} />
+				) : (
+					<RegisterForm {...this.state} />
+				)}
 				<hr />
 				<h4 className="has-text-centered">{pageTitle} quickly with:</h4>
 				<div className="buttons">
 					<OAuthButton color="is-primary" service="Facebook" />
 					<button className="button is-primary">
 						<span className="icon">
-							<i className="fa fa-facebook"></i>
+							<i className="fa fa-facebook" />
 						</span>
 						<span>Facebook</span>
 					</button>
 					<OAuthButton color="is-danger" service="Google" />
 					<button className="button is-danger">
 						<span className="icon">
-							<i className="fa fa-google"></i>
+							<i className="fa fa-google" />
 						</span>
 						<span>Google</span>
 					</button>
 					<OAuthButton color="is-info" service="Twitter" />
 					<button className="button is-info">
 						<span className="icon">
-							<i className="fa fa-twitter"></i>
+							<i className="fa fa-twitter" />
 						</span>
 						<span>Twitter</span>
 					</button>

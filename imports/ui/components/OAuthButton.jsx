@@ -9,7 +9,7 @@ import { displayError } from '../helpers/errors';
 import { colorType, onClickType, serviceType } from '../helpers/types';
 
 /**
- * @typedef {{ color: String, service: String, onClick: Function }} OAuthButtonProps
+ * @typedef {{ color: String, service: String, onClick?: Function }} OAuthButtonProps
  * @type {React.SFC<OAuthButtonProps>}
  */
 const OAuthButton = ({ color, service, onClick }) => {

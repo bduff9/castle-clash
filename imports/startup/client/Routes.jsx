@@ -4,7 +4,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 
-import { authenticatedType, loggingInType, userType } from '../../ui/helpers/types';
+import {
+	authenticatedType,
+	loggingInType,
+	userType
+} from '../../ui/helpers/types';
 import AdminRouteContainer from '../../ui/containers/AdminRouteContainer';
 import AuthenticatedRouteContainer from '../../ui/containers/AuthenticatedRouteContainer';
 import UnauthenticatedRouteContainer from '../../ui/containers/UnauthenticatedRouteContainer';
@@ -19,26 +23,55 @@ import VerifyEmailPage from '../../ui/pages/VerifyEmailPage';
 
 const MainContent = styled.section`
 	grid-area: maincontent;
-	background-color: #FFF;
+	background-color: #fff;
 	opacity: 0.75;
 	padding: 1.5rem;
 `;
 
 /**
- * @typedef {{}} RoutesProps
+ * @typedef {{ authenticated: Boolean, loggingIn: Boolean, user: Object }} RoutesProps
  * @type {React.SFC<RoutesProps>}
  */
-const Routes = (props) => (
+const Routes = props => (
 	<MainContent>
 		<Switch>
-			<UnauthenticatedRouteContainer exact path="/login" component={LoginPage} {...props} />
-			<UnauthenticatedRouteContainer exact path="/register" component={LoginPage} {...props} />
+			<UnauthenticatedRouteContainer
+				exact
+				path="/login"
+				component={LoginPage}
+				{...props}
+			/>
+			<UnauthenticatedRouteContainer
+				exact
+				path="/register"
+				component={LoginPage}
+				{...props}
+			/>
 			<Route exact path="/logout" render={logoutUser} {...props} />
-			<Route exact path="/reset-password/:token" component={ResetPasswordPage} {...props} />
-			<UnauthenticatedRouteContainer exact path="/verify-email/:token" component={VerifyEmailPage} {...props} />
+			<Route
+				exact
+				path="/reset-password/:token"
+				component={ResetPasswordPage}
+				{...props}
+			/>
+			<UnauthenticatedRouteContainer
+				exact
+				path="/verify-email/:token"
+				component={VerifyEmailPage}
+				{...props}
+			/>
 			<AdminRouteContainer path="/admin" component={AdminPage} {...props} />
-			<AuthenticatedRouteContainer path="/users" component={UsersPage} {...props} />
-			<AuthenticatedRouteContainer exact path="/" component={DashboardPage} {...props} />
+			<AuthenticatedRouteContainer
+				path="/users"
+				component={UsersPage}
+				{...props}
+			/>
+			<AuthenticatedRouteContainer
+				exact
+				path="/"
+				component={DashboardPage}
+				{...props}
+			/>
 			<Route component={NotFoundPage} {...props} />
 		</Switch>
 	</MainContent>
