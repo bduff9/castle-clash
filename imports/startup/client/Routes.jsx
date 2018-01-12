@@ -24,7 +24,7 @@ import VerifyEmailPage from '../../ui/pages/VerifyEmailPage';
 const MainContent = styled.section`
 	grid-area: maincontent;
 	background-color: #fff;
-	opacity: 0.75;
+	opacity: 0.9;
 	padding: 1.5rem;
 `;
 

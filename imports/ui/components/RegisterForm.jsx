@@ -3,23 +3,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Accounts } from 'meteor/accounts-base';
+// @ts-ignore
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Form, withFormik } from 'formik';
 import Yup, { addMethod, string, ref } from 'yup';
 
-import { formikErrorType, formikErrorsType, handleBlurType, handleChangeType, handleResetType, handleSubmitType, isSubmittingType, touchedType, valuesType } from '../helpers/types';
+import { formikErrorType, formikErrorsType, handleBlurType, handleChangeType, handleResetType, handleSubmitType, isSubmittingType, touchedType, updateEmailType, updatePasswordType, valuesType } from '../helpers/types';
 import { getFieldStatus } from '../helpers/forms';
 
+/**
+ * @typedef {{ error: Object, errors: Object, isSubmitting: Boolean, touched: Object, values: Object, handleBlur: React.FocusEventHandler<HTMLInputElement>, handleChange: React.ChangeEventHandler<HTMLInputElement>, handleReset: Function, handleSubmit: Function, updateEmail: React.ChangeEventHandler<HTMLInputElement>, updatePassword: React.ChangeEventHandler<HTMLInputElement> }} RegisterFormProps
+ * @type {React.SFC<RegisterFormProps>}
+ */
 const RegisterForm = ({
-	values,
-	touched,
-	errors,
 	error,
-	handleChange,
-	handleSubmit,
+	errors,
+	isSubmitting,
+	touched,
+	values,
 	handleBlur,
+	handleChange,
 	handleReset,
-	isSubmitting
+	handleSubmit,
+	updateEmail,
+	updatePassword
 }) =>
 	<Form>
 		<div className="field">
@@ -73,7 +80,7 @@ const RegisterForm = ({
 					type="email"
 					value={values.email}
 					onBlur={handleBlur}
-					onChange={handleChange} />
+					onChange={(ev) => { handleChange(ev); updateEmail(ev); }} />
 				<span className="icon is-small is-left">
 					<i className="fa fa-user"></i>
 				</span>
@@ -92,7 +99,7 @@ const RegisterForm = ({
 					type="password"
 					value={values.password}
 					onBlur={handleBlur}
-					onChange={handleChange} />
+					onChange={(ev) => { handleChange(ev); updatePassword(ev); }} />
 				<span className="icon is-small is-left">
 					<i className="fa fa-lock"></i>
 				</span>
@@ -139,7 +146,9 @@ RegisterForm.propTypes = {
 	handleBlur: handleBlurType.isRequired,
 	handleChange: handleChangeType.isRequired,
 	handleReset: handleResetType.isRequired,
-	handleSubmit: handleSubmitType.isRequired
+	handleSubmit: handleSubmitType.isRequired,
+	updateEmail: updateEmailType.isRequired,
+	updatePassword: updatePasswordType
 };
 
 addMethod(string, 'sameAs', function (ref, message) {

@@ -17,7 +17,7 @@ const OAuthButton = ({ color, service, onClick }) => {
 		const options = {
 			requestPermissions: ['email']
 		};
-		onClick(ev);
+		if (onClick) onClick(ev);
 		Meteor[`loginWith${service}`](options, err => {
 			if (err) {
 				displayError(err, { title: err.message, icon: 'danger' });
@@ -43,7 +43,7 @@ const OAuthButton = ({ color, service, onClick }) => {
 
 OAuthButton.propTypes = {
 	color: colorType,
-	service: serviceType,
+	service: serviceType.isRequired,
 	onClick: onClickType
 };
 

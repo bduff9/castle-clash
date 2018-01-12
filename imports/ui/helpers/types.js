@@ -69,6 +69,10 @@ export const serviceType = oneOf(['Facebook', 'Google', 'Twitter']);
 
 export const touchedType = object;
 
+export const updateEmailType = func;
+
+export const updatePasswordType = func;
+
 export const userType = object;
 
 export const userIDType = string;
