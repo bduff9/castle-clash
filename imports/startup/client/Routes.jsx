@@ -24,6 +24,10 @@ const MainContent = styled.section`
 	padding: 1.5rem;
 `;
 
+/**
+ * @typedef {{}} RoutesProps
+ * @type {React.SFC<RoutesProps>}
+ */
 const Routes = (props) => (
 	<MainContent>
 		<Switch>

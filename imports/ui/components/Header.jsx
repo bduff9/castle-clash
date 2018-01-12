@@ -14,6 +14,10 @@ const HeaderEl = styled.nav`
 	padding-left: 20px;
 `;
 
+/**
+ * @typedef {{ user: Object }} HeaderProps
+ * @type {React.SFC<HeaderProps>}
+ */
 const Header = ({ user }) => (
 	<HeaderEl className="navbar">
 		<div className="navbar-brand">
