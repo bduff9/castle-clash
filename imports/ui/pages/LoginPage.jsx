@@ -6,10 +6,11 @@ import Helmet from 'react-helmet';
 import { matchType } from '../helpers/types';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
+import OAuthButton from '../components/OAuthButton';
 
 class LoginPage extends Component {
-	constructor () {
-		super();
+	constructor (props) {
+		super(props);
 		this.state = {
 			email: '',
 			password: ''
@@ -22,12 +23,14 @@ class LoginPage extends Component {
 		const value = ev.target.value;
 		this.setState({ email: value });
 	}
+
 	_updatePassword (ev) {
 		const value = ev.target.value;
 		this.setState({ password: value });
 	}
 
 	render () {
+		/** @type {object} */
 		const { match } = this.props;
 		const isLogin = (match.path === '/login');
 		const pageTitle = (isLogin ? 'Login' : 'Register');
@@ -39,18 +42,21 @@ class LoginPage extends Component {
 				<hr />
 				<h4 className="has-text-centered">{pageTitle} quickly with:</h4>
 				<div className="buttons">
+					<OAuthButton color="is-primary" service="Facebook" />
 					<button className="button is-primary">
 						<span className="icon">
 							<i className="fa fa-facebook"></i>
 						</span>
 						<span>Facebook</span>
 					</button>
+					<OAuthButton color="is-danger" service="Google" />
 					<button className="button is-danger">
 						<span className="icon">
 							<i className="fa fa-google"></i>
 						</span>
 						<span>Google</span>
 					</button>
+					<OAuthButton color="is-info" service="Twitter" />
 					<button className="button is-info">
 						<span className="icon">
 							<i className="fa fa-twitter"></i>
