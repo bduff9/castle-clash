@@ -8,6 +8,7 @@ import { Form, withFormik } from 'formik';
 import Yup, { addMethod, string, ref } from 'yup';
 
 import { formikErrorType, formikErrorsType, handleBlurType, handleChangeType, handleResetType, handleSubmitType, isSubmittingType, touchedType, valuesType } from '../helpers/types';
+import { handleError } from '../helpers/errors';
 import { getFieldStatus } from '../helpers/forms';
 
 const RegisterForm = ({
@@ -124,7 +125,7 @@ const RegisterForm = ({
 				<button className={`button is-primary${isSubmitting ? ' is-loading' : ''}`} type="submit">Register</button>
 			</div>
 			<div className ="control">
-				<NavLink className="button is-link" to="/login">Login</NavLink>
+				<NavLink className="button is-link" to="/login">I already have an account</NavLink>
 			</div>
 		</div>
 		{error && error.message && <p className="help is-danger">{error.message}</p>}
@@ -171,8 +172,7 @@ export default withFormik({
 		password: values.password,
 		profile: {
 			first_name: values.first_name,
-			last_name: values.last_name,
-			if_forgot: values.password
+			last_name: values.last_name
 		}
 	}),
 
@@ -182,9 +182,9 @@ export default withFormik({
 				setError(err);
 				setSubmitting(false);
 				if (err.error && err.reason) {
-					//displayError(err, { title: err.error, message: err.reason, type: 'warning' });
+					handleError(err, { title: err.error, message: err.reason, type: 'warning' });
 				} else {
-					//displayError(err);
+					handleError(err);
 				}
 			} else {
 				Bert.alert({

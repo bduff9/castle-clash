@@ -65,7 +65,7 @@ const LoginForm = ({
 				<button className={`button is-primary${isSubmitting ? ' is-loading' : ''}`} type="submit">Login</button>
 			</div>
 			<div className ="control">
-				<NavLink className="button is-link" to="/register">Register</NavLink>
+				<NavLink className="button is-link" to="/register">I need to register</NavLink>
 			</div>
 		</div>
 		{error && error.message && <p className="help is-danger">{error.message}</p>}
