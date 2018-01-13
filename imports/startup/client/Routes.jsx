@@ -20,8 +20,9 @@ import VerifyEmailPage from '../../ui/pages/VerifyEmailPage';
 const MainContent = styled.section`
 	grid-area: maincontent;
 	background-color: #FFF;
-	opacity: 0.75;
+	opacity: 0.94;
 	padding: 1.5rem;
+	overflow: auto;
 `;
 
 const Routes = (props) => (
