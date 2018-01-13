@@ -1,8 +1,20 @@
 'use strict';
 
-import { array, bool, func, number, object, oneOfType, shape, string } from 'prop-types';
+import {
+	array,
+	bool,
+	func,
+	number,
+	object,
+	oneOf,
+	oneOfType,
+	shape,
+	string
+} from 'prop-types';
 
 export const authenticatedType = bool;
+
+export const colorType = string;
 
 export const componentType = func;
 
@@ -49,11 +61,19 @@ export const matchType = shape({
 	url: string.isRequired
 });
 
+export const onClickType = func;
+
 export const pageReadyType = bool;
+
+export const serviceType = oneOf(['Facebook', 'Google', 'Twitter']);
 
 export const touchedType = object;
 
-export const userType = object; //TODO: can we make this more specific?
+export const updateEmailType = func;
+
+export const updatePasswordType = func;
+
+export const userType = object;
 
 export const userIDType = string;
 
