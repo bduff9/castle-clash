@@ -1,9 +1,18 @@
-/* global alert */
 'use strict';
 
-export const displayError = (error) => {
-	if (error) {
-		// It would be better to not alert the error here but inform the user in some more subtle way
-		alert(error.error); // eslint-disable-line no-alert
+import { Meteor } from 'meteor/meteor';
+
+export const handleError = (err, opts = {}, cb = null, hide = false) => {
+	let sweetAlert;
+	if (!err) return;
+	if (Meteor.isClient && !hide) {
+		sweetAlert = require('sweetalert');
+		opts.title = opts.title || 'Error Occurred';
+		opts.text = opts.text || err.reason || err.message || err.error || 'Something went wrong, please try again';
+		opts.icon = opts.icon || opts.type || 'error';
+		sweetAlert(opts).then(cb);
+	} else {
+		console.error(opts.title || 'Caught error', err);
+		if (cb) cb();
 	}
 };
