@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"checkJs": true,
+		"experimentalDecorators": true,
+		"types": [
+			"node"
+		]
+	}
+}

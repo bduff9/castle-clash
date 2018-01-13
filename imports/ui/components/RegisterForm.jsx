@@ -3,7 +3,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Accounts } from 'meteor/accounts-base';
-// @ts-ignore
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Form, withFormik } from 'formik';
 import Yup, { addMethod, string, ref } from 'yup';

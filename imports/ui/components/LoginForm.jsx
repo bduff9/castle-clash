@@ -3,12 +3,23 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// @ts-ignore
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Form, withFormik } from 'formik';
 import Yup from 'yup';
 
-import { formikErrorType, formikErrorsType, handleBlurType, handleChangeType, handleResetType, handleSubmitType, isSubmittingType, touchedType, updateEmailType, updatePasswordType, valuesType } from '../helpers/types';
+import {
+	formikErrorType,
+	formikErrorsType,
+	handleBlurType,
+	handleChangeType,
+	handleResetType,
+	handleSubmitType,
+	isSubmittingType,
+	touchedType,
+	updateEmailType,
+	updatePasswordType,
+	valuesType
+} from '../helpers/types';
 import { getFieldStatus } from '../helpers/forms';
 
 /**
@@ -27,10 +38,12 @@ const LoginForm = ({
 	handleSubmit,
 	updateEmail,
 	updatePassword
-}) =>
+}) => (
 	<Form>
 		<div className="field">
-			<label className="label" htmlFor="email">Email</label>
+			<label className="label" htmlFor="email">
+				Email
+			</label>
 			<div className="control has-icons-left">
 				<input
 					className={`input ${getFieldStatus('email', errors, touched)}`}
@@ -40,16 +53,23 @@ const LoginForm = ({
 					type="email"
 					value={values.email}
 					onBlur={handleBlur}
-					onChange={(ev) => { handleChange(ev); updateEmail(ev); }} />
+					onChange={ev => {
+						handleChange(ev);
+						updateEmail(ev);
+					}}
+				/>
 				<span className="icon is-small is-left">
-					<i className="fa fa-user"></i>
+					<i className="fa fa-user" />
 				</span>
 			</div>
-			{errors.email && touched.email && <p className="help is-danger">{errors.email}</p>}
+			{errors.email &&
+				touched.email && <p className="help is-danger">{errors.email}</p>}
 		</div>
 
 		<div className="field">
-			<label className="label" htmlFor="password">Password</label>
+			<label className="label" htmlFor="password">
+				Password
+			</label>
 			<div className="control has-icons-left">
 				<input
 					className={`input ${getFieldStatus('password', errors, touched)}`}
@@ -59,24 +79,37 @@ const LoginForm = ({
 					type="password"
 					value={values.password}
 					onBlur={handleBlur}
-					onChange={(ev) => { handleChange(ev); updatePassword(ev); }} />
+					onChange={ev => {
+						handleChange(ev);
+						updatePassword(ev);
+					}}
+				/>
 				<span className="icon is-small is-left">
-					<i className="fa fa-lock"></i>
+					<i className="fa fa-lock" />
 				</span>
 			</div>
-			{errors.password && touched.password && <p className="help is-danger">{errors.password}</p>}
+			{errors.password &&
+				touched.password && <p className="help is-danger">{errors.password}</p>}
 		</div>
 
 		<div className="field is-grouped">
-			<div className ="control">
-				<button className={`button is-primary${isSubmitting ? ' is-loading' : ''}`} type="submit">Login</button>
+			<div className="control">
+				<button
+					className={`button is-primary${isSubmitting ? ' is-loading' : ''}`}
+					type="submit">
+					Login
+				</button>
 			</div>
-			<div className ="control">
-				<NavLink className="button is-link" to="/register">I need to register</NavLink>
+			<div className="control">
+				<NavLink className="button is-link" to="/register">
+					I need to register
+				</NavLink>
 			</div>
 		</div>
-		{error && error.message && <p className="help is-danger">{error.message}</p>}
-	</Form>;
+		{error &&
+			error.message && <p className="help is-danger">{error.message}</p>}
+	</Form>
+);
 
 LoginForm.propTypes = {
 	error: formikErrorType,
@@ -94,8 +127,12 @@ LoginForm.propTypes = {
 
 export default withFormik({
 	validationSchema: Yup.object().shape({
-		email: Yup.string().email('Please enter a valid email').required('Email address is required'),
-		password: Yup.string().min(6, 'Password must be at least 6 characters').required('Please enter a password')
+		email: Yup.string()
+			.email('Please enter a valid email')
+			.required('Email address is required'),
+		password: Yup.string()
+			.min(6, 'Password must be at least 6 characters')
+			.required('Please enter a password')
 	}),
 
 	mapPropsToValues: ({ email, password }) => ({
@@ -122,5 +159,5 @@ export default withFormik({
 				});
 			}
 		});
-	},
+	}
 })(LoginForm);
