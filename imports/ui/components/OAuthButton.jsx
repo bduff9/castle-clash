@@ -5,7 +5,7 @@ import React from 'react';
 // @ts-ignore
 import { Bert } from 'meteor/themeteorchef:bert';
 
-import { displayError } from '../helpers/errors';
+import { handleError } from '../helpers/errors';
 import { colorType, onClickType, serviceType } from '../helpers/types';
 
 /**
@@ -20,7 +20,7 @@ const OAuthButton = ({ color, service, onClick }) => {
 		if (onClick) onClick(ev);
 		Meteor[`loginWith${service}`](options, err => {
 			if (err) {
-				displayError(err, { title: err.message, icon: 'danger' });
+				handleError(err, { title: err.message });
 			} else {
 				Bert.alert({
 					message: 'Welcome!',

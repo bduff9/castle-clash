@@ -7,6 +7,8 @@ import { Bert } from 'meteor/themeteorchef:bert';
 import { Form, withFormik } from 'formik';
 import Yup from 'yup';
 
+import { handleError } from '../helpers/errors';
+import { getFieldStatus } from '../helpers/forms';
 import {
 	formikErrorType,
 	formikErrorsType,
@@ -20,7 +22,6 @@ import {
 	updatePasswordType,
 	valuesType
 } from '../helpers/types';
-import { getFieldStatus } from '../helpers/forms';
 
 /**
  * @typedef {{ error: Object, errors: Object, isSubmitting: Boolean, touched: Object, values: Object, handleBlur: React.FocusEventHandler<HTMLInputElement>, handleChange: React.ChangeEventHandler<HTMLInputElement>, handleReset: Function, handleSubmit: Function, updateEmail: React.ChangeEventHandler<HTMLInputElement>, updatePassword: React.ChangeEventHandler<HTMLInputElement> }} LoginFormProps
@@ -140,16 +141,16 @@ export default withFormik({
 		password
 	}),
 
-	handleSubmit: (payload, { props, setError, setSubmitting }) => {
+	handleSubmit: (payload, { props, setErrors, setSubmitting }) => {
 		const { email, password } = payload;
 		Meteor.loginWithPassword(email, password, err => {
 			if (err) {
-				setError(err);
+				setErrors(err);
 				setSubmitting(false);
 				if (err.reason === 'User not found') {
-					//displayError(err, { title: 'User not found!  Did you mean to register using the button at the bottom right of this page instead?', type: 'warning' });
+					handleError(err, { title: 'User not found!  Did you mean to register using the button at the bottom right of this page instead?', icon: 'warning' });
 				} else {
-					//displayError(err, { title: err.reason, type: 'warning' });
+					handleError(err, { title: err.reason, icon: 'warning' });
 				}
 			} else {
 				Bert.alert({

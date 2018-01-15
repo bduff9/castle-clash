@@ -3,7 +3,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 
-import { handleError } from '../../ui/helpers/errors';
 import User from '../../api/users/users';
 
 Meteor.startup(() => {
@@ -21,12 +20,12 @@ Meteor.startup(() => {
 		//TODO: do we also need to check for someone signed in?
 		//TODO: https://forums.meteor.com/t/accounts-password-merge-with-accounts-google-2017-way/35590/2
 		if (user.services.facebook) {
-			first_name = user.services.facebook.first_name;
-			last_name = user.services.facebook.last_name;
+			firstName = user.services.facebook.first_name;
+			lastName = user.services.facebook.last_name;
 			email = user.services.facebook.email;
 		} else if (user.services.google) {
-			first_name = user.services.google.given_name;
-			last_name = user.services.google.family_name;
+			firstName = user.services.google.given_name;
+			lastName = user.services.google.family_name;
 			email = user.services.google.email;
 		} else {
 			email = options.email;
@@ -35,8 +34,8 @@ Meteor.startup(() => {
 		user.profile = options.profile || {};
 		user.email = email;
 		user.phone_number = '';
-		user.first_name = first_name;
-		user.last_name = last_name;
+		user.first_name = firstName;
+		user.last_name = lastName;
 		user.verified = verified;
 		user.done_registering = false;
 		user.is_admin = false;

@@ -14,7 +14,7 @@ export const handleError = (err, opts = {}, cb = null, hide = false) => {
 			err.message ||
 			err.error ||
 			'Something went wrong, please try again';
-		opts.icon = opts.icon || opts.type || 'error';
+		opts.icon = opts.icon || 'error';
 		sweetAlert(opts).then(cb);
 	} else {
 		console.error(opts.title || 'Caught error', err);

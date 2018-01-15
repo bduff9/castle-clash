@@ -252,16 +252,16 @@ export default withFormik({
 		}
 	}),
 
-	handleSubmit: (payload, { props, setError, setSubmitting }) => {
+	handleSubmit: (payload, { props, setErrors, setSubmitting }) => {
 		Accounts.createUser(payload, err => {
 			if (err && err.reason !== 'Login forbidden') {
-				setError(err);
+				setErrors(err);
 				setSubmitting(false);
 				if (err.error && err.reason) {
 					handleError(err, {
 						title: err.error,
 						message: err.reason,
-						type: 'warning'
+						icon: 'warning'
 					});
 				} else {
 					handleError(err);

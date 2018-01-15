@@ -19,6 +19,7 @@
 ## App
 
 * _Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage_
+  * Troubleshoot "Maximum call stack size exceeded" by attaching multiple schemas to users (<https://github.com/aldeed/meteor-collection2#attaching-multiple-schemas-to-the-same-collection>)
   * Finish registration page
 * Include accounts logic (onCreate, merge, etc.?)
 * Assign users to admin
