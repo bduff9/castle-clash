@@ -7,6 +7,7 @@
 
 ## Database
 
+* Indexes (<https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/>)
 * Figure out needed tables
   * Create files and definitions for:
     * Heroes
@@ -18,10 +19,10 @@
 
 ## App
 
+* Fix menu dividers (remove from last child)
 * _Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage_
-  * Troubleshoot "Maximum call stack size exceeded" by attaching multiple schemas to users (<https://github.com/aldeed/meteor-collection2#attaching-multiple-schemas-to-the-same-collection>)
   * Finish registration page
-* Include accounts logic (onCreate, merge, etc.?)
+  * Include accounts logic (onCreate, merge, etc.?)
 * Assign users to admin
 * Create admin screens for heroes
 * Create basic hero entry screen

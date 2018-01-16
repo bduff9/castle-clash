@@ -13,12 +13,12 @@ import { colorType, onClickType, serviceType } from '../helpers/types';
  * @type {React.SFC<OAuthButtonProps>}
  */
 const OAuthButton = ({ color, service, onClick }) => {
-	const _oauthLogin = ev => {
+	const _oauthLogin = (ev) => {
 		const options = {
 			requestPermissions: ['email']
 		};
 		if (onClick) onClick(ev);
-		Meteor[`loginWith${service}`](options, err => {
+		Meteor[`loginWith${service}`](options, (err) => {
 			if (err) {
 				handleError(err, { title: err.message });
 			} else {

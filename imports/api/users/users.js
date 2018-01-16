@@ -48,16 +48,13 @@ Users.schema = new SimpleSchema({
 	},
 	profile: {
 		type: Object,
-		optional: true
+		blackbox: true
 	},
 	// Make sure this services field is in your schema if you're using any of the accounts packages
 	services: {
 		type: Object,
 		optional: true,
 		blackbox: true
-	},
-	'roles.$': {
-		type: String
 	},
 	// In order to avoid an 'Exception in setInterval callback' from Meteor
 	heartbeat: {
@@ -66,17 +63,30 @@ Users.schema = new SimpleSchema({
 	},
 	first_name: String,
 	last_name: String,
-	email: /\S+@\S+\.\S+/,
-	game_name: String,
-	line_name: String,
+	email: {
+		type: String,
+		regEx: SimpleSchema.RegEx.Email
+	},
+	game_name: {
+		type: String,
+		optional: true
+	},
+	line_name: {
+		type: String,
+		optional: true
+	},
 	game_platform: {
 		type: String,
-		allowedValues: ['Android', 'iOS', 'Windows']
+		allowedValues: ['Android', 'iOS', 'Windows'],
+		optional: true
 	},
 	game_server: {
 		type: String,
-		allowedValues: ['Taiwan', 'US']
+		allowedValues: ['Taiwan', 'US'],
+		optional: true
 	},
+	done_registering: Boolean,
+	verified: Boolean,
 	is_admin: {
 		type: Boolean,
 		defaultValue: false
@@ -84,10 +94,18 @@ Users.schema = new SimpleSchema({
 	guild: {
 		type: String,
 		optional: true
+	},
+	phone_number: {
+		type: String,
+		regEx: /^1?(\D*\d\D*){10}$/m,
+		optional: true
 	}
 });
 
 Users.attachSchema(Users.schema);
+
+// Create indexes here for common queries
+//TODO: Users._ensureIndex({ keys }, { options });
 
 // This represents the keys from User objects that should be published to the client.
 // If we add secret properties to User objects, don't list them here to keep them private to the server.
