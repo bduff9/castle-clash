@@ -7,7 +7,6 @@
 
 ## Database
 
-* Indexes (<https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/>)
 * Figure out needed tables
   * Create files and definitions for:
     * Heroes
@@ -32,3 +31,13 @@
 * Image recognition?
   * Pixfinder <https://www.npmjs.com/package/pixfinder>
   * Maybe also OCR after we identify the areas to look in?
+
+## Performance
+
+* React
+  * Immutable JS?
+  * PureComponent and pass primitives where possible
+  * Check re-renders and implement shouldComponentUpdate (<https://blog.logrocket.com/make-react-fast-again-part-1-performance-timeline-f7f39f676f58>)
+  * LogRocket?
+* mongodb
+  * Indexes (<https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/>)
