@@ -13,6 +13,7 @@ Meteor.startup(() => {
 		let first_name = EMPTY_VAL;
 		let last_name = EMPTY_VAL;
 		let email = EMPTY_VAL;
+		let profile = options.profile || {};
 		let verified = true;
 		let firstName;
 		let lastName;
@@ -29,9 +30,11 @@ Meteor.startup(() => {
 			email = user.services.google.email;
 		} else {
 			email = options.email;
+			firstName = profile.first_name;
+			lastName = profile.last_name;
 			verified = false;
 		}
-		user.profile = options.profile || {};
+		user.profile = profile;
 		user.email = email;
 		user.phone_number = '';
 		user.first_name = firstName;

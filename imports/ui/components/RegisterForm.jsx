@@ -243,16 +243,10 @@ export default withFormik({
 		last_name: ''
 	}),
 
-	mapValuesToPayload: values => ({
-		email: values.email,
-		password: values.password,
-		profile: {
-			first_name: values.first_name,
-			last_name: values.last_name
-		}
-	}),
+	handleSubmit: (values, { props, setErrors, setSubmitting }) => {
+		const { email, password, confirmPassword: UUconfirmPassword, ...profile } = values,
+				payload = { email, password, profile };
 
-	handleSubmit: (payload, { props, setErrors, setSubmitting }) => {
 		Accounts.createUser(payload, err => {
 			if (err && err.reason !== 'Login forbidden') {
 				setErrors(err);
