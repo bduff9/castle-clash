@@ -40,7 +40,6 @@ const Header = ({ user }) => (
 				:
 				(
 					<div className="navbar-end">
-						<HeaderNavLink className="navbar-item" to="/fdhbjska">404 Page</HeaderNavLink>
 						<HeaderNavLink className="navbar-item" to="/login">Login</HeaderNavLink>
 						<HeaderNavLink className="navbar-item" to="/register">Register</HeaderNavLink>
 					</div>
