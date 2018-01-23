@@ -18,7 +18,6 @@
 
 ## App
 
-* Fix menu dividers (remove from last child)
 * _Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage_
   * Finish registration page
   * Include accounts logic (onCreate, merge, etc.?)
