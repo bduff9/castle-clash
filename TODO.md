@@ -20,6 +20,7 @@
 
 * _Create basic sign in (Password, Google, Facebook, Twitter) in LoginPage_
   * Finish registration page
+    * Send verify email on register
   * Include accounts logic (onCreate, merge, etc.?)
 * Assign users to admin
 * Create admin screens for heroes
