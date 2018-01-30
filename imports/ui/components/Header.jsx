@@ -30,18 +30,18 @@ const Header = ({ user }) => (
 			<div className="navbar-start"></div>
 			{user ? (
 				<div className="navbar-end">
-					<HeaderNavLink className="navbar-item" to="/">Home</HeaderNavLink>
-					<HeaderNavLink className="navbar-item" to="/users/heroes">My Heroes</HeaderNavLink>
-					<HeaderNavLink className="navbar-item" to="/users/edit">My Profile</HeaderNavLink>
-					{user.is_admin ? <HeaderNavLink className="navbar-item" to="/admin">Admin</HeaderNavLink> : null}
-					<HeaderNavLink className="navbar-item" to="/logout">Logout</HeaderNavLink>
+					<HeaderNavLink className="navbar-item" exact to="/">Home</HeaderNavLink>
+					<HeaderNavLink className="navbar-item" exact to="/users/heroes">My Heroes</HeaderNavLink>
+					<HeaderNavLink className="navbar-item" exact to="/users/edit">My Profile</HeaderNavLink>
+					{user.is_admin ? <HeaderNavLink className="navbar-item" exact to="/admin">Admin</HeaderNavLink> : null}
+					<HeaderNavLink className="navbar-item" exact to="/logout">Logout</HeaderNavLink>
 				</div>
 			)
 				:
 				(
 					<div className="navbar-end">
-						<HeaderNavLink className="navbar-item" to="/login">Login</HeaderNavLink>
-						<HeaderNavLink className="navbar-item" to="/register">Register</HeaderNavLink>
+						<HeaderNavLink className="navbar-item" exact to="/login">Login</HeaderNavLink>
+						<HeaderNavLink className="navbar-item" exact to="/register">Register</HeaderNavLink>
 					</div>
 				)
 			}
