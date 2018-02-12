@@ -8,7 +8,12 @@ const SideBarEl = styled.section`
 `;
 
 const SideBar = () => (
-	<SideBarEl>SideHeader</SideBarEl>
+	<SideBarEl>
+		Context Aware Side Menu<br />
+		TODO: put routes in here<br />
+		to show/hide sidebar<br />
+		based on current route
+	</SideBarEl>
 );
 
 SideBar.propTypes = {};
