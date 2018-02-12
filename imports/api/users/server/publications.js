@@ -6,7 +6,7 @@ import Users from '../users';
 import { explainQuery, getIndexes } from '../../utils';
 
 Meteor.publish('Users.currentUserInfo', function currentUserInfo () {
-	const query = { userId: this.userId };
+	const query = { _id: this.userId };
 	let userInfo;
 	if (!this.userId) return this.ready();
 	getIndexes(Users);
